@@ -9,7 +9,7 @@
 - [Module Behaviour Requirements](SpecificationDocs/module_behavior_requirements.md)
 - [Operational Data Module](SpecificationDocs/operational_data_model.md)
 - [Diagrams and Schematics](SpecificationDocs/Diagrams/Diagrams.md)
-- [Schemas](SpecificationDocs/Schema/Schema.md)
+- [Schemas](SpecificationDocs/Schema.md)
 
 #### Glossaries
 - [Capability](SpecificationDocs/Glossaries/Capability.md)
