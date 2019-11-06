@@ -8,7 +8,7 @@
 - [Middleware Selection](middleware_selection.md)
 - [Module Behaviour Requirements](module_behavior_requirements.md)
 - [Operational Data Module](operational_data_model.md)
-- [Diagrams and Schematics](Diagrams/Diagrams.md)
+- [Diagrams and Schematics](Diagrams.md)
 - [Schemas](Schema.md)
 
 #### Glossaries
