@@ -9,8 +9,7 @@ module AMM
     /* Included in AMM namespace to avoid name conflicts in generated software bindings. */
     struct UUID
     {
-        long long UUID_MSB;
-        long long UUID_LSB;
+        string id;
     };
 
     enum AssessmentValue {
@@ -36,7 +35,7 @@ module AMM
        ,INSTRUCTOR
        ,SCENARIO
        ,PHYSIOLOGY
-    }
+    };
 
     struct EventFragment
         /** QoS:
@@ -44,7 +43,7 @@ module AMM
          *  Durability: Volatile
          */
     {
-        @key UUID id;
+        UUID id;
         unsigned long long timestamp;
         UUID educational_encounter;
         FMA_Location location;
@@ -63,7 +62,7 @@ module AMM
     {
         UUID id;
         unsigned long long timestamp;
-        @key UUID educational_encounter;
+        UUID educational_encounter;
         FMA_Location location;
         EventAgentType agent_type;
         UUID agent_id;
@@ -82,7 +81,7 @@ module AMM
          *  Durability: Volatile
          */
     {
-        @key UUID id;
+        UUID id;
         UUID fragment_id;
         FAR_Status status;
         // Values that can be amended
@@ -92,12 +91,12 @@ module AMM
     };
 
     enum LogLevel {
-        FATAL
-       ,ERROR
-       ,WARN
-       ,INFO
-       ,DEBUG
-       ,TRACE
+        L_FATAL
+       ,L_ERROR
+       ,L_WARN
+       ,L_INFO
+       ,L_DEBUG
+       ,L_TRACE
     };
     struct Log
         /** QoS:
@@ -106,7 +105,7 @@ module AMM
          */
     {
         unsigned long long timestamp;
-        @Key UUID module_id;
+        UUID module_id;
         LogLevel level;
         string message;
     };
@@ -118,7 +117,7 @@ module AMM
          */
     {
         string name;
-        @Key UUID module_id;
+        UUID module_id;
         UUID educational_encounter;
         unsigned long long timestamp;
         string capabilities_configuration;
@@ -133,7 +132,7 @@ module AMM
     {
         UUID id;
         unsigned long long timestamp;   // When the omission was detected.
-        @key UUID educational_encounter;
+        UUID educational_encounter;
         FMA_Location location;
         EventAgentType agent_type;
         UUID agent_id;
@@ -157,10 +156,10 @@ module AMM
         string manufacturer;
         string model;
         string serial_number;
-        @Key UUID module_id;
+        UUID module_id;
         string module_version;
-        Semantic_Version configuration_version;
-        Semantic_Version AMM_version;
+       string configuration_version;
+       string AMM_version;
         octet ip_address[4];
         string capabilities_schema; // Defined by CapabilitiesSchema.xsd
     };
@@ -190,7 +189,7 @@ module AMM
         UUID educational_encounter;
         long long simulation_time;
         unsigned long long timestamp;
-        @Key string name;   // BioGears node path
+        string name;   // BioGears node path
         string unit;
         double value;
     };
@@ -207,7 +206,7 @@ module AMM
         UUID educational_encounter;
         long long simulation_time;
         unsigned long long timestamp;
-        @Key string name;   // BioGears node path
+        string name;   // BioGears node path
         string unit;
         double value;
     };
@@ -239,7 +238,7 @@ module AMM
     {
         unsigned long long timestamp;
         ControlType type;
-        @key UUID educational_encounter;
+        UUID educational_encounter;
     };
 
     enum StatusValue {
@@ -254,10 +253,10 @@ module AMM
          *  Liveliness: Automatic, 1 second lease
          */
     {
-        @Key UUID module_id;
+        UUID module_id;
         string module_name;
         UUID educational_encounter;
-        @Key string capability;
+        string capability;
         unsigned long long timestamp;
         StatusValue value;
         string message;
