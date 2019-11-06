@@ -121,10 +121,8 @@ Once publishable data is generated, it can about be written out to the DDS netwo
 mgr->WriteAssessment(assessment);
 ```
 
-Now run the source code for yourself!\
-https://github.com/AdvancedModularManikin/example-module/blob/master/Source/Tutorial_1.cpp
+[Now run the source code for yourself!](https://github.com/AdvancedModularManikin/example-module/blob/master/Source/Tutorial_1.cpp)
 
 ### END TUTORIAL 1
 
-Move on to Tutorial 2.\
-https://github.com/AdvancedModularManikin/example-module/blob/master/Documents/Tutorial_2.md
+[Move on to Tutorial 2](Tutorial_2.md)

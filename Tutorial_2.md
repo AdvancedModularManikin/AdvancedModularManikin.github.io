@@ -60,10 +60,8 @@ Required function signature for Assessment.\
 
 The second argument is always `SampleInfo_t*`.
 
-Now run the source code for yourself!\
-https://github.com/AdvancedModularManikin/example-module/blob/master/Source/Tutorial_2.cpp
+[Now run the source code for yourself!](https://github.com/AdvancedModularManikin/example-module/blob/master/Source/Tutorial_2.cpp)
 
 ### END TUTORIAL 2
 
-Move on to Tutorial 3.\
-https://github.com/AdvancedModularManikin/example-module/blob/master/Documents/Tutorial_3.md
+[Move on to Tutorial 3](Tutorial_3.md)

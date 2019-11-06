@@ -95,10 +95,8 @@ If Shutdown is used on an instance of DDS Manager and the program doesn't exit, 
 delete mgr;
 ```
 
-Now run the source code for yourself!\
-https://github.com/AdvancedModularManikin/example-module/blob/master/Source/Tutorial_6.cpp
+[Now run the source code for yourself!](https://github.com/AdvancedModularManikin/example-module/blob/master/Source/Tutorial_6.cpp)
 
 ### END TUTORIAL 6
 
-Move on to Tutorial 7.\
-https://github.com/AdvancedModularManikin/example-module/blob/master/Documents/Tutorial_7.md
+[Move on to Tutorial 7](Tutorial_7.md)

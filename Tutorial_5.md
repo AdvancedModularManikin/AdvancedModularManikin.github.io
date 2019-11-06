@@ -137,10 +137,8 @@ if (mgr->WriteAssessment(errmsg, a) != 0) {
 }
 ```
 
-Now run the source code for yourself!\
-https://github.com/AdvancedModularManikin/example-module/blob/master/Source/Tutorial_5.cpp
+[Now run the source code for yourself!](https://github.com/AdvancedModularManikin/example-module/blob/master/Source/Tutorial_5.cpp)
 
 ### END TUTORIAL 5
 
-Move on to Tutorial 6.\
-https://github.com/AdvancedModularManikin/example-module/blob/master/Documents/Tutorial_6.md
+[Move on to Tutorial 6](Tutorial_6.md)

@@ -55,10 +55,8 @@ Foo* foo = new Foo();
 ```
 
 
-Now run the source code for yourself!\
-https://github.com/AdvancedModularManikin/example-module/blob/master/Source/Tutorial_4.cpp
+[Now run the source code for yourself!](https://github.com/AdvancedModularManikin/example-module/blob/master/Source/Tutorial_4.cpp)
 
 ### END TUTORIAL 4
 
-Move on to Tutorial 5.\
-https://github.com/AdvancedModularManikin/example-module/blob/master/Documents/Tutorial_5.md
+[Move on to Tutorial 5](Tutorial_5.md)
