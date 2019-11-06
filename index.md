@@ -12,10 +12,10 @@
 - [Schemas](SpecificationDocs/Schema/Schema.md)
 
 #### Glossaries
-- [Capability](SpecificationDocs/Glossaries/Capability/Capability.md)
-- [Event Type](SpecificationDocs/Glossaries/Event_Type/EventType.md)
-- [Physiology Modification](SpecificationDocs/Glossaries/Physiology_Modification/PhysiologyModification.md)
-- [Render Modification](SpecificationDocs/Glossaries/Render_Modification/RenderModification.md)
+- [Capability](SpecificationDocs/Glossaries/Capability.md)
+- [Event Type](SpecificationDocs/Glossaries/EventType.md)
+- [Physiology Modification](SpecificationDocs/Glossaries/PhysiologyModification.md)
+- [Render Modification](SpecificationDocs/Glossaries/RenderModification.md)
 
 #### AMM API Documentation
 - [AMM Library](AMMLibraryDoxygen/html/index.html)
