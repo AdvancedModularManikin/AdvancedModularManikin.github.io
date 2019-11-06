@@ -1,0 +1,716 @@
+\hypertarget{_command_line_module_main_8cpp}{}\doxysection{Source/\+Command\+Line\+Module\+Main.cpp File Reference}
+\label{_command_line_module_main_8cpp}\index{Source/CommandLineModuleMain.cpp@{Source/CommandLineModuleMain.cpp}}
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$amm\+\_\+std.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_command_line_module_main_8cpp_a80d8b021e31e47ad9d862d91f75b480f}{D\+E\+F\+A\+U\+L\+T\+\_\+\+U\+U\+I\+D\+\_\+\+S\+TR}}~\char`\"{}00000000-\/0000-\/0000-\/0000-\/000000000000\char`\"{}
+\item 
+\#define \mbox{\hyperlink{_command_line_module_main_8cpp_ad148eb63667d249bea3af0477374fa53}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+TR}}~\char`\"{}Command line test\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_command_line_module_main_8cpp_a3cb16d38a248152b638d293987962d64}{On\+New\+Assessment}} (A\+M\+M\+::\+Assessment \&a, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{_command_line_module_main_8cpp_a83c8d42df6f040676a283ad0237512f1}{On\+New\+Event\+Fragment}} (A\+M\+M\+::\+Event\+Fragment \&ef, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{_command_line_module_main_8cpp_a13d32b2bc45db45b56e2ebada1816a99}{On\+New\+Event\+Record}} (A\+M\+M\+::\+Event\+Record \&er, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{_command_line_module_main_8cpp_a240830159d09a232da714d1e128cc5dc}{On\+New\+Fragment\+Amendment\+Request}} (A\+M\+M\+::\+Fragment\+Amendment\+Request \&farq, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{_command_line_module_main_8cpp_a08160f32677c922821c434f3b1a0a67b}{On\+New\+Log}} (A\+M\+M\+::\+Log \&l, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{_command_line_module_main_8cpp_ab76077a0ee34e66940d8b2701dafbfb6}{On\+New\+Module\+Configuration}} (A\+M\+M\+::\+Module\+Configuration \&mc, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{_command_line_module_main_8cpp_a81f29c9fa315eb352f0ba247e27c1053}{On\+New\+Omitted\+Event}} (A\+M\+M\+::\+Omitted\+Event \&oe, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{_command_line_module_main_8cpp_a9a492d5a063122abc8139a188248ad97}{On\+New\+Operational\+Description}} (A\+M\+M\+::\+Operational\+Description \&od, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{_command_line_module_main_8cpp_a5aa9b1f744a213e5ce56ac2b75215b94}{On\+New\+Physiology\+Modification}} (A\+M\+M\+::\+Physiology\+Modification \&pm, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{_command_line_module_main_8cpp_aec670eafc494e24460fbb92e1440b22d}{On\+New\+Physiology\+Value}} (A\+M\+M\+::\+Physiology\+Value \&pv, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{_command_line_module_main_8cpp_ac8913ca0cbeed19650dd480d6cf09726}{On\+New\+Physiology\+Waveform}} (A\+M\+M\+::\+Physiology\+Waveform \&pw, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{_command_line_module_main_8cpp_afc4cc378bb1011f2763215d3c7fe95c6}{On\+New\+Render\+Modification}} (A\+M\+M\+::\+Render\+Modification \&rm, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{_command_line_module_main_8cpp_ad33a5ff377beadae9c65616dcd089e03}{On\+New\+Simulation\+Control}} (A\+M\+M\+::\+Simulation\+Control \&sc, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{_command_line_module_main_8cpp_a5a3d7ca75d543f57e76465f2d11a61ba}{On\+New\+Status}} (A\+M\+M\+::\+Status \&s, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{_command_line_module_main_8cpp_a0ef51f38f79ea47f7ba3c623cdeea8e1}{On\+New\+Tick}} (A\+M\+M\+::\+Tick \&t, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{_command_line_module_main_8cpp_ae2077779a196486a655284342ee65a80}{On\+New\+Instrument\+Data}} (A\+M\+M\+::\+Instrument\+Data \&d, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{_command_line_module_main_8cpp_a84f75299a27fd73dd89e3c7357db43f3}{On\+New\+Command}} (A\+M\+M\+::\+Command \&c, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$info)
+\item 
+A\+M\+M\+::\+Assessment\+Value \mbox{\hyperlink{_command_line_module_main_8cpp_ab90a7c0a9acc2936bf62adec9908753a}{User\+Select\+Assessment\+Value}} ()
+\item 
+A\+M\+M\+::\+Event\+Agent\+Type \mbox{\hyperlink{_command_line_module_main_8cpp_aece22a247cd1539c50336ff77521d68f}{User\+Select\+Agent\+Type}} ()
+\item 
+A\+M\+M\+::\+F\+A\+R\+\_\+\+Status \mbox{\hyperlink{_command_line_module_main_8cpp_a6b7254e86e54b4d43a3f51bd0906f759}{User\+Select\+Far\+Status}} ()
+\item 
+A\+M\+M\+::\+Log\+Level \mbox{\hyperlink{_command_line_module_main_8cpp_ab82766046a1e661bc5e4e3b6829c0e32}{User\+Select\+Log\+Level}} ()
+\item 
+A\+M\+M\+::\+Control\+Type \mbox{\hyperlink{_command_line_module_main_8cpp_a6b6c86c4f152589232fee7addc0d8ed2}{User\+Select\+Control\+Type}} ()
+\item 
+A\+M\+M\+::\+Status\+Value \mbox{\hyperlink{_command_line_module_main_8cpp_af050f942865d48b2218a92235fa136bb}{User\+Select\+Status\+Value}} ()
+\item 
+int \mbox{\hyperlink{_command_line_module_main_8cpp_a190faa90901b2fdcdc022279629beae8}{Publish\+Assessment}} (A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$mgr)
+\item 
+int \mbox{\hyperlink{_command_line_module_main_8cpp_a4dab64f2495685591f9f022a8ba28cd9}{Publish\+Event\+Fragment}} (A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$mgr)
+\item 
+int \mbox{\hyperlink{_command_line_module_main_8cpp_ac0e2728e65e9dfdb133b6dcc0b482a9d}{Publish\+Event\+Record}} (A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$mgr)
+\item 
+int \mbox{\hyperlink{_command_line_module_main_8cpp_a662dc5a1c249f6b26c23d29af42c41b5}{Publish\+Far}} (A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$mgr)
+\item 
+int \mbox{\hyperlink{_command_line_module_main_8cpp_a204fc5e04cc0324bf7ca2611249b0c61}{Publish\+Log}} (A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$mgr)
+\item 
+int \mbox{\hyperlink{_command_line_module_main_8cpp_a4e24a1d594c83dd6072733312ea26b2d}{Publish\+Module\+Config}} (A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$mgr)
+\item 
+int \mbox{\hyperlink{_command_line_module_main_8cpp_a158814058234e8063816f716116ba9d3}{Publish\+Omitted\+Event}} (A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$mgr)
+\item 
+int \mbox{\hyperlink{_command_line_module_main_8cpp_aca6f62b266a8212015607b13d8427a01}{Publish\+Operational\+Description}} (A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$mgr)
+\item 
+int \mbox{\hyperlink{_command_line_module_main_8cpp_aebae34b4f9730843c5ef32cd5ffa0237}{Publish\+Physiology\+Modification}} (A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$mgr)
+\item 
+int \mbox{\hyperlink{_command_line_module_main_8cpp_afcc8354e1d7f523ab17a24a1fb742142}{Publish\+Physiology\+Value}} (A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$mgr)
+\item 
+int \mbox{\hyperlink{_command_line_module_main_8cpp_a41776f5525060157ad052251ce35e49d}{Publish\+Physiology\+Waveform}} (A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$mgr)
+\item 
+int \mbox{\hyperlink{_command_line_module_main_8cpp_aec5734c989629762cfd803116d89da18}{Publish\+Render\+Modification}} (A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$mgr)
+\item 
+int \mbox{\hyperlink{_command_line_module_main_8cpp_a305a88353655a8ede7cb336df5c18722}{Publish\+Sim\+Control}} (A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$mgr)
+\item 
+int \mbox{\hyperlink{_command_line_module_main_8cpp_a8e5185bc13437106711e8079d923664b}{Publish\+Status}} (A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$mgr)
+\item 
+int \mbox{\hyperlink{_command_line_module_main_8cpp_ac8732105f45ca860a181152d8f6b7e6f}{Publish\+Tick}} (A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$mgr)
+\item 
+int \mbox{\hyperlink{_command_line_module_main_8cpp_ab3f53b057d25c453152dfd951b87fbf4}{Publish\+Instrument\+Data}} (A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$mgr)
+\item 
+int \mbox{\hyperlink{_command_line_module_main_8cpp_a2beeace5ada466c664cc78b353519f6f}{Publish\+Command}} (A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$mgr)
+\item 
+int \mbox{\hyperlink{_command_line_module_main_8cpp_a39ddb5daacb87430a12a0495156b8273}{Enter\+Listening\+Mode}} (A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$mgr)
+\item 
+void \mbox{\hyperlink{_command_line_module_main_8cpp_ad810aa862f3cf1f2524fcc096095a07a}{Menu}} (A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$mgr)
+\item 
+int \mbox{\hyperlink{_command_line_module_main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{_command_line_module_main_8cpp_a35e1fbda907c4c69651e7ffed1543106}{is\+Running}} = true
+\begin{DoxyCompactList}\small\item\em Is the main program in a loop? \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_ad148eb63667d249bea3af0477374fa53}\label{_command_line_module_main_8cpp_ad148eb63667d249bea3af0477374fa53}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!DEFAULT\_STR@{DEFAULT\_STR}}
+\index{DEFAULT\_STR@{DEFAULT\_STR}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_STR}{DEFAULT\_STR}}
+{\footnotesize\ttfamily \#define D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+TR~\char`\"{}Command line test\char`\"{}}
+
+\mbox{\Hypertarget{_command_line_module_main_8cpp_a80d8b021e31e47ad9d862d91f75b480f}\label{_command_line_module_main_8cpp_a80d8b021e31e47ad9d862d91f75b480f}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!DEFAULT\_UUID\_STR@{DEFAULT\_UUID\_STR}}
+\index{DEFAULT\_UUID\_STR@{DEFAULT\_UUID\_STR}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_UUID\_STR}{DEFAULT\_UUID\_STR}}
+{\footnotesize\ttfamily \#define D\+E\+F\+A\+U\+L\+T\+\_\+\+U\+U\+I\+D\+\_\+\+S\+TR~\char`\"{}00000000-\/0000-\/0000-\/0000-\/000000000000\char`\"{}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_a39ddb5daacb87430a12a0495156b8273}\label{_command_line_module_main_8cpp_a39ddb5daacb87430a12a0495156b8273}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!EnterListeningMode@{EnterListeningMode}}
+\index{EnterListeningMode@{EnterListeningMode}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{EnterListeningMode()}{EnterListeningMode()}}
+{\footnotesize\ttfamily int Enter\+Listening\+Mode (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$}]{mgr }\end{DoxyParamCaption})}
+
+Activate listening mode and display all incomming data.
+
+Initializes A\+LL topic subscribers and displays their incomming data. \begin{DoxyNote}{Note}
+Intended for unit testing and controlled diagnostics. Listening to a fully operational sim will result in lots os spam and noisey data. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em Instance} & of D\+DS Manager to initialize subscribers. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_command_line_module_main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!main@{main}}
+\index{main@{main}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_command_line_module_main_8cpp_ad810aa862f3cf1f2524fcc096095a07a}\label{_command_line_module_main_8cpp_ad810aa862f3cf1f2524fcc096095a07a}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!Menu@{Menu}}
+\index{Menu@{Menu}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{Menu()}{Menu()}}
+{\footnotesize\ttfamily void Menu (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$}]{mgr }\end{DoxyParamCaption})}
+
+Central program loop prompting for user action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Instance} & of D\+DS Manager that will be passed along where necessary. Is initialized in main. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_a3cb16d38a248152b638d293987962d64}\label{_command_line_module_main_8cpp_a3cb16d38a248152b638d293987962d64}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!OnNewAssessment@{OnNewAssessment}}
+\index{OnNewAssessment@{OnNewAssessment}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{OnNewAssessment()}{OnNewAssessment()}}
+{\footnotesize\ttfamily void On\+New\+Assessment (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Assessment \&}]{a,  }\item[{eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})}
+
+Receiver for Assessment data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Assessment data. \\
+\hline
+{\em Sample\+Info\+\_\+t} & Fast\+R\+T\+PS sample info. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_a84f75299a27fd73dd89e3c7357db43f3}\label{_command_line_module_main_8cpp_a84f75299a27fd73dd89e3c7357db43f3}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!OnNewCommand@{OnNewCommand}}
+\index{OnNewCommand@{OnNewCommand}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{OnNewCommand()}{OnNewCommand()}}
+{\footnotesize\ttfamily void On\+New\+Command (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Command \&}]{c,  }\item[{eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})}
+
+Receiver for Command data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Command data. \\
+\hline
+{\em Sample\+Info\+\_\+t} & Fast\+R\+T\+PS sample info. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_a83c8d42df6f040676a283ad0237512f1}\label{_command_line_module_main_8cpp_a83c8d42df6f040676a283ad0237512f1}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!OnNewEventFragment@{OnNewEventFragment}}
+\index{OnNewEventFragment@{OnNewEventFragment}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{OnNewEventFragment()}{OnNewEventFragment()}}
+{\footnotesize\ttfamily void On\+New\+Event\+Fragment (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Event\+Fragment \&}]{ef,  }\item[{eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})}
+
+Receiver for Event Fragment data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ef} & Event Fragment data. \\
+\hline
+{\em Sample\+Info\+\_\+t} & Fast\+R\+T\+PS sample info. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_a13d32b2bc45db45b56e2ebada1816a99}\label{_command_line_module_main_8cpp_a13d32b2bc45db45b56e2ebada1816a99}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!OnNewEventRecord@{OnNewEventRecord}}
+\index{OnNewEventRecord@{OnNewEventRecord}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{OnNewEventRecord()}{OnNewEventRecord()}}
+{\footnotesize\ttfamily void On\+New\+Event\+Record (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Event\+Record \&}]{er,  }\item[{eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})}
+
+Receiver for Event Record data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em er} & Event Record data. \\
+\hline
+{\em Sample\+Info\+\_\+t} & Fast\+R\+T\+PS sample info. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_a240830159d09a232da714d1e128cc5dc}\label{_command_line_module_main_8cpp_a240830159d09a232da714d1e128cc5dc}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!OnNewFragmentAmendmentRequest@{OnNewFragmentAmendmentRequest}}
+\index{OnNewFragmentAmendmentRequest@{OnNewFragmentAmendmentRequest}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{OnNewFragmentAmendmentRequest()}{OnNewFragmentAmendmentRequest()}}
+{\footnotesize\ttfamily void On\+New\+Fragment\+Amendment\+Request (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Fragment\+Amendment\+Request \&}]{farq,  }\item[{eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})}
+
+Receiver for Fragment Amendment Request data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em farq} & Fragment Amendment Request data. \\
+\hline
+{\em Sample\+Info\+\_\+t} & Fast\+R\+T\+PS sample info. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_ae2077779a196486a655284342ee65a80}\label{_command_line_module_main_8cpp_ae2077779a196486a655284342ee65a80}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!OnNewInstrumentData@{OnNewInstrumentData}}
+\index{OnNewInstrumentData@{OnNewInstrumentData}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{OnNewInstrumentData()}{OnNewInstrumentData()}}
+{\footnotesize\ttfamily void On\+New\+Instrument\+Data (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Instrument\+Data \&}]{d,  }\item[{eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})}
+
+Receiver for Instrument Data data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & Instrument Data data. \\
+\hline
+{\em Sample\+Info\+\_\+t} & Fast\+R\+T\+PS sample info. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_a08160f32677c922821c434f3b1a0a67b}\label{_command_line_module_main_8cpp_a08160f32677c922821c434f3b1a0a67b}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!OnNewLog@{OnNewLog}}
+\index{OnNewLog@{OnNewLog}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{OnNewLog()}{OnNewLog()}}
+{\footnotesize\ttfamily void On\+New\+Log (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Log \&}]{l,  }\item[{eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})}
+
+Receiver for Log data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & Log data. \\
+\hline
+{\em Sample\+Info\+\_\+t} & Fast\+R\+T\+PS sample info. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_ab76077a0ee34e66940d8b2701dafbfb6}\label{_command_line_module_main_8cpp_ab76077a0ee34e66940d8b2701dafbfb6}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!OnNewModuleConfiguration@{OnNewModuleConfiguration}}
+\index{OnNewModuleConfiguration@{OnNewModuleConfiguration}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{OnNewModuleConfiguration()}{OnNewModuleConfiguration()}}
+{\footnotesize\ttfamily void On\+New\+Module\+Configuration (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Module\+Configuration \&}]{mc,  }\item[{eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})}
+
+Receiver for Module Configuration data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mc} & Module Configuration data. \\
+\hline
+{\em Sample\+Info\+\_\+t} & Fast\+R\+T\+PS sample info. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_a81f29c9fa315eb352f0ba247e27c1053}\label{_command_line_module_main_8cpp_a81f29c9fa315eb352f0ba247e27c1053}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!OnNewOmittedEvent@{OnNewOmittedEvent}}
+\index{OnNewOmittedEvent@{OnNewOmittedEvent}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{OnNewOmittedEvent()}{OnNewOmittedEvent()}}
+{\footnotesize\ttfamily void On\+New\+Omitted\+Event (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Omitted\+Event \&}]{oe,  }\item[{eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})}
+
+Receiver for Omitted Event data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em oe} & Omitted Event data. \\
+\hline
+{\em Sample\+Info\+\_\+t} & Fast\+R\+T\+PS sample info. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_a9a492d5a063122abc8139a188248ad97}\label{_command_line_module_main_8cpp_a9a492d5a063122abc8139a188248ad97}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!OnNewOperationalDescription@{OnNewOperationalDescription}}
+\index{OnNewOperationalDescription@{OnNewOperationalDescription}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{OnNewOperationalDescription()}{OnNewOperationalDescription()}}
+{\footnotesize\ttfamily void On\+New\+Operational\+Description (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Operational\+Description \&}]{od,  }\item[{eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})}
+
+Receiver for Operational Description data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em od} & Operational Description data. \\
+\hline
+{\em Sample\+Info\+\_\+t} & Fast\+R\+T\+PS sample info. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_a5aa9b1f744a213e5ce56ac2b75215b94}\label{_command_line_module_main_8cpp_a5aa9b1f744a213e5ce56ac2b75215b94}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!OnNewPhysiologyModification@{OnNewPhysiologyModification}}
+\index{OnNewPhysiologyModification@{OnNewPhysiologyModification}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{OnNewPhysiologyModification()}{OnNewPhysiologyModification()}}
+{\footnotesize\ttfamily void On\+New\+Physiology\+Modification (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Physiology\+Modification \&}]{pm,  }\item[{eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})}
+
+Receiver for Physiology Modification data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pm} & Physiology Modification data. \\
+\hline
+{\em Sample\+Info\+\_\+t} & Fast\+R\+T\+PS sample info. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_aec670eafc494e24460fbb92e1440b22d}\label{_command_line_module_main_8cpp_aec670eafc494e24460fbb92e1440b22d}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!OnNewPhysiologyValue@{OnNewPhysiologyValue}}
+\index{OnNewPhysiologyValue@{OnNewPhysiologyValue}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{OnNewPhysiologyValue()}{OnNewPhysiologyValue()}}
+{\footnotesize\ttfamily void On\+New\+Physiology\+Value (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Physiology\+Value \&}]{pv,  }\item[{eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})}
+
+Receiver for Physiology Value data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pv} & Physiology Value data. \\
+\hline
+{\em Sample\+Info\+\_\+t} & Fast\+R\+T\+PS sample info. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_ac8913ca0cbeed19650dd480d6cf09726}\label{_command_line_module_main_8cpp_ac8913ca0cbeed19650dd480d6cf09726}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!OnNewPhysiologyWaveform@{OnNewPhysiologyWaveform}}
+\index{OnNewPhysiologyWaveform@{OnNewPhysiologyWaveform}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{OnNewPhysiologyWaveform()}{OnNewPhysiologyWaveform()}}
+{\footnotesize\ttfamily void On\+New\+Physiology\+Waveform (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Physiology\+Waveform \&}]{pw,  }\item[{eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})}
+
+Receiver for Physiology Waveform data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pw} & Physiology Waveform data. \\
+\hline
+{\em Sample\+Info\+\_\+t} & Fast\+R\+T\+PS sample info. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_afc4cc378bb1011f2763215d3c7fe95c6}\label{_command_line_module_main_8cpp_afc4cc378bb1011f2763215d3c7fe95c6}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!OnNewRenderModification@{OnNewRenderModification}}
+\index{OnNewRenderModification@{OnNewRenderModification}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{OnNewRenderModification()}{OnNewRenderModification()}}
+{\footnotesize\ttfamily void On\+New\+Render\+Modification (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Render\+Modification \&}]{rm,  }\item[{eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})}
+
+Receiver for Render Modification data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rm} & Render Modification data. \\
+\hline
+{\em Sample\+Info\+\_\+t} & Fast\+R\+T\+PS sample info. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_ad33a5ff377beadae9c65616dcd089e03}\label{_command_line_module_main_8cpp_ad33a5ff377beadae9c65616dcd089e03}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!OnNewSimulationControl@{OnNewSimulationControl}}
+\index{OnNewSimulationControl@{OnNewSimulationControl}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{OnNewSimulationControl()}{OnNewSimulationControl()}}
+{\footnotesize\ttfamily void On\+New\+Simulation\+Control (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Simulation\+Control \&}]{sc,  }\item[{eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})}
+
+Receiver for Simulation Control data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sc} & Simulation Control data. \\
+\hline
+{\em Sample\+Info\+\_\+t} & Fast\+R\+T\+PS sample info. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_a5a3d7ca75d543f57e76465f2d11a61ba}\label{_command_line_module_main_8cpp_a5a3d7ca75d543f57e76465f2d11a61ba}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!OnNewStatus@{OnNewStatus}}
+\index{OnNewStatus@{OnNewStatus}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{OnNewStatus()}{OnNewStatus()}}
+{\footnotesize\ttfamily void On\+New\+Status (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Status \&}]{s,  }\item[{eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})}
+
+Receiver for Status data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ss} & Status data. \\
+\hline
+{\em Sample\+Info\+\_\+t} & Fast\+R\+T\+PS sample info. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_a0ef51f38f79ea47f7ba3c623cdeea8e1}\label{_command_line_module_main_8cpp_a0ef51f38f79ea47f7ba3c623cdeea8e1}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!OnNewTick@{OnNewTick}}
+\index{OnNewTick@{OnNewTick}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{OnNewTick()}{OnNewTick()}}
+{\footnotesize\ttfamily void On\+New\+Tick (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Tick \&}]{t,  }\item[{eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})}
+
+Receiver for Tick data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Tick data. \\
+\hline
+{\em Sample\+Info\+\_\+t} & Fast\+R\+T\+PS sample info. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_a190faa90901b2fdcdc022279629beae8}\label{_command_line_module_main_8cpp_a190faa90901b2fdcdc022279629beae8}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!PublishAssessment@{PublishAssessment}}
+\index{PublishAssessment@{PublishAssessment}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{PublishAssessment()}{PublishAssessment()}}
+{\footnotesize\ttfamily int Publish\+Assessment (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$}]{mgr }\end{DoxyParamCaption})}
+
+Publishes Assessment data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mgr} & Instance of D\+DS Manager to call Write Assessment. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_a2beeace5ada466c664cc78b353519f6f}\label{_command_line_module_main_8cpp_a2beeace5ada466c664cc78b353519f6f}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!PublishCommand@{PublishCommand}}
+\index{PublishCommand@{PublishCommand}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{PublishCommand()}{PublishCommand()}}
+{\footnotesize\ttfamily int Publish\+Command (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$}]{mgr }\end{DoxyParamCaption})}
+
+Publishes Command data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mgr} & Instance of D\+DS Manager to call Write Command. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_a4dab64f2495685591f9f022a8ba28cd9}\label{_command_line_module_main_8cpp_a4dab64f2495685591f9f022a8ba28cd9}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!PublishEventFragment@{PublishEventFragment}}
+\index{PublishEventFragment@{PublishEventFragment}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{PublishEventFragment()}{PublishEventFragment()}}
+{\footnotesize\ttfamily int Publish\+Event\+Fragment (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$}]{mgr }\end{DoxyParamCaption})}
+
+Publishes Event Fragment data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mgr} & Instance of D\+DS Manager to call Write Event Fragment. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_ac0e2728e65e9dfdb133b6dcc0b482a9d}\label{_command_line_module_main_8cpp_ac0e2728e65e9dfdb133b6dcc0b482a9d}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!PublishEventRecord@{PublishEventRecord}}
+\index{PublishEventRecord@{PublishEventRecord}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{PublishEventRecord()}{PublishEventRecord()}}
+{\footnotesize\ttfamily int Publish\+Event\+Record (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$}]{mgr }\end{DoxyParamCaption})}
+
+Publishes Event Record data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mgr} & Instance of D\+DS Manager to call Write Event Record. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_a662dc5a1c249f6b26c23d29af42c41b5}\label{_command_line_module_main_8cpp_a662dc5a1c249f6b26c23d29af42c41b5}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!PublishFar@{PublishFar}}
+\index{PublishFar@{PublishFar}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{PublishFar()}{PublishFar()}}
+{\footnotesize\ttfamily int Publish\+Far (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$}]{mgr }\end{DoxyParamCaption})}
+
+Publishes Fragment Amendment Request data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mgr} & Instance of D\+DS Manager to call Write Fragment Amendment Request. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_ab3f53b057d25c453152dfd951b87fbf4}\label{_command_line_module_main_8cpp_ab3f53b057d25c453152dfd951b87fbf4}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!PublishInstrumentData@{PublishInstrumentData}}
+\index{PublishInstrumentData@{PublishInstrumentData}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{PublishInstrumentData()}{PublishInstrumentData()}}
+{\footnotesize\ttfamily int Publish\+Instrument\+Data (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$}]{mgr }\end{DoxyParamCaption})}
+
+Publishes Instrument Data data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mgr} & Instance of D\+DS Manager to call Write Instrument Data. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_a204fc5e04cc0324bf7ca2611249b0c61}\label{_command_line_module_main_8cpp_a204fc5e04cc0324bf7ca2611249b0c61}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!PublishLog@{PublishLog}}
+\index{PublishLog@{PublishLog}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{PublishLog()}{PublishLog()}}
+{\footnotesize\ttfamily int Publish\+Log (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$}]{mgr }\end{DoxyParamCaption})}
+
+Publishes Log data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mgr} & Instance of D\+DS Manager to call Write Log. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_a4e24a1d594c83dd6072733312ea26b2d}\label{_command_line_module_main_8cpp_a4e24a1d594c83dd6072733312ea26b2d}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!PublishModuleConfig@{PublishModuleConfig}}
+\index{PublishModuleConfig@{PublishModuleConfig}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{PublishModuleConfig()}{PublishModuleConfig()}}
+{\footnotesize\ttfamily int Publish\+Module\+Config (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$}]{mgr }\end{DoxyParamCaption})}
+
+Publishes Module Config data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mgr} & Instance of D\+DS Manager to call Write Module Config. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_a158814058234e8063816f716116ba9d3}\label{_command_line_module_main_8cpp_a158814058234e8063816f716116ba9d3}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!PublishOmittedEvent@{PublishOmittedEvent}}
+\index{PublishOmittedEvent@{PublishOmittedEvent}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{PublishOmittedEvent()}{PublishOmittedEvent()}}
+{\footnotesize\ttfamily int Publish\+Omitted\+Event (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$}]{mgr }\end{DoxyParamCaption})}
+
+Publishes Omitted Event data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mgr} & Instance of D\+DS Manager to call Write Omitted Event. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_aca6f62b266a8212015607b13d8427a01}\label{_command_line_module_main_8cpp_aca6f62b266a8212015607b13d8427a01}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!PublishOperationalDescription@{PublishOperationalDescription}}
+\index{PublishOperationalDescription@{PublishOperationalDescription}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{PublishOperationalDescription()}{PublishOperationalDescription()}}
+{\footnotesize\ttfamily int Publish\+Operational\+Description (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$}]{mgr }\end{DoxyParamCaption})}
+
+Publishes Operational Description data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mgr} & Instance of D\+DS Manager to call Write Operational Description. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_aebae34b4f9730843c5ef32cd5ffa0237}\label{_command_line_module_main_8cpp_aebae34b4f9730843c5ef32cd5ffa0237}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!PublishPhysiologyModification@{PublishPhysiologyModification}}
+\index{PublishPhysiologyModification@{PublishPhysiologyModification}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{PublishPhysiologyModification()}{PublishPhysiologyModification()}}
+{\footnotesize\ttfamily int Publish\+Physiology\+Modification (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$}]{mgr }\end{DoxyParamCaption})}
+
+Publishes Physiology Modification data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mgr} & Instance of D\+DS Manager to call Write Physiology Modification. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_afcc8354e1d7f523ab17a24a1fb742142}\label{_command_line_module_main_8cpp_afcc8354e1d7f523ab17a24a1fb742142}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!PublishPhysiologyValue@{PublishPhysiologyValue}}
+\index{PublishPhysiologyValue@{PublishPhysiologyValue}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{PublishPhysiologyValue()}{PublishPhysiologyValue()}}
+{\footnotesize\ttfamily int Publish\+Physiology\+Value (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$}]{mgr }\end{DoxyParamCaption})}
+
+Publishes Physiology Value data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mgr} & Instance of D\+DS Manager to call Write Physiology Value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_a41776f5525060157ad052251ce35e49d}\label{_command_line_module_main_8cpp_a41776f5525060157ad052251ce35e49d}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!PublishPhysiologyWaveform@{PublishPhysiologyWaveform}}
+\index{PublishPhysiologyWaveform@{PublishPhysiologyWaveform}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{PublishPhysiologyWaveform()}{PublishPhysiologyWaveform()}}
+{\footnotesize\ttfamily int Publish\+Physiology\+Waveform (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$}]{mgr }\end{DoxyParamCaption})}
+
+Publishes Physiology Waveform data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mgr} & Instance of D\+DS Manager to call Write Physiology Waveform. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_aec5734c989629762cfd803116d89da18}\label{_command_line_module_main_8cpp_aec5734c989629762cfd803116d89da18}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!PublishRenderModification@{PublishRenderModification}}
+\index{PublishRenderModification@{PublishRenderModification}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{PublishRenderModification()}{PublishRenderModification()}}
+{\footnotesize\ttfamily int Publish\+Render\+Modification (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$}]{mgr }\end{DoxyParamCaption})}
+
+Publishes Assessment data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mgr} & Instance of D\+DS Manager to call Write Assessment. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_a305a88353655a8ede7cb336df5c18722}\label{_command_line_module_main_8cpp_a305a88353655a8ede7cb336df5c18722}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!PublishSimControl@{PublishSimControl}}
+\index{PublishSimControl@{PublishSimControl}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{PublishSimControl()}{PublishSimControl()}}
+{\footnotesize\ttfamily int Publish\+Sim\+Control (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$}]{mgr }\end{DoxyParamCaption})}
+
+Publishes Simulation Control data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mgr} & Instance of D\+DS Manager to call Write Simulation Control. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_a8e5185bc13437106711e8079d923664b}\label{_command_line_module_main_8cpp_a8e5185bc13437106711e8079d923664b}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!PublishStatus@{PublishStatus}}
+\index{PublishStatus@{PublishStatus}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{PublishStatus()}{PublishStatus()}}
+{\footnotesize\ttfamily int Publish\+Status (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$}]{mgr }\end{DoxyParamCaption})}
+
+Publishes Status data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mgr} & Instance of D\+DS Manager to call Write Status. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_ac8732105f45ca860a181152d8f6b7e6f}\label{_command_line_module_main_8cpp_ac8732105f45ca860a181152d8f6b7e6f}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!PublishTick@{PublishTick}}
+\index{PublishTick@{PublishTick}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{PublishTick()}{PublishTick()}}
+{\footnotesize\ttfamily int Publish\+Tick (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$ $\ast$}]{mgr }\end{DoxyParamCaption})}
+
+Publishes Tick data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mgr} & Instance of D\+DS Manager to call Write Tick. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_aece22a247cd1539c50336ff77521d68f}\label{_command_line_module_main_8cpp_aece22a247cd1539c50336ff77521d68f}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!UserSelectAgentType@{UserSelectAgentType}}
+\index{UserSelectAgentType@{UserSelectAgentType}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{UserSelectAgentType()}{UserSelectAgentType()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Event\+Agent\+Type User\+Select\+Agent\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+User prompt for selecting Event Agent Type.
+
+Prompts the user to select any of the given Event Agent Types. \begin{DoxyReturn}{Returns}
+The user selected enum value for Event Agent Type. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_ab90a7c0a9acc2936bf62adec9908753a}\label{_command_line_module_main_8cpp_ab90a7c0a9acc2936bf62adec9908753a}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!UserSelectAssessmentValue@{UserSelectAssessmentValue}}
+\index{UserSelectAssessmentValue@{UserSelectAssessmentValue}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{UserSelectAssessmentValue()}{UserSelectAssessmentValue()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Assessment\+Value User\+Select\+Assessment\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+User prompt for selecting Assessment Value.
+
+Prompts the user to select any of the given Assessment Values. \begin{DoxyReturn}{Returns}
+The user selected enum value for Assessment Value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_a6b6c86c4f152589232fee7addc0d8ed2}\label{_command_line_module_main_8cpp_a6b6c86c4f152589232fee7addc0d8ed2}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!UserSelectControlType@{UserSelectControlType}}
+\index{UserSelectControlType@{UserSelectControlType}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{UserSelectControlType()}{UserSelectControlType()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Control\+Type User\+Select\+Control\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+User prompt for selected Control Type.
+
+Prompts the user to select any of the given Control Types. \begin{DoxyReturn}{Returns}
+The user selected enum value for Control Type. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_a6b7254e86e54b4d43a3f51bd0906f759}\label{_command_line_module_main_8cpp_a6b7254e86e54b4d43a3f51bd0906f759}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!UserSelectFarStatus@{UserSelectFarStatus}}
+\index{UserSelectFarStatus@{UserSelectFarStatus}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{UserSelectFarStatus()}{UserSelectFarStatus()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+F\+A\+R\+\_\+\+Status User\+Select\+Far\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+User prompt for selected F\+AR Status.
+
+Prompts the user to select any of the given F\+AR Statuses. \begin{DoxyReturn}{Returns}
+The user selected enum value for F\+AR Status. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_ab82766046a1e661bc5e4e3b6829c0e32}\label{_command_line_module_main_8cpp_ab82766046a1e661bc5e4e3b6829c0e32}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!UserSelectLogLevel@{UserSelectLogLevel}}
+\index{UserSelectLogLevel@{UserSelectLogLevel}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{UserSelectLogLevel()}{UserSelectLogLevel()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Log\+Level User\+Select\+Log\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+User prompt for selected Log Level
+
+Prompts the user to select any of the given Log Levels. \begin{DoxyReturn}{Returns}
+The user selected enum value for Log Level 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_af050f942865d48b2218a92235fa136bb}\label{_command_line_module_main_8cpp_af050f942865d48b2218a92235fa136bb}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!UserSelectStatusValue@{UserSelectStatusValue}}
+\index{UserSelectStatusValue@{UserSelectStatusValue}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{UserSelectStatusValue()}{UserSelectStatusValue()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Status\+Value User\+Select\+Status\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+User prompt for selected Status Value.
+
+Prompts the user to select any of the given Status Values. \begin{DoxyReturn}{Returns}
+The user selected enum value for Status Value. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_command_line_module_main_8cpp_a35e1fbda907c4c69651e7ffed1543106}\label{_command_line_module_main_8cpp_a35e1fbda907c4c69651e7ffed1543106}} 
+\index{CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}!isRunning@{isRunning}}
+\index{isRunning@{isRunning}!CommandLineModuleMain.cpp@{CommandLineModuleMain.cpp}}
+\doxysubsubsection{\texorpdfstring{isRunning}{isRunning}}
+{\footnotesize\ttfamily bool is\+Running = true}
+
+
+
+Is the main program in a loop? 
+
