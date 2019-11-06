@@ -1,4 +1,4 @@
 
 
 
-[Image](SpecificationDocs/diagrams/Power_System_Architecture.jpg)
+![Image](SpecificationDocs\diagrams\Power_System_Architecture.jpg)
