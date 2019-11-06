@@ -17,5 +17,5 @@
 - [Physiology Modification](SpecificationDocs/Glossaries/PhysiologyModification.md)
 - [Render Modification](SpecificationDocs/Glossaries/RenderModification.md)
 
-#### AMM API Documentation
+#### AMM API
 - [AMM Library](AMMLibraryDoxygen/html/index.html)
