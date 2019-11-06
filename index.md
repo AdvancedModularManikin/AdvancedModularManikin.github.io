@@ -8,7 +8,7 @@
 - [Middleware Selection](SpecificationDocs/middleware_selection.md)
 - [Module Behaviour Requirements](SpecificationDocs/module_behavior_requirements.md)
 - [Operational Data Module](SpecificationDocs/operational_data_model.md)
-- [Diagrams](SpecificationDocs/diagrams)
+- [Diagrams](SpecificationDocs/diagrams/diagrams.md)
 
 
 
