@@ -10,6 +10,9 @@
 - [Operational Data Module](SpecificationDocs/operational_data_model.md)
 - [Diagrams](SpecificationDocs/diagrams/diagrams.md)
 
+###### Other Documents
+- [AMM Fluidics Schematic](SpecificationDocs/diagrams/AMM_fluidics_schematic.pdf)
+
 
 
 #### AMM API Documentation

@@ -1,5 +1,7 @@
 
 
+###### Power System Architecture
+![](/SpecificationDocs/diagrams/Power_System_Architecture.jpg)
 
-![arch](SpecificationDocs/diagrams/Power_System_Architecture.jpg)
-![frag](SpecificationDocs/diagrams/AMMEventFragmentDataFlow-SyringeExample.jpg)
+###### AMM Event Fragment Data Flow - Syringe Example
+![](/SpecificationDocs/diagrams/AMMEventFragmentDataFlow-SyringeExample.jpg)
