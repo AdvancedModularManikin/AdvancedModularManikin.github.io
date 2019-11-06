@@ -34,4 +34,4 @@
 - [AMM TCP Bridge]()
 - [AMM REST Bridge]()
 - [AMM Serial Bridge]()
-- [AMM Command Line Module](CommandLineModuleDOxygen/html/index.html)
+- [AMM Command Line Module](CommandLineModuleDoxygen/html/index.html)
