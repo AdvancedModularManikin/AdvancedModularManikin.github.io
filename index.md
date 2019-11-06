@@ -4,18 +4,18 @@
 
 #### General Documentation
 ##### System Specification
-- [Configuration Data Module](SpecificationDocs/configuration_data_model.md)
-- [Middleware Selection](SpecificationDocs/middleware_selection.md)
-- [Module Behaviour Requirements](SpecificationDocs/module_behavior_requirements.md)
-- [Operational Data Module](SpecificationDocs/operational_data_model.md)
-- [Diagrams and Schematics](SpecificationDocs/Diagrams/Diagrams.md)
+- [Configuration Data Module](configuration_data_model.md)
+- [Middleware Selection](middleware_selection.md)
+- [Module Behaviour Requirements](module_behavior_requirements.md)
+- [Operational Data Module](operational_data_model.md)
+- [Diagrams and Schematics](Diagrams/Diagrams.md)
 - [Schemas](Schema.md)
 
 #### Glossaries
-- [Capability](SpecificationDocs/Glossaries/Capability.md)
-- [Event Type](SpecificationDocs/Glossaries/EventType.md)
-- [Physiology Modification](SpecificationDocs/Glossaries/PhysiologyModification.md)
-- [Render Modification](SpecificationDocs/Glossaries/RenderModification.md)
+- [Capability](Capability.md)
+- [Event Type](EventType.md)
+- [Physiology Modification](PhysiologyModification.md)
+- [Render Modification](RenderModification.md)
 
 #### AMM API
 - [AMM Library](AMMLibraryDoxygen/html/index.html)
