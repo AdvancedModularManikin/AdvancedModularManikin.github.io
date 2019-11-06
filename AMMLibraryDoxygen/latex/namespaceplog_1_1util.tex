@@ -1,0 +1,117 @@
+\hypertarget{namespaceplog_1_1util}{}\doxysection{plog\+::util Namespace Reference}
+\label{namespaceplog_1_1util}\index{plog::util@{plog::util}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classplog_1_1util_1_1_file}{File}}
+\item 
+class \mbox{\hyperlink{classplog_1_1util_1_1_mutex}{Mutex}}
+\item 
+class \mbox{\hyperlink{classplog_1_1util_1_1_mutex_lock}{Mutex\+Lock}}
+\item 
+class \mbox{\hyperlink{classplog_1_1util_1_1_non_copyable}{Non\+Copyable}}
+\item 
+class \mbox{\hyperlink{classplog_1_1util_1_1_singleton}{Singleton}}
+\item 
+struct \mbox{\hyperlink{structplog_1_1util_1_1_time}{Time}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::string \mbox{\hyperlink{namespaceplog_1_1util_a6006c27fd4b0e374593ae75b8f88076f}{nstring}}
+\item 
+typedef std\+::ostringstream \mbox{\hyperlink{namespaceplog_1_1util_a742fa17b01754458ba40d9c739eba963}{nostringstream}}
+\item 
+typedef std\+::istringstream \mbox{\hyperlink{namespaceplog_1_1util_a825e616e22f2ce43ff8a605d45516179}{nistringstream}}
+\item 
+typedef char \mbox{\hyperlink{namespaceplog_1_1util_a5904dfdf0e59be15b2da55f49c34691e}{nchar}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespaceplog_1_1util_a829e3957b08288ccd481ddba24e37e41}{localtime\+\_\+s}} (struct tm $\ast$t, const time\+\_\+t $\ast$time)
+\item 
+void \mbox{\hyperlink{namespaceplog_1_1util_a10bab2b413e194f8e30770cff3cb00c7}{gmtime\+\_\+s}} (struct tm $\ast$t, const time\+\_\+t $\ast$time)
+\item 
+void \mbox{\hyperlink{namespaceplog_1_1util_ad2bfef2b4d327248ed80091a9a77893d}{ftime}} (\mbox{\hyperlink{structplog_1_1util_1_1_time}{Time}} $\ast$t)
+\item 
+unsigned int \mbox{\hyperlink{namespaceplog_1_1util_add2656286e84f4025dfca7c3053be004}{gettid}} ()
+\item 
+std\+::string \mbox{\hyperlink{namespaceplog_1_1util_a21e790275eea0f204619fc8001b11921}{process\+Func\+Name}} (const char $\ast$func)
+\item 
+const \mbox{\hyperlink{namespaceplog_1_1util_a5904dfdf0e59be15b2da55f49c34691e}{nchar}} $\ast$ \mbox{\hyperlink{namespaceplog_1_1util_a4e202198acb6648356591a4fca478a0e}{find\+Extension\+Dot}} (const \mbox{\hyperlink{namespaceplog_1_1util_a5904dfdf0e59be15b2da55f49c34691e}{nchar}} $\ast$file\+Name)
+\item 
+void \mbox{\hyperlink{namespaceplog_1_1util_a213ef20b4d0a99026624c936a22c5c97}{split\+File\+Name}} (const \mbox{\hyperlink{namespaceplog_1_1util_a5904dfdf0e59be15b2da55f49c34691e}{nchar}} $\ast$file\+Name, \mbox{\hyperlink{namespaceplog_1_1util_a6006c27fd4b0e374593ae75b8f88076f}{nstring}} \&file\+Name\+No\+Ext, \mbox{\hyperlink{namespaceplog_1_1util_a6006c27fd4b0e374593ae75b8f88076f}{nstring}} \&file\+Ext)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespaceplog_1_1util_a5904dfdf0e59be15b2da55f49c34691e}\label{namespaceplog_1_1util_a5904dfdf0e59be15b2da55f49c34691e}} 
+\index{plog::util@{plog::util}!nchar@{nchar}}
+\index{nchar@{nchar}!plog::util@{plog::util}}
+\doxysubsubsection{\texorpdfstring{nchar}{nchar}}
+{\footnotesize\ttfamily typedef char \mbox{\hyperlink{namespaceplog_1_1util_a5904dfdf0e59be15b2da55f49c34691e}{plog\+::util\+::nchar}}}
+
+\mbox{\Hypertarget{namespaceplog_1_1util_a825e616e22f2ce43ff8a605d45516179}\label{namespaceplog_1_1util_a825e616e22f2ce43ff8a605d45516179}} 
+\index{plog::util@{plog::util}!nistringstream@{nistringstream}}
+\index{nistringstream@{nistringstream}!plog::util@{plog::util}}
+\doxysubsubsection{\texorpdfstring{nistringstream}{nistringstream}}
+{\footnotesize\ttfamily typedef std\+::istringstream \mbox{\hyperlink{namespaceplog_1_1util_a825e616e22f2ce43ff8a605d45516179}{plog\+::util\+::nistringstream}}}
+
+\mbox{\Hypertarget{namespaceplog_1_1util_a742fa17b01754458ba40d9c739eba963}\label{namespaceplog_1_1util_a742fa17b01754458ba40d9c739eba963}} 
+\index{plog::util@{plog::util}!nostringstream@{nostringstream}}
+\index{nostringstream@{nostringstream}!plog::util@{plog::util}}
+\doxysubsubsection{\texorpdfstring{nostringstream}{nostringstream}}
+{\footnotesize\ttfamily typedef std\+::ostringstream \mbox{\hyperlink{namespaceplog_1_1util_a742fa17b01754458ba40d9c739eba963}{plog\+::util\+::nostringstream}}}
+
+\mbox{\Hypertarget{namespaceplog_1_1util_a6006c27fd4b0e374593ae75b8f88076f}\label{namespaceplog_1_1util_a6006c27fd4b0e374593ae75b8f88076f}} 
+\index{plog::util@{plog::util}!nstring@{nstring}}
+\index{nstring@{nstring}!plog::util@{plog::util}}
+\doxysubsubsection{\texorpdfstring{nstring}{nstring}}
+{\footnotesize\ttfamily typedef std\+::string \mbox{\hyperlink{namespaceplog_1_1util_a6006c27fd4b0e374593ae75b8f88076f}{plog\+::util\+::nstring}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceplog_1_1util_a4e202198acb6648356591a4fca478a0e}\label{namespaceplog_1_1util_a4e202198acb6648356591a4fca478a0e}} 
+\index{plog::util@{plog::util}!findExtensionDot@{findExtensionDot}}
+\index{findExtensionDot@{findExtensionDot}!plog::util@{plog::util}}
+\doxysubsubsection{\texorpdfstring{findExtensionDot()}{findExtensionDot()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceplog_1_1util_a5904dfdf0e59be15b2da55f49c34691e}{nchar}}$\ast$ plog\+::util\+::find\+Extension\+Dot (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceplog_1_1util_a5904dfdf0e59be15b2da55f49c34691e}{nchar}} $\ast$}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespaceplog_1_1util_ad2bfef2b4d327248ed80091a9a77893d}\label{namespaceplog_1_1util_ad2bfef2b4d327248ed80091a9a77893d}} 
+\index{plog::util@{plog::util}!ftime@{ftime}}
+\index{ftime@{ftime}!plog::util@{plog::util}}
+\doxysubsubsection{\texorpdfstring{ftime()}{ftime()}}
+{\footnotesize\ttfamily void plog\+::util\+::ftime (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structplog_1_1util_1_1_time}{Time}} $\ast$}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespaceplog_1_1util_add2656286e84f4025dfca7c3053be004}\label{namespaceplog_1_1util_add2656286e84f4025dfca7c3053be004}} 
+\index{plog::util@{plog::util}!gettid@{gettid}}
+\index{gettid@{gettid}!plog::util@{plog::util}}
+\doxysubsubsection{\texorpdfstring{gettid()}{gettid()}}
+{\footnotesize\ttfamily unsigned int plog\+::util\+::gettid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespaceplog_1_1util_a10bab2b413e194f8e30770cff3cb00c7}\label{namespaceplog_1_1util_a10bab2b413e194f8e30770cff3cb00c7}} 
+\index{plog::util@{plog::util}!gmtime\_s@{gmtime\_s}}
+\index{gmtime\_s@{gmtime\_s}!plog::util@{plog::util}}
+\doxysubsubsection{\texorpdfstring{gmtime\_s()}{gmtime\_s()}}
+{\footnotesize\ttfamily void plog\+::util\+::gmtime\+\_\+s (\begin{DoxyParamCaption}\item[{struct tm $\ast$}]{t,  }\item[{const time\+\_\+t $\ast$}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespaceplog_1_1util_a829e3957b08288ccd481ddba24e37e41}\label{namespaceplog_1_1util_a829e3957b08288ccd481ddba24e37e41}} 
+\index{plog::util@{plog::util}!localtime\_s@{localtime\_s}}
+\index{localtime\_s@{localtime\_s}!plog::util@{plog::util}}
+\doxysubsubsection{\texorpdfstring{localtime\_s()}{localtime\_s()}}
+{\footnotesize\ttfamily void plog\+::util\+::localtime\+\_\+s (\begin{DoxyParamCaption}\item[{struct tm $\ast$}]{t,  }\item[{const time\+\_\+t $\ast$}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespaceplog_1_1util_a21e790275eea0f204619fc8001b11921}\label{namespaceplog_1_1util_a21e790275eea0f204619fc8001b11921}} 
+\index{plog::util@{plog::util}!processFuncName@{processFuncName}}
+\index{processFuncName@{processFuncName}!plog::util@{plog::util}}
+\doxysubsubsection{\texorpdfstring{processFuncName()}{processFuncName()}}
+{\footnotesize\ttfamily std\+::string plog\+::util\+::process\+Func\+Name (\begin{DoxyParamCaption}\item[{const char $\ast$}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespaceplog_1_1util_a213ef20b4d0a99026624c936a22c5c97}\label{namespaceplog_1_1util_a213ef20b4d0a99026624c936a22c5c97}} 
+\index{plog::util@{plog::util}!splitFileName@{splitFileName}}
+\index{splitFileName@{splitFileName}!plog::util@{plog::util}}
+\doxysubsubsection{\texorpdfstring{splitFileName()}{splitFileName()}}
+{\footnotesize\ttfamily void plog\+::util\+::split\+File\+Name (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceplog_1_1util_a5904dfdf0e59be15b2da55f49c34691e}{nchar}} $\ast$}]{file\+Name,  }\item[{\mbox{\hyperlink{namespaceplog_1_1util_a6006c27fd4b0e374593ae75b8f88076f}{nstring}} \&}]{file\+Name\+No\+Ext,  }\item[{\mbox{\hyperlink{namespaceplog_1_1util_a6006c27fd4b0e374593ae75b8f88076f}{nstring}} \&}]{file\+Ext }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+

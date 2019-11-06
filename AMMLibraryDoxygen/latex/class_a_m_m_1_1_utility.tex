@@ -1,0 +1,213 @@
+\hypertarget{class_a_m_m_1_1_utility}{}\doxysection{A\+MM\+::Utility Class Reference}
+\label{class_a_m_m_1_1_utility}\index{AMM::Utility@{AMM::Utility}}
+
+
+{\ttfamily \#include $<$Utility.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{class_a_m_m_1_1_utility_aa50de29f3778e00b54e18a644c65de8e}{read\+\_\+file\+\_\+to\+\_\+string}} (const std\+::string \&filename)
+\item 
+static void \mbox{\hyperlink{class_a_m_m_1_1_utility_a6e593fb81d7b01856bdf56f457cd4bb1}{add\+\_\+once}} (std\+::vector$<$ std\+::string $>$ \&vec, const std\+::string \&element)
+\item 
+static std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_a_m_m_1_1_utility_af2d4b948ea5704213f9097d8815cdf39}{explode}} (const std\+::string \&delimiter, const std\+::string \&str)
+\item 
+static std\+::string \mbox{\hyperlink{class_a_m_m_1_1_utility_a51bf89608dfd2a0ad30c3af0a2b2f328}{decode64}} (const std\+::string \&val)
+\item 
+static std\+::string \mbox{\hyperlink{class_a_m_m_1_1_utility_aa7452b7ace9bdb57dad0dda1978709d0}{encode64}} (const std\+::string \&val)
+\item 
+static std\+::string \mbox{\hyperlink{class_a_m_m_1_1_utility_a258ae49c0587f60505b3263e5bb54d32}{get\+Timestamped\+Filename}} (const std\+::string \&base\+Pathname, const std\+::string \&ext)
+\item 
+static std\+::map$<$ std\+::string, std\+::vector$<$ uint8\+\_\+t $>$ $>$ \mbox{\hyperlink{class_a_m_m_1_1_utility_a7dcafc93f336baae51bc332873210a4d}{parse\+\_\+key\+\_\+value}} (std\+::vector$<$ uint8\+\_\+t $>$ kv)
+\item 
+static std\+::string \mbox{\hyperlink{class_a_m_m_1_1_utility_a90583c0f1a0dac9ff951a804dd0f7860}{E\+Assessment\+Value\+Str}} (int value)
+\begin{DoxyCompactList}\small\item\em Returns the string repensentation of an Assessment Value. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{class_a_m_m_1_1_utility_aa3402138ee351467d4b39b113ee9fd3f}{E\+Event\+Agent\+Type\+Str}} (int value)
+\begin{DoxyCompactList}\small\item\em Returns the string repensentation of an Event Agent Type. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{class_a_m_m_1_1_utility_a4af8b7cb59201cce598399c700d6df26}{E\+Far\+Status\+Str}} (int value)
+\begin{DoxyCompactList}\small\item\em Returns the string repensentation of an F\+AR Status. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{class_a_m_m_1_1_utility_a85fe6fb9d31f43a6197928000116cbea}{E\+Log\+Level\+Str}} (int value)
+\begin{DoxyCompactList}\small\item\em Returns the string repensentation of an Log Level. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{class_a_m_m_1_1_utility_a4bc9e25266163727abd83b57cdc4b3c9}{E\+Control\+Type\+Str}} (int value)
+\begin{DoxyCompactList}\small\item\em Returns the string repensentation of an Control Type. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{class_a_m_m_1_1_utility_a1e874229277a361c4755ba3bfba5ff17}{E\+Status\+Value\+Str}} (int value)
+\begin{DoxyCompactList}\small\item\em Returns the string repensentation of an Status Value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_utility_a6e593fb81d7b01856bdf56f457cd4bb1}\label{class_a_m_m_1_1_utility_a6e593fb81d7b01856bdf56f457cd4bb1}} 
+\index{AMM::Utility@{AMM::Utility}!add\_once@{add\_once}}
+\index{add\_once@{add\_once}!AMM::Utility@{AMM::Utility}}
+\doxysubsubsection{\texorpdfstring{add\_once()}{add\_once()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Utility\+::add\+\_\+once (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$ \&}]{vec,  }\item[{const std\+::string \&}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Add an element to a vector. Remove any previous matching element.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & \\
+\hline
+{\em element} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_m_m_1_1_utility_a51bf89608dfd2a0ad30c3af0a2b2f328}\label{class_a_m_m_1_1_utility_a51bf89608dfd2a0ad30c3af0a2b2f328}} 
+\index{AMM::Utility@{AMM::Utility}!decode64@{decode64}}
+\index{decode64@{decode64}!AMM::Utility@{AMM::Utility}}
+\doxysubsubsection{\texorpdfstring{decode64()}{decode64()}}
+{\footnotesize\ttfamily std\+::string A\+M\+M\+::\+Utility\+::decode64 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Decode a string from base64
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_m_m_1_1_utility_a90583c0f1a0dac9ff951a804dd0f7860}\label{class_a_m_m_1_1_utility_a90583c0f1a0dac9ff951a804dd0f7860}} 
+\index{AMM::Utility@{AMM::Utility}!EAssessmentValueStr@{EAssessmentValueStr}}
+\index{EAssessmentValueStr@{EAssessmentValueStr}!AMM::Utility@{AMM::Utility}}
+\doxysubsubsection{\texorpdfstring{EAssessmentValueStr()}{EAssessmentValueStr()}}
+{\footnotesize\ttfamily std\+::string A\+M\+M\+::\+Utility\+::\+E\+Assessment\+Value\+Str (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the string repensentation of an Assessment Value. 
+
+\mbox{\Hypertarget{class_a_m_m_1_1_utility_a4bc9e25266163727abd83b57cdc4b3c9}\label{class_a_m_m_1_1_utility_a4bc9e25266163727abd83b57cdc4b3c9}} 
+\index{AMM::Utility@{AMM::Utility}!EControlTypeStr@{EControlTypeStr}}
+\index{EControlTypeStr@{EControlTypeStr}!AMM::Utility@{AMM::Utility}}
+\doxysubsubsection{\texorpdfstring{EControlTypeStr()}{EControlTypeStr()}}
+{\footnotesize\ttfamily std\+::string A\+M\+M\+::\+Utility\+::\+E\+Control\+Type\+Str (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the string repensentation of an Control Type. 
+
+\mbox{\Hypertarget{class_a_m_m_1_1_utility_aa3402138ee351467d4b39b113ee9fd3f}\label{class_a_m_m_1_1_utility_aa3402138ee351467d4b39b113ee9fd3f}} 
+\index{AMM::Utility@{AMM::Utility}!EEventAgentTypeStr@{EEventAgentTypeStr}}
+\index{EEventAgentTypeStr@{EEventAgentTypeStr}!AMM::Utility@{AMM::Utility}}
+\doxysubsubsection{\texorpdfstring{EEventAgentTypeStr()}{EEventAgentTypeStr()}}
+{\footnotesize\ttfamily std\+::string A\+M\+M\+::\+Utility\+::\+E\+Event\+Agent\+Type\+Str (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the string repensentation of an Event Agent Type. 
+
+\mbox{\Hypertarget{class_a_m_m_1_1_utility_a4af8b7cb59201cce598399c700d6df26}\label{class_a_m_m_1_1_utility_a4af8b7cb59201cce598399c700d6df26}} 
+\index{AMM::Utility@{AMM::Utility}!EFarStatusStr@{EFarStatusStr}}
+\index{EFarStatusStr@{EFarStatusStr}!AMM::Utility@{AMM::Utility}}
+\doxysubsubsection{\texorpdfstring{EFarStatusStr()}{EFarStatusStr()}}
+{\footnotesize\ttfamily std\+::string A\+M\+M\+::\+Utility\+::\+E\+Far\+Status\+Str (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the string repensentation of an F\+AR Status. 
+
+\mbox{\Hypertarget{class_a_m_m_1_1_utility_a85fe6fb9d31f43a6197928000116cbea}\label{class_a_m_m_1_1_utility_a85fe6fb9d31f43a6197928000116cbea}} 
+\index{AMM::Utility@{AMM::Utility}!ELogLevelStr@{ELogLevelStr}}
+\index{ELogLevelStr@{ELogLevelStr}!AMM::Utility@{AMM::Utility}}
+\doxysubsubsection{\texorpdfstring{ELogLevelStr()}{ELogLevelStr()}}
+{\footnotesize\ttfamily std\+::string A\+M\+M\+::\+Utility\+::\+E\+Log\+Level\+Str (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the string repensentation of an Log Level. 
+
+\mbox{\Hypertarget{class_a_m_m_1_1_utility_aa7452b7ace9bdb57dad0dda1978709d0}\label{class_a_m_m_1_1_utility_aa7452b7ace9bdb57dad0dda1978709d0}} 
+\index{AMM::Utility@{AMM::Utility}!encode64@{encode64}}
+\index{encode64@{encode64}!AMM::Utility@{AMM::Utility}}
+\doxysubsubsection{\texorpdfstring{encode64()}{encode64()}}
+{\footnotesize\ttfamily std\+::string A\+M\+M\+::\+Utility\+::encode64 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Encode a string as base64
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_m_m_1_1_utility_a1e874229277a361c4755ba3bfba5ff17}\label{class_a_m_m_1_1_utility_a1e874229277a361c4755ba3bfba5ff17}} 
+\index{AMM::Utility@{AMM::Utility}!EStatusValueStr@{EStatusValueStr}}
+\index{EStatusValueStr@{EStatusValueStr}!AMM::Utility@{AMM::Utility}}
+\doxysubsubsection{\texorpdfstring{EStatusValueStr()}{EStatusValueStr()}}
+{\footnotesize\ttfamily std\+::string A\+M\+M\+::\+Utility\+::\+E\+Status\+Value\+Str (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the string repensentation of an Status Value. 
+
+\mbox{\Hypertarget{class_a_m_m_1_1_utility_af2d4b948ea5704213f9097d8815cdf39}\label{class_a_m_m_1_1_utility_af2d4b948ea5704213f9097d8815cdf39}} 
+\index{AMM::Utility@{AMM::Utility}!explode@{explode}}
+\index{explode@{explode}!AMM::Utility@{AMM::Utility}}
+\doxysubsubsection{\texorpdfstring{explode()}{explode()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ A\+M\+M\+::\+Utility\+::explode (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{delimiter,  }\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Explode a string to a vector of strings based on a delimiter
+
+
+\begin{DoxyParams}{Parameters}
+{\em delimiter} & \\
+\hline
+{\em str} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_m_m_1_1_utility_a258ae49c0587f60505b3263e5bb54d32}\label{class_a_m_m_1_1_utility_a258ae49c0587f60505b3263e5bb54d32}} 
+\index{AMM::Utility@{AMM::Utility}!getTimestampedFilename@{getTimestampedFilename}}
+\index{getTimestampedFilename@{getTimestampedFilename}!AMM::Utility@{AMM::Utility}}
+\doxysubsubsection{\texorpdfstring{getTimestampedFilename()}{getTimestampedFilename()}}
+{\footnotesize\ttfamily std\+::string A\+M\+M\+::\+Utility\+::get\+Timestamped\+Filename (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{base\+Pathname,  }\item[{const std\+::string \&}]{ext }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get a filename with an embedded now timestamp
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Pathname} & \\
+\hline
+{\em ext} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_m_m_1_1_utility_a7dcafc93f336baae51bc332873210a4d}\label{class_a_m_m_1_1_utility_a7dcafc93f336baae51bc332873210a4d}} 
+\index{AMM::Utility@{AMM::Utility}!parse\_key\_value@{parse\_key\_value}}
+\index{parse\_key\_value@{parse\_key\_value}!AMM::Utility@{AMM::Utility}}
+\doxysubsubsection{\texorpdfstring{parse\_key\_value()}{parse\_key\_value()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, std\+::vector$<$ uint8\+\_\+t $>$ $>$ A\+M\+M\+::\+Utility\+::parse\+\_\+key\+\_\+value (\begin{DoxyParamCaption}\item[{std\+::vector$<$ uint8\+\_\+t $>$}]{kv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Parse K\+VP pairs into an S\+TL map
+
+
+\begin{DoxyParams}{Parameters}
+{\em kv} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_m_m_1_1_utility_aa50de29f3778e00b54e18a644c65de8e}\label{class_a_m_m_1_1_utility_aa50de29f3778e00b54e18a644c65de8e}} 
+\index{AMM::Utility@{AMM::Utility}!read\_file\_to\_string@{read\_file\_to\_string}}
+\index{read\_file\_to\_string@{read\_file\_to\_string}!AMM::Utility@{AMM::Utility}}
+\doxysubsubsection{\texorpdfstring{read\_file\_to\_string()}{read\_file\_to\_string()}}
+{\footnotesize\ttfamily std\+::string A\+M\+M\+::\+Utility\+::read\+\_\+file\+\_\+to\+\_\+string (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Read a file into a string
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}

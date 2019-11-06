@@ -1,0 +1,129 @@
+\hypertarget{class_a_m_m_1_1_f_m_a___location_pub_sub_type}{}\doxysection{A\+MM\+::F\+M\+A\+\_\+\+Location\+Pub\+Sub\+Type Class Reference}
+\label{class_a_m_m_1_1_f_m_a___location_pub_sub_type}\index{AMM::FMA\_LocationPubSubType@{AMM::FMA\_LocationPubSubType}}
+
+
+This class represents the Topic\+Data\+Type of the type \mbox{\hyperlink{class_a_m_m_1_1_f_m_a___location}{F\+M\+A\+\_\+\+Location}} defined by the user in the I\+DL file.  
+
+
+
+
+{\ttfamily \#include $<$A\+M\+M\+\_\+\+Standard\+Pub\+Sub\+Types.\+h$>$}
+
+Inheritance diagram for A\+MM\+::F\+M\+A\+\_\+\+Location\+Pub\+Sub\+Type\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_m_m_1_1_f_m_a___location_pub_sub_type}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{class_a_m_m_1_1_f_m_a___location}{F\+M\+A\+\_\+\+Location}} \mbox{\hyperlink{class_a_m_m_1_1_f_m_a___location_pub_sub_type_aaf408ce49b9ea5365b3e60969117e782}{type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_f_m_a___location_pub_sub_type_acb916c0ab2036fc0458376e2f3989408}{F\+M\+A\+\_\+\+Location\+Pub\+Sub\+Type}} ()
+\item 
+virtual \mbox{\hyperlink{class_a_m_m_1_1_f_m_a___location_pub_sub_type_a5537d01fbc39e4ea975466213048927f}{$\sim$\+F\+M\+A\+\_\+\+Location\+Pub\+Sub\+Type}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_f_m_a___location_pub_sub_type_a33fa2504bd36af1d4a5e9e9b86c7dbfd}{serialize}} (void $\ast$data, eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$payload) override
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_f_m_a___location_pub_sub_type_a8f0929be7331d8c6574ac25c4287bb4a}{deserialize}} (eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$payload, void $\ast$data) override
+\item 
+virtual std\+::function$<$ uint32\+\_\+t()$>$ \mbox{\hyperlink{class_a_m_m_1_1_f_m_a___location_pub_sub_type_ae9721b4c92a5cb5eb578b342909d77d3}{get\+Serialized\+Size\+Provider}} (void $\ast$data) override
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_f_m_a___location_pub_sub_type_a228085b42635d1a4d9c9b4aae5e5d6f3}{get\+Key}} (void $\ast$data, eprosima\+::fastrtps\+::rtps\+::\+Instance\+Handle\+\_\+t $\ast$ihandle, bool force\+\_\+md5=false) override
+\item 
+virtual void $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_f_m_a___location_pub_sub_type_a03fc98bcbd5408562e7c89718c694818}{create\+Data}} () override
+\item 
+virtual void \mbox{\hyperlink{class_a_m_m_1_1_f_m_a___location_pub_sub_type_afa385d2b03b5588125e19b1d59b98e7d}{delete\+Data}} (void $\ast$data) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+M\+D5 \mbox{\hyperlink{class_a_m_m_1_1_f_m_a___location_pub_sub_type_adc940b7dc5911118628616c055ecd734}{m\+\_\+md5}}
+\item 
+unsigned char $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_f_m_a___location_pub_sub_type_a839f332695356df350feffa17e51c3d9}{m\+\_\+key\+Buffer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the Topic\+Data\+Type of the type \mbox{\hyperlink{class_a_m_m_1_1_f_m_a___location}{F\+M\+A\+\_\+\+Location}} defined by the user in the I\+DL file. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_f_m_a___location_pub_sub_type_aaf408ce49b9ea5365b3e60969117e782}\label{class_a_m_m_1_1_f_m_a___location_pub_sub_type_aaf408ce49b9ea5365b3e60969117e782}} 
+\index{AMM::FMA\_LocationPubSubType@{AMM::FMA\_LocationPubSubType}!type@{type}}
+\index{type@{type}!AMM::FMA\_LocationPubSubType@{AMM::FMA\_LocationPubSubType}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{class_a_m_m_1_1_f_m_a___location}{F\+M\+A\+\_\+\+Location}} \mbox{\hyperlink{class_a_m_m_1_1_f_m_a___location_pub_sub_type_aaf408ce49b9ea5365b3e60969117e782}{A\+M\+M\+::\+F\+M\+A\+\_\+\+Location\+Pub\+Sub\+Type\+::type}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_f_m_a___location_pub_sub_type_acb916c0ab2036fc0458376e2f3989408}\label{class_a_m_m_1_1_f_m_a___location_pub_sub_type_acb916c0ab2036fc0458376e2f3989408}} 
+\index{AMM::FMA\_LocationPubSubType@{AMM::FMA\_LocationPubSubType}!FMA\_LocationPubSubType@{FMA\_LocationPubSubType}}
+\index{FMA\_LocationPubSubType@{FMA\_LocationPubSubType}!AMM::FMA\_LocationPubSubType@{AMM::FMA\_LocationPubSubType}}
+\doxysubsubsection{\texorpdfstring{FMA\_LocationPubSubType()}{FMA\_LocationPubSubType()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+F\+M\+A\+\_\+\+Location\+Pub\+Sub\+Type\+::\+F\+M\+A\+\_\+\+Location\+Pub\+Sub\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_f_m_a___location_pub_sub_type_a5537d01fbc39e4ea975466213048927f}\label{class_a_m_m_1_1_f_m_a___location_pub_sub_type_a5537d01fbc39e4ea975466213048927f}} 
+\index{AMM::FMA\_LocationPubSubType@{AMM::FMA\_LocationPubSubType}!````~FMA\_LocationPubSubType@{$\sim$FMA\_LocationPubSubType}}
+\index{````~FMA\_LocationPubSubType@{$\sim$FMA\_LocationPubSubType}!AMM::FMA\_LocationPubSubType@{AMM::FMA\_LocationPubSubType}}
+\doxysubsubsection{\texorpdfstring{$\sim$FMA\_LocationPubSubType()}{~FMA\_LocationPubSubType()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+F\+M\+A\+\_\+\+Location\+Pub\+Sub\+Type\+::$\sim$\+F\+M\+A\+\_\+\+Location\+Pub\+Sub\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_f_m_a___location_pub_sub_type_a03fc98bcbd5408562e7c89718c694818}\label{class_a_m_m_1_1_f_m_a___location_pub_sub_type_a03fc98bcbd5408562e7c89718c694818}} 
+\index{AMM::FMA\_LocationPubSubType@{AMM::FMA\_LocationPubSubType}!createData@{createData}}
+\index{createData@{createData}!AMM::FMA\_LocationPubSubType@{AMM::FMA\_LocationPubSubType}}
+\doxysubsubsection{\texorpdfstring{createData()}{createData()}}
+{\footnotesize\ttfamily void $\ast$ A\+M\+M\+::\+F\+M\+A\+\_\+\+Location\+Pub\+Sub\+Type\+::create\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_f_m_a___location_pub_sub_type_afa385d2b03b5588125e19b1d59b98e7d}\label{class_a_m_m_1_1_f_m_a___location_pub_sub_type_afa385d2b03b5588125e19b1d59b98e7d}} 
+\index{AMM::FMA\_LocationPubSubType@{AMM::FMA\_LocationPubSubType}!deleteData@{deleteData}}
+\index{deleteData@{deleteData}!AMM::FMA\_LocationPubSubType@{AMM::FMA\_LocationPubSubType}}
+\doxysubsubsection{\texorpdfstring{deleteData()}{deleteData()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+F\+M\+A\+\_\+\+Location\+Pub\+Sub\+Type\+::delete\+Data (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_f_m_a___location_pub_sub_type_a8f0929be7331d8c6574ac25c4287bb4a}\label{class_a_m_m_1_1_f_m_a___location_pub_sub_type_a8f0929be7331d8c6574ac25c4287bb4a}} 
+\index{AMM::FMA\_LocationPubSubType@{AMM::FMA\_LocationPubSubType}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!AMM::FMA\_LocationPubSubType@{AMM::FMA\_LocationPubSubType}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+F\+M\+A\+\_\+\+Location\+Pub\+Sub\+Type\+::deserialize (\begin{DoxyParamCaption}\item[{eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$}]{payload,  }\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_f_m_a___location_pub_sub_type_a228085b42635d1a4d9c9b4aae5e5d6f3}\label{class_a_m_m_1_1_f_m_a___location_pub_sub_type_a228085b42635d1a4d9c9b4aae5e5d6f3}} 
+\index{AMM::FMA\_LocationPubSubType@{AMM::FMA\_LocationPubSubType}!getKey@{getKey}}
+\index{getKey@{getKey}!AMM::FMA\_LocationPubSubType@{AMM::FMA\_LocationPubSubType}}
+\doxysubsubsection{\texorpdfstring{getKey()}{getKey()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+F\+M\+A\+\_\+\+Location\+Pub\+Sub\+Type\+::get\+Key (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{eprosima\+::fastrtps\+::rtps\+::\+Instance\+Handle\+\_\+t $\ast$}]{ihandle,  }\item[{bool}]{force\+\_\+md5 = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_f_m_a___location_pub_sub_type_ae9721b4c92a5cb5eb578b342909d77d3}\label{class_a_m_m_1_1_f_m_a___location_pub_sub_type_ae9721b4c92a5cb5eb578b342909d77d3}} 
+\index{AMM::FMA\_LocationPubSubType@{AMM::FMA\_LocationPubSubType}!getSerializedSizeProvider@{getSerializedSizeProvider}}
+\index{getSerializedSizeProvider@{getSerializedSizeProvider}!AMM::FMA\_LocationPubSubType@{AMM::FMA\_LocationPubSubType}}
+\doxysubsubsection{\texorpdfstring{getSerializedSizeProvider()}{getSerializedSizeProvider()}}
+{\footnotesize\ttfamily std\+::function$<$ uint32\+\_\+t()$>$ A\+M\+M\+::\+F\+M\+A\+\_\+\+Location\+Pub\+Sub\+Type\+::get\+Serialized\+Size\+Provider (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_f_m_a___location_pub_sub_type_a33fa2504bd36af1d4a5e9e9b86c7dbfd}\label{class_a_m_m_1_1_f_m_a___location_pub_sub_type_a33fa2504bd36af1d4a5e9e9b86c7dbfd}} 
+\index{AMM::FMA\_LocationPubSubType@{AMM::FMA\_LocationPubSubType}!serialize@{serialize}}
+\index{serialize@{serialize}!AMM::FMA\_LocationPubSubType@{AMM::FMA\_LocationPubSubType}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+F\+M\+A\+\_\+\+Location\+Pub\+Sub\+Type\+::serialize (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$}]{payload }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_f_m_a___location_pub_sub_type_a839f332695356df350feffa17e51c3d9}\label{class_a_m_m_1_1_f_m_a___location_pub_sub_type_a839f332695356df350feffa17e51c3d9}} 
+\index{AMM::FMA\_LocationPubSubType@{AMM::FMA\_LocationPubSubType}!m\_keyBuffer@{m\_keyBuffer}}
+\index{m\_keyBuffer@{m\_keyBuffer}!AMM::FMA\_LocationPubSubType@{AMM::FMA\_LocationPubSubType}}
+\doxysubsubsection{\texorpdfstring{m\_keyBuffer}{m\_keyBuffer}}
+{\footnotesize\ttfamily unsigned char$\ast$ A\+M\+M\+::\+F\+M\+A\+\_\+\+Location\+Pub\+Sub\+Type\+::m\+\_\+key\+Buffer}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_f_m_a___location_pub_sub_type_adc940b7dc5911118628616c055ecd734}\label{class_a_m_m_1_1_f_m_a___location_pub_sub_type_adc940b7dc5911118628616c055ecd734}} 
+\index{AMM::FMA\_LocationPubSubType@{AMM::FMA\_LocationPubSubType}!m\_md5@{m\_md5}}
+\index{m\_md5@{m\_md5}!AMM::FMA\_LocationPubSubType@{AMM::FMA\_LocationPubSubType}}
+\doxysubsubsection{\texorpdfstring{m\_md5}{m\_md5}}
+{\footnotesize\ttfamily M\+D5 A\+M\+M\+::\+F\+M\+A\+\_\+\+Location\+Pub\+Sub\+Type\+::m\+\_\+md5}
+

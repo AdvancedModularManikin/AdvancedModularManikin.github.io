@@ -1,0 +1,113 @@
+\hypertarget{classplog_1_1_logger}{}\doxysection{plog\+::Logger$<$ instance $>$ Class Template Reference}
+\label{classplog_1_1_logger}\index{plog::Logger$<$ instance $>$@{plog::Logger$<$ instance $>$}}
+
+
+{\ttfamily \#include $<$Logger.\+h$>$}
+
+Inheritance diagram for plog\+::Logger$<$ instance $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classplog_1_1_logger}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classplog_1_1_logger_adf5f47e5be36dd24105057b25a647e87}{Logger}} (\mbox{\hyperlink{namespaceplog_aedf8d68ce41dbf94f1f150faa06b50f0}{Severity}} max\+Severity=\mbox{\hyperlink{namespaceplog_aedf8d68ce41dbf94f1f150faa06b50f0a970bc7d9a88862a306201468ad8b4b6d}{none}})
+\item 
+\mbox{\hyperlink{classplog_1_1_logger}{Logger}} \& \mbox{\hyperlink{classplog_1_1_logger_ae0c727c4a900dab0234c1a87df0e743d}{add\+Appender}} (\mbox{\hyperlink{classplog_1_1_i_appender}{I\+Appender}} $\ast$appender)
+\item 
+\mbox{\hyperlink{namespaceplog_aedf8d68ce41dbf94f1f150faa06b50f0}{Severity}} \mbox{\hyperlink{classplog_1_1_logger_a9bf72fbe47d7fadffdbca50037b9bd4e}{get\+Max\+Severity}} () const
+\item 
+void \mbox{\hyperlink{classplog_1_1_logger_a22786c09aae4e399fb1e555d917b9811}{set\+Max\+Severity}} (\mbox{\hyperlink{namespaceplog_aedf8d68ce41dbf94f1f150faa06b50f0}{Severity}} severity)
+\item 
+bool \mbox{\hyperlink{classplog_1_1_logger_aa839931ae5df3b9b0e92d5aad1d13978}{check\+Severity}} (\mbox{\hyperlink{namespaceplog_aedf8d68ce41dbf94f1f150faa06b50f0}{Severity}} severity) const
+\item 
+virtual void \mbox{\hyperlink{classplog_1_1_logger_ac7c7b820c79f69f970cedc72f7b14f45}{write}} (const \mbox{\hyperlink{classplog_1_1_record}{Record}} \&record)
+\item 
+void \mbox{\hyperlink{classplog_1_1_logger_a5cab6ce29ab6c587e8149db3d2da2219}{operator+=}} (const \mbox{\hyperlink{classplog_1_1_record}{Record}} \&record)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceplog_aedf8d68ce41dbf94f1f150faa06b50f0}{Severity}} \mbox{\hyperlink{classplog_1_1_logger_a3a0c016035bf26f722b43eaa128dba92}{m\+\_\+max\+Severity}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classplog_1_1_i_appender}{I\+Appender}} $\ast$ $>$ \mbox{\hyperlink{classplog_1_1_logger_a9b74a3c84cd033982364af4d6ca59d43}{m\+\_\+appenders}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classplog_1_1_logger_adf5f47e5be36dd24105057b25a647e87}\label{classplog_1_1_logger_adf5f47e5be36dd24105057b25a647e87}} 
+\index{plog::Logger$<$ instance $>$@{plog::Logger$<$ instance $>$}!Logger@{Logger}}
+\index{Logger@{Logger}!plog::Logger$<$ instance $>$@{plog::Logger$<$ instance $>$}}
+\doxysubsubsection{\texorpdfstring{Logger()}{Logger()}}
+{\footnotesize\ttfamily template$<$int instance$>$ \\
+\mbox{\hyperlink{classplog_1_1_logger}{plog\+::\+Logger}}$<$ instance $>$\+::\mbox{\hyperlink{classplog_1_1_logger}{Logger}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceplog_aedf8d68ce41dbf94f1f150faa06b50f0}{Severity}}}]{max\+Severity = {\ttfamily \mbox{\hyperlink{namespaceplog_aedf8d68ce41dbf94f1f150faa06b50f0a970bc7d9a88862a306201468ad8b4b6d}{none}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classplog_1_1_logger_ae0c727c4a900dab0234c1a87df0e743d}\label{classplog_1_1_logger_ae0c727c4a900dab0234c1a87df0e743d}} 
+\index{plog::Logger$<$ instance $>$@{plog::Logger$<$ instance $>$}!addAppender@{addAppender}}
+\index{addAppender@{addAppender}!plog::Logger$<$ instance $>$@{plog::Logger$<$ instance $>$}}
+\doxysubsubsection{\texorpdfstring{addAppender()}{addAppender()}}
+{\footnotesize\ttfamily template$<$int instance$>$ \\
+\mbox{\hyperlink{classplog_1_1_logger}{Logger}}\& \mbox{\hyperlink{classplog_1_1_logger}{plog\+::\+Logger}}$<$ instance $>$\+::add\+Appender (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classplog_1_1_i_appender}{I\+Appender}} $\ast$}]{appender }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classplog_1_1_logger_aa839931ae5df3b9b0e92d5aad1d13978}\label{classplog_1_1_logger_aa839931ae5df3b9b0e92d5aad1d13978}} 
+\index{plog::Logger$<$ instance $>$@{plog::Logger$<$ instance $>$}!checkSeverity@{checkSeverity}}
+\index{checkSeverity@{checkSeverity}!plog::Logger$<$ instance $>$@{plog::Logger$<$ instance $>$}}
+\doxysubsubsection{\texorpdfstring{checkSeverity()}{checkSeverity()}}
+{\footnotesize\ttfamily template$<$int instance$>$ \\
+bool \mbox{\hyperlink{classplog_1_1_logger}{plog\+::\+Logger}}$<$ instance $>$\+::check\+Severity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceplog_aedf8d68ce41dbf94f1f150faa06b50f0}{Severity}}}]{severity }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classplog_1_1_logger_a9bf72fbe47d7fadffdbca50037b9bd4e}\label{classplog_1_1_logger_a9bf72fbe47d7fadffdbca50037b9bd4e}} 
+\index{plog::Logger$<$ instance $>$@{plog::Logger$<$ instance $>$}!getMaxSeverity@{getMaxSeverity}}
+\index{getMaxSeverity@{getMaxSeverity}!plog::Logger$<$ instance $>$@{plog::Logger$<$ instance $>$}}
+\doxysubsubsection{\texorpdfstring{getMaxSeverity()}{getMaxSeverity()}}
+{\footnotesize\ttfamily template$<$int instance$>$ \\
+\mbox{\hyperlink{namespaceplog_aedf8d68ce41dbf94f1f150faa06b50f0}{Severity}} \mbox{\hyperlink{classplog_1_1_logger}{plog\+::\+Logger}}$<$ instance $>$\+::get\+Max\+Severity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classplog_1_1_logger_a5cab6ce29ab6c587e8149db3d2da2219}\label{classplog_1_1_logger_a5cab6ce29ab6c587e8149db3d2da2219}} 
+\index{plog::Logger$<$ instance $>$@{plog::Logger$<$ instance $>$}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!plog::Logger$<$ instance $>$@{plog::Logger$<$ instance $>$}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily template$<$int instance$>$ \\
+void \mbox{\hyperlink{classplog_1_1_logger}{plog\+::\+Logger}}$<$ instance $>$\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classplog_1_1_record}{Record}} \&}]{record }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classplog_1_1_logger_a22786c09aae4e399fb1e555d917b9811}\label{classplog_1_1_logger_a22786c09aae4e399fb1e555d917b9811}} 
+\index{plog::Logger$<$ instance $>$@{plog::Logger$<$ instance $>$}!setMaxSeverity@{setMaxSeverity}}
+\index{setMaxSeverity@{setMaxSeverity}!plog::Logger$<$ instance $>$@{plog::Logger$<$ instance $>$}}
+\doxysubsubsection{\texorpdfstring{setMaxSeverity()}{setMaxSeverity()}}
+{\footnotesize\ttfamily template$<$int instance$>$ \\
+void \mbox{\hyperlink{classplog_1_1_logger}{plog\+::\+Logger}}$<$ instance $>$\+::set\+Max\+Severity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceplog_aedf8d68ce41dbf94f1f150faa06b50f0}{Severity}}}]{severity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classplog_1_1_logger_ac7c7b820c79f69f970cedc72f7b14f45}\label{classplog_1_1_logger_ac7c7b820c79f69f970cedc72f7b14f45}} 
+\index{plog::Logger$<$ instance $>$@{plog::Logger$<$ instance $>$}!write@{write}}
+\index{write@{write}!plog::Logger$<$ instance $>$@{plog::Logger$<$ instance $>$}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily template$<$int instance$>$ \\
+virtual void \mbox{\hyperlink{classplog_1_1_logger}{plog\+::\+Logger}}$<$ instance $>$\+::write (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classplog_1_1_record}{Record}} \&}]{record }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classplog_1_1_i_appender_a7a38d65d04c6c70d9fedb40ac6ee4a70}{plog\+::\+I\+Appender}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classplog_1_1_logger_a9b74a3c84cd033982364af4d6ca59d43}\label{classplog_1_1_logger_a9b74a3c84cd033982364af4d6ca59d43}} 
+\index{plog::Logger$<$ instance $>$@{plog::Logger$<$ instance $>$}!m\_appenders@{m\_appenders}}
+\index{m\_appenders@{m\_appenders}!plog::Logger$<$ instance $>$@{plog::Logger$<$ instance $>$}}
+\doxysubsubsection{\texorpdfstring{m\_appenders}{m\_appenders}}
+{\footnotesize\ttfamily template$<$int instance$>$ \\
+std\+::vector$<$\mbox{\hyperlink{classplog_1_1_i_appender}{I\+Appender}}$\ast$$>$ \mbox{\hyperlink{classplog_1_1_logger}{plog\+::\+Logger}}$<$ instance $>$\+::m\+\_\+appenders\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classplog_1_1_logger_a3a0c016035bf26f722b43eaa128dba92}\label{classplog_1_1_logger_a3a0c016035bf26f722b43eaa128dba92}} 
+\index{plog::Logger$<$ instance $>$@{plog::Logger$<$ instance $>$}!m\_maxSeverity@{m\_maxSeverity}}
+\index{m\_maxSeverity@{m\_maxSeverity}!plog::Logger$<$ instance $>$@{plog::Logger$<$ instance $>$}}
+\doxysubsubsection{\texorpdfstring{m\_maxSeverity}{m\_maxSeverity}}
+{\footnotesize\ttfamily template$<$int instance$>$ \\
+\mbox{\hyperlink{namespaceplog_aedf8d68ce41dbf94f1f150faa06b50f0}{Severity}} \mbox{\hyperlink{classplog_1_1_logger}{plog\+::\+Logger}}$<$ instance $>$\+::m\+\_\+max\+Severity\hspace{0.3cm}{\ttfamily [private]}}
+

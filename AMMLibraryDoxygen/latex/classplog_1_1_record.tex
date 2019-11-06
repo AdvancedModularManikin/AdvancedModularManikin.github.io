@@ -1,0 +1,214 @@
+\hypertarget{classplog_1_1_record}{}\doxysection{plog\+::Record Class Reference}
+\label{classplog_1_1_record}\index{plog::Record@{plog::Record}}
+
+
+{\ttfamily \#include $<$Record.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classplog_1_1_record_a9eb6c246e6b39c2c3efd72375d4b70a2}{Record}} (\mbox{\hyperlink{namespaceplog_aedf8d68ce41dbf94f1f150faa06b50f0}{Severity}} severity, const char $\ast$func, size\+\_\+t line, const char $\ast$file, const void $\ast$object)
+\item 
+\mbox{\hyperlink{classplog_1_1_record}{Record}} \& \mbox{\hyperlink{classplog_1_1_record_aed56aa096fedf3c17668c2efd2153c6f}{ref}} ()
+\item 
+\mbox{\hyperlink{classplog_1_1_record}{Record}} \& \mbox{\hyperlink{classplog_1_1_record_aae4e2c74fdf5ddc7f0f0e82b395b13b4}{operator$<$$<$}} (char data)
+\item 
+\mbox{\hyperlink{classplog_1_1_record}{Record}} \& \mbox{\hyperlink{classplog_1_1_record_a2014c38e1265126a7d2b8a2476036508}{operator$<$$<$}} (std\+::ostream \&($\ast$data)(std\+::ostream \&))
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classplog_1_1_record}{Record}} \& \mbox{\hyperlink{classplog_1_1_record_a4e4a51a08bf65131e5b96b438b5b38eb}{operator$<$$<$}} (const T \&data)
+\item 
+virtual const \mbox{\hyperlink{structplog_1_1util_1_1_time}{util\+::\+Time}} \& \mbox{\hyperlink{classplog_1_1_record_aa9e28a25439c2d758ab38f8739b46022}{get\+Time}} () const
+\item 
+virtual \mbox{\hyperlink{namespaceplog_aedf8d68ce41dbf94f1f150faa06b50f0}{Severity}} \mbox{\hyperlink{classplog_1_1_record_ae4dc669ba3fe44a922f7b0f0c7f8a0da}{get\+Severity}} () const
+\item 
+virtual unsigned int \mbox{\hyperlink{classplog_1_1_record_a1eb389624fef0f4d27f307510cfd82ef}{get\+Tid}} () const
+\item 
+virtual const void $\ast$ \mbox{\hyperlink{classplog_1_1_record_ac8afeeffab899e098006e232837082f9}{get\+Object}} () const
+\item 
+virtual size\+\_\+t \mbox{\hyperlink{classplog_1_1_record_ab5c1e137116536fe49e9f50bb441cb8b}{get\+Line}} () const
+\item 
+virtual const \mbox{\hyperlink{namespaceplog_1_1util_a5904dfdf0e59be15b2da55f49c34691e}{util\+::nchar}} $\ast$ \mbox{\hyperlink{classplog_1_1_record_ab19cc0bba781c94fc43447fce4753546}{get\+Message}} () const
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{classplog_1_1_record_a374f0c1f45a1448c044955cc2d2712ce}{get\+Func}} () const
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{classplog_1_1_record_aa82e1018e9bc355c610cc85552d9d54d}{get\+File}} () const
+\item 
+virtual \mbox{\hyperlink{classplog_1_1_record_a7f8e9024b9eec97bef296f26ac017899}{$\sim$\+Record}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structplog_1_1util_1_1_time}{util\+::\+Time}} \mbox{\hyperlink{classplog_1_1_record_a018c8c726d59c06be654de38a68bb36d}{m\+\_\+time}}
+\item 
+const \mbox{\hyperlink{namespaceplog_aedf8d68ce41dbf94f1f150faa06b50f0}{Severity}} \mbox{\hyperlink{classplog_1_1_record_aa8cf502ac029ad77212e211c1aa80b92}{m\+\_\+severity}}
+\item 
+const unsigned int \mbox{\hyperlink{classplog_1_1_record_aea689640c9864c67a69b3dbb66700361}{m\+\_\+tid}}
+\item 
+const void $\ast$const \mbox{\hyperlink{classplog_1_1_record_a6f4f1e8e7a54646171fc0d14c7a059f4}{m\+\_\+object}}
+\item 
+const size\+\_\+t \mbox{\hyperlink{classplog_1_1_record_a949d8437a4cf17e6279777ffdca46f15}{m\+\_\+line}}
+\item 
+\mbox{\hyperlink{namespaceplog_1_1util_a742fa17b01754458ba40d9c739eba963}{util\+::nostringstream}} \mbox{\hyperlink{classplog_1_1_record_a0d36c04104cf959702d312112dde9b8e}{m\+\_\+message}}
+\item 
+const char $\ast$const \mbox{\hyperlink{classplog_1_1_record_ad04e46d91b4dc84e246dfb0f37254311}{m\+\_\+func}}
+\item 
+const char $\ast$const \mbox{\hyperlink{classplog_1_1_record_afe8ceb90584e2157efbe076e172e56dc}{m\+\_\+file}}
+\item 
+std\+::string \mbox{\hyperlink{classplog_1_1_record_ad608fb796bac1efcfa782b9cf147c523}{m\+\_\+func\+Str}}
+\item 
+\mbox{\hyperlink{namespaceplog_1_1util_a6006c27fd4b0e374593ae75b8f88076f}{util\+::nstring}} \mbox{\hyperlink{classplog_1_1_record_a4d2998d5745d1c8df968e5f32604f275}{m\+\_\+message\+Str}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classplog_1_1_record_a9eb6c246e6b39c2c3efd72375d4b70a2}\label{classplog_1_1_record_a9eb6c246e6b39c2c3efd72375d4b70a2}} 
+\index{plog::Record@{plog::Record}!Record@{Record}}
+\index{Record@{Record}!plog::Record@{plog::Record}}
+\doxysubsubsection{\texorpdfstring{Record()}{Record()}}
+{\footnotesize\ttfamily plog\+::\+Record\+::\+Record (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceplog_aedf8d68ce41dbf94f1f150faa06b50f0}{Severity}}}]{severity,  }\item[{const char $\ast$}]{func,  }\item[{size\+\_\+t}]{line,  }\item[{const char $\ast$}]{file,  }\item[{const void $\ast$}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classplog_1_1_record_a7f8e9024b9eec97bef296f26ac017899}\label{classplog_1_1_record_a7f8e9024b9eec97bef296f26ac017899}} 
+\index{plog::Record@{plog::Record}!````~Record@{$\sim$Record}}
+\index{````~Record@{$\sim$Record}!plog::Record@{plog::Record}}
+\doxysubsubsection{\texorpdfstring{$\sim$Record()}{~Record()}}
+{\footnotesize\ttfamily virtual plog\+::\+Record\+::$\sim$\+Record (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classplog_1_1_record_aa82e1018e9bc355c610cc85552d9d54d}\label{classplog_1_1_record_aa82e1018e9bc355c610cc85552d9d54d}} 
+\index{plog::Record@{plog::Record}!getFile@{getFile}}
+\index{getFile@{getFile}!plog::Record@{plog::Record}}
+\doxysubsubsection{\texorpdfstring{getFile()}{getFile()}}
+{\footnotesize\ttfamily virtual const char$\ast$ plog\+::\+Record\+::get\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classplog_1_1_record_a374f0c1f45a1448c044955cc2d2712ce}\label{classplog_1_1_record_a374f0c1f45a1448c044955cc2d2712ce}} 
+\index{plog::Record@{plog::Record}!getFunc@{getFunc}}
+\index{getFunc@{getFunc}!plog::Record@{plog::Record}}
+\doxysubsubsection{\texorpdfstring{getFunc()}{getFunc()}}
+{\footnotesize\ttfamily virtual const char$\ast$ plog\+::\+Record\+::get\+Func (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classplog_1_1_record_ab5c1e137116536fe49e9f50bb441cb8b}\label{classplog_1_1_record_ab5c1e137116536fe49e9f50bb441cb8b}} 
+\index{plog::Record@{plog::Record}!getLine@{getLine}}
+\index{getLine@{getLine}!plog::Record@{plog::Record}}
+\doxysubsubsection{\texorpdfstring{getLine()}{getLine()}}
+{\footnotesize\ttfamily virtual size\+\_\+t plog\+::\+Record\+::get\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classplog_1_1_record_ab19cc0bba781c94fc43447fce4753546}\label{classplog_1_1_record_ab19cc0bba781c94fc43447fce4753546}} 
+\index{plog::Record@{plog::Record}!getMessage@{getMessage}}
+\index{getMessage@{getMessage}!plog::Record@{plog::Record}}
+\doxysubsubsection{\texorpdfstring{getMessage()}{getMessage()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{namespaceplog_1_1util_a5904dfdf0e59be15b2da55f49c34691e}{util\+::nchar}}$\ast$ plog\+::\+Record\+::get\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classplog_1_1_record_ac8afeeffab899e098006e232837082f9}\label{classplog_1_1_record_ac8afeeffab899e098006e232837082f9}} 
+\index{plog::Record@{plog::Record}!getObject@{getObject}}
+\index{getObject@{getObject}!plog::Record@{plog::Record}}
+\doxysubsubsection{\texorpdfstring{getObject()}{getObject()}}
+{\footnotesize\ttfamily virtual const void$\ast$ plog\+::\+Record\+::get\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classplog_1_1_record_ae4dc669ba3fe44a922f7b0f0c7f8a0da}\label{classplog_1_1_record_ae4dc669ba3fe44a922f7b0f0c7f8a0da}} 
+\index{plog::Record@{plog::Record}!getSeverity@{getSeverity}}
+\index{getSeverity@{getSeverity}!plog::Record@{plog::Record}}
+\doxysubsubsection{\texorpdfstring{getSeverity()}{getSeverity()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespaceplog_aedf8d68ce41dbf94f1f150faa06b50f0}{Severity}} plog\+::\+Record\+::get\+Severity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classplog_1_1_record_a1eb389624fef0f4d27f307510cfd82ef}\label{classplog_1_1_record_a1eb389624fef0f4d27f307510cfd82ef}} 
+\index{plog::Record@{plog::Record}!getTid@{getTid}}
+\index{getTid@{getTid}!plog::Record@{plog::Record}}
+\doxysubsubsection{\texorpdfstring{getTid()}{getTid()}}
+{\footnotesize\ttfamily virtual unsigned int plog\+::\+Record\+::get\+Tid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classplog_1_1_record_aa9e28a25439c2d758ab38f8739b46022}\label{classplog_1_1_record_aa9e28a25439c2d758ab38f8739b46022}} 
+\index{plog::Record@{plog::Record}!getTime@{getTime}}
+\index{getTime@{getTime}!plog::Record@{plog::Record}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{structplog_1_1util_1_1_time}{util\+::\+Time}}\& plog\+::\+Record\+::get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classplog_1_1_record_aae4e2c74fdf5ddc7f0f0e82b395b13b4}\label{classplog_1_1_record_aae4e2c74fdf5ddc7f0f0e82b395b13b4}} 
+\index{plog::Record@{plog::Record}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!plog::Record@{plog::Record}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classplog_1_1_record}{Record}}\& plog\+::\+Record\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{char}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classplog_1_1_record_a4e4a51a08bf65131e5b96b438b5b38eb}\label{classplog_1_1_record_a4e4a51a08bf65131e5b96b438b5b38eb}} 
+\index{plog::Record@{plog::Record}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!plog::Record@{plog::Record}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classplog_1_1_record}{Record}}\& plog\+::\+Record\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{const T \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classplog_1_1_record_a2014c38e1265126a7d2b8a2476036508}\label{classplog_1_1_record_a2014c38e1265126a7d2b8a2476036508}} 
+\index{plog::Record@{plog::Record}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!plog::Record@{plog::Record}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classplog_1_1_record}{Record}}\& plog\+::\+Record\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&($\ast$)(std\+::ostream \&)}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classplog_1_1_record_aed56aa096fedf3c17668c2efd2153c6f}\label{classplog_1_1_record_aed56aa096fedf3c17668c2efd2153c6f}} 
+\index{plog::Record@{plog::Record}!ref@{ref}}
+\index{ref@{ref}!plog::Record@{plog::Record}}
+\doxysubsubsection{\texorpdfstring{ref()}{ref()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classplog_1_1_record}{Record}}\& plog\+::\+Record\+::ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classplog_1_1_record_afe8ceb90584e2157efbe076e172e56dc}\label{classplog_1_1_record_afe8ceb90584e2157efbe076e172e56dc}} 
+\index{plog::Record@{plog::Record}!m\_file@{m\_file}}
+\index{m\_file@{m\_file}!plog::Record@{plog::Record}}
+\doxysubsubsection{\texorpdfstring{m\_file}{m\_file}}
+{\footnotesize\ttfamily const char$\ast$ const plog\+::\+Record\+::m\+\_\+file\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classplog_1_1_record_ad04e46d91b4dc84e246dfb0f37254311}\label{classplog_1_1_record_ad04e46d91b4dc84e246dfb0f37254311}} 
+\index{plog::Record@{plog::Record}!m\_func@{m\_func}}
+\index{m\_func@{m\_func}!plog::Record@{plog::Record}}
+\doxysubsubsection{\texorpdfstring{m\_func}{m\_func}}
+{\footnotesize\ttfamily const char$\ast$ const plog\+::\+Record\+::m\+\_\+func\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classplog_1_1_record_ad608fb796bac1efcfa782b9cf147c523}\label{classplog_1_1_record_ad608fb796bac1efcfa782b9cf147c523}} 
+\index{plog::Record@{plog::Record}!m\_funcStr@{m\_funcStr}}
+\index{m\_funcStr@{m\_funcStr}!plog::Record@{plog::Record}}
+\doxysubsubsection{\texorpdfstring{m\_funcStr}{m\_funcStr}}
+{\footnotesize\ttfamily std\+::string plog\+::\+Record\+::m\+\_\+func\+Str\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classplog_1_1_record_a949d8437a4cf17e6279777ffdca46f15}\label{classplog_1_1_record_a949d8437a4cf17e6279777ffdca46f15}} 
+\index{plog::Record@{plog::Record}!m\_line@{m\_line}}
+\index{m\_line@{m\_line}!plog::Record@{plog::Record}}
+\doxysubsubsection{\texorpdfstring{m\_line}{m\_line}}
+{\footnotesize\ttfamily const size\+\_\+t plog\+::\+Record\+::m\+\_\+line\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classplog_1_1_record_a0d36c04104cf959702d312112dde9b8e}\label{classplog_1_1_record_a0d36c04104cf959702d312112dde9b8e}} 
+\index{plog::Record@{plog::Record}!m\_message@{m\_message}}
+\index{m\_message@{m\_message}!plog::Record@{plog::Record}}
+\doxysubsubsection{\texorpdfstring{m\_message}{m\_message}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceplog_1_1util_a742fa17b01754458ba40d9c739eba963}{util\+::nostringstream}} plog\+::\+Record\+::m\+\_\+message\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classplog_1_1_record_a4d2998d5745d1c8df968e5f32604f275}\label{classplog_1_1_record_a4d2998d5745d1c8df968e5f32604f275}} 
+\index{plog::Record@{plog::Record}!m\_messageStr@{m\_messageStr}}
+\index{m\_messageStr@{m\_messageStr}!plog::Record@{plog::Record}}
+\doxysubsubsection{\texorpdfstring{m\_messageStr}{m\_messageStr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceplog_1_1util_a6006c27fd4b0e374593ae75b8f88076f}{util\+::nstring}} plog\+::\+Record\+::m\+\_\+message\+Str\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classplog_1_1_record_a6f4f1e8e7a54646171fc0d14c7a059f4}\label{classplog_1_1_record_a6f4f1e8e7a54646171fc0d14c7a059f4}} 
+\index{plog::Record@{plog::Record}!m\_object@{m\_object}}
+\index{m\_object@{m\_object}!plog::Record@{plog::Record}}
+\doxysubsubsection{\texorpdfstring{m\_object}{m\_object}}
+{\footnotesize\ttfamily const void$\ast$ const plog\+::\+Record\+::m\+\_\+object\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classplog_1_1_record_aa8cf502ac029ad77212e211c1aa80b92}\label{classplog_1_1_record_aa8cf502ac029ad77212e211c1aa80b92}} 
+\index{plog::Record@{plog::Record}!m\_severity@{m\_severity}}
+\index{m\_severity@{m\_severity}!plog::Record@{plog::Record}}
+\doxysubsubsection{\texorpdfstring{m\_severity}{m\_severity}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceplog_aedf8d68ce41dbf94f1f150faa06b50f0}{Severity}} plog\+::\+Record\+::m\+\_\+severity\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classplog_1_1_record_aea689640c9864c67a69b3dbb66700361}\label{classplog_1_1_record_aea689640c9864c67a69b3dbb66700361}} 
+\index{plog::Record@{plog::Record}!m\_tid@{m\_tid}}
+\index{m\_tid@{m\_tid}!plog::Record@{plog::Record}}
+\doxysubsubsection{\texorpdfstring{m\_tid}{m\_tid}}
+{\footnotesize\ttfamily const unsigned int plog\+::\+Record\+::m\+\_\+tid\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classplog_1_1_record_a018c8c726d59c06be654de38a68bb36d}\label{classplog_1_1_record_a018c8c726d59c06be654de38a68bb36d}} 
+\index{plog::Record@{plog::Record}!m\_time@{m\_time}}
+\index{m\_time@{m\_time}!plog::Record@{plog::Record}}
+\doxysubsubsection{\texorpdfstring{m\_time}{m\_time}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structplog_1_1util_1_1_time}{util\+::\+Time}} plog\+::\+Record\+::m\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+

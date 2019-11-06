@@ -1,0 +1,315 @@
+\hypertarget{class_listener_interface}{}\doxysection{Listener\+Interface Class Reference}
+\label{class_listener_interface}\index{ListenerInterface@{ListenerInterface}}
+
+
+{\ttfamily \#include $<$Listener\+Interface.\+h$>$}
+
+Inheritance diagram for Listener\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_listener_interface}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_listener_interface_a318b3bba435ab73f44592b9c61370745}{Listener\+Interface}} ()=default
+\item 
+\mbox{\hyperlink{class_listener_interface_a57b1972efc74461dfad57766bc792d8c}{$\sim$\+Listener\+Interface}} () override
+\item 
+virtual void \mbox{\hyperlink{class_listener_interface_a0a916e7b9eb950c82ae43d3508c446a7}{on\+New\+Assessment}} (A\+M\+M\+::\+Assessment assessment, Sample\+Info\+\_\+t $\ast$info)
+\begin{DoxyCompactList}\small\item\em Event handler for incoming Assessment data. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_listener_interface_a161e72c6d3326c6c54b934da6cbb4daa}{on\+New\+Event\+Fragment}} (A\+M\+M\+::\+Event\+Fragment event\+Frag, Sample\+Info\+\_\+t $\ast$info)
+\begin{DoxyCompactList}\small\item\em Event handler for incoming Event Fragment data. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_listener_interface_a03780ecc2d7a398370ed063bab0d6660}{on\+New\+Event\+Record}} (A\+M\+M\+::\+Event\+Record event\+Rec, Sample\+Info\+\_\+t $\ast$info)
+\begin{DoxyCompactList}\small\item\em Event handler for incoming Event Record data. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_listener_interface_a5b5549916eb14017721aba9f02a5d0e2}{on\+New\+Fragment\+Amendment\+Request}} (A\+M\+M\+::\+Fragment\+Amendment\+Request ffar, Sample\+Info\+\_\+t $\ast$info)
+\begin{DoxyCompactList}\small\item\em Event handler for incoming Fragment Amendment Request data. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_listener_interface_a54c403a7e8b4b786ba3a08b354def189}{on\+New\+Log}} (A\+M\+M\+::\+Log log, Sample\+Info\+\_\+t $\ast$info)
+\begin{DoxyCompactList}\small\item\em Event handler for incoming Log data. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_listener_interface_a3f57f4de17a26bdbfe114bf395cbdce1}{on\+New\+Module\+Configuration}} (A\+M\+M\+::\+Module\+Configuration mod\+Config, Sample\+Info\+\_\+t $\ast$info)
+\begin{DoxyCompactList}\small\item\em Event handler for incoming Module Configuration data. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_listener_interface_af96199163ae588042033813e9a7ddf5e}{on\+New\+Omitted\+Event}} (A\+M\+M\+::\+Omitted\+Event omitted\+Event, Sample\+Info\+\_\+t $\ast$info)
+\begin{DoxyCompactList}\small\item\em Event handler for incoming Omitted Event data. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_listener_interface_aa69a4d87e39ed2b4eadf1632e2859750}{on\+New\+Operational\+Description}} (A\+M\+M\+::\+Operational\+Description op\+Descript, Sample\+Info\+\_\+t $\ast$info)
+\begin{DoxyCompactList}\small\item\em Event handler for incoming Operational Description data. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_listener_interface_abf91b76be5cda3e1a13ac1d28182bc8f}{on\+New\+Physiology\+Modification}} (A\+M\+M\+::\+Physiology\+Modification phys\+Mod, Sample\+Info\+\_\+t $\ast$info)
+\begin{DoxyCompactList}\small\item\em Event handler for incoming Physiology Modification data. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_listener_interface_a6da9903a9f7a5cf70424f32f1ae28bbd}{on\+New\+Physiology\+Value}} (A\+M\+M\+::\+Physiology\+Value phys\+Value, Sample\+Info\+\_\+t $\ast$info)
+\begin{DoxyCompactList}\small\item\em Event handler for incoming Physiology Value data. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_listener_interface_a8e8d5fd3581b6149ff62c950631457f3}{on\+New\+Physiology\+Waveform}} (A\+M\+M\+::\+Physiology\+Waveform phys\+Wave, Sample\+Info\+\_\+t $\ast$info)
+\begin{DoxyCompactList}\small\item\em Event handler for incoming Physiology Waveform data. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_listener_interface_a551b2d99a22b6e1eaf44de16e753df4c}{on\+New\+Render\+Modification}} (A\+M\+M\+::\+Render\+Modification rend\+Mod, Sample\+Info\+\_\+t $\ast$info)
+\begin{DoxyCompactList}\small\item\em Event handler for incoming Render Modification data. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_listener_interface_adbeacdcc58c189b0878bf7d237233eed}{on\+New\+Simulation\+Control}} (A\+M\+M\+::\+Simulation\+Control sim\+Control, Sample\+Info\+\_\+t $\ast$info)
+\begin{DoxyCompactList}\small\item\em Event handler for incoming Simulation Control data. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_listener_interface_aeac4e011711df2bd48b48e51379aae1b}{on\+New\+Status}} (A\+M\+M\+::\+Status status, Sample\+Info\+\_\+t $\ast$info)
+\begin{DoxyCompactList}\small\item\em Event handler for incoming Status data. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_listener_interface_a054288fa5cfe42d6982489c93ac0fcb9}{on\+New\+Tick}} (A\+M\+M\+::\+Tick tick, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$info)
+\begin{DoxyCompactList}\small\item\em Event handler for incoming Tick data. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_listener_interface_a07875b0ed664743f6c4de9c800a7603f}{on\+New\+Instrument\+Data}} (A\+M\+M\+::\+Instrument\+Data inst\+Data, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$info)
+\begin{DoxyCompactList}\small\item\em Event handler for incoming Instrument Data data. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_listener_interface_acfcbccdf46790b30bae4620716cbb824}{on\+New\+Command}} (A\+M\+M\+::\+Command command, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$info)
+\begin{DoxyCompactList}\small\item\em Event handler for incoming Command data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_listener_interface_a4b35b343c919b510de6e626ccfd2c7ad}{sys\+Prefix}} = \char`\"{}\mbox{[}S\+YS\mbox{]}\char`\"{}
+\begin{DoxyCompactList}\small\item\em T\+O\+DO. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_listener_interface_a8251ac43d9d93f03c7d7718ec1ef1b56}{act\+Prefix}} = \char`\"{}\mbox{[}A\+CT\mbox{]}\char`\"{}
+\begin{DoxyCompactList}\small\item\em T\+O\+DO. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_listener_interface_aae68c2c21fbf3c16ce5c55b12eec2f2f}{load\+Prefix}} = \char`\"{}L\+O\+A\+D\+\_\+\+S\+T\+A\+T\+E\+:\char`\"{}
+\begin{DoxyCompactList}\small\item\em T\+O\+DO. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_listener_interface_a8bf8d482e0a9928b932bd4cd7b0b8b10}{load\+Scenario\+Prefix}} = \char`\"{}L\+O\+A\+D\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+:\char`\"{}
+\begin{DoxyCompactList}\small\item\em T\+O\+DO. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Common listeners that can be implemented.
+
+To receive data from subscribed topics, an object must implement this interface and override one of the methods. \begin{DoxyNote}{Note}
+This interface is already implemented on D\+DS Manager where helper methods facilitate the exchange of data. If a user doesn\textquotesingle{}t wish to use D\+DS Manager (which is recommended) then this interface must be manually implemented. 
+\end{DoxyNote}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_listener_interface_a318b3bba435ab73f44592b9c61370745}\label{class_listener_interface_a318b3bba435ab73f44592b9c61370745}} 
+\index{ListenerInterface@{ListenerInterface}!ListenerInterface@{ListenerInterface}}
+\index{ListenerInterface@{ListenerInterface}!ListenerInterface@{ListenerInterface}}
+\doxysubsubsection{\texorpdfstring{ListenerInterface()}{ListenerInterface()}}
+{\footnotesize\ttfamily Listener\+Interface\+::\+Listener\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{class_listener_interface_a57b1972efc74461dfad57766bc792d8c}\label{class_listener_interface_a57b1972efc74461dfad57766bc792d8c}} 
+\index{ListenerInterface@{ListenerInterface}!````~ListenerInterface@{$\sim$ListenerInterface}}
+\index{````~ListenerInterface@{$\sim$ListenerInterface}!ListenerInterface@{ListenerInterface}}
+\doxysubsubsection{\texorpdfstring{$\sim$ListenerInterface()}{~ListenerInterface()}}
+{\footnotesize\ttfamily Listener\+Interface\+::$\sim$\+Listener\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_listener_interface_a0a916e7b9eb950c82ae43d3508c446a7}\label{class_listener_interface_a0a916e7b9eb950c82ae43d3508c446a7}} 
+\index{ListenerInterface@{ListenerInterface}!onNewAssessment@{onNewAssessment}}
+\index{onNewAssessment@{onNewAssessment}!ListenerInterface@{ListenerInterface}}
+\doxysubsubsection{\texorpdfstring{onNewAssessment()}{onNewAssessment()}}
+{\footnotesize\ttfamily virtual void Listener\+Interface\+::on\+New\+Assessment (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Assessment}]{assessment,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Event handler for incoming Assessment data. 
+
+\mbox{\Hypertarget{class_listener_interface_acfcbccdf46790b30bae4620716cbb824}\label{class_listener_interface_acfcbccdf46790b30bae4620716cbb824}} 
+\index{ListenerInterface@{ListenerInterface}!onNewCommand@{onNewCommand}}
+\index{onNewCommand@{onNewCommand}!ListenerInterface@{ListenerInterface}}
+\doxysubsubsection{\texorpdfstring{onNewCommand()}{onNewCommand()}}
+{\footnotesize\ttfamily virtual void Listener\+Interface\+::on\+New\+Command (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Command}]{command,  }\item[{eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Event handler for incoming Command data. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_a_m_m_1_1_d_d_s_manager_3_01void_01_4_a898f3ac49b51010c66f5a371475a3ed8}{A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$}}, and \mbox{\hyperlink{class_a_m_m_1_1_d_d_s_manager_a568e981fb8340557eb2cd041b7b77549}{A\+M\+M\+::\+D\+D\+S\+Manager$<$ U $>$}}.
+
+\mbox{\Hypertarget{class_listener_interface_a161e72c6d3326c6c54b934da6cbb4daa}\label{class_listener_interface_a161e72c6d3326c6c54b934da6cbb4daa}} 
+\index{ListenerInterface@{ListenerInterface}!onNewEventFragment@{onNewEventFragment}}
+\index{onNewEventFragment@{onNewEventFragment}!ListenerInterface@{ListenerInterface}}
+\doxysubsubsection{\texorpdfstring{onNewEventFragment()}{onNewEventFragment()}}
+{\footnotesize\ttfamily virtual void Listener\+Interface\+::on\+New\+Event\+Fragment (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Event\+Fragment}]{event\+Frag,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Event handler for incoming Event Fragment data. 
+
+\mbox{\Hypertarget{class_listener_interface_a03780ecc2d7a398370ed063bab0d6660}\label{class_listener_interface_a03780ecc2d7a398370ed063bab0d6660}} 
+\index{ListenerInterface@{ListenerInterface}!onNewEventRecord@{onNewEventRecord}}
+\index{onNewEventRecord@{onNewEventRecord}!ListenerInterface@{ListenerInterface}}
+\doxysubsubsection{\texorpdfstring{onNewEventRecord()}{onNewEventRecord()}}
+{\footnotesize\ttfamily virtual void Listener\+Interface\+::on\+New\+Event\+Record (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Event\+Record}]{event\+Rec,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Event handler for incoming Event Record data. 
+
+\mbox{\Hypertarget{class_listener_interface_a5b5549916eb14017721aba9f02a5d0e2}\label{class_listener_interface_a5b5549916eb14017721aba9f02a5d0e2}} 
+\index{ListenerInterface@{ListenerInterface}!onNewFragmentAmendmentRequest@{onNewFragmentAmendmentRequest}}
+\index{onNewFragmentAmendmentRequest@{onNewFragmentAmendmentRequest}!ListenerInterface@{ListenerInterface}}
+\doxysubsubsection{\texorpdfstring{onNewFragmentAmendmentRequest()}{onNewFragmentAmendmentRequest()}}
+{\footnotesize\ttfamily virtual void Listener\+Interface\+::on\+New\+Fragment\+Amendment\+Request (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Fragment\+Amendment\+Request}]{ffar,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Event handler for incoming Fragment Amendment Request data. 
+
+\mbox{\Hypertarget{class_listener_interface_a07875b0ed664743f6c4de9c800a7603f}\label{class_listener_interface_a07875b0ed664743f6c4de9c800a7603f}} 
+\index{ListenerInterface@{ListenerInterface}!onNewInstrumentData@{onNewInstrumentData}}
+\index{onNewInstrumentData@{onNewInstrumentData}!ListenerInterface@{ListenerInterface}}
+\doxysubsubsection{\texorpdfstring{onNewInstrumentData()}{onNewInstrumentData()}}
+{\footnotesize\ttfamily virtual void Listener\+Interface\+::on\+New\+Instrument\+Data (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Instrument\+Data}]{inst\+Data,  }\item[{eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Event handler for incoming Instrument Data data. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_a_m_m_1_1_d_d_s_manager_3_01void_01_4_a0fc628963a76e27e051f75f565ef4576}{A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$}}, and \mbox{\hyperlink{class_a_m_m_1_1_d_d_s_manager_a3aed8b0152eb7d380b1d1d2db7a044c3}{A\+M\+M\+::\+D\+D\+S\+Manager$<$ U $>$}}.
+
+\mbox{\Hypertarget{class_listener_interface_a54c403a7e8b4b786ba3a08b354def189}\label{class_listener_interface_a54c403a7e8b4b786ba3a08b354def189}} 
+\index{ListenerInterface@{ListenerInterface}!onNewLog@{onNewLog}}
+\index{onNewLog@{onNewLog}!ListenerInterface@{ListenerInterface}}
+\doxysubsubsection{\texorpdfstring{onNewLog()}{onNewLog()}}
+{\footnotesize\ttfamily virtual void Listener\+Interface\+::on\+New\+Log (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Log}]{log,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Event handler for incoming Log data. 
+
+\mbox{\Hypertarget{class_listener_interface_a3f57f4de17a26bdbfe114bf395cbdce1}\label{class_listener_interface_a3f57f4de17a26bdbfe114bf395cbdce1}} 
+\index{ListenerInterface@{ListenerInterface}!onNewModuleConfiguration@{onNewModuleConfiguration}}
+\index{onNewModuleConfiguration@{onNewModuleConfiguration}!ListenerInterface@{ListenerInterface}}
+\doxysubsubsection{\texorpdfstring{onNewModuleConfiguration()}{onNewModuleConfiguration()}}
+{\footnotesize\ttfamily virtual void Listener\+Interface\+::on\+New\+Module\+Configuration (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Module\+Configuration}]{mod\+Config,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Event handler for incoming Module Configuration data. 
+
+\mbox{\Hypertarget{class_listener_interface_af96199163ae588042033813e9a7ddf5e}\label{class_listener_interface_af96199163ae588042033813e9a7ddf5e}} 
+\index{ListenerInterface@{ListenerInterface}!onNewOmittedEvent@{onNewOmittedEvent}}
+\index{onNewOmittedEvent@{onNewOmittedEvent}!ListenerInterface@{ListenerInterface}}
+\doxysubsubsection{\texorpdfstring{onNewOmittedEvent()}{onNewOmittedEvent()}}
+{\footnotesize\ttfamily virtual void Listener\+Interface\+::on\+New\+Omitted\+Event (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Omitted\+Event}]{omitted\+Event,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Event handler for incoming Omitted Event data. 
+
+\mbox{\Hypertarget{class_listener_interface_aa69a4d87e39ed2b4eadf1632e2859750}\label{class_listener_interface_aa69a4d87e39ed2b4eadf1632e2859750}} 
+\index{ListenerInterface@{ListenerInterface}!onNewOperationalDescription@{onNewOperationalDescription}}
+\index{onNewOperationalDescription@{onNewOperationalDescription}!ListenerInterface@{ListenerInterface}}
+\doxysubsubsection{\texorpdfstring{onNewOperationalDescription()}{onNewOperationalDescription()}}
+{\footnotesize\ttfamily virtual void Listener\+Interface\+::on\+New\+Operational\+Description (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Operational\+Description}]{op\+Descript,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Event handler for incoming Operational Description data. 
+
+\mbox{\Hypertarget{class_listener_interface_abf91b76be5cda3e1a13ac1d28182bc8f}\label{class_listener_interface_abf91b76be5cda3e1a13ac1d28182bc8f}} 
+\index{ListenerInterface@{ListenerInterface}!onNewPhysiologyModification@{onNewPhysiologyModification}}
+\index{onNewPhysiologyModification@{onNewPhysiologyModification}!ListenerInterface@{ListenerInterface}}
+\doxysubsubsection{\texorpdfstring{onNewPhysiologyModification()}{onNewPhysiologyModification()}}
+{\footnotesize\ttfamily virtual void Listener\+Interface\+::on\+New\+Physiology\+Modification (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Physiology\+Modification}]{phys\+Mod,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Event handler for incoming Physiology Modification data. 
+
+\mbox{\Hypertarget{class_listener_interface_a6da9903a9f7a5cf70424f32f1ae28bbd}\label{class_listener_interface_a6da9903a9f7a5cf70424f32f1ae28bbd}} 
+\index{ListenerInterface@{ListenerInterface}!onNewPhysiologyValue@{onNewPhysiologyValue}}
+\index{onNewPhysiologyValue@{onNewPhysiologyValue}!ListenerInterface@{ListenerInterface}}
+\doxysubsubsection{\texorpdfstring{onNewPhysiologyValue()}{onNewPhysiologyValue()}}
+{\footnotesize\ttfamily virtual void Listener\+Interface\+::on\+New\+Physiology\+Value (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Physiology\+Value}]{phys\+Value,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Event handler for incoming Physiology Value data. 
+
+\mbox{\Hypertarget{class_listener_interface_a8e8d5fd3581b6149ff62c950631457f3}\label{class_listener_interface_a8e8d5fd3581b6149ff62c950631457f3}} 
+\index{ListenerInterface@{ListenerInterface}!onNewPhysiologyWaveform@{onNewPhysiologyWaveform}}
+\index{onNewPhysiologyWaveform@{onNewPhysiologyWaveform}!ListenerInterface@{ListenerInterface}}
+\doxysubsubsection{\texorpdfstring{onNewPhysiologyWaveform()}{onNewPhysiologyWaveform()}}
+{\footnotesize\ttfamily virtual void Listener\+Interface\+::on\+New\+Physiology\+Waveform (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Physiology\+Waveform}]{phys\+Wave,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Event handler for incoming Physiology Waveform data. 
+
+\mbox{\Hypertarget{class_listener_interface_a551b2d99a22b6e1eaf44de16e753df4c}\label{class_listener_interface_a551b2d99a22b6e1eaf44de16e753df4c}} 
+\index{ListenerInterface@{ListenerInterface}!onNewRenderModification@{onNewRenderModification}}
+\index{onNewRenderModification@{onNewRenderModification}!ListenerInterface@{ListenerInterface}}
+\doxysubsubsection{\texorpdfstring{onNewRenderModification()}{onNewRenderModification()}}
+{\footnotesize\ttfamily virtual void Listener\+Interface\+::on\+New\+Render\+Modification (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Render\+Modification}]{rend\+Mod,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Event handler for incoming Render Modification data. 
+
+\mbox{\Hypertarget{class_listener_interface_adbeacdcc58c189b0878bf7d237233eed}\label{class_listener_interface_adbeacdcc58c189b0878bf7d237233eed}} 
+\index{ListenerInterface@{ListenerInterface}!onNewSimulationControl@{onNewSimulationControl}}
+\index{onNewSimulationControl@{onNewSimulationControl}!ListenerInterface@{ListenerInterface}}
+\doxysubsubsection{\texorpdfstring{onNewSimulationControl()}{onNewSimulationControl()}}
+{\footnotesize\ttfamily virtual void Listener\+Interface\+::on\+New\+Simulation\+Control (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Simulation\+Control}]{sim\+Control,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Event handler for incoming Simulation Control data. 
+
+\mbox{\Hypertarget{class_listener_interface_aeac4e011711df2bd48b48e51379aae1b}\label{class_listener_interface_aeac4e011711df2bd48b48e51379aae1b}} 
+\index{ListenerInterface@{ListenerInterface}!onNewStatus@{onNewStatus}}
+\index{onNewStatus@{onNewStatus}!ListenerInterface@{ListenerInterface}}
+\doxysubsubsection{\texorpdfstring{onNewStatus()}{onNewStatus()}}
+{\footnotesize\ttfamily virtual void Listener\+Interface\+::on\+New\+Status (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Status}]{status,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Event handler for incoming Status data. 
+
+\mbox{\Hypertarget{class_listener_interface_a054288fa5cfe42d6982489c93ac0fcb9}\label{class_listener_interface_a054288fa5cfe42d6982489c93ac0fcb9}} 
+\index{ListenerInterface@{ListenerInterface}!onNewTick@{onNewTick}}
+\index{onNewTick@{onNewTick}!ListenerInterface@{ListenerInterface}}
+\doxysubsubsection{\texorpdfstring{onNewTick()}{onNewTick()}}
+{\footnotesize\ttfamily virtual void Listener\+Interface\+::on\+New\+Tick (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Tick}]{tick,  }\item[{eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Event handler for incoming Tick data. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_a_m_m_1_1_d_d_s_manager_3_01void_01_4_a4a399645826a9f0fc9dd2af0f9a1bc25}{A\+M\+M\+::\+D\+D\+S\+Manager$<$ void $>$}}, and \mbox{\hyperlink{class_a_m_m_1_1_d_d_s_manager_a628f9e156f40325f4fb22debb5ab46c4}{A\+M\+M\+::\+D\+D\+S\+Manager$<$ U $>$}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_listener_interface_a8251ac43d9d93f03c7d7718ec1ef1b56}\label{class_listener_interface_a8251ac43d9d93f03c7d7718ec1ef1b56}} 
+\index{ListenerInterface@{ListenerInterface}!actPrefix@{actPrefix}}
+\index{actPrefix@{actPrefix}!ListenerInterface@{ListenerInterface}}
+\doxysubsubsection{\texorpdfstring{actPrefix}{actPrefix}}
+{\footnotesize\ttfamily std\+::string Listener\+Interface\+::act\+Prefix = \char`\"{}\mbox{[}A\+CT\mbox{]}\char`\"{}}
+
+
+
+T\+O\+DO. 
+
+\mbox{\Hypertarget{class_listener_interface_aae68c2c21fbf3c16ce5c55b12eec2f2f}\label{class_listener_interface_aae68c2c21fbf3c16ce5c55b12eec2f2f}} 
+\index{ListenerInterface@{ListenerInterface}!loadPrefix@{loadPrefix}}
+\index{loadPrefix@{loadPrefix}!ListenerInterface@{ListenerInterface}}
+\doxysubsubsection{\texorpdfstring{loadPrefix}{loadPrefix}}
+{\footnotesize\ttfamily std\+::string Listener\+Interface\+::load\+Prefix = \char`\"{}L\+O\+A\+D\+\_\+\+S\+T\+A\+T\+E\+:\char`\"{}}
+
+
+
+T\+O\+DO. 
+
+\mbox{\Hypertarget{class_listener_interface_a8bf8d482e0a9928b932bd4cd7b0b8b10}\label{class_listener_interface_a8bf8d482e0a9928b932bd4cd7b0b8b10}} 
+\index{ListenerInterface@{ListenerInterface}!loadScenarioPrefix@{loadScenarioPrefix}}
+\index{loadScenarioPrefix@{loadScenarioPrefix}!ListenerInterface@{ListenerInterface}}
+\doxysubsubsection{\texorpdfstring{loadScenarioPrefix}{loadScenarioPrefix}}
+{\footnotesize\ttfamily std\+::string Listener\+Interface\+::load\+Scenario\+Prefix = \char`\"{}L\+O\+A\+D\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+:\char`\"{}}
+
+
+
+T\+O\+DO. 
+
+\mbox{\Hypertarget{class_listener_interface_a4b35b343c919b510de6e626ccfd2c7ad}\label{class_listener_interface_a4b35b343c919b510de6e626ccfd2c7ad}} 
+\index{ListenerInterface@{ListenerInterface}!sysPrefix@{sysPrefix}}
+\index{sysPrefix@{sysPrefix}!ListenerInterface@{ListenerInterface}}
+\doxysubsubsection{\texorpdfstring{sysPrefix}{sysPrefix}}
+{\footnotesize\ttfamily std\+::string Listener\+Interface\+::sys\+Prefix = \char`\"{}\mbox{[}S\+YS\mbox{]}\char`\"{}}
+
+
+
+T\+O\+DO. 
+

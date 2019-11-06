@@ -1,0 +1,84 @@
+\hypertarget{classplog_1_1util_1_1_mutex}{}\doxysection{plog\+::util\+::Mutex Class Reference}
+\label{classplog_1_1util_1_1_mutex}\index{plog::util::Mutex@{plog::util::Mutex}}
+
+
+{\ttfamily \#include $<$Util.\+h$>$}
+
+Inheritance diagram for plog\+::util\+::Mutex\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classplog_1_1util_1_1_mutex}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classplog_1_1util_1_1_mutex_a00d7dbd739a4559330aef8ad65cdb116}{Mutex}} ()
+\item 
+\mbox{\hyperlink{classplog_1_1util_1_1_mutex_a7ce28fd8e257dbf26272a34f33663897}{$\sim$\+Mutex}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classplog_1_1util_1_1_mutex_a0ace69f740fdd73c3181ad6a3a25e755}{lock}} ()
+\item 
+void \mbox{\hyperlink{classplog_1_1util_1_1_mutex_ad8eae27a9309e1d41edc933dc1b4a9fc}{unlock}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+pthread\+\_\+mutex\+\_\+t \mbox{\hyperlink{classplog_1_1util_1_1_mutex_a115de20ff5a03cefdce6b83030996ecd}{m\+\_\+sync}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classplog_1_1util_1_1_mutex_a7177018259362468923e579d8525b5d5}{Mutex\+Lock}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classplog_1_1util_1_1_mutex_a00d7dbd739a4559330aef8ad65cdb116}\label{classplog_1_1util_1_1_mutex_a00d7dbd739a4559330aef8ad65cdb116}} 
+\index{plog::util::Mutex@{plog::util::Mutex}!Mutex@{Mutex}}
+\index{Mutex@{Mutex}!plog::util::Mutex@{plog::util::Mutex}}
+\doxysubsubsection{\texorpdfstring{Mutex()}{Mutex()}}
+{\footnotesize\ttfamily plog\+::util\+::\+Mutex\+::\+Mutex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classplog_1_1util_1_1_mutex_a7ce28fd8e257dbf26272a34f33663897}\label{classplog_1_1util_1_1_mutex_a7ce28fd8e257dbf26272a34f33663897}} 
+\index{plog::util::Mutex@{plog::util::Mutex}!````~Mutex@{$\sim$Mutex}}
+\index{````~Mutex@{$\sim$Mutex}!plog::util::Mutex@{plog::util::Mutex}}
+\doxysubsubsection{\texorpdfstring{$\sim$Mutex()}{~Mutex()}}
+{\footnotesize\ttfamily plog\+::util\+::\+Mutex\+::$\sim$\+Mutex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classplog_1_1util_1_1_mutex_a0ace69f740fdd73c3181ad6a3a25e755}\label{classplog_1_1util_1_1_mutex_a0ace69f740fdd73c3181ad6a3a25e755}} 
+\index{plog::util::Mutex@{plog::util::Mutex}!lock@{lock}}
+\index{lock@{lock}!plog::util::Mutex@{plog::util::Mutex}}
+\doxysubsubsection{\texorpdfstring{lock()}{lock()}}
+{\footnotesize\ttfamily void plog\+::util\+::\+Mutex\+::lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classplog_1_1util_1_1_mutex_ad8eae27a9309e1d41edc933dc1b4a9fc}\label{classplog_1_1util_1_1_mutex_ad8eae27a9309e1d41edc933dc1b4a9fc}} 
+\index{plog::util::Mutex@{plog::util::Mutex}!unlock@{unlock}}
+\index{unlock@{unlock}!plog::util::Mutex@{plog::util::Mutex}}
+\doxysubsubsection{\texorpdfstring{unlock()}{unlock()}}
+{\footnotesize\ttfamily void plog\+::util\+::\+Mutex\+::unlock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classplog_1_1util_1_1_mutex_a7177018259362468923e579d8525b5d5}\label{classplog_1_1util_1_1_mutex_a7177018259362468923e579d8525b5d5}} 
+\index{plog::util::Mutex@{plog::util::Mutex}!MutexLock@{MutexLock}}
+\index{MutexLock@{MutexLock}!plog::util::Mutex@{plog::util::Mutex}}
+\doxysubsubsection{\texorpdfstring{MutexLock}{MutexLock}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classplog_1_1util_1_1_mutex_lock}{Mutex\+Lock}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classplog_1_1util_1_1_mutex_a115de20ff5a03cefdce6b83030996ecd}\label{classplog_1_1util_1_1_mutex_a115de20ff5a03cefdce6b83030996ecd}} 
+\index{plog::util::Mutex@{plog::util::Mutex}!m\_sync@{m\_sync}}
+\index{m\_sync@{m\_sync}!plog::util::Mutex@{plog::util::Mutex}}
+\doxysubsubsection{\texorpdfstring{m\_sync}{m\_sync}}
+{\footnotesize\ttfamily pthread\+\_\+mutex\+\_\+t plog\+::util\+::\+Mutex\+::m\+\_\+sync\hspace{0.3cm}{\ttfamily [private]}}
+

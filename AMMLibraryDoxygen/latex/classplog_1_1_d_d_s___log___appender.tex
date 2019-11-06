@@ -1,0 +1,93 @@
+\hypertarget{classplog_1_1_d_d_s___log___appender}{}\doxysection{plog\+::D\+D\+S\+\_\+\+Log\+\_\+\+Appender$<$ Formatter $>$ Class Template Reference}
+\label{classplog_1_1_d_d_s___log___appender}\index{plog::DDS\_Log\_Appender$<$ Formatter $>$@{plog::DDS\_Log\_Appender$<$ Formatter $>$}}
+
+
+{\ttfamily \#include $<$D\+D\+S\+\_\+\+Log\+\_\+\+Appender.\+h$>$}
+
+Inheritance diagram for plog\+::D\+D\+S\+\_\+\+Log\+\_\+\+Appender$<$ Formatter $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classplog_1_1_d_d_s___log___appender}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classplog_1_1_d_d_s___log___appender_a92b4afd1244502d5b87b6d5c3f52f833}{D\+D\+S\+\_\+\+Log\+\_\+\+Appender}} (\mbox{\hyperlink{class_a_m_m_1_1_d_d_s_manager}{A\+M\+M\+::\+D\+D\+S\+Manager}}$<$ void $>$ $\ast$mgr)
+\item 
+A\+M\+M\+::\+Log\+Level \mbox{\hyperlink{classplog_1_1_d_d_s___log___appender_a41b335f5d8a0a9b5789a0cf768de9dd0}{convert}} (const std\+::string \&str)
+\item 
+virtual void \mbox{\hyperlink{classplog_1_1_d_d_s___log___appender_ae0ccebd71b1360ef04b444dc4059a6ec}{write}} (const Record \&record)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_d_d_s_manager}{A\+M\+M\+::\+D\+D\+S\+Manager}}$<$ void $>$ $\ast$ \mbox{\hyperlink{classplog_1_1_d_d_s___log___appender_a231d2520710c22f6b849693b9611f9ab}{m\+\_\+mgr}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class Formatter$>$\newline
+class plog\+::\+D\+D\+S\+\_\+\+Log\+\_\+\+Appender$<$ Formatter $>$}
+
+Log appender for plog that allows us to push application logs onto the D\+DS bus on the \mbox{\hyperlink{namespace_a_m_m}{A\+MM}} Log topic
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Formatter} & \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classplog_1_1_d_d_s___log___appender_a92b4afd1244502d5b87b6d5c3f52f833}\label{classplog_1_1_d_d_s___log___appender_a92b4afd1244502d5b87b6d5c3f52f833}} 
+\index{plog::DDS\_Log\_Appender$<$ Formatter $>$@{plog::DDS\_Log\_Appender$<$ Formatter $>$}!DDS\_Log\_Appender@{DDS\_Log\_Appender}}
+\index{DDS\_Log\_Appender@{DDS\_Log\_Appender}!plog::DDS\_Log\_Appender$<$ Formatter $>$@{plog::DDS\_Log\_Appender$<$ Formatter $>$}}
+\doxysubsubsection{\texorpdfstring{DDS\_Log\_Appender()}{DDS\_Log\_Appender()}}
+{\footnotesize\ttfamily template$<$class Formatter $>$ \\
+\mbox{\hyperlink{classplog_1_1_d_d_s___log___appender}{plog\+::\+D\+D\+S\+\_\+\+Log\+\_\+\+Appender}}$<$ Formatter $>$\+::\mbox{\hyperlink{classplog_1_1_d_d_s___log___appender}{D\+D\+S\+\_\+\+Log\+\_\+\+Appender}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_m_m_1_1_d_d_s_manager}{A\+M\+M\+::\+D\+D\+S\+Manager}}$<$ void $>$ $\ast$}]{mgr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classplog_1_1_d_d_s___log___appender_a41b335f5d8a0a9b5789a0cf768de9dd0}\label{classplog_1_1_d_d_s___log___appender_a41b335f5d8a0a9b5789a0cf768de9dd0}} 
+\index{plog::DDS\_Log\_Appender$<$ Formatter $>$@{plog::DDS\_Log\_Appender$<$ Formatter $>$}!convert@{convert}}
+\index{convert@{convert}!plog::DDS\_Log\_Appender$<$ Formatter $>$@{plog::DDS\_Log\_Appender$<$ Formatter $>$}}
+\doxysubsubsection{\texorpdfstring{convert()}{convert()}}
+{\footnotesize\ttfamily template$<$class Formatter $>$ \\
+A\+M\+M\+::\+Log\+Level \mbox{\hyperlink{classplog_1_1_d_d_s___log___appender}{plog\+::\+D\+D\+S\+\_\+\+Log\+\_\+\+Appender}}$<$ Formatter $>$\+::convert (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert \mbox{\hyperlink{namespace_a_m_m}{A\+MM}} Log\+Levels to strings
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classplog_1_1_d_d_s___log___appender_ae0ccebd71b1360ef04b444dc4059a6ec}\label{classplog_1_1_d_d_s___log___appender_ae0ccebd71b1360ef04b444dc4059a6ec}} 
+\index{plog::DDS\_Log\_Appender$<$ Formatter $>$@{plog::DDS\_Log\_Appender$<$ Formatter $>$}!write@{write}}
+\index{write@{write}!plog::DDS\_Log\_Appender$<$ Formatter $>$@{plog::DDS\_Log\_Appender$<$ Formatter $>$}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily template$<$class Formatter $>$ \\
+virtual void \mbox{\hyperlink{classplog_1_1_d_d_s___log___appender}{plog\+::\+D\+D\+S\+\_\+\+Log\+\_\+\+Appender}}$<$ Formatter $>$\+::write (\begin{DoxyParamCaption}\item[{const Record \&}]{record }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Write override to extract the message and log level and publish it to the D\+DS bus as an \mbox{\hyperlink{namespace_a_m_m}{A\+MM}} Log message
+
+
+\begin{DoxyParams}{Parameters}
+{\em record} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classplog_1_1_d_d_s___log___appender_a231d2520710c22f6b849693b9611f9ab}\label{classplog_1_1_d_d_s___log___appender_a231d2520710c22f6b849693b9611f9ab}} 
+\index{plog::DDS\_Log\_Appender$<$ Formatter $>$@{plog::DDS\_Log\_Appender$<$ Formatter $>$}!m\_mgr@{m\_mgr}}
+\index{m\_mgr@{m\_mgr}!plog::DDS\_Log\_Appender$<$ Formatter $>$@{plog::DDS\_Log\_Appender$<$ Formatter $>$}}
+\doxysubsubsection{\texorpdfstring{m\_mgr}{m\_mgr}}
+{\footnotesize\ttfamily template$<$class Formatter $>$ \\
+\mbox{\hyperlink{class_a_m_m_1_1_d_d_s_manager}{A\+M\+M\+::\+D\+D\+S\+Manager}}$<$void$>$$\ast$ \mbox{\hyperlink{classplog_1_1_d_d_s___log___appender}{plog\+::\+D\+D\+S\+\_\+\+Log\+\_\+\+Appender}}$<$ Formatter $>$\+::m\+\_\+mgr\hspace{0.3cm}{\ttfamily [private]}}
+

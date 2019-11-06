@@ -1,0 +1,129 @@
+\hypertarget{class_a_m_m_1_1_instrument_data_pub_sub_type}{}\doxysection{A\+MM\+::Instrument\+Data\+Pub\+Sub\+Type Class Reference}
+\label{class_a_m_m_1_1_instrument_data_pub_sub_type}\index{AMM::InstrumentDataPubSubType@{AMM::InstrumentDataPubSubType}}
+
+
+This class represents the Topic\+Data\+Type of the type \mbox{\hyperlink{class_a_m_m_1_1_instrument_data}{Instrument\+Data}} defined by the user in the I\+DL file.  
+
+
+
+
+{\ttfamily \#include $<$A\+M\+M\+\_\+\+Extended\+Pub\+Sub\+Types.\+h$>$}
+
+Inheritance diagram for A\+MM\+::Instrument\+Data\+Pub\+Sub\+Type\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_m_m_1_1_instrument_data_pub_sub_type}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{class_a_m_m_1_1_instrument_data}{Instrument\+Data}} \mbox{\hyperlink{class_a_m_m_1_1_instrument_data_pub_sub_type_a00d105edb6478d2de50e8485cafa7024}{type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_instrument_data_pub_sub_type_a5b8ad1e96b71303f507660a43a73921c}{Instrument\+Data\+Pub\+Sub\+Type}} ()
+\item 
+virtual \mbox{\hyperlink{class_a_m_m_1_1_instrument_data_pub_sub_type_a1e4f530e47f124acf34724bfea2b744f}{$\sim$\+Instrument\+Data\+Pub\+Sub\+Type}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_instrument_data_pub_sub_type_a4fe42023cde728eab359614226659640}{serialize}} (void $\ast$data, eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$payload) override
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_instrument_data_pub_sub_type_a807fd29812fb745774f589665f85dade}{deserialize}} (eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$payload, void $\ast$data) override
+\item 
+virtual std\+::function$<$ uint32\+\_\+t()$>$ \mbox{\hyperlink{class_a_m_m_1_1_instrument_data_pub_sub_type_ae840534292e5de0a41887e66862df230}{get\+Serialized\+Size\+Provider}} (void $\ast$data) override
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_instrument_data_pub_sub_type_a5d0c7b0ead45d0c680b78ec490bddbc3}{get\+Key}} (void $\ast$data, eprosima\+::fastrtps\+::rtps\+::\+Instance\+Handle\+\_\+t $\ast$ihandle, bool force\+\_\+md5=false) override
+\item 
+virtual void $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_instrument_data_pub_sub_type_a856a41cfc52bca4e11a321b46d25d0d3}{create\+Data}} () override
+\item 
+virtual void \mbox{\hyperlink{class_a_m_m_1_1_instrument_data_pub_sub_type_a60019668863384b42e8d63a718b04598}{delete\+Data}} (void $\ast$data) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+M\+D5 \mbox{\hyperlink{class_a_m_m_1_1_instrument_data_pub_sub_type_ac9805f665af637b67c202b3d193e943a}{m\+\_\+md5}}
+\item 
+unsigned char $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_instrument_data_pub_sub_type_a93887d393e492092947008909bc4ad7c}{m\+\_\+key\+Buffer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the Topic\+Data\+Type of the type \mbox{\hyperlink{class_a_m_m_1_1_instrument_data}{Instrument\+Data}} defined by the user in the I\+DL file. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_instrument_data_pub_sub_type_a00d105edb6478d2de50e8485cafa7024}\label{class_a_m_m_1_1_instrument_data_pub_sub_type_a00d105edb6478d2de50e8485cafa7024}} 
+\index{AMM::InstrumentDataPubSubType@{AMM::InstrumentDataPubSubType}!type@{type}}
+\index{type@{type}!AMM::InstrumentDataPubSubType@{AMM::InstrumentDataPubSubType}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{class_a_m_m_1_1_instrument_data}{Instrument\+Data}} \mbox{\hyperlink{class_a_m_m_1_1_instrument_data_pub_sub_type_a00d105edb6478d2de50e8485cafa7024}{A\+M\+M\+::\+Instrument\+Data\+Pub\+Sub\+Type\+::type}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_instrument_data_pub_sub_type_a5b8ad1e96b71303f507660a43a73921c}\label{class_a_m_m_1_1_instrument_data_pub_sub_type_a5b8ad1e96b71303f507660a43a73921c}} 
+\index{AMM::InstrumentDataPubSubType@{AMM::InstrumentDataPubSubType}!InstrumentDataPubSubType@{InstrumentDataPubSubType}}
+\index{InstrumentDataPubSubType@{InstrumentDataPubSubType}!AMM::InstrumentDataPubSubType@{AMM::InstrumentDataPubSubType}}
+\doxysubsubsection{\texorpdfstring{InstrumentDataPubSubType()}{InstrumentDataPubSubType()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Instrument\+Data\+Pub\+Sub\+Type\+::\+Instrument\+Data\+Pub\+Sub\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_instrument_data_pub_sub_type_a1e4f530e47f124acf34724bfea2b744f}\label{class_a_m_m_1_1_instrument_data_pub_sub_type_a1e4f530e47f124acf34724bfea2b744f}} 
+\index{AMM::InstrumentDataPubSubType@{AMM::InstrumentDataPubSubType}!````~InstrumentDataPubSubType@{$\sim$InstrumentDataPubSubType}}
+\index{````~InstrumentDataPubSubType@{$\sim$InstrumentDataPubSubType}!AMM::InstrumentDataPubSubType@{AMM::InstrumentDataPubSubType}}
+\doxysubsubsection{\texorpdfstring{$\sim$InstrumentDataPubSubType()}{~InstrumentDataPubSubType()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Instrument\+Data\+Pub\+Sub\+Type\+::$\sim$\+Instrument\+Data\+Pub\+Sub\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_instrument_data_pub_sub_type_a856a41cfc52bca4e11a321b46d25d0d3}\label{class_a_m_m_1_1_instrument_data_pub_sub_type_a856a41cfc52bca4e11a321b46d25d0d3}} 
+\index{AMM::InstrumentDataPubSubType@{AMM::InstrumentDataPubSubType}!createData@{createData}}
+\index{createData@{createData}!AMM::InstrumentDataPubSubType@{AMM::InstrumentDataPubSubType}}
+\doxysubsubsection{\texorpdfstring{createData()}{createData()}}
+{\footnotesize\ttfamily void $\ast$ A\+M\+M\+::\+Instrument\+Data\+Pub\+Sub\+Type\+::create\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_instrument_data_pub_sub_type_a60019668863384b42e8d63a718b04598}\label{class_a_m_m_1_1_instrument_data_pub_sub_type_a60019668863384b42e8d63a718b04598}} 
+\index{AMM::InstrumentDataPubSubType@{AMM::InstrumentDataPubSubType}!deleteData@{deleteData}}
+\index{deleteData@{deleteData}!AMM::InstrumentDataPubSubType@{AMM::InstrumentDataPubSubType}}
+\doxysubsubsection{\texorpdfstring{deleteData()}{deleteData()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Instrument\+Data\+Pub\+Sub\+Type\+::delete\+Data (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_instrument_data_pub_sub_type_a807fd29812fb745774f589665f85dade}\label{class_a_m_m_1_1_instrument_data_pub_sub_type_a807fd29812fb745774f589665f85dade}} 
+\index{AMM::InstrumentDataPubSubType@{AMM::InstrumentDataPubSubType}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!AMM::InstrumentDataPubSubType@{AMM::InstrumentDataPubSubType}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Instrument\+Data\+Pub\+Sub\+Type\+::deserialize (\begin{DoxyParamCaption}\item[{eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$}]{payload,  }\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_instrument_data_pub_sub_type_a5d0c7b0ead45d0c680b78ec490bddbc3}\label{class_a_m_m_1_1_instrument_data_pub_sub_type_a5d0c7b0ead45d0c680b78ec490bddbc3}} 
+\index{AMM::InstrumentDataPubSubType@{AMM::InstrumentDataPubSubType}!getKey@{getKey}}
+\index{getKey@{getKey}!AMM::InstrumentDataPubSubType@{AMM::InstrumentDataPubSubType}}
+\doxysubsubsection{\texorpdfstring{getKey()}{getKey()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Instrument\+Data\+Pub\+Sub\+Type\+::get\+Key (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{eprosima\+::fastrtps\+::rtps\+::\+Instance\+Handle\+\_\+t $\ast$}]{ihandle,  }\item[{bool}]{force\+\_\+md5 = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_instrument_data_pub_sub_type_ae840534292e5de0a41887e66862df230}\label{class_a_m_m_1_1_instrument_data_pub_sub_type_ae840534292e5de0a41887e66862df230}} 
+\index{AMM::InstrumentDataPubSubType@{AMM::InstrumentDataPubSubType}!getSerializedSizeProvider@{getSerializedSizeProvider}}
+\index{getSerializedSizeProvider@{getSerializedSizeProvider}!AMM::InstrumentDataPubSubType@{AMM::InstrumentDataPubSubType}}
+\doxysubsubsection{\texorpdfstring{getSerializedSizeProvider()}{getSerializedSizeProvider()}}
+{\footnotesize\ttfamily std\+::function$<$ uint32\+\_\+t()$>$ A\+M\+M\+::\+Instrument\+Data\+Pub\+Sub\+Type\+::get\+Serialized\+Size\+Provider (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_instrument_data_pub_sub_type_a4fe42023cde728eab359614226659640}\label{class_a_m_m_1_1_instrument_data_pub_sub_type_a4fe42023cde728eab359614226659640}} 
+\index{AMM::InstrumentDataPubSubType@{AMM::InstrumentDataPubSubType}!serialize@{serialize}}
+\index{serialize@{serialize}!AMM::InstrumentDataPubSubType@{AMM::InstrumentDataPubSubType}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Instrument\+Data\+Pub\+Sub\+Type\+::serialize (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$}]{payload }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_instrument_data_pub_sub_type_a93887d393e492092947008909bc4ad7c}\label{class_a_m_m_1_1_instrument_data_pub_sub_type_a93887d393e492092947008909bc4ad7c}} 
+\index{AMM::InstrumentDataPubSubType@{AMM::InstrumentDataPubSubType}!m\_keyBuffer@{m\_keyBuffer}}
+\index{m\_keyBuffer@{m\_keyBuffer}!AMM::InstrumentDataPubSubType@{AMM::InstrumentDataPubSubType}}
+\doxysubsubsection{\texorpdfstring{m\_keyBuffer}{m\_keyBuffer}}
+{\footnotesize\ttfamily unsigned char$\ast$ A\+M\+M\+::\+Instrument\+Data\+Pub\+Sub\+Type\+::m\+\_\+key\+Buffer}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_instrument_data_pub_sub_type_ac9805f665af637b67c202b3d193e943a}\label{class_a_m_m_1_1_instrument_data_pub_sub_type_ac9805f665af637b67c202b3d193e943a}} 
+\index{AMM::InstrumentDataPubSubType@{AMM::InstrumentDataPubSubType}!m\_md5@{m\_md5}}
+\index{m\_md5@{m\_md5}!AMM::InstrumentDataPubSubType@{AMM::InstrumentDataPubSubType}}
+\doxysubsubsection{\texorpdfstring{m\_md5}{m\_md5}}
+{\footnotesize\ttfamily M\+D5 A\+M\+M\+::\+Instrument\+Data\+Pub\+Sub\+Type\+::m\+\_\+md5}
+

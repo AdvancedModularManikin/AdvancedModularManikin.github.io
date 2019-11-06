@@ -1,0 +1,129 @@
+\hypertarget{class_a_m_m_1_1_render_modification_pub_sub_type}{}\doxysection{A\+MM\+::Render\+Modification\+Pub\+Sub\+Type Class Reference}
+\label{class_a_m_m_1_1_render_modification_pub_sub_type}\index{AMM::RenderModificationPubSubType@{AMM::RenderModificationPubSubType}}
+
+
+This class represents the Topic\+Data\+Type of the type \mbox{\hyperlink{class_a_m_m_1_1_render_modification}{Render\+Modification}} defined by the user in the I\+DL file.  
+
+
+
+
+{\ttfamily \#include $<$A\+M\+M\+\_\+\+Standard\+Pub\+Sub\+Types.\+h$>$}
+
+Inheritance diagram for A\+MM\+::Render\+Modification\+Pub\+Sub\+Type\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_m_m_1_1_render_modification_pub_sub_type}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{class_a_m_m_1_1_render_modification}{Render\+Modification}} \mbox{\hyperlink{class_a_m_m_1_1_render_modification_pub_sub_type_a10cdfa16d3d33db3382c2be55b8a09a0}{type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_render_modification_pub_sub_type_acfe499a9e9ee03dcbc14d91a7506a3cf}{Render\+Modification\+Pub\+Sub\+Type}} ()
+\item 
+virtual \mbox{\hyperlink{class_a_m_m_1_1_render_modification_pub_sub_type_a36dcac7d55c95d402664cee07eaf8988}{$\sim$\+Render\+Modification\+Pub\+Sub\+Type}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_render_modification_pub_sub_type_ace1892c524102c73c4c137ea7d77df09}{serialize}} (void $\ast$data, eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$payload) override
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_render_modification_pub_sub_type_aebfc7b7d9c943bb1440a7aeb7cfe37d8}{deserialize}} (eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$payload, void $\ast$data) override
+\item 
+virtual std\+::function$<$ uint32\+\_\+t()$>$ \mbox{\hyperlink{class_a_m_m_1_1_render_modification_pub_sub_type_a3179e4afd63c9cd0c85956a7126bac53}{get\+Serialized\+Size\+Provider}} (void $\ast$data) override
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_render_modification_pub_sub_type_a8a56d7363e6dd36c42ddff87f05e1d8b}{get\+Key}} (void $\ast$data, eprosima\+::fastrtps\+::rtps\+::\+Instance\+Handle\+\_\+t $\ast$ihandle, bool force\+\_\+md5=false) override
+\item 
+virtual void $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_render_modification_pub_sub_type_ac675233e3fc15497dc51ceb56cf0f21c}{create\+Data}} () override
+\item 
+virtual void \mbox{\hyperlink{class_a_m_m_1_1_render_modification_pub_sub_type_abf2aa6d3a10ce162ae4fdeb4a596ba0f}{delete\+Data}} (void $\ast$data) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+M\+D5 \mbox{\hyperlink{class_a_m_m_1_1_render_modification_pub_sub_type_aa0e6ca882326dd69bb9292191282ae5a}{m\+\_\+md5}}
+\item 
+unsigned char $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_render_modification_pub_sub_type_aa4427897b1c78a3e081ae5c15ad0a709}{m\+\_\+key\+Buffer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the Topic\+Data\+Type of the type \mbox{\hyperlink{class_a_m_m_1_1_render_modification}{Render\+Modification}} defined by the user in the I\+DL file. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_render_modification_pub_sub_type_a10cdfa16d3d33db3382c2be55b8a09a0}\label{class_a_m_m_1_1_render_modification_pub_sub_type_a10cdfa16d3d33db3382c2be55b8a09a0}} 
+\index{AMM::RenderModificationPubSubType@{AMM::RenderModificationPubSubType}!type@{type}}
+\index{type@{type}!AMM::RenderModificationPubSubType@{AMM::RenderModificationPubSubType}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{class_a_m_m_1_1_render_modification}{Render\+Modification}} \mbox{\hyperlink{class_a_m_m_1_1_render_modification_pub_sub_type_a10cdfa16d3d33db3382c2be55b8a09a0}{A\+M\+M\+::\+Render\+Modification\+Pub\+Sub\+Type\+::type}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_render_modification_pub_sub_type_acfe499a9e9ee03dcbc14d91a7506a3cf}\label{class_a_m_m_1_1_render_modification_pub_sub_type_acfe499a9e9ee03dcbc14d91a7506a3cf}} 
+\index{AMM::RenderModificationPubSubType@{AMM::RenderModificationPubSubType}!RenderModificationPubSubType@{RenderModificationPubSubType}}
+\index{RenderModificationPubSubType@{RenderModificationPubSubType}!AMM::RenderModificationPubSubType@{AMM::RenderModificationPubSubType}}
+\doxysubsubsection{\texorpdfstring{RenderModificationPubSubType()}{RenderModificationPubSubType()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Render\+Modification\+Pub\+Sub\+Type\+::\+Render\+Modification\+Pub\+Sub\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_render_modification_pub_sub_type_a36dcac7d55c95d402664cee07eaf8988}\label{class_a_m_m_1_1_render_modification_pub_sub_type_a36dcac7d55c95d402664cee07eaf8988}} 
+\index{AMM::RenderModificationPubSubType@{AMM::RenderModificationPubSubType}!````~RenderModificationPubSubType@{$\sim$RenderModificationPubSubType}}
+\index{````~RenderModificationPubSubType@{$\sim$RenderModificationPubSubType}!AMM::RenderModificationPubSubType@{AMM::RenderModificationPubSubType}}
+\doxysubsubsection{\texorpdfstring{$\sim$RenderModificationPubSubType()}{~RenderModificationPubSubType()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Render\+Modification\+Pub\+Sub\+Type\+::$\sim$\+Render\+Modification\+Pub\+Sub\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_render_modification_pub_sub_type_ac675233e3fc15497dc51ceb56cf0f21c}\label{class_a_m_m_1_1_render_modification_pub_sub_type_ac675233e3fc15497dc51ceb56cf0f21c}} 
+\index{AMM::RenderModificationPubSubType@{AMM::RenderModificationPubSubType}!createData@{createData}}
+\index{createData@{createData}!AMM::RenderModificationPubSubType@{AMM::RenderModificationPubSubType}}
+\doxysubsubsection{\texorpdfstring{createData()}{createData()}}
+{\footnotesize\ttfamily void $\ast$ A\+M\+M\+::\+Render\+Modification\+Pub\+Sub\+Type\+::create\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_render_modification_pub_sub_type_abf2aa6d3a10ce162ae4fdeb4a596ba0f}\label{class_a_m_m_1_1_render_modification_pub_sub_type_abf2aa6d3a10ce162ae4fdeb4a596ba0f}} 
+\index{AMM::RenderModificationPubSubType@{AMM::RenderModificationPubSubType}!deleteData@{deleteData}}
+\index{deleteData@{deleteData}!AMM::RenderModificationPubSubType@{AMM::RenderModificationPubSubType}}
+\doxysubsubsection{\texorpdfstring{deleteData()}{deleteData()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Render\+Modification\+Pub\+Sub\+Type\+::delete\+Data (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_render_modification_pub_sub_type_aebfc7b7d9c943bb1440a7aeb7cfe37d8}\label{class_a_m_m_1_1_render_modification_pub_sub_type_aebfc7b7d9c943bb1440a7aeb7cfe37d8}} 
+\index{AMM::RenderModificationPubSubType@{AMM::RenderModificationPubSubType}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!AMM::RenderModificationPubSubType@{AMM::RenderModificationPubSubType}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Render\+Modification\+Pub\+Sub\+Type\+::deserialize (\begin{DoxyParamCaption}\item[{eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$}]{payload,  }\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_render_modification_pub_sub_type_a8a56d7363e6dd36c42ddff87f05e1d8b}\label{class_a_m_m_1_1_render_modification_pub_sub_type_a8a56d7363e6dd36c42ddff87f05e1d8b}} 
+\index{AMM::RenderModificationPubSubType@{AMM::RenderModificationPubSubType}!getKey@{getKey}}
+\index{getKey@{getKey}!AMM::RenderModificationPubSubType@{AMM::RenderModificationPubSubType}}
+\doxysubsubsection{\texorpdfstring{getKey()}{getKey()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Render\+Modification\+Pub\+Sub\+Type\+::get\+Key (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{eprosima\+::fastrtps\+::rtps\+::\+Instance\+Handle\+\_\+t $\ast$}]{ihandle,  }\item[{bool}]{force\+\_\+md5 = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_render_modification_pub_sub_type_a3179e4afd63c9cd0c85956a7126bac53}\label{class_a_m_m_1_1_render_modification_pub_sub_type_a3179e4afd63c9cd0c85956a7126bac53}} 
+\index{AMM::RenderModificationPubSubType@{AMM::RenderModificationPubSubType}!getSerializedSizeProvider@{getSerializedSizeProvider}}
+\index{getSerializedSizeProvider@{getSerializedSizeProvider}!AMM::RenderModificationPubSubType@{AMM::RenderModificationPubSubType}}
+\doxysubsubsection{\texorpdfstring{getSerializedSizeProvider()}{getSerializedSizeProvider()}}
+{\footnotesize\ttfamily std\+::function$<$ uint32\+\_\+t()$>$ A\+M\+M\+::\+Render\+Modification\+Pub\+Sub\+Type\+::get\+Serialized\+Size\+Provider (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_render_modification_pub_sub_type_ace1892c524102c73c4c137ea7d77df09}\label{class_a_m_m_1_1_render_modification_pub_sub_type_ace1892c524102c73c4c137ea7d77df09}} 
+\index{AMM::RenderModificationPubSubType@{AMM::RenderModificationPubSubType}!serialize@{serialize}}
+\index{serialize@{serialize}!AMM::RenderModificationPubSubType@{AMM::RenderModificationPubSubType}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Render\+Modification\+Pub\+Sub\+Type\+::serialize (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$}]{payload }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_render_modification_pub_sub_type_aa4427897b1c78a3e081ae5c15ad0a709}\label{class_a_m_m_1_1_render_modification_pub_sub_type_aa4427897b1c78a3e081ae5c15ad0a709}} 
+\index{AMM::RenderModificationPubSubType@{AMM::RenderModificationPubSubType}!m\_keyBuffer@{m\_keyBuffer}}
+\index{m\_keyBuffer@{m\_keyBuffer}!AMM::RenderModificationPubSubType@{AMM::RenderModificationPubSubType}}
+\doxysubsubsection{\texorpdfstring{m\_keyBuffer}{m\_keyBuffer}}
+{\footnotesize\ttfamily unsigned char$\ast$ A\+M\+M\+::\+Render\+Modification\+Pub\+Sub\+Type\+::m\+\_\+key\+Buffer}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_render_modification_pub_sub_type_aa0e6ca882326dd69bb9292191282ae5a}\label{class_a_m_m_1_1_render_modification_pub_sub_type_aa0e6ca882326dd69bb9292191282ae5a}} 
+\index{AMM::RenderModificationPubSubType@{AMM::RenderModificationPubSubType}!m\_md5@{m\_md5}}
+\index{m\_md5@{m\_md5}!AMM::RenderModificationPubSubType@{AMM::RenderModificationPubSubType}}
+\doxysubsubsection{\texorpdfstring{m\_md5}{m\_md5}}
+{\footnotesize\ttfamily M\+D5 A\+M\+M\+::\+Render\+Modification\+Pub\+Sub\+Type\+::m\+\_\+md5}
+

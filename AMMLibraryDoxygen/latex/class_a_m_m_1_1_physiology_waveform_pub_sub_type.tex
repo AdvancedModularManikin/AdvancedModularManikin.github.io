@@ -1,0 +1,129 @@
+\hypertarget{class_a_m_m_1_1_physiology_waveform_pub_sub_type}{}\doxysection{A\+MM\+::Physiology\+Waveform\+Pub\+Sub\+Type Class Reference}
+\label{class_a_m_m_1_1_physiology_waveform_pub_sub_type}\index{AMM::PhysiologyWaveformPubSubType@{AMM::PhysiologyWaveformPubSubType}}
+
+
+This class represents the Topic\+Data\+Type of the type \mbox{\hyperlink{class_a_m_m_1_1_physiology_waveform}{Physiology\+Waveform}} defined by the user in the I\+DL file.  
+
+
+
+
+{\ttfamily \#include $<$A\+M\+M\+\_\+\+Standard\+Pub\+Sub\+Types.\+h$>$}
+
+Inheritance diagram for A\+MM\+::Physiology\+Waveform\+Pub\+Sub\+Type\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_m_m_1_1_physiology_waveform_pub_sub_type}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{class_a_m_m_1_1_physiology_waveform}{Physiology\+Waveform}} \mbox{\hyperlink{class_a_m_m_1_1_physiology_waveform_pub_sub_type_a5172a25929e3e9e6f55bb09188430294}{type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_physiology_waveform_pub_sub_type_ae6386f3e0082a9a9d11b7feb977cfa5c}{Physiology\+Waveform\+Pub\+Sub\+Type}} ()
+\item 
+virtual \mbox{\hyperlink{class_a_m_m_1_1_physiology_waveform_pub_sub_type_ad463f7e2c06ca3ba8f7016561cbe464d}{$\sim$\+Physiology\+Waveform\+Pub\+Sub\+Type}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_physiology_waveform_pub_sub_type_a8eecd11167fc1f2f6198765ec6530e78}{serialize}} (void $\ast$data, eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$payload) override
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_physiology_waveform_pub_sub_type_a9a34d3f4316eb1d6a4fbf4e5ca18dc60}{deserialize}} (eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$payload, void $\ast$data) override
+\item 
+virtual std\+::function$<$ uint32\+\_\+t()$>$ \mbox{\hyperlink{class_a_m_m_1_1_physiology_waveform_pub_sub_type_a64d3dde52130677ef346dafc7da2d03c}{get\+Serialized\+Size\+Provider}} (void $\ast$data) override
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_physiology_waveform_pub_sub_type_a46738ab3ccf175ba4775c52bdd3c2d98}{get\+Key}} (void $\ast$data, eprosima\+::fastrtps\+::rtps\+::\+Instance\+Handle\+\_\+t $\ast$ihandle, bool force\+\_\+md5=false) override
+\item 
+virtual void $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_physiology_waveform_pub_sub_type_a337d90810e606d01dbb90d5d4559f6f9}{create\+Data}} () override
+\item 
+virtual void \mbox{\hyperlink{class_a_m_m_1_1_physiology_waveform_pub_sub_type_a9b2c0986b854143a4a1cc8f5ec92f5da}{delete\+Data}} (void $\ast$data) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+M\+D5 \mbox{\hyperlink{class_a_m_m_1_1_physiology_waveform_pub_sub_type_ae1e9049bd9102ff365b620fcd0c42cd2}{m\+\_\+md5}}
+\item 
+unsigned char $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_physiology_waveform_pub_sub_type_a411a6ba2d37bf8fbcc7c2a334cbd6655}{m\+\_\+key\+Buffer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the Topic\+Data\+Type of the type \mbox{\hyperlink{class_a_m_m_1_1_physiology_waveform}{Physiology\+Waveform}} defined by the user in the I\+DL file. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_waveform_pub_sub_type_a5172a25929e3e9e6f55bb09188430294}\label{class_a_m_m_1_1_physiology_waveform_pub_sub_type_a5172a25929e3e9e6f55bb09188430294}} 
+\index{AMM::PhysiologyWaveformPubSubType@{AMM::PhysiologyWaveformPubSubType}!type@{type}}
+\index{type@{type}!AMM::PhysiologyWaveformPubSubType@{AMM::PhysiologyWaveformPubSubType}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{class_a_m_m_1_1_physiology_waveform}{Physiology\+Waveform}} \mbox{\hyperlink{class_a_m_m_1_1_physiology_waveform_pub_sub_type_a5172a25929e3e9e6f55bb09188430294}{A\+M\+M\+::\+Physiology\+Waveform\+Pub\+Sub\+Type\+::type}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_waveform_pub_sub_type_ae6386f3e0082a9a9d11b7feb977cfa5c}\label{class_a_m_m_1_1_physiology_waveform_pub_sub_type_ae6386f3e0082a9a9d11b7feb977cfa5c}} 
+\index{AMM::PhysiologyWaveformPubSubType@{AMM::PhysiologyWaveformPubSubType}!PhysiologyWaveformPubSubType@{PhysiologyWaveformPubSubType}}
+\index{PhysiologyWaveformPubSubType@{PhysiologyWaveformPubSubType}!AMM::PhysiologyWaveformPubSubType@{AMM::PhysiologyWaveformPubSubType}}
+\doxysubsubsection{\texorpdfstring{PhysiologyWaveformPubSubType()}{PhysiologyWaveformPubSubType()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Physiology\+Waveform\+Pub\+Sub\+Type\+::\+Physiology\+Waveform\+Pub\+Sub\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_waveform_pub_sub_type_ad463f7e2c06ca3ba8f7016561cbe464d}\label{class_a_m_m_1_1_physiology_waveform_pub_sub_type_ad463f7e2c06ca3ba8f7016561cbe464d}} 
+\index{AMM::PhysiologyWaveformPubSubType@{AMM::PhysiologyWaveformPubSubType}!````~PhysiologyWaveformPubSubType@{$\sim$PhysiologyWaveformPubSubType}}
+\index{````~PhysiologyWaveformPubSubType@{$\sim$PhysiologyWaveformPubSubType}!AMM::PhysiologyWaveformPubSubType@{AMM::PhysiologyWaveformPubSubType}}
+\doxysubsubsection{\texorpdfstring{$\sim$PhysiologyWaveformPubSubType()}{~PhysiologyWaveformPubSubType()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Physiology\+Waveform\+Pub\+Sub\+Type\+::$\sim$\+Physiology\+Waveform\+Pub\+Sub\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_waveform_pub_sub_type_a337d90810e606d01dbb90d5d4559f6f9}\label{class_a_m_m_1_1_physiology_waveform_pub_sub_type_a337d90810e606d01dbb90d5d4559f6f9}} 
+\index{AMM::PhysiologyWaveformPubSubType@{AMM::PhysiologyWaveformPubSubType}!createData@{createData}}
+\index{createData@{createData}!AMM::PhysiologyWaveformPubSubType@{AMM::PhysiologyWaveformPubSubType}}
+\doxysubsubsection{\texorpdfstring{createData()}{createData()}}
+{\footnotesize\ttfamily void $\ast$ A\+M\+M\+::\+Physiology\+Waveform\+Pub\+Sub\+Type\+::create\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_waveform_pub_sub_type_a9b2c0986b854143a4a1cc8f5ec92f5da}\label{class_a_m_m_1_1_physiology_waveform_pub_sub_type_a9b2c0986b854143a4a1cc8f5ec92f5da}} 
+\index{AMM::PhysiologyWaveformPubSubType@{AMM::PhysiologyWaveformPubSubType}!deleteData@{deleteData}}
+\index{deleteData@{deleteData}!AMM::PhysiologyWaveformPubSubType@{AMM::PhysiologyWaveformPubSubType}}
+\doxysubsubsection{\texorpdfstring{deleteData()}{deleteData()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Physiology\+Waveform\+Pub\+Sub\+Type\+::delete\+Data (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_waveform_pub_sub_type_a9a34d3f4316eb1d6a4fbf4e5ca18dc60}\label{class_a_m_m_1_1_physiology_waveform_pub_sub_type_a9a34d3f4316eb1d6a4fbf4e5ca18dc60}} 
+\index{AMM::PhysiologyWaveformPubSubType@{AMM::PhysiologyWaveformPubSubType}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!AMM::PhysiologyWaveformPubSubType@{AMM::PhysiologyWaveformPubSubType}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Physiology\+Waveform\+Pub\+Sub\+Type\+::deserialize (\begin{DoxyParamCaption}\item[{eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$}]{payload,  }\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_waveform_pub_sub_type_a46738ab3ccf175ba4775c52bdd3c2d98}\label{class_a_m_m_1_1_physiology_waveform_pub_sub_type_a46738ab3ccf175ba4775c52bdd3c2d98}} 
+\index{AMM::PhysiologyWaveformPubSubType@{AMM::PhysiologyWaveformPubSubType}!getKey@{getKey}}
+\index{getKey@{getKey}!AMM::PhysiologyWaveformPubSubType@{AMM::PhysiologyWaveformPubSubType}}
+\doxysubsubsection{\texorpdfstring{getKey()}{getKey()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Physiology\+Waveform\+Pub\+Sub\+Type\+::get\+Key (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{eprosima\+::fastrtps\+::rtps\+::\+Instance\+Handle\+\_\+t $\ast$}]{ihandle,  }\item[{bool}]{force\+\_\+md5 = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_waveform_pub_sub_type_a64d3dde52130677ef346dafc7da2d03c}\label{class_a_m_m_1_1_physiology_waveform_pub_sub_type_a64d3dde52130677ef346dafc7da2d03c}} 
+\index{AMM::PhysiologyWaveformPubSubType@{AMM::PhysiologyWaveformPubSubType}!getSerializedSizeProvider@{getSerializedSizeProvider}}
+\index{getSerializedSizeProvider@{getSerializedSizeProvider}!AMM::PhysiologyWaveformPubSubType@{AMM::PhysiologyWaveformPubSubType}}
+\doxysubsubsection{\texorpdfstring{getSerializedSizeProvider()}{getSerializedSizeProvider()}}
+{\footnotesize\ttfamily std\+::function$<$ uint32\+\_\+t()$>$ A\+M\+M\+::\+Physiology\+Waveform\+Pub\+Sub\+Type\+::get\+Serialized\+Size\+Provider (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_waveform_pub_sub_type_a8eecd11167fc1f2f6198765ec6530e78}\label{class_a_m_m_1_1_physiology_waveform_pub_sub_type_a8eecd11167fc1f2f6198765ec6530e78}} 
+\index{AMM::PhysiologyWaveformPubSubType@{AMM::PhysiologyWaveformPubSubType}!serialize@{serialize}}
+\index{serialize@{serialize}!AMM::PhysiologyWaveformPubSubType@{AMM::PhysiologyWaveformPubSubType}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Physiology\+Waveform\+Pub\+Sub\+Type\+::serialize (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$}]{payload }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_waveform_pub_sub_type_a411a6ba2d37bf8fbcc7c2a334cbd6655}\label{class_a_m_m_1_1_physiology_waveform_pub_sub_type_a411a6ba2d37bf8fbcc7c2a334cbd6655}} 
+\index{AMM::PhysiologyWaveformPubSubType@{AMM::PhysiologyWaveformPubSubType}!m\_keyBuffer@{m\_keyBuffer}}
+\index{m\_keyBuffer@{m\_keyBuffer}!AMM::PhysiologyWaveformPubSubType@{AMM::PhysiologyWaveformPubSubType}}
+\doxysubsubsection{\texorpdfstring{m\_keyBuffer}{m\_keyBuffer}}
+{\footnotesize\ttfamily unsigned char$\ast$ A\+M\+M\+::\+Physiology\+Waveform\+Pub\+Sub\+Type\+::m\+\_\+key\+Buffer}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_waveform_pub_sub_type_ae1e9049bd9102ff365b620fcd0c42cd2}\label{class_a_m_m_1_1_physiology_waveform_pub_sub_type_ae1e9049bd9102ff365b620fcd0c42cd2}} 
+\index{AMM::PhysiologyWaveformPubSubType@{AMM::PhysiologyWaveformPubSubType}!m\_md5@{m\_md5}}
+\index{m\_md5@{m\_md5}!AMM::PhysiologyWaveformPubSubType@{AMM::PhysiologyWaveformPubSubType}}
+\doxysubsubsection{\texorpdfstring{m\_md5}{m\_md5}}
+{\footnotesize\ttfamily M\+D5 A\+M\+M\+::\+Physiology\+Waveform\+Pub\+Sub\+Type\+::m\+\_\+md5}
+

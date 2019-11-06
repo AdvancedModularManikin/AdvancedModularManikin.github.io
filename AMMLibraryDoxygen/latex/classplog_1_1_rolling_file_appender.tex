@@ -1,0 +1,151 @@
+\hypertarget{classplog_1_1_rolling_file_appender}{}\doxysection{plog\+::Rolling\+File\+Appender$<$ Formatter, Converter $>$ Class Template Reference}
+\label{classplog_1_1_rolling_file_appender}\index{plog::RollingFileAppender$<$ Formatter, Converter $>$@{plog::RollingFileAppender$<$ Formatter, Converter $>$}}
+
+
+{\ttfamily \#include $<$Rolling\+File\+Appender.\+h$>$}
+
+Inheritance diagram for plog\+::Rolling\+File\+Appender$<$ Formatter, Converter $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classplog_1_1_rolling_file_appender}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classplog_1_1_rolling_file_appender_a2f2a9caa661d3c00206174a8bef41823}{Rolling\+File\+Appender}} (const \mbox{\hyperlink{namespaceplog_1_1util_a5904dfdf0e59be15b2da55f49c34691e}{util\+::nchar}} $\ast$file\+Name, size\+\_\+t max\+File\+Size=0, int max\+Files=0)
+\item 
+virtual void \mbox{\hyperlink{classplog_1_1_rolling_file_appender_ae561c3b59a646d7bbc8fb005e209a77d}{write}} (const \mbox{\hyperlink{classplog_1_1_record}{Record}} \&record)
+\item 
+void \mbox{\hyperlink{classplog_1_1_rolling_file_appender_a70622b2fedf13a53a9ae00759201f995}{roll\+Log\+Files}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classplog_1_1_rolling_file_appender_abef35c47215039b7437882e778e0cd70}{open\+Log\+File}} ()
+\item 
+\mbox{\hyperlink{namespaceplog_1_1util_a6006c27fd4b0e374593ae75b8f88076f}{util\+::nstring}} \mbox{\hyperlink{classplog_1_1_rolling_file_appender_adbc5e7e09690641a80f0bad72e02aa85}{build\+File\+Name}} (int file\+Number=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classplog_1_1util_1_1_mutex}{util\+::\+Mutex}} \mbox{\hyperlink{classplog_1_1_rolling_file_appender_a886274b6fba065c2c8a7d4794ec81cc6}{m\+\_\+mutex}}
+\item 
+\mbox{\hyperlink{classplog_1_1util_1_1_file}{util\+::\+File}} \mbox{\hyperlink{classplog_1_1_rolling_file_appender_af70c4b4c9b810477a45ebb80f793a40d}{m\+\_\+file}}
+\item 
+off\+\_\+t \mbox{\hyperlink{classplog_1_1_rolling_file_appender_a1ce7c25aa73777b725792d0b5514c1cb}{m\+\_\+file\+Size}}
+\item 
+const off\+\_\+t \mbox{\hyperlink{classplog_1_1_rolling_file_appender_afb9e01c4673f6047e0c01b909fc03370}{m\+\_\+max\+File\+Size}}
+\item 
+const int \mbox{\hyperlink{classplog_1_1_rolling_file_appender_a58e3c406b441314000751562495b294a}{m\+\_\+max\+Files}}
+\item 
+\mbox{\hyperlink{namespaceplog_1_1util_a6006c27fd4b0e374593ae75b8f88076f}{util\+::nstring}} \mbox{\hyperlink{classplog_1_1_rolling_file_appender_a51096c5aa73e33bf083d4c5b0715590d}{m\+\_\+file\+Ext}}
+\item 
+\mbox{\hyperlink{namespaceplog_1_1util_a6006c27fd4b0e374593ae75b8f88076f}{util\+::nstring}} \mbox{\hyperlink{classplog_1_1_rolling_file_appender_aec359a79d2eb7c32d6e267b3dd4dee3b}{m\+\_\+file\+Name\+No\+Ext}}
+\item 
+bool \mbox{\hyperlink{classplog_1_1_rolling_file_appender_a59ffd2d3efc604e316c01bda3d43679b}{m\+\_\+first\+Write}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classplog_1_1_rolling_file_appender_a2f2a9caa661d3c00206174a8bef41823}\label{classplog_1_1_rolling_file_appender_a2f2a9caa661d3c00206174a8bef41823}} 
+\index{plog::RollingFileAppender$<$ Formatter, Converter $>$@{plog::RollingFileAppender$<$ Formatter, Converter $>$}!RollingFileAppender@{RollingFileAppender}}
+\index{RollingFileAppender@{RollingFileAppender}!plog::RollingFileAppender$<$ Formatter, Converter $>$@{plog::RollingFileAppender$<$ Formatter, Converter $>$}}
+\doxysubsubsection{\texorpdfstring{RollingFileAppender()}{RollingFileAppender()}}
+{\footnotesize\ttfamily template$<$class Formatter, class Converter = U\+T\+F8\+Converter$>$ \\
+\mbox{\hyperlink{classplog_1_1_rolling_file_appender}{plog\+::\+Rolling\+File\+Appender}}$<$ Formatter, Converter $>$\+::\mbox{\hyperlink{classplog_1_1_rolling_file_appender}{Rolling\+File\+Appender}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceplog_1_1util_a5904dfdf0e59be15b2da55f49c34691e}{util\+::nchar}} $\ast$}]{file\+Name,  }\item[{size\+\_\+t}]{max\+File\+Size = {\ttfamily 0},  }\item[{int}]{max\+Files = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classplog_1_1_rolling_file_appender_adbc5e7e09690641a80f0bad72e02aa85}\label{classplog_1_1_rolling_file_appender_adbc5e7e09690641a80f0bad72e02aa85}} 
+\index{plog::RollingFileAppender$<$ Formatter, Converter $>$@{plog::RollingFileAppender$<$ Formatter, Converter $>$}!buildFileName@{buildFileName}}
+\index{buildFileName@{buildFileName}!plog::RollingFileAppender$<$ Formatter, Converter $>$@{plog::RollingFileAppender$<$ Formatter, Converter $>$}}
+\doxysubsubsection{\texorpdfstring{buildFileName()}{buildFileName()}}
+{\footnotesize\ttfamily template$<$class Formatter, class Converter = U\+T\+F8\+Converter$>$ \\
+\mbox{\hyperlink{namespaceplog_1_1util_a6006c27fd4b0e374593ae75b8f88076f}{util\+::nstring}} \mbox{\hyperlink{classplog_1_1_rolling_file_appender}{plog\+::\+Rolling\+File\+Appender}}$<$ Formatter, Converter $>$\+::build\+File\+Name (\begin{DoxyParamCaption}\item[{int}]{file\+Number = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classplog_1_1_rolling_file_appender_abef35c47215039b7437882e778e0cd70}\label{classplog_1_1_rolling_file_appender_abef35c47215039b7437882e778e0cd70}} 
+\index{plog::RollingFileAppender$<$ Formatter, Converter $>$@{plog::RollingFileAppender$<$ Formatter, Converter $>$}!openLogFile@{openLogFile}}
+\index{openLogFile@{openLogFile}!plog::RollingFileAppender$<$ Formatter, Converter $>$@{plog::RollingFileAppender$<$ Formatter, Converter $>$}}
+\doxysubsubsection{\texorpdfstring{openLogFile()}{openLogFile()}}
+{\footnotesize\ttfamily template$<$class Formatter, class Converter = U\+T\+F8\+Converter$>$ \\
+void \mbox{\hyperlink{classplog_1_1_rolling_file_appender}{plog\+::\+Rolling\+File\+Appender}}$<$ Formatter, Converter $>$\+::open\+Log\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classplog_1_1_rolling_file_appender_a70622b2fedf13a53a9ae00759201f995}\label{classplog_1_1_rolling_file_appender_a70622b2fedf13a53a9ae00759201f995}} 
+\index{plog::RollingFileAppender$<$ Formatter, Converter $>$@{plog::RollingFileAppender$<$ Formatter, Converter $>$}!rollLogFiles@{rollLogFiles}}
+\index{rollLogFiles@{rollLogFiles}!plog::RollingFileAppender$<$ Formatter, Converter $>$@{plog::RollingFileAppender$<$ Formatter, Converter $>$}}
+\doxysubsubsection{\texorpdfstring{rollLogFiles()}{rollLogFiles()}}
+{\footnotesize\ttfamily template$<$class Formatter, class Converter = U\+T\+F8\+Converter$>$ \\
+void \mbox{\hyperlink{classplog_1_1_rolling_file_appender}{plog\+::\+Rolling\+File\+Appender}}$<$ Formatter, Converter $>$\+::roll\+Log\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classplog_1_1_rolling_file_appender_ae561c3b59a646d7bbc8fb005e209a77d}\label{classplog_1_1_rolling_file_appender_ae561c3b59a646d7bbc8fb005e209a77d}} 
+\index{plog::RollingFileAppender$<$ Formatter, Converter $>$@{plog::RollingFileAppender$<$ Formatter, Converter $>$}!write@{write}}
+\index{write@{write}!plog::RollingFileAppender$<$ Formatter, Converter $>$@{plog::RollingFileAppender$<$ Formatter, Converter $>$}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily template$<$class Formatter, class Converter = U\+T\+F8\+Converter$>$ \\
+virtual void \mbox{\hyperlink{classplog_1_1_rolling_file_appender}{plog\+::\+Rolling\+File\+Appender}}$<$ Formatter, Converter $>$\+::write (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classplog_1_1_record}{Record}} \&}]{record }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classplog_1_1_i_appender_a7a38d65d04c6c70d9fedb40ac6ee4a70}{plog\+::\+I\+Appender}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classplog_1_1_rolling_file_appender_af70c4b4c9b810477a45ebb80f793a40d}\label{classplog_1_1_rolling_file_appender_af70c4b4c9b810477a45ebb80f793a40d}} 
+\index{plog::RollingFileAppender$<$ Formatter, Converter $>$@{plog::RollingFileAppender$<$ Formatter, Converter $>$}!m\_file@{m\_file}}
+\index{m\_file@{m\_file}!plog::RollingFileAppender$<$ Formatter, Converter $>$@{plog::RollingFileAppender$<$ Formatter, Converter $>$}}
+\doxysubsubsection{\texorpdfstring{m\_file}{m\_file}}
+{\footnotesize\ttfamily template$<$class Formatter, class Converter = U\+T\+F8\+Converter$>$ \\
+\mbox{\hyperlink{classplog_1_1util_1_1_file}{util\+::\+File}} \mbox{\hyperlink{classplog_1_1_rolling_file_appender}{plog\+::\+Rolling\+File\+Appender}}$<$ Formatter, Converter $>$\+::m\+\_\+file\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classplog_1_1_rolling_file_appender_a51096c5aa73e33bf083d4c5b0715590d}\label{classplog_1_1_rolling_file_appender_a51096c5aa73e33bf083d4c5b0715590d}} 
+\index{plog::RollingFileAppender$<$ Formatter, Converter $>$@{plog::RollingFileAppender$<$ Formatter, Converter $>$}!m\_fileExt@{m\_fileExt}}
+\index{m\_fileExt@{m\_fileExt}!plog::RollingFileAppender$<$ Formatter, Converter $>$@{plog::RollingFileAppender$<$ Formatter, Converter $>$}}
+\doxysubsubsection{\texorpdfstring{m\_fileExt}{m\_fileExt}}
+{\footnotesize\ttfamily template$<$class Formatter, class Converter = U\+T\+F8\+Converter$>$ \\
+\mbox{\hyperlink{namespaceplog_1_1util_a6006c27fd4b0e374593ae75b8f88076f}{util\+::nstring}} \mbox{\hyperlink{classplog_1_1_rolling_file_appender}{plog\+::\+Rolling\+File\+Appender}}$<$ Formatter, Converter $>$\+::m\+\_\+file\+Ext\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classplog_1_1_rolling_file_appender_aec359a79d2eb7c32d6e267b3dd4dee3b}\label{classplog_1_1_rolling_file_appender_aec359a79d2eb7c32d6e267b3dd4dee3b}} 
+\index{plog::RollingFileAppender$<$ Formatter, Converter $>$@{plog::RollingFileAppender$<$ Formatter, Converter $>$}!m\_fileNameNoExt@{m\_fileNameNoExt}}
+\index{m\_fileNameNoExt@{m\_fileNameNoExt}!plog::RollingFileAppender$<$ Formatter, Converter $>$@{plog::RollingFileAppender$<$ Formatter, Converter $>$}}
+\doxysubsubsection{\texorpdfstring{m\_fileNameNoExt}{m\_fileNameNoExt}}
+{\footnotesize\ttfamily template$<$class Formatter, class Converter = U\+T\+F8\+Converter$>$ \\
+\mbox{\hyperlink{namespaceplog_1_1util_a6006c27fd4b0e374593ae75b8f88076f}{util\+::nstring}} \mbox{\hyperlink{classplog_1_1_rolling_file_appender}{plog\+::\+Rolling\+File\+Appender}}$<$ Formatter, Converter $>$\+::m\+\_\+file\+Name\+No\+Ext\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classplog_1_1_rolling_file_appender_a1ce7c25aa73777b725792d0b5514c1cb}\label{classplog_1_1_rolling_file_appender_a1ce7c25aa73777b725792d0b5514c1cb}} 
+\index{plog::RollingFileAppender$<$ Formatter, Converter $>$@{plog::RollingFileAppender$<$ Formatter, Converter $>$}!m\_fileSize@{m\_fileSize}}
+\index{m\_fileSize@{m\_fileSize}!plog::RollingFileAppender$<$ Formatter, Converter $>$@{plog::RollingFileAppender$<$ Formatter, Converter $>$}}
+\doxysubsubsection{\texorpdfstring{m\_fileSize}{m\_fileSize}}
+{\footnotesize\ttfamily template$<$class Formatter, class Converter = U\+T\+F8\+Converter$>$ \\
+off\+\_\+t \mbox{\hyperlink{classplog_1_1_rolling_file_appender}{plog\+::\+Rolling\+File\+Appender}}$<$ Formatter, Converter $>$\+::m\+\_\+file\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classplog_1_1_rolling_file_appender_a59ffd2d3efc604e316c01bda3d43679b}\label{classplog_1_1_rolling_file_appender_a59ffd2d3efc604e316c01bda3d43679b}} 
+\index{plog::RollingFileAppender$<$ Formatter, Converter $>$@{plog::RollingFileAppender$<$ Formatter, Converter $>$}!m\_firstWrite@{m\_firstWrite}}
+\index{m\_firstWrite@{m\_firstWrite}!plog::RollingFileAppender$<$ Formatter, Converter $>$@{plog::RollingFileAppender$<$ Formatter, Converter $>$}}
+\doxysubsubsection{\texorpdfstring{m\_firstWrite}{m\_firstWrite}}
+{\footnotesize\ttfamily template$<$class Formatter, class Converter = U\+T\+F8\+Converter$>$ \\
+bool \mbox{\hyperlink{classplog_1_1_rolling_file_appender}{plog\+::\+Rolling\+File\+Appender}}$<$ Formatter, Converter $>$\+::m\+\_\+first\+Write\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classplog_1_1_rolling_file_appender_a58e3c406b441314000751562495b294a}\label{classplog_1_1_rolling_file_appender_a58e3c406b441314000751562495b294a}} 
+\index{plog::RollingFileAppender$<$ Formatter, Converter $>$@{plog::RollingFileAppender$<$ Formatter, Converter $>$}!m\_maxFiles@{m\_maxFiles}}
+\index{m\_maxFiles@{m\_maxFiles}!plog::RollingFileAppender$<$ Formatter, Converter $>$@{plog::RollingFileAppender$<$ Formatter, Converter $>$}}
+\doxysubsubsection{\texorpdfstring{m\_maxFiles}{m\_maxFiles}}
+{\footnotesize\ttfamily template$<$class Formatter, class Converter = U\+T\+F8\+Converter$>$ \\
+const int \mbox{\hyperlink{classplog_1_1_rolling_file_appender}{plog\+::\+Rolling\+File\+Appender}}$<$ Formatter, Converter $>$\+::m\+\_\+max\+Files\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classplog_1_1_rolling_file_appender_afb9e01c4673f6047e0c01b909fc03370}\label{classplog_1_1_rolling_file_appender_afb9e01c4673f6047e0c01b909fc03370}} 
+\index{plog::RollingFileAppender$<$ Formatter, Converter $>$@{plog::RollingFileAppender$<$ Formatter, Converter $>$}!m\_maxFileSize@{m\_maxFileSize}}
+\index{m\_maxFileSize@{m\_maxFileSize}!plog::RollingFileAppender$<$ Formatter, Converter $>$@{plog::RollingFileAppender$<$ Formatter, Converter $>$}}
+\doxysubsubsection{\texorpdfstring{m\_maxFileSize}{m\_maxFileSize}}
+{\footnotesize\ttfamily template$<$class Formatter, class Converter = U\+T\+F8\+Converter$>$ \\
+const off\+\_\+t \mbox{\hyperlink{classplog_1_1_rolling_file_appender}{plog\+::\+Rolling\+File\+Appender}}$<$ Formatter, Converter $>$\+::m\+\_\+max\+File\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classplog_1_1_rolling_file_appender_a886274b6fba065c2c8a7d4794ec81cc6}\label{classplog_1_1_rolling_file_appender_a886274b6fba065c2c8a7d4794ec81cc6}} 
+\index{plog::RollingFileAppender$<$ Formatter, Converter $>$@{plog::RollingFileAppender$<$ Formatter, Converter $>$}!m\_mutex@{m\_mutex}}
+\index{m\_mutex@{m\_mutex}!plog::RollingFileAppender$<$ Formatter, Converter $>$@{plog::RollingFileAppender$<$ Formatter, Converter $>$}}
+\doxysubsubsection{\texorpdfstring{m\_mutex}{m\_mutex}}
+{\footnotesize\ttfamily template$<$class Formatter, class Converter = U\+T\+F8\+Converter$>$ \\
+\mbox{\hyperlink{classplog_1_1util_1_1_mutex}{util\+::\+Mutex}} \mbox{\hyperlink{classplog_1_1_rolling_file_appender}{plog\+::\+Rolling\+File\+Appender}}$<$ Formatter, Converter $>$\+::m\+\_\+mutex\hspace{0.3cm}{\ttfamily [private]}}
+

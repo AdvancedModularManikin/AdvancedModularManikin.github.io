@@ -1,0 +1,120 @@
+\hypertarget{classplog_1_1util_1_1_file}{}\doxysection{plog\+::util\+::File Class Reference}
+\label{classplog_1_1util_1_1_file}\index{plog::util::File@{plog::util::File}}
+
+
+{\ttfamily \#include $<$Util.\+h$>$}
+
+Inheritance diagram for plog\+::util\+::File\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classplog_1_1util_1_1_file}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classplog_1_1util_1_1_file_a916917c4e7f9bf67a0070df680ab89f8}{File}} ()
+\item 
+\mbox{\hyperlink{classplog_1_1util_1_1_file_a12e4ca7fd5bdf57afe700a4d253ba38a}{File}} (const \mbox{\hyperlink{namespaceplog_1_1util_a5904dfdf0e59be15b2da55f49c34691e}{nchar}} $\ast$file\+Name)
+\item 
+\mbox{\hyperlink{classplog_1_1util_1_1_file_a9c19d21e7568500444f0a3bfeea442fb}{$\sim$\+File}} ()
+\item 
+off\+\_\+t \mbox{\hyperlink{classplog_1_1util_1_1_file_a022b9a5e084bd7210dcb5a0a86f483d0}{open}} (const \mbox{\hyperlink{namespaceplog_1_1util_a5904dfdf0e59be15b2da55f49c34691e}{nchar}} $\ast$file\+Name)
+\item 
+int \mbox{\hyperlink{classplog_1_1util_1_1_file_a74e4b87730e6f2c7c8009f83a0e98530}{write}} (const void $\ast$buf, size\+\_\+t count)
+\item 
+{\footnotesize template$<$class Char\+Type $>$ }\\int \mbox{\hyperlink{classplog_1_1util_1_1_file_a7ceff1ee539ad987d5a53866f591222c}{write}} (const std\+::basic\+\_\+string$<$ Char\+Type $>$ \&str)
+\item 
+off\+\_\+t \mbox{\hyperlink{classplog_1_1util_1_1_file_a99dcc25cb9d82e7c370e60a18e3d9e9f}{seek}} (off\+\_\+t offset, int whence)
+\item 
+void \mbox{\hyperlink{classplog_1_1util_1_1_file_ab8783a15dad942243ab0202af1337801}{close}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classplog_1_1util_1_1_file_afbf3818ca3534fe05b4727c74593ac34}{unlink}} (const \mbox{\hyperlink{namespaceplog_1_1util_a5904dfdf0e59be15b2da55f49c34691e}{nchar}} $\ast$file\+Name)
+\item 
+static int \mbox{\hyperlink{classplog_1_1util_1_1_file_af90baf585c136784d0f8c934f57f2939}{rename}} (const \mbox{\hyperlink{namespaceplog_1_1util_a5904dfdf0e59be15b2da55f49c34691e}{nchar}} $\ast$old\+Filename, const \mbox{\hyperlink{namespaceplog_1_1util_a5904dfdf0e59be15b2da55f49c34691e}{nchar}} $\ast$new\+Filename)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classplog_1_1util_1_1_file_aa450f796c6fa50f9c1f177638eea8a9e}{m\+\_\+file}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classplog_1_1util_1_1_file_a916917c4e7f9bf67a0070df680ab89f8}\label{classplog_1_1util_1_1_file_a916917c4e7f9bf67a0070df680ab89f8}} 
+\index{plog::util::File@{plog::util::File}!File@{File}}
+\index{File@{File}!plog::util::File@{plog::util::File}}
+\doxysubsubsection{\texorpdfstring{File()}{File()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily plog\+::util\+::\+File\+::\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classplog_1_1util_1_1_file_a12e4ca7fd5bdf57afe700a4d253ba38a}\label{classplog_1_1util_1_1_file_a12e4ca7fd5bdf57afe700a4d253ba38a}} 
+\index{plog::util::File@{plog::util::File}!File@{File}}
+\index{File@{File}!plog::util::File@{plog::util::File}}
+\doxysubsubsection{\texorpdfstring{File()}{File()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily plog\+::util\+::\+File\+::\+File (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceplog_1_1util_a5904dfdf0e59be15b2da55f49c34691e}{nchar}} $\ast$}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classplog_1_1util_1_1_file_a9c19d21e7568500444f0a3bfeea442fb}\label{classplog_1_1util_1_1_file_a9c19d21e7568500444f0a3bfeea442fb}} 
+\index{plog::util::File@{plog::util::File}!````~File@{$\sim$File}}
+\index{````~File@{$\sim$File}!plog::util::File@{plog::util::File}}
+\doxysubsubsection{\texorpdfstring{$\sim$File()}{~File()}}
+{\footnotesize\ttfamily plog\+::util\+::\+File\+::$\sim$\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classplog_1_1util_1_1_file_ab8783a15dad942243ab0202af1337801}\label{classplog_1_1util_1_1_file_ab8783a15dad942243ab0202af1337801}} 
+\index{plog::util::File@{plog::util::File}!close@{close}}
+\index{close@{close}!plog::util::File@{plog::util::File}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void plog\+::util\+::\+File\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classplog_1_1util_1_1_file_a022b9a5e084bd7210dcb5a0a86f483d0}\label{classplog_1_1util_1_1_file_a022b9a5e084bd7210dcb5a0a86f483d0}} 
+\index{plog::util::File@{plog::util::File}!open@{open}}
+\index{open@{open}!plog::util::File@{plog::util::File}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily off\+\_\+t plog\+::util\+::\+File\+::open (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceplog_1_1util_a5904dfdf0e59be15b2da55f49c34691e}{nchar}} $\ast$}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classplog_1_1util_1_1_file_af90baf585c136784d0f8c934f57f2939}\label{classplog_1_1util_1_1_file_af90baf585c136784d0f8c934f57f2939}} 
+\index{plog::util::File@{plog::util::File}!rename@{rename}}
+\index{rename@{rename}!plog::util::File@{plog::util::File}}
+\doxysubsubsection{\texorpdfstring{rename()}{rename()}}
+{\footnotesize\ttfamily static int plog\+::util\+::\+File\+::rename (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceplog_1_1util_a5904dfdf0e59be15b2da55f49c34691e}{nchar}} $\ast$}]{old\+Filename,  }\item[{const \mbox{\hyperlink{namespaceplog_1_1util_a5904dfdf0e59be15b2da55f49c34691e}{nchar}} $\ast$}]{new\+Filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classplog_1_1util_1_1_file_a99dcc25cb9d82e7c370e60a18e3d9e9f}\label{classplog_1_1util_1_1_file_a99dcc25cb9d82e7c370e60a18e3d9e9f}} 
+\index{plog::util::File@{plog::util::File}!seek@{seek}}
+\index{seek@{seek}!plog::util::File@{plog::util::File}}
+\doxysubsubsection{\texorpdfstring{seek()}{seek()}}
+{\footnotesize\ttfamily off\+\_\+t plog\+::util\+::\+File\+::seek (\begin{DoxyParamCaption}\item[{off\+\_\+t}]{offset,  }\item[{int}]{whence }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classplog_1_1util_1_1_file_afbf3818ca3534fe05b4727c74593ac34}\label{classplog_1_1util_1_1_file_afbf3818ca3534fe05b4727c74593ac34}} 
+\index{plog::util::File@{plog::util::File}!unlink@{unlink}}
+\index{unlink@{unlink}!plog::util::File@{plog::util::File}}
+\doxysubsubsection{\texorpdfstring{unlink()}{unlink()}}
+{\footnotesize\ttfamily static int plog\+::util\+::\+File\+::unlink (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceplog_1_1util_a5904dfdf0e59be15b2da55f49c34691e}{nchar}} $\ast$}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classplog_1_1util_1_1_file_a7ceff1ee539ad987d5a53866f591222c}\label{classplog_1_1util_1_1_file_a7ceff1ee539ad987d5a53866f591222c}} 
+\index{plog::util::File@{plog::util::File}!write@{write}}
+\index{write@{write}!plog::util::File@{plog::util::File}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Char\+Type $>$ \\
+int plog\+::util\+::\+File\+::write (\begin{DoxyParamCaption}\item[{const std\+::basic\+\_\+string$<$ Char\+Type $>$ \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classplog_1_1util_1_1_file_a74e4b87730e6f2c7c8009f83a0e98530}\label{classplog_1_1util_1_1_file_a74e4b87730e6f2c7c8009f83a0e98530}} 
+\index{plog::util::File@{plog::util::File}!write@{write}}
+\index{write@{write}!plog::util::File@{plog::util::File}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int plog\+::util\+::\+File\+::write (\begin{DoxyParamCaption}\item[{const void $\ast$}]{buf,  }\item[{size\+\_\+t}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classplog_1_1util_1_1_file_aa450f796c6fa50f9c1f177638eea8a9e}\label{classplog_1_1util_1_1_file_aa450f796c6fa50f9c1f177638eea8a9e}} 
+\index{plog::util::File@{plog::util::File}!m\_file@{m\_file}}
+\index{m\_file@{m\_file}!plog::util::File@{plog::util::File}}
+\doxysubsubsection{\texorpdfstring{m\_file}{m\_file}}
+{\footnotesize\ttfamily int plog\+::util\+::\+File\+::m\+\_\+file\hspace{0.3cm}{\ttfamily [private]}}
+

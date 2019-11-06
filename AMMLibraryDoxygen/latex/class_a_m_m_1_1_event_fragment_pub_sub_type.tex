@@ -1,0 +1,129 @@
+\hypertarget{class_a_m_m_1_1_event_fragment_pub_sub_type}{}\doxysection{A\+MM\+::Event\+Fragment\+Pub\+Sub\+Type Class Reference}
+\label{class_a_m_m_1_1_event_fragment_pub_sub_type}\index{AMM::EventFragmentPubSubType@{AMM::EventFragmentPubSubType}}
+
+
+This class represents the Topic\+Data\+Type of the type \mbox{\hyperlink{class_a_m_m_1_1_event_fragment}{Event\+Fragment}} defined by the user in the I\+DL file.  
+
+
+
+
+{\ttfamily \#include $<$A\+M\+M\+\_\+\+Standard\+Pub\+Sub\+Types.\+h$>$}
+
+Inheritance diagram for A\+MM\+::Event\+Fragment\+Pub\+Sub\+Type\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_m_m_1_1_event_fragment_pub_sub_type}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{class_a_m_m_1_1_event_fragment}{Event\+Fragment}} \mbox{\hyperlink{class_a_m_m_1_1_event_fragment_pub_sub_type_a3fb74991e227240b238d788701c63877}{type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_event_fragment_pub_sub_type_a68a29543d4645dba43a14f82b0d4cf79}{Event\+Fragment\+Pub\+Sub\+Type}} ()
+\item 
+virtual \mbox{\hyperlink{class_a_m_m_1_1_event_fragment_pub_sub_type_abdf96ecaa46e3e9c0e22b2321ee01241}{$\sim$\+Event\+Fragment\+Pub\+Sub\+Type}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_event_fragment_pub_sub_type_a73cdbd091a3d99f7c9a1fcdf10a42e49}{serialize}} (void $\ast$data, eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$payload) override
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_event_fragment_pub_sub_type_a4394a7435df6ff59a8a532e49fe39732}{deserialize}} (eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$payload, void $\ast$data) override
+\item 
+virtual std\+::function$<$ uint32\+\_\+t()$>$ \mbox{\hyperlink{class_a_m_m_1_1_event_fragment_pub_sub_type_adc7ad26eddf074037500531c41b89207}{get\+Serialized\+Size\+Provider}} (void $\ast$data) override
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_event_fragment_pub_sub_type_af11dedc99c6f33a7b6925b2c2e8a8ac2}{get\+Key}} (void $\ast$data, eprosima\+::fastrtps\+::rtps\+::\+Instance\+Handle\+\_\+t $\ast$ihandle, bool force\+\_\+md5=false) override
+\item 
+virtual void $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_event_fragment_pub_sub_type_a5d7ee1901b17d7a6733432729f44b8bb}{create\+Data}} () override
+\item 
+virtual void \mbox{\hyperlink{class_a_m_m_1_1_event_fragment_pub_sub_type_a1415febc39625667f405eb594646184b}{delete\+Data}} (void $\ast$data) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+M\+D5 \mbox{\hyperlink{class_a_m_m_1_1_event_fragment_pub_sub_type_aec65c8e6e6eea970d65ba16412ddd8b4}{m\+\_\+md5}}
+\item 
+unsigned char $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_event_fragment_pub_sub_type_a6aaa753e61daebaaaebbff1440c9b1bb}{m\+\_\+key\+Buffer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the Topic\+Data\+Type of the type \mbox{\hyperlink{class_a_m_m_1_1_event_fragment}{Event\+Fragment}} defined by the user in the I\+DL file. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_event_fragment_pub_sub_type_a3fb74991e227240b238d788701c63877}\label{class_a_m_m_1_1_event_fragment_pub_sub_type_a3fb74991e227240b238d788701c63877}} 
+\index{AMM::EventFragmentPubSubType@{AMM::EventFragmentPubSubType}!type@{type}}
+\index{type@{type}!AMM::EventFragmentPubSubType@{AMM::EventFragmentPubSubType}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{class_a_m_m_1_1_event_fragment}{Event\+Fragment}} \mbox{\hyperlink{class_a_m_m_1_1_event_fragment_pub_sub_type_a3fb74991e227240b238d788701c63877}{A\+M\+M\+::\+Event\+Fragment\+Pub\+Sub\+Type\+::type}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_event_fragment_pub_sub_type_a68a29543d4645dba43a14f82b0d4cf79}\label{class_a_m_m_1_1_event_fragment_pub_sub_type_a68a29543d4645dba43a14f82b0d4cf79}} 
+\index{AMM::EventFragmentPubSubType@{AMM::EventFragmentPubSubType}!EventFragmentPubSubType@{EventFragmentPubSubType}}
+\index{EventFragmentPubSubType@{EventFragmentPubSubType}!AMM::EventFragmentPubSubType@{AMM::EventFragmentPubSubType}}
+\doxysubsubsection{\texorpdfstring{EventFragmentPubSubType()}{EventFragmentPubSubType()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Event\+Fragment\+Pub\+Sub\+Type\+::\+Event\+Fragment\+Pub\+Sub\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_event_fragment_pub_sub_type_abdf96ecaa46e3e9c0e22b2321ee01241}\label{class_a_m_m_1_1_event_fragment_pub_sub_type_abdf96ecaa46e3e9c0e22b2321ee01241}} 
+\index{AMM::EventFragmentPubSubType@{AMM::EventFragmentPubSubType}!````~EventFragmentPubSubType@{$\sim$EventFragmentPubSubType}}
+\index{````~EventFragmentPubSubType@{$\sim$EventFragmentPubSubType}!AMM::EventFragmentPubSubType@{AMM::EventFragmentPubSubType}}
+\doxysubsubsection{\texorpdfstring{$\sim$EventFragmentPubSubType()}{~EventFragmentPubSubType()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Event\+Fragment\+Pub\+Sub\+Type\+::$\sim$\+Event\+Fragment\+Pub\+Sub\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_event_fragment_pub_sub_type_a5d7ee1901b17d7a6733432729f44b8bb}\label{class_a_m_m_1_1_event_fragment_pub_sub_type_a5d7ee1901b17d7a6733432729f44b8bb}} 
+\index{AMM::EventFragmentPubSubType@{AMM::EventFragmentPubSubType}!createData@{createData}}
+\index{createData@{createData}!AMM::EventFragmentPubSubType@{AMM::EventFragmentPubSubType}}
+\doxysubsubsection{\texorpdfstring{createData()}{createData()}}
+{\footnotesize\ttfamily void $\ast$ A\+M\+M\+::\+Event\+Fragment\+Pub\+Sub\+Type\+::create\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_event_fragment_pub_sub_type_a1415febc39625667f405eb594646184b}\label{class_a_m_m_1_1_event_fragment_pub_sub_type_a1415febc39625667f405eb594646184b}} 
+\index{AMM::EventFragmentPubSubType@{AMM::EventFragmentPubSubType}!deleteData@{deleteData}}
+\index{deleteData@{deleteData}!AMM::EventFragmentPubSubType@{AMM::EventFragmentPubSubType}}
+\doxysubsubsection{\texorpdfstring{deleteData()}{deleteData()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Event\+Fragment\+Pub\+Sub\+Type\+::delete\+Data (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_event_fragment_pub_sub_type_a4394a7435df6ff59a8a532e49fe39732}\label{class_a_m_m_1_1_event_fragment_pub_sub_type_a4394a7435df6ff59a8a532e49fe39732}} 
+\index{AMM::EventFragmentPubSubType@{AMM::EventFragmentPubSubType}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!AMM::EventFragmentPubSubType@{AMM::EventFragmentPubSubType}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Event\+Fragment\+Pub\+Sub\+Type\+::deserialize (\begin{DoxyParamCaption}\item[{eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$}]{payload,  }\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_event_fragment_pub_sub_type_af11dedc99c6f33a7b6925b2c2e8a8ac2}\label{class_a_m_m_1_1_event_fragment_pub_sub_type_af11dedc99c6f33a7b6925b2c2e8a8ac2}} 
+\index{AMM::EventFragmentPubSubType@{AMM::EventFragmentPubSubType}!getKey@{getKey}}
+\index{getKey@{getKey}!AMM::EventFragmentPubSubType@{AMM::EventFragmentPubSubType}}
+\doxysubsubsection{\texorpdfstring{getKey()}{getKey()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Event\+Fragment\+Pub\+Sub\+Type\+::get\+Key (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{eprosima\+::fastrtps\+::rtps\+::\+Instance\+Handle\+\_\+t $\ast$}]{ihandle,  }\item[{bool}]{force\+\_\+md5 = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_event_fragment_pub_sub_type_adc7ad26eddf074037500531c41b89207}\label{class_a_m_m_1_1_event_fragment_pub_sub_type_adc7ad26eddf074037500531c41b89207}} 
+\index{AMM::EventFragmentPubSubType@{AMM::EventFragmentPubSubType}!getSerializedSizeProvider@{getSerializedSizeProvider}}
+\index{getSerializedSizeProvider@{getSerializedSizeProvider}!AMM::EventFragmentPubSubType@{AMM::EventFragmentPubSubType}}
+\doxysubsubsection{\texorpdfstring{getSerializedSizeProvider()}{getSerializedSizeProvider()}}
+{\footnotesize\ttfamily std\+::function$<$ uint32\+\_\+t()$>$ A\+M\+M\+::\+Event\+Fragment\+Pub\+Sub\+Type\+::get\+Serialized\+Size\+Provider (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_event_fragment_pub_sub_type_a73cdbd091a3d99f7c9a1fcdf10a42e49}\label{class_a_m_m_1_1_event_fragment_pub_sub_type_a73cdbd091a3d99f7c9a1fcdf10a42e49}} 
+\index{AMM::EventFragmentPubSubType@{AMM::EventFragmentPubSubType}!serialize@{serialize}}
+\index{serialize@{serialize}!AMM::EventFragmentPubSubType@{AMM::EventFragmentPubSubType}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Event\+Fragment\+Pub\+Sub\+Type\+::serialize (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$}]{payload }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_event_fragment_pub_sub_type_a6aaa753e61daebaaaebbff1440c9b1bb}\label{class_a_m_m_1_1_event_fragment_pub_sub_type_a6aaa753e61daebaaaebbff1440c9b1bb}} 
+\index{AMM::EventFragmentPubSubType@{AMM::EventFragmentPubSubType}!m\_keyBuffer@{m\_keyBuffer}}
+\index{m\_keyBuffer@{m\_keyBuffer}!AMM::EventFragmentPubSubType@{AMM::EventFragmentPubSubType}}
+\doxysubsubsection{\texorpdfstring{m\_keyBuffer}{m\_keyBuffer}}
+{\footnotesize\ttfamily unsigned char$\ast$ A\+M\+M\+::\+Event\+Fragment\+Pub\+Sub\+Type\+::m\+\_\+key\+Buffer}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_event_fragment_pub_sub_type_aec65c8e6e6eea970d65ba16412ddd8b4}\label{class_a_m_m_1_1_event_fragment_pub_sub_type_aec65c8e6e6eea970d65ba16412ddd8b4}} 
+\index{AMM::EventFragmentPubSubType@{AMM::EventFragmentPubSubType}!m\_md5@{m\_md5}}
+\index{m\_md5@{m\_md5}!AMM::EventFragmentPubSubType@{AMM::EventFragmentPubSubType}}
+\doxysubsubsection{\texorpdfstring{m\_md5}{m\_md5}}
+{\footnotesize\ttfamily M\+D5 A\+M\+M\+::\+Event\+Fragment\+Pub\+Sub\+Type\+::m\+\_\+md5}
+

@@ -1,0 +1,129 @@
+\hypertarget{class_a_m_m_1_1_status_pub_sub_type}{}\doxysection{A\+MM\+::Status\+Pub\+Sub\+Type Class Reference}
+\label{class_a_m_m_1_1_status_pub_sub_type}\index{AMM::StatusPubSubType@{AMM::StatusPubSubType}}
+
+
+This class represents the Topic\+Data\+Type of the type \mbox{\hyperlink{class_a_m_m_1_1_status}{Status}} defined by the user in the I\+DL file.  
+
+
+
+
+{\ttfamily \#include $<$A\+M\+M\+\_\+\+Standard\+Pub\+Sub\+Types.\+h$>$}
+
+Inheritance diagram for A\+MM\+::Status\+Pub\+Sub\+Type\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_m_m_1_1_status_pub_sub_type}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{class_a_m_m_1_1_status}{Status}} \mbox{\hyperlink{class_a_m_m_1_1_status_pub_sub_type_ad1a7f127b2c2eee5939761d6df055816}{type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_status_pub_sub_type_a47c1a581aafb11bbb5c709388a6105d1}{Status\+Pub\+Sub\+Type}} ()
+\item 
+virtual \mbox{\hyperlink{class_a_m_m_1_1_status_pub_sub_type_aea204fa9d80925cd9b907205f2494c3f}{$\sim$\+Status\+Pub\+Sub\+Type}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_status_pub_sub_type_a87a56edf796dd00df9fcb848c717de01}{serialize}} (void $\ast$data, eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$payload) override
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_status_pub_sub_type_aeeeab86b627296376099f1b4642df5b1}{deserialize}} (eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$payload, void $\ast$data) override
+\item 
+virtual std\+::function$<$ uint32\+\_\+t()$>$ \mbox{\hyperlink{class_a_m_m_1_1_status_pub_sub_type_aac15f61229750b55b13ca01a7e903ab3}{get\+Serialized\+Size\+Provider}} (void $\ast$data) override
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_status_pub_sub_type_abf1065559cddb2cf578a1722be236389}{get\+Key}} (void $\ast$data, eprosima\+::fastrtps\+::rtps\+::\+Instance\+Handle\+\_\+t $\ast$ihandle, bool force\+\_\+md5=false) override
+\item 
+virtual void $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_status_pub_sub_type_a19e722a6b97124534f613b99539a2aa7}{create\+Data}} () override
+\item 
+virtual void \mbox{\hyperlink{class_a_m_m_1_1_status_pub_sub_type_a7c54c22cecf9f8822f92fb805076fbe8}{delete\+Data}} (void $\ast$data) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+M\+D5 \mbox{\hyperlink{class_a_m_m_1_1_status_pub_sub_type_a38f63315f21502f5c20dfa47e624631e}{m\+\_\+md5}}
+\item 
+unsigned char $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_status_pub_sub_type_ac06a210ad0915421e28ab01c0574b139}{m\+\_\+key\+Buffer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the Topic\+Data\+Type of the type \mbox{\hyperlink{class_a_m_m_1_1_status}{Status}} defined by the user in the I\+DL file. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_status_pub_sub_type_ad1a7f127b2c2eee5939761d6df055816}\label{class_a_m_m_1_1_status_pub_sub_type_ad1a7f127b2c2eee5939761d6df055816}} 
+\index{AMM::StatusPubSubType@{AMM::StatusPubSubType}!type@{type}}
+\index{type@{type}!AMM::StatusPubSubType@{AMM::StatusPubSubType}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{class_a_m_m_1_1_status}{Status}} \mbox{\hyperlink{class_a_m_m_1_1_status_pub_sub_type_ad1a7f127b2c2eee5939761d6df055816}{A\+M\+M\+::\+Status\+Pub\+Sub\+Type\+::type}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_status_pub_sub_type_a47c1a581aafb11bbb5c709388a6105d1}\label{class_a_m_m_1_1_status_pub_sub_type_a47c1a581aafb11bbb5c709388a6105d1}} 
+\index{AMM::StatusPubSubType@{AMM::StatusPubSubType}!StatusPubSubType@{StatusPubSubType}}
+\index{StatusPubSubType@{StatusPubSubType}!AMM::StatusPubSubType@{AMM::StatusPubSubType}}
+\doxysubsubsection{\texorpdfstring{StatusPubSubType()}{StatusPubSubType()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Status\+Pub\+Sub\+Type\+::\+Status\+Pub\+Sub\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_status_pub_sub_type_aea204fa9d80925cd9b907205f2494c3f}\label{class_a_m_m_1_1_status_pub_sub_type_aea204fa9d80925cd9b907205f2494c3f}} 
+\index{AMM::StatusPubSubType@{AMM::StatusPubSubType}!````~StatusPubSubType@{$\sim$StatusPubSubType}}
+\index{````~StatusPubSubType@{$\sim$StatusPubSubType}!AMM::StatusPubSubType@{AMM::StatusPubSubType}}
+\doxysubsubsection{\texorpdfstring{$\sim$StatusPubSubType()}{~StatusPubSubType()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Status\+Pub\+Sub\+Type\+::$\sim$\+Status\+Pub\+Sub\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_status_pub_sub_type_a19e722a6b97124534f613b99539a2aa7}\label{class_a_m_m_1_1_status_pub_sub_type_a19e722a6b97124534f613b99539a2aa7}} 
+\index{AMM::StatusPubSubType@{AMM::StatusPubSubType}!createData@{createData}}
+\index{createData@{createData}!AMM::StatusPubSubType@{AMM::StatusPubSubType}}
+\doxysubsubsection{\texorpdfstring{createData()}{createData()}}
+{\footnotesize\ttfamily void $\ast$ A\+M\+M\+::\+Status\+Pub\+Sub\+Type\+::create\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_status_pub_sub_type_a7c54c22cecf9f8822f92fb805076fbe8}\label{class_a_m_m_1_1_status_pub_sub_type_a7c54c22cecf9f8822f92fb805076fbe8}} 
+\index{AMM::StatusPubSubType@{AMM::StatusPubSubType}!deleteData@{deleteData}}
+\index{deleteData@{deleteData}!AMM::StatusPubSubType@{AMM::StatusPubSubType}}
+\doxysubsubsection{\texorpdfstring{deleteData()}{deleteData()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Status\+Pub\+Sub\+Type\+::delete\+Data (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_status_pub_sub_type_aeeeab86b627296376099f1b4642df5b1}\label{class_a_m_m_1_1_status_pub_sub_type_aeeeab86b627296376099f1b4642df5b1}} 
+\index{AMM::StatusPubSubType@{AMM::StatusPubSubType}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!AMM::StatusPubSubType@{AMM::StatusPubSubType}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Status\+Pub\+Sub\+Type\+::deserialize (\begin{DoxyParamCaption}\item[{eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$}]{payload,  }\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_status_pub_sub_type_abf1065559cddb2cf578a1722be236389}\label{class_a_m_m_1_1_status_pub_sub_type_abf1065559cddb2cf578a1722be236389}} 
+\index{AMM::StatusPubSubType@{AMM::StatusPubSubType}!getKey@{getKey}}
+\index{getKey@{getKey}!AMM::StatusPubSubType@{AMM::StatusPubSubType}}
+\doxysubsubsection{\texorpdfstring{getKey()}{getKey()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Status\+Pub\+Sub\+Type\+::get\+Key (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{eprosima\+::fastrtps\+::rtps\+::\+Instance\+Handle\+\_\+t $\ast$}]{ihandle,  }\item[{bool}]{force\+\_\+md5 = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_status_pub_sub_type_aac15f61229750b55b13ca01a7e903ab3}\label{class_a_m_m_1_1_status_pub_sub_type_aac15f61229750b55b13ca01a7e903ab3}} 
+\index{AMM::StatusPubSubType@{AMM::StatusPubSubType}!getSerializedSizeProvider@{getSerializedSizeProvider}}
+\index{getSerializedSizeProvider@{getSerializedSizeProvider}!AMM::StatusPubSubType@{AMM::StatusPubSubType}}
+\doxysubsubsection{\texorpdfstring{getSerializedSizeProvider()}{getSerializedSizeProvider()}}
+{\footnotesize\ttfamily std\+::function$<$ uint32\+\_\+t()$>$ A\+M\+M\+::\+Status\+Pub\+Sub\+Type\+::get\+Serialized\+Size\+Provider (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_status_pub_sub_type_a87a56edf796dd00df9fcb848c717de01}\label{class_a_m_m_1_1_status_pub_sub_type_a87a56edf796dd00df9fcb848c717de01}} 
+\index{AMM::StatusPubSubType@{AMM::StatusPubSubType}!serialize@{serialize}}
+\index{serialize@{serialize}!AMM::StatusPubSubType@{AMM::StatusPubSubType}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Status\+Pub\+Sub\+Type\+::serialize (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$}]{payload }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_status_pub_sub_type_ac06a210ad0915421e28ab01c0574b139}\label{class_a_m_m_1_1_status_pub_sub_type_ac06a210ad0915421e28ab01c0574b139}} 
+\index{AMM::StatusPubSubType@{AMM::StatusPubSubType}!m\_keyBuffer@{m\_keyBuffer}}
+\index{m\_keyBuffer@{m\_keyBuffer}!AMM::StatusPubSubType@{AMM::StatusPubSubType}}
+\doxysubsubsection{\texorpdfstring{m\_keyBuffer}{m\_keyBuffer}}
+{\footnotesize\ttfamily unsigned char$\ast$ A\+M\+M\+::\+Status\+Pub\+Sub\+Type\+::m\+\_\+key\+Buffer}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_status_pub_sub_type_a38f63315f21502f5c20dfa47e624631e}\label{class_a_m_m_1_1_status_pub_sub_type_a38f63315f21502f5c20dfa47e624631e}} 
+\index{AMM::StatusPubSubType@{AMM::StatusPubSubType}!m\_md5@{m\_md5}}
+\index{m\_md5@{m\_md5}!AMM::StatusPubSubType@{AMM::StatusPubSubType}}
+\doxysubsubsection{\texorpdfstring{m\_md5}{m\_md5}}
+{\footnotesize\ttfamily M\+D5 A\+M\+M\+::\+Status\+Pub\+Sub\+Type\+::m\+\_\+md5}
+

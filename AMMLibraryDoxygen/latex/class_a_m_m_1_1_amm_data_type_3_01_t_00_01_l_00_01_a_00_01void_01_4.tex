@@ -1,0 +1,544 @@
+\hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4}{}\doxysection{A\+MM\+::Amm\+Data\+Type$<$ T, L, A, void $>$ Class Template Reference}
+\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4}\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+
+
+{\ttfamily \#include $<$Amm\+Data\+Type.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a7d0fa8e7ebdda546ad2f2cf38bca10bb}{Amm\+Data\+Type}} (const std\+::string topic\+Name, eprosima\+::fastrtps\+::\+Participant $\ast$p, \mbox{\hyperlink{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener}{D\+D\+S\+\_\+\+Listeners\+::\+Pub\+Listener}} $\ast$pl)
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a33278203e8c718ef582a7359ad9c2267}{Amm\+Data\+Type}} (int \&err, const std\+::string topic\+Name, eprosima\+::fastrtps\+::\+Participant $\ast$p, \mbox{\hyperlink{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener}{D\+D\+S\+\_\+\+Listeners\+::\+Pub\+Listener}} $\ast$pl)
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_ab707cfddcaf08f149d867be25b38bc58}{Amm\+Data\+Type}} (int \&err, std\+::string \&errmsg, const std\+::string topic\+Name, eprosima\+::fastrtps\+::\+Participant $\ast$p, \mbox{\hyperlink{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener}{D\+D\+S\+\_\+\+Listeners\+::\+Pub\+Listener}} $\ast$pl)
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a6bd61bf24d2e541fc339a19383ac210c}{$\sim$\+Amm\+Data\+Type}} ()
+\item 
+std\+::string \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_aa03c19216d7b2c0cffb8fa43d582be99}{Topic\+Name}} ()
+\item 
+bool \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_ad509efa7f73a2154a6b3db6ba1371b1b}{Is\+Type\+Registered}} ()
+\item 
+int \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_aa1c2e4c4b69e79330807b0cbb8cad8bd}{Create\+Publisher}} ()
+\item 
+int \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a8cae22a25f77e97025a1f59b6de53d02}{Create\+Publisher}} (std\+::string \&errmsg)
+\item 
+int \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a0d726eeb525d096f9867aeb1f2865a42}{Create\+Subscriber}} (\mbox{\hyperlink{class_listener_interface}{Listener\+Interface}} $\ast$li, void($\ast$on\+Event)(A \&, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$))
+\item 
+int \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a144f1664b37024515e65ef43a1007b8d}{Create\+Subscriber}} (std\+::string \&err, \mbox{\hyperlink{class_listener_interface}{Listener\+Interface}} $\ast$li, void($\ast$on\+Event)(A \&, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$))
+\item 
+int \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_ac28cd0723eb99da957493b90ee1b97c7}{Write}} (A \&a)
+\item 
+int \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a301f002670882fda991fd45d42fd3443}{Write}} (std\+::string \&errmsg, A \&a)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a1d233c80ef9941af0069baf0b7fbf335}{On\+Event}} (A \&a, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$info)
+\item 
+int \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_aa32900500fdde282674987c98317fd33}{Delete}} ()
+\item 
+int \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a43741ee103995167e70ed776311a73b0}{Delete}} (std\+::string \&errmsg)
+\item 
+int \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_ac653acb826566fade0000baeed9095b4}{Remove\+Publisher}} ()
+\item 
+int \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a9b390764ff8ed1b4f64fba19704ff311}{Remove\+Publisher}} (std\+::string \&errmsg)
+\item 
+int \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_ae7d9b0482e405b1cbc1b19e22f587e29}{Remove\+Subscriber}} ()
+\item 
+int \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_aff91433f45e60f8c566d3aa44f80c564}{Remove\+Subscriber}} (std\+::string \&errmsg)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_ad1312e0eef3ddc603063d17eb133dae5}{Force\+Delete}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+eprosima\+::fastrtps\+::\+Participant $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a2e133331638c47916f9b54d279f8220a}{m\+\_\+participant}}
+\begin{DoxyCompactList}\small\item\em Pointer to the D\+DS Participant managed by the D\+DS Manager. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener}{D\+D\+S\+\_\+\+Listeners\+::\+Pub\+Listener}} $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_aba2431bcc2b4e316ee6d6382b928ad15}{m\+\_\+pub\+Listener}}
+\begin{DoxyCompactList}\small\item\em Pointer to the Publisher Listener managed by the D\+DS Manager. \end{DoxyCompactList}\item 
+T $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_ad1d45ae0068f65b618ba1626d1f310a1}{m\+\_\+type}}
+\item 
+L $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a7c15a6a83a2da896ebf9371de8ac00d9}{m\+\_\+listener}}
+\item 
+eprosima\+::fastrtps\+::\+Publisher $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a12409c633b8e6a49fa19a081b1a8ce80}{m\+\_\+publisher}}
+\begin{DoxyCompactList}\small\item\em Publisher of the Amm Data Type defined by this template. \end{DoxyCompactList}\item 
+eprosima\+::fastrtps\+::\+Subscriber $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a10ae227cf50fa3ed602962b0d078eab9}{m\+\_\+subscriber}}
+\begin{DoxyCompactList}\small\item\em Subscriber of the Amm Data Type defined by this template. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a9ba3cf22dd17abfed4625217ddccd9ed}{m\+\_\+is\+Pub\+Init}} = false
+\item 
+bool \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a860c25dc3a2dd094b9e88a0c27de1961}{m\+\_\+is\+Sub\+Init}} = false
+\item 
+std\+::string \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a0858f3645892041d2a6714ee8f451747}{m\+\_\+topic\+Name}}
+\begin{DoxyCompactList}\small\item\em Name of this \mbox{\hyperlink{namespace_a_m_m}{A\+MM}} Data Type that is to be registered on the D\+DS network. \end{DoxyCompactList}\item 
+void($\ast$ \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a0fdfb42c6caba46664e048bacaf9ce81}{m\+\_\+on\+Event}} )(A \&, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T, class L, class A$>$\newline
+class A\+M\+M\+::\+Amm\+Data\+Type$<$ T, L, A, void $>$}
+
+\mbox{\hyperlink{namespace_a_m_m}{A\+MM}} template class for handling A\+M\+M-\/\+D\+DS topics.
+
+\begin{DoxyAttention}{Attention}
+This specialization should be used if a stand-\/alone function is being used to receive subscribed events. This specialization doesn\textquotesingle{}t manage a reference to another object.
+\end{DoxyAttention}
+The following template variables are examples of how to use this tempate. T = A\+M\+M\+::\+Assessment\+Pub\+Sub\+Type L = \mbox{\hyperlink{class_a_m_m_1_1_d_d_s___listeners_1_1_assessment_listener}{D\+D\+S\+\_\+\+Listeners\+::\+Assessment\+Listener}} A = A\+M\+M\+::\+Assessment 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a7d0fa8e7ebdda546ad2f2cf38bca10bb}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a7d0fa8e7ebdda546ad2f2cf38bca10bb}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!AmmDataType@{AmmDataType}}
+\index{AmmDataType@{AmmDataType}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{AmmDataType()}{AmmDataType()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+\mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::\mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{Amm\+Data\+Type}} (\begin{DoxyParamCaption}\item[{const std\+::string}]{topic\+Name,  }\item[{eprosima\+::fastrtps\+::\+Participant $\ast$}]{p,  }\item[{\mbox{\hyperlink{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener}{D\+D\+S\+\_\+\+Listeners\+::\+Pub\+Listener}} $\ast$}]{pl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for initializing an Amm Data Type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Name of this type that willb e registered on the D\+DS network. \\
+\hline
+{\em b} & D\+DS Participant that is managed from the D\+DS Manager. \\
+\hline
+{\em c} & D\+DS Publisher Listener that is managed from the D\+DS Manager. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a33278203e8c718ef582a7359ad9c2267}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a33278203e8c718ef582a7359ad9c2267}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!AmmDataType@{AmmDataType}}
+\index{AmmDataType@{AmmDataType}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{AmmDataType()}{AmmDataType()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+\mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::\mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{Amm\+Data\+Type}} (\begin{DoxyParamCaption}\item[{int \&}]{err,  }\item[{const std\+::string}]{topic\+Name,  }\item[{eprosima\+::fastrtps\+::\+Participant $\ast$}]{p,  }\item[{\mbox{\hyperlink{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener}{D\+D\+S\+\_\+\+Listeners\+::\+Pub\+Listener}} $\ast$}]{pl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for initializing an Amm Data Type.
+
+This is primarily used for error handling since the internal logic of this constructor can throw errors and end the routine prematurely. 
+\begin{DoxyParams}{Parameters}
+{\em a} & Error code output. Is 0 if routine is successful. \\
+\hline
+{\em b} & Name of this type that willb e registered on the D\+DS network. \\
+\hline
+{\em c} & D\+DS Participant that is managed from the D\+DS Manager. \\
+\hline
+{\em d} & D\+DS Publisher Listener that is managed from the D\+DS Manager. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_ab707cfddcaf08f149d867be25b38bc58}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_ab707cfddcaf08f149d867be25b38bc58}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!AmmDataType@{AmmDataType}}
+\index{AmmDataType@{AmmDataType}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{AmmDataType()}{AmmDataType()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+\mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::\mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{Amm\+Data\+Type}} (\begin{DoxyParamCaption}\item[{int \&}]{err,  }\item[{std\+::string \&}]{errmsg,  }\item[{const std\+::string}]{topic\+Name,  }\item[{eprosima\+::fastrtps\+::\+Participant $\ast$}]{p,  }\item[{\mbox{\hyperlink{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener}{D\+D\+S\+\_\+\+Listeners\+::\+Pub\+Listener}} $\ast$}]{pl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for initializing an Amm Data Type.
+
+This is primarily used for error handling since the internal logic of this constructor can throw errors and end the routine prematurely. 
+\begin{DoxyParams}{Parameters}
+{\em a} & Error code output. Is 0 if routine is successful. \\
+\hline
+{\em b} & Error message output describing the error if any. \\
+\hline
+{\em c} & Name of this type that willb e registered on the D\+DS network. \\
+\hline
+{\em d} & D\+DS Participant that is managed from the D\+DS Manager. \\
+\hline
+{\em e} & D\+DS Publisher Listener that is managed from the D\+DS Manager. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a6bd61bf24d2e541fc339a19383ac210c}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a6bd61bf24d2e541fc339a19383ac210c}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!````~AmmDataType@{$\sim$AmmDataType}}
+\index{````~AmmDataType@{$\sim$AmmDataType}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$AmmDataType()}{~AmmDataType()}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+\mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::$\sim$\mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{Amm\+Data\+Type}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Default deconstructor.
+
+Calls Force Delete when used. \begin{DoxyNote}{Note}
+It is safe to call the deconstructor on this as opposed to calling Shutdown since Force Delete will ensure that a cleanup routine is at least attempted if not already, however it is not recommened. 
+\end{DoxyNote}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_aa1c2e4c4b69e79330807b0cbb8cad8bd}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_aa1c2e4c4b69e79330807b0cbb8cad8bd}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!CreatePublisher@{CreatePublisher}}
+\index{CreatePublisher@{CreatePublisher}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{CreatePublisher()}{CreatePublisher()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+int \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::Create\+Publisher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates a Publisher for the Amm Data Type defined in this template.
+
+\begin{DoxyReturn}{Returns}
+0 if the Publisher is created successful. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a8cae22a25f77e97025a1f59b6de53d02}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a8cae22a25f77e97025a1f59b6de53d02}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!CreatePublisher@{CreatePublisher}}
+\index{CreatePublisher@{CreatePublisher}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{CreatePublisher()}{CreatePublisher()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+int \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::Create\+Publisher (\begin{DoxyParamCaption}\item[{std\+::string \&}]{errmsg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates a Publisher for the Amm Data Type defined in this template.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Error message output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the Publisher is created successful. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a0d726eeb525d096f9867aeb1f2865a42}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a0d726eeb525d096f9867aeb1f2865a42}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!CreateSubscriber@{CreateSubscriber}}
+\index{CreateSubscriber@{CreateSubscriber}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{CreateSubscriber()}{CreateSubscriber()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+int \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::Create\+Subscriber (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_listener_interface}{Listener\+Interface}} $\ast$}]{li,  }\item[{void($\ast$)(A \&, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$)}]{on\+Event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates a Subscriber for the Amm Data Type defined in this template.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Pointer to a Listener Interface for setting the Subscriber upstream. \\
+\hline
+{\em b} & Reference to a function for callback on subscription event. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the Subscriber is created successful or one already exists. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a144f1664b37024515e65ef43a1007b8d}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a144f1664b37024515e65ef43a1007b8d}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!CreateSubscriber@{CreateSubscriber}}
+\index{CreateSubscriber@{CreateSubscriber}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{CreateSubscriber()}{CreateSubscriber()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+int \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::Create\+Subscriber (\begin{DoxyParamCaption}\item[{std\+::string \&}]{err,  }\item[{\mbox{\hyperlink{class_listener_interface}{Listener\+Interface}} $\ast$}]{li,  }\item[{void($\ast$)(A \&, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$)}]{on\+Event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates a Subscriber for the Amm Data Type defined in this template.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Error message output. \\
+\hline
+{\em b} & Pointer to a Listener Interface for setting the Subscriber upstream. \\
+\hline
+{\em c} & Reference to a function for callback on subscription event. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the Subscriber is created successful or one already exists. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_aa32900500fdde282674987c98317fd33}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_aa32900500fdde282674987c98317fd33}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!Delete@{Delete}}
+\index{Delete@{Delete}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+int \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Delete this type and call cleanup routines for all associated types.
+
+\begin{DoxyNote}{Note}
+Does not actually call {\ttfamily delete} on this. 
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+0 if delete is successful. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a43741ee103995167e70ed776311a73b0}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a43741ee103995167e70ed776311a73b0}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!Delete@{Delete}}
+\index{Delete@{Delete}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+int \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::Delete (\begin{DoxyParamCaption}\item[{std\+::string \&}]{errmsg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Delete this type and call cleanup routines for all associated types.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Error message output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Does not actually call {\ttfamily delete} on this. 
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+0 if delete is successful. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_ad1312e0eef3ddc603063d17eb133dae5}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_ad1312e0eef3ddc603063d17eb133dae5}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!ForceDelete@{ForceDelete}}
+\index{ForceDelete@{ForceDelete}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{ForceDelete()}{ForceDelete()}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+void \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::Force\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Attempt to clean up all objects created or initialized by this class. \begin{DoxyNote}{Note}
+Will throw silent errors if any occur during cleanup, but will continue to remove all used objects. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_ad509efa7f73a2154a6b3db6ba1371b1b}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_ad509efa7f73a2154a6b3db6ba1371b1b}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!IsTypeRegistered@{IsTypeRegistered}}
+\index{IsTypeRegistered@{IsTypeRegistered}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{IsTypeRegistered()}{IsTypeRegistered()}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+bool \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::Is\+Type\+Registered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Is this Amm Data Type registered on the D\+DS network?
+
+Runs a check if the topic name defined in the constructor has been registered on the D\+DS network. \begin{DoxyReturn}{Returns}
+True if the name defined in the constructor is registered. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a1d233c80ef9941af0069baf0b7fbf335}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a1d233c80ef9941af0069baf0b7fbf335}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!OnEvent@{OnEvent}}
+\index{OnEvent@{OnEvent}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{OnEvent()}{OnEvent()}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+void \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::On\+Event (\begin{DoxyParamCaption}\item[{A \&}]{a,  }\item[{eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Callback for subscriber events.
+
+Calls the function pointer m\+\_\+on\+Event passing these same parameters. 
+\begin{DoxyParams}{Parameters}
+{\em a} & Reference to the Amm Data Object that is being recieved from the D\+DS network. \\
+\hline
+{\em b} & Sample Info provided by the Fast\+R\+T\+PS framework. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAttention}{Attention}
+This is called by the entity that implements Listener Interface, which for internal use is D\+DS Manager, using the appropriate function override. 
+\end{DoxyAttention}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_listener_interface}{Listener\+Interface}} 
+
+\mbox{\hyperlink{class_a_m_m_1_1_d_d_s_manager}{D\+D\+S\+Manager}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_ac653acb826566fade0000baeed9095b4}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_ac653acb826566fade0000baeed9095b4}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!RemovePublisher@{RemovePublisher}}
+\index{RemovePublisher@{RemovePublisher}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{RemovePublisher()}{RemovePublisher()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+int \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::Remove\+Publisher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Attempts to remove the Publisher associated with this type if one exists.
+
+\begin{DoxyReturn}{Returns}
+0 if removal is successful or if publisher doesn\textquotesingle{}t exist. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a9b390764ff8ed1b4f64fba19704ff311}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a9b390764ff8ed1b4f64fba19704ff311}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!RemovePublisher@{RemovePublisher}}
+\index{RemovePublisher@{RemovePublisher}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{RemovePublisher()}{RemovePublisher()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+int \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::Remove\+Publisher (\begin{DoxyParamCaption}\item[{std\+::string \&}]{errmsg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Attempts to remove the Publisher associated with this type if one exists.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Error message output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if removal is successful or if publisher doesn\textquotesingle{}t exist. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_ae7d9b0482e405b1cbc1b19e22f587e29}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_ae7d9b0482e405b1cbc1b19e22f587e29}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!RemoveSubscriber@{RemoveSubscriber}}
+\index{RemoveSubscriber@{RemoveSubscriber}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{RemoveSubscriber()}{RemoveSubscriber()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+int \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::Remove\+Subscriber (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Attempts to remove the Subscriber associated with this type if one exists.
+
+\begin{DoxyReturn}{Returns}
+0 if removal is successful or if subscriber doesn\textquotesingle{}t exist. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_aff91433f45e60f8c566d3aa44f80c564}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_aff91433f45e60f8c566d3aa44f80c564}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!RemoveSubscriber@{RemoveSubscriber}}
+\index{RemoveSubscriber@{RemoveSubscriber}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{RemoveSubscriber()}{RemoveSubscriber()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+int \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::Remove\+Subscriber (\begin{DoxyParamCaption}\item[{std\+::string \&}]{errmsg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Attempts to remove the Subscriber associated with this type if one exists.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Error message output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if removal is successful or if subscriber doesn\textquotesingle{}t exist. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_aa03c19216d7b2c0cffb8fa43d582be99}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_aa03c19216d7b2c0cffb8fa43d582be99}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!TopicName@{TopicName}}
+\index{TopicName@{TopicName}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{TopicName()}{TopicName()}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+std\+::string \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::Topic\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Topic Name Property.
+
+\begin{DoxyReturn}{Returns}
+Topic Name defined in the constructor of this type. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_ac28cd0723eb99da957493b90ee1b97c7}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_ac28cd0723eb99da957493b90ee1b97c7}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!Write@{Write}}
+\index{Write@{Write}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+int \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::Write (\begin{DoxyParamCaption}\item[{A \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Tells the Publisher to write type data to the D\+DS network.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Reference to the Amm Data Object that is to be written out to the D\+DS network. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the write is successful. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a301f002670882fda991fd45d42fd3443}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a301f002670882fda991fd45d42fd3443}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!Write@{Write}}
+\index{Write@{Write}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+int \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::Write (\begin{DoxyParamCaption}\item[{std\+::string \&}]{errmsg,  }\item[{A \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Tells the Publisher to write type data to the D\+DS network.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Error message output. \\
+\hline
+{\em b} & Reference to the Amm Data Object that is to be written out to the D\+DS network. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the write was successful. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a9ba3cf22dd17abfed4625217ddccd9ed}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a9ba3cf22dd17abfed4625217ddccd9ed}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!m\_isPubInit@{m\_isPubInit}}
+\index{m\_isPubInit@{m\_isPubInit}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{m\_isPubInit}{m\_isPubInit}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+bool \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::m\+\_\+is\+Pub\+Init = false\hspace{0.3cm}{\ttfamily [private]}}
+
+Is the publisher of this type initialized?
+
+\begin{DoxyNote}{Note}
+Prevents access to a null publisher pointer. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a860c25dc3a2dd094b9e88a0c27de1961}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a860c25dc3a2dd094b9e88a0c27de1961}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!m\_isSubInit@{m\_isSubInit}}
+\index{m\_isSubInit@{m\_isSubInit}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{m\_isSubInit}{m\_isSubInit}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+bool \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::m\+\_\+is\+Sub\+Init = false\hspace{0.3cm}{\ttfamily [private]}}
+
+Is the subscriber of this type initialized?
+
+\begin{DoxyNote}{Note}
+Prevent access to a null subscriber pointer. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a7c15a6a83a2da896ebf9371de8ac00d9}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a7c15a6a83a2da896ebf9371de8ac00d9}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!m\_listener@{m\_listener}}
+\index{m\_listener@{m\_listener}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{m\_listener}{m\_listener}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+L$\ast$ \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::m\+\_\+listener\hspace{0.3cm}{\ttfamily [private]}}
+
+Pointer to the Subscriber Listener defined in this template.
+
+\begin{DoxyNote}{Note}
+Is managed internally by this template class. 
+
+e.\+g. L = \mbox{\hyperlink{class_a_m_m_1_1_d_d_s___listeners_1_1_assessment_listener}{D\+D\+S\+\_\+\+Listeners\+::\+Assessment\+Listener}}. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a0fdfb42c6caba46664e048bacaf9ce81}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a0fdfb42c6caba46664e048bacaf9ce81}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!m\_onEvent@{m\_onEvent}}
+\index{m\_onEvent@{m\_onEvent}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{m\_onEvent}{m\_onEvent}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+void($\ast$ \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::m\+\_\+on\+Event) (A \&, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$)\hspace{0.3cm}{\ttfamily [private]}}
+
+Pointer to the function that is called when a subscribed event occurs.
+
+\begin{DoxyNote}{Note}
+Takes data from an object type that is defined by this template. 
+
+e.\+g A = A\+M\+M\+::\+Assessment. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a2e133331638c47916f9b54d279f8220a}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a2e133331638c47916f9b54d279f8220a}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!m\_participant@{m\_participant}}
+\index{m\_participant@{m\_participant}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{m\_participant}{m\_participant}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+eprosima\+::fastrtps\+::\+Participant$\ast$ \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::m\+\_\+participant\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pointer to the D\+DS Participant managed by the D\+DS Manager. 
+
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a12409c633b8e6a49fa19a081b1a8ce80}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a12409c633b8e6a49fa19a081b1a8ce80}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!m\_publisher@{m\_publisher}}
+\index{m\_publisher@{m\_publisher}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{m\_publisher}{m\_publisher}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+eprosima\+::fastrtps\+::\+Publisher$\ast$ \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::m\+\_\+publisher\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Publisher of the Amm Data Type defined by this template. 
+
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_aba2431bcc2b4e316ee6d6382b928ad15}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_aba2431bcc2b4e316ee6d6382b928ad15}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!m\_pubListener@{m\_pubListener}}
+\index{m\_pubListener@{m\_pubListener}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{m\_pubListener}{m\_pubListener}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+\mbox{\hyperlink{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener}{D\+D\+S\+\_\+\+Listeners\+::\+Pub\+Listener}}$\ast$ \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::m\+\_\+pub\+Listener\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pointer to the Publisher Listener managed by the D\+DS Manager. 
+
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a10ae227cf50fa3ed602962b0d078eab9}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a10ae227cf50fa3ed602962b0d078eab9}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!m\_subscriber@{m\_subscriber}}
+\index{m\_subscriber@{m\_subscriber}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{m\_subscriber}{m\_subscriber}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+eprosima\+::fastrtps\+::\+Subscriber$\ast$ \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::m\+\_\+subscriber\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Subscriber of the Amm Data Type defined by this template. 
+
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a0858f3645892041d2a6714ee8f451747}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_a0858f3645892041d2a6714ee8f451747}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!m\_topicName@{m\_topicName}}
+\index{m\_topicName@{m\_topicName}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{m\_topicName}{m\_topicName}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+std\+::string \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::m\+\_\+topic\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Name of this \mbox{\hyperlink{namespace_a_m_m}{A\+MM}} Data Type that is to be registered on the D\+DS network. 
+
+\mbox{\Hypertarget{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_ad1d45ae0068f65b618ba1626d1f310a1}\label{class_a_m_m_1_1_amm_data_type_3_01_t_00_01_l_00_01_a_00_01void_01_4_ad1d45ae0068f65b618ba1626d1f310a1}} 
+\index{AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}!m\_type@{m\_type}}
+\index{m\_type@{m\_type}!AMM::AmmDataType$<$ T, L, A, void $>$@{AMM::AmmDataType$<$ T, L, A, void $>$}}
+\doxysubsubsection{\texorpdfstring{m\_type}{m\_type}}
+{\footnotesize\ttfamily template$<$class T , class L , class A $>$ \\
+T$\ast$ \mbox{\hyperlink{class_a_m_m_1_1_amm_data_type}{A\+M\+M\+::\+Amm\+Data\+Type}}$<$ T, L, A, void $>$\+::m\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+Pointer to the Amm Pub\+Sub Type defined in this template.
+
+\begin{DoxyNote}{Note}
+Is managed internally by this template class. 
+
+e.\+g. T = A\+M\+M\+::\+Assessment\+Pub\+Sub\+Type 
+\end{DoxyNote}

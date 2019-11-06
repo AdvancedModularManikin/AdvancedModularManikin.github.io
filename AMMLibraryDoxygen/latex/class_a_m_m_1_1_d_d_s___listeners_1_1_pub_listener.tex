@@ -1,0 +1,83 @@
+\hypertarget{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener}{}\doxysection{A\+MM\+::D\+D\+S\+\_\+\+Listeners\+::Pub\+Listener Class Reference}
+\label{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener}\index{AMM::DDS\_Listeners::PubListener@{AMM::DDS\_Listeners::PubListener}}
+
+
+{\ttfamily \#include $<$D\+D\+S\+\_\+\+Listeners.\+h$>$}
+
+Inheritance diagram for A\+MM\+::D\+D\+S\+\_\+\+Listeners\+::Pub\+Listener\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener_aec0ec7323ffbbfd9dd8665a5933644c5}{Pub\+Listener}} ()
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener_a4ccf6a318bc388ee02a7c41b99f4a258}{$\sim$\+Pub\+Listener}} () override=default
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener_a286f4f7aa29a666ec77e107b185c30d7}{on\+Publication\+Matched}} (Publisher $\ast$pub, Matching\+Info \&info) override
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener_a4d0a79d30298f1e750b15cfda324ffe3}{Set\+Upstream}} (\mbox{\hyperlink{class_listener_interface}{Listener\+Interface}} $\ast$l)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener_afe19e51ff2b35bbeef85b4e88e0ea31a}{n\+\_\+matched}}
+\item 
+\mbox{\hyperlink{class_listener_interface}{Listener\+Interface}} $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener_ab670b762c510a571928e3c6e03e1ca73}{upstream}} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Default listener for publishers.
+
+\begin{DoxyNote}{Note}
+A single instance of this class may be used for all publishers. 
+\end{DoxyNote}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener_aec0ec7323ffbbfd9dd8665a5933644c5}\label{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener_aec0ec7323ffbbfd9dd8665a5933644c5}} 
+\index{AMM::DDS\_Listeners::PubListener@{AMM::DDS\_Listeners::PubListener}!PubListener@{PubListener}}
+\index{PubListener@{PubListener}!AMM::DDS\_Listeners::PubListener@{AMM::DDS\_Listeners::PubListener}}
+\doxysubsubsection{\texorpdfstring{PubListener()}{PubListener()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+D\+D\+S\+\_\+\+Listeners\+::\+Pub\+Listener\+::\+Pub\+Listener (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener_a4ccf6a318bc388ee02a7c41b99f4a258}\label{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener_a4ccf6a318bc388ee02a7c41b99f4a258}} 
+\index{AMM::DDS\_Listeners::PubListener@{AMM::DDS\_Listeners::PubListener}!````~PubListener@{$\sim$PubListener}}
+\index{````~PubListener@{$\sim$PubListener}!AMM::DDS\_Listeners::PubListener@{AMM::DDS\_Listeners::PubListener}}
+\doxysubsubsection{\texorpdfstring{$\sim$PubListener()}{~PubListener()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+D\+D\+S\+\_\+\+Listeners\+::\+Pub\+Listener\+::$\sim$\+Pub\+Listener (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener_a286f4f7aa29a666ec77e107b185c30d7}\label{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener_a286f4f7aa29a666ec77e107b185c30d7}} 
+\index{AMM::DDS\_Listeners::PubListener@{AMM::DDS\_Listeners::PubListener}!onPublicationMatched@{onPublicationMatched}}
+\index{onPublicationMatched@{onPublicationMatched}!AMM::DDS\_Listeners::PubListener@{AMM::DDS\_Listeners::PubListener}}
+\doxysubsubsection{\texorpdfstring{onPublicationMatched()}{onPublicationMatched()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+D\+D\+S\+\_\+\+Listeners\+::\+Pub\+Listener\+::on\+Publication\+Matched (\begin{DoxyParamCaption}\item[{Publisher $\ast$}]{pub,  }\item[{Matching\+Info \&}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener_a4d0a79d30298f1e750b15cfda324ffe3}\label{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener_a4d0a79d30298f1e750b15cfda324ffe3}} 
+\index{AMM::DDS\_Listeners::PubListener@{AMM::DDS\_Listeners::PubListener}!SetUpstream@{SetUpstream}}
+\index{SetUpstream@{SetUpstream}!AMM::DDS\_Listeners::PubListener@{AMM::DDS\_Listeners::PubListener}}
+\doxysubsubsection{\texorpdfstring{SetUpstream()}{SetUpstream()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+D\+D\+S\+\_\+\+Listeners\+::\+Pub\+Listener\+::\+Set\+Upstream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_listener_interface}{Listener\+Interface}} $\ast$}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener_afe19e51ff2b35bbeef85b4e88e0ea31a}\label{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener_afe19e51ff2b35bbeef85b4e88e0ea31a}} 
+\index{AMM::DDS\_Listeners::PubListener@{AMM::DDS\_Listeners::PubListener}!n\_matched@{n\_matched}}
+\index{n\_matched@{n\_matched}!AMM::DDS\_Listeners::PubListener@{AMM::DDS\_Listeners::PubListener}}
+\doxysubsubsection{\texorpdfstring{n\_matched}{n\_matched}}
+{\footnotesize\ttfamily int A\+M\+M\+::\+D\+D\+S\+\_\+\+Listeners\+::\+Pub\+Listener\+::n\+\_\+matched}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener_ab670b762c510a571928e3c6e03e1ca73}\label{class_a_m_m_1_1_d_d_s___listeners_1_1_pub_listener_ab670b762c510a571928e3c6e03e1ca73}} 
+\index{AMM::DDS\_Listeners::PubListener@{AMM::DDS\_Listeners::PubListener}!upstream@{upstream}}
+\index{upstream@{upstream}!AMM::DDS\_Listeners::PubListener@{AMM::DDS\_Listeners::PubListener}}
+\doxysubsubsection{\texorpdfstring{upstream}{upstream}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_listener_interface}{Listener\+Interface}}$\ast$ A\+M\+M\+::\+D\+D\+S\+\_\+\+Listeners\+::\+Pub\+Listener\+::upstream \{\}}
+

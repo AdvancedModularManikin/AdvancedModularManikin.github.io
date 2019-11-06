@@ -1,0 +1,129 @@
+\hypertarget{class_a_m_m_1_1_semantic___version_pub_sub_type}{}\doxysection{A\+MM\+::Semantic\+\_\+\+Version\+Pub\+Sub\+Type Class Reference}
+\label{class_a_m_m_1_1_semantic___version_pub_sub_type}\index{AMM::Semantic\_VersionPubSubType@{AMM::Semantic\_VersionPubSubType}}
+
+
+This class represents the Topic\+Data\+Type of the type \mbox{\hyperlink{class_a_m_m_1_1_semantic___version}{Semantic\+\_\+\+Version}} defined by the user in the I\+DL file.  
+
+
+
+
+{\ttfamily \#include $<$A\+M\+M\+\_\+\+Standard\+Pub\+Sub\+Types.\+h$>$}
+
+Inheritance diagram for A\+MM\+::Semantic\+\_\+\+Version\+Pub\+Sub\+Type\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_m_m_1_1_semantic___version_pub_sub_type}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{class_a_m_m_1_1_semantic___version}{Semantic\+\_\+\+Version}} \mbox{\hyperlink{class_a_m_m_1_1_semantic___version_pub_sub_type_abee2f9261d9fd432d5489b426fe6e036}{type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_semantic___version_pub_sub_type_afc0041349ff7a1a4dbd72305ef25b245}{Semantic\+\_\+\+Version\+Pub\+Sub\+Type}} ()
+\item 
+virtual \mbox{\hyperlink{class_a_m_m_1_1_semantic___version_pub_sub_type_a2c533a9519adbd63920f35f057d37e33}{$\sim$\+Semantic\+\_\+\+Version\+Pub\+Sub\+Type}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_semantic___version_pub_sub_type_a041a311df6ad76f76ccc290bc475b399}{serialize}} (void $\ast$data, eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$payload) override
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_semantic___version_pub_sub_type_a17ddf5768cc54fb53ed8ba571b4710ae}{deserialize}} (eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$payload, void $\ast$data) override
+\item 
+virtual std\+::function$<$ uint32\+\_\+t()$>$ \mbox{\hyperlink{class_a_m_m_1_1_semantic___version_pub_sub_type_a8ec9edad1a8bf43efbf8f865201df605}{get\+Serialized\+Size\+Provider}} (void $\ast$data) override
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_semantic___version_pub_sub_type_af9aad6e6e804c851761e0f90eb4256e7}{get\+Key}} (void $\ast$data, eprosima\+::fastrtps\+::rtps\+::\+Instance\+Handle\+\_\+t $\ast$ihandle, bool force\+\_\+md5=false) override
+\item 
+virtual void $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_semantic___version_pub_sub_type_ac0f6f8a71b85c23f5fbb294be9413011}{create\+Data}} () override
+\item 
+virtual void \mbox{\hyperlink{class_a_m_m_1_1_semantic___version_pub_sub_type_a60a2aa9fffee45069791d609f9ba77f3}{delete\+Data}} (void $\ast$data) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+M\+D5 \mbox{\hyperlink{class_a_m_m_1_1_semantic___version_pub_sub_type_af711caff26dbd5a73a4d1dba6abf1e75}{m\+\_\+md5}}
+\item 
+unsigned char $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_semantic___version_pub_sub_type_a7e4f56a74b38701b59d7e0725d568a1b}{m\+\_\+key\+Buffer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the Topic\+Data\+Type of the type \mbox{\hyperlink{class_a_m_m_1_1_semantic___version}{Semantic\+\_\+\+Version}} defined by the user in the I\+DL file. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_semantic___version_pub_sub_type_abee2f9261d9fd432d5489b426fe6e036}\label{class_a_m_m_1_1_semantic___version_pub_sub_type_abee2f9261d9fd432d5489b426fe6e036}} 
+\index{AMM::Semantic\_VersionPubSubType@{AMM::Semantic\_VersionPubSubType}!type@{type}}
+\index{type@{type}!AMM::Semantic\_VersionPubSubType@{AMM::Semantic\_VersionPubSubType}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{class_a_m_m_1_1_semantic___version}{Semantic\+\_\+\+Version}} \mbox{\hyperlink{class_a_m_m_1_1_semantic___version_pub_sub_type_abee2f9261d9fd432d5489b426fe6e036}{A\+M\+M\+::\+Semantic\+\_\+\+Version\+Pub\+Sub\+Type\+::type}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_semantic___version_pub_sub_type_afc0041349ff7a1a4dbd72305ef25b245}\label{class_a_m_m_1_1_semantic___version_pub_sub_type_afc0041349ff7a1a4dbd72305ef25b245}} 
+\index{AMM::Semantic\_VersionPubSubType@{AMM::Semantic\_VersionPubSubType}!Semantic\_VersionPubSubType@{Semantic\_VersionPubSubType}}
+\index{Semantic\_VersionPubSubType@{Semantic\_VersionPubSubType}!AMM::Semantic\_VersionPubSubType@{AMM::Semantic\_VersionPubSubType}}
+\doxysubsubsection{\texorpdfstring{Semantic\_VersionPubSubType()}{Semantic\_VersionPubSubType()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Semantic\+\_\+\+Version\+Pub\+Sub\+Type\+::\+Semantic\+\_\+\+Version\+Pub\+Sub\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_semantic___version_pub_sub_type_a2c533a9519adbd63920f35f057d37e33}\label{class_a_m_m_1_1_semantic___version_pub_sub_type_a2c533a9519adbd63920f35f057d37e33}} 
+\index{AMM::Semantic\_VersionPubSubType@{AMM::Semantic\_VersionPubSubType}!````~Semantic\_VersionPubSubType@{$\sim$Semantic\_VersionPubSubType}}
+\index{````~Semantic\_VersionPubSubType@{$\sim$Semantic\_VersionPubSubType}!AMM::Semantic\_VersionPubSubType@{AMM::Semantic\_VersionPubSubType}}
+\doxysubsubsection{\texorpdfstring{$\sim$Semantic\_VersionPubSubType()}{~Semantic\_VersionPubSubType()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Semantic\+\_\+\+Version\+Pub\+Sub\+Type\+::$\sim$\+Semantic\+\_\+\+Version\+Pub\+Sub\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_semantic___version_pub_sub_type_ac0f6f8a71b85c23f5fbb294be9413011}\label{class_a_m_m_1_1_semantic___version_pub_sub_type_ac0f6f8a71b85c23f5fbb294be9413011}} 
+\index{AMM::Semantic\_VersionPubSubType@{AMM::Semantic\_VersionPubSubType}!createData@{createData}}
+\index{createData@{createData}!AMM::Semantic\_VersionPubSubType@{AMM::Semantic\_VersionPubSubType}}
+\doxysubsubsection{\texorpdfstring{createData()}{createData()}}
+{\footnotesize\ttfamily void $\ast$ A\+M\+M\+::\+Semantic\+\_\+\+Version\+Pub\+Sub\+Type\+::create\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_semantic___version_pub_sub_type_a60a2aa9fffee45069791d609f9ba77f3}\label{class_a_m_m_1_1_semantic___version_pub_sub_type_a60a2aa9fffee45069791d609f9ba77f3}} 
+\index{AMM::Semantic\_VersionPubSubType@{AMM::Semantic\_VersionPubSubType}!deleteData@{deleteData}}
+\index{deleteData@{deleteData}!AMM::Semantic\_VersionPubSubType@{AMM::Semantic\_VersionPubSubType}}
+\doxysubsubsection{\texorpdfstring{deleteData()}{deleteData()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Semantic\+\_\+\+Version\+Pub\+Sub\+Type\+::delete\+Data (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_semantic___version_pub_sub_type_a17ddf5768cc54fb53ed8ba571b4710ae}\label{class_a_m_m_1_1_semantic___version_pub_sub_type_a17ddf5768cc54fb53ed8ba571b4710ae}} 
+\index{AMM::Semantic\_VersionPubSubType@{AMM::Semantic\_VersionPubSubType}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!AMM::Semantic\_VersionPubSubType@{AMM::Semantic\_VersionPubSubType}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Semantic\+\_\+\+Version\+Pub\+Sub\+Type\+::deserialize (\begin{DoxyParamCaption}\item[{eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$}]{payload,  }\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_semantic___version_pub_sub_type_af9aad6e6e804c851761e0f90eb4256e7}\label{class_a_m_m_1_1_semantic___version_pub_sub_type_af9aad6e6e804c851761e0f90eb4256e7}} 
+\index{AMM::Semantic\_VersionPubSubType@{AMM::Semantic\_VersionPubSubType}!getKey@{getKey}}
+\index{getKey@{getKey}!AMM::Semantic\_VersionPubSubType@{AMM::Semantic\_VersionPubSubType}}
+\doxysubsubsection{\texorpdfstring{getKey()}{getKey()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Semantic\+\_\+\+Version\+Pub\+Sub\+Type\+::get\+Key (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{eprosima\+::fastrtps\+::rtps\+::\+Instance\+Handle\+\_\+t $\ast$}]{ihandle,  }\item[{bool}]{force\+\_\+md5 = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_semantic___version_pub_sub_type_a8ec9edad1a8bf43efbf8f865201df605}\label{class_a_m_m_1_1_semantic___version_pub_sub_type_a8ec9edad1a8bf43efbf8f865201df605}} 
+\index{AMM::Semantic\_VersionPubSubType@{AMM::Semantic\_VersionPubSubType}!getSerializedSizeProvider@{getSerializedSizeProvider}}
+\index{getSerializedSizeProvider@{getSerializedSizeProvider}!AMM::Semantic\_VersionPubSubType@{AMM::Semantic\_VersionPubSubType}}
+\doxysubsubsection{\texorpdfstring{getSerializedSizeProvider()}{getSerializedSizeProvider()}}
+{\footnotesize\ttfamily std\+::function$<$ uint32\+\_\+t()$>$ A\+M\+M\+::\+Semantic\+\_\+\+Version\+Pub\+Sub\+Type\+::get\+Serialized\+Size\+Provider (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_semantic___version_pub_sub_type_a041a311df6ad76f76ccc290bc475b399}\label{class_a_m_m_1_1_semantic___version_pub_sub_type_a041a311df6ad76f76ccc290bc475b399}} 
+\index{AMM::Semantic\_VersionPubSubType@{AMM::Semantic\_VersionPubSubType}!serialize@{serialize}}
+\index{serialize@{serialize}!AMM::Semantic\_VersionPubSubType@{AMM::Semantic\_VersionPubSubType}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Semantic\+\_\+\+Version\+Pub\+Sub\+Type\+::serialize (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$}]{payload }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_semantic___version_pub_sub_type_a7e4f56a74b38701b59d7e0725d568a1b}\label{class_a_m_m_1_1_semantic___version_pub_sub_type_a7e4f56a74b38701b59d7e0725d568a1b}} 
+\index{AMM::Semantic\_VersionPubSubType@{AMM::Semantic\_VersionPubSubType}!m\_keyBuffer@{m\_keyBuffer}}
+\index{m\_keyBuffer@{m\_keyBuffer}!AMM::Semantic\_VersionPubSubType@{AMM::Semantic\_VersionPubSubType}}
+\doxysubsubsection{\texorpdfstring{m\_keyBuffer}{m\_keyBuffer}}
+{\footnotesize\ttfamily unsigned char$\ast$ A\+M\+M\+::\+Semantic\+\_\+\+Version\+Pub\+Sub\+Type\+::m\+\_\+key\+Buffer}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_semantic___version_pub_sub_type_af711caff26dbd5a73a4d1dba6abf1e75}\label{class_a_m_m_1_1_semantic___version_pub_sub_type_af711caff26dbd5a73a4d1dba6abf1e75}} 
+\index{AMM::Semantic\_VersionPubSubType@{AMM::Semantic\_VersionPubSubType}!m\_md5@{m\_md5}}
+\index{m\_md5@{m\_md5}!AMM::Semantic\_VersionPubSubType@{AMM::Semantic\_VersionPubSubType}}
+\doxysubsubsection{\texorpdfstring{m\_md5}{m\_md5}}
+{\footnotesize\ttfamily M\+D5 A\+M\+M\+::\+Semantic\+\_\+\+Version\+Pub\+Sub\+Type\+::m\+\_\+md5}
+

@@ -1,0 +1,129 @@
+\hypertarget{class_a_m_m_1_1_omitted_event_pub_sub_type}{}\doxysection{A\+MM\+::Omitted\+Event\+Pub\+Sub\+Type Class Reference}
+\label{class_a_m_m_1_1_omitted_event_pub_sub_type}\index{AMM::OmittedEventPubSubType@{AMM::OmittedEventPubSubType}}
+
+
+This class represents the Topic\+Data\+Type of the type \mbox{\hyperlink{class_a_m_m_1_1_omitted_event}{Omitted\+Event}} defined by the user in the I\+DL file.  
+
+
+
+
+{\ttfamily \#include $<$A\+M\+M\+\_\+\+Standard\+Pub\+Sub\+Types.\+h$>$}
+
+Inheritance diagram for A\+MM\+::Omitted\+Event\+Pub\+Sub\+Type\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_m_m_1_1_omitted_event_pub_sub_type}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{class_a_m_m_1_1_omitted_event}{Omitted\+Event}} \mbox{\hyperlink{class_a_m_m_1_1_omitted_event_pub_sub_type_ada461b24ed9ec4bfb3ee0a21a9288243}{type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_omitted_event_pub_sub_type_a84d47007d0a5d32db9408de1e4f60636}{Omitted\+Event\+Pub\+Sub\+Type}} ()
+\item 
+virtual \mbox{\hyperlink{class_a_m_m_1_1_omitted_event_pub_sub_type_abec0748588d3b03b91fb196cb71fe0d3}{$\sim$\+Omitted\+Event\+Pub\+Sub\+Type}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_omitted_event_pub_sub_type_a2b3d97f187e75a00ae80afaa550fd343}{serialize}} (void $\ast$data, eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$payload) override
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_omitted_event_pub_sub_type_a34a5fccc7bf762f9b250f69525e7f5e9}{deserialize}} (eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$payload, void $\ast$data) override
+\item 
+virtual std\+::function$<$ uint32\+\_\+t()$>$ \mbox{\hyperlink{class_a_m_m_1_1_omitted_event_pub_sub_type_ae1767702a2927741baafc6fa5eec2c66}{get\+Serialized\+Size\+Provider}} (void $\ast$data) override
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_omitted_event_pub_sub_type_a25fb0f2c3269c96e7f9b68ccc5102362}{get\+Key}} (void $\ast$data, eprosima\+::fastrtps\+::rtps\+::\+Instance\+Handle\+\_\+t $\ast$ihandle, bool force\+\_\+md5=false) override
+\item 
+virtual void $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_omitted_event_pub_sub_type_af870462faed89767ca71997704074db5}{create\+Data}} () override
+\item 
+virtual void \mbox{\hyperlink{class_a_m_m_1_1_omitted_event_pub_sub_type_a5ffe70bff5e7632855ce9590667e4428}{delete\+Data}} (void $\ast$data) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+M\+D5 \mbox{\hyperlink{class_a_m_m_1_1_omitted_event_pub_sub_type_a0d26523d0cc5e91d4878be95e1cf0471}{m\+\_\+md5}}
+\item 
+unsigned char $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_omitted_event_pub_sub_type_ad53070bd3c86433962cd55e01114180d}{m\+\_\+key\+Buffer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the Topic\+Data\+Type of the type \mbox{\hyperlink{class_a_m_m_1_1_omitted_event}{Omitted\+Event}} defined by the user in the I\+DL file. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_omitted_event_pub_sub_type_ada461b24ed9ec4bfb3ee0a21a9288243}\label{class_a_m_m_1_1_omitted_event_pub_sub_type_ada461b24ed9ec4bfb3ee0a21a9288243}} 
+\index{AMM::OmittedEventPubSubType@{AMM::OmittedEventPubSubType}!type@{type}}
+\index{type@{type}!AMM::OmittedEventPubSubType@{AMM::OmittedEventPubSubType}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{class_a_m_m_1_1_omitted_event}{Omitted\+Event}} \mbox{\hyperlink{class_a_m_m_1_1_omitted_event_pub_sub_type_ada461b24ed9ec4bfb3ee0a21a9288243}{A\+M\+M\+::\+Omitted\+Event\+Pub\+Sub\+Type\+::type}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_omitted_event_pub_sub_type_a84d47007d0a5d32db9408de1e4f60636}\label{class_a_m_m_1_1_omitted_event_pub_sub_type_a84d47007d0a5d32db9408de1e4f60636}} 
+\index{AMM::OmittedEventPubSubType@{AMM::OmittedEventPubSubType}!OmittedEventPubSubType@{OmittedEventPubSubType}}
+\index{OmittedEventPubSubType@{OmittedEventPubSubType}!AMM::OmittedEventPubSubType@{AMM::OmittedEventPubSubType}}
+\doxysubsubsection{\texorpdfstring{OmittedEventPubSubType()}{OmittedEventPubSubType()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Omitted\+Event\+Pub\+Sub\+Type\+::\+Omitted\+Event\+Pub\+Sub\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_omitted_event_pub_sub_type_abec0748588d3b03b91fb196cb71fe0d3}\label{class_a_m_m_1_1_omitted_event_pub_sub_type_abec0748588d3b03b91fb196cb71fe0d3}} 
+\index{AMM::OmittedEventPubSubType@{AMM::OmittedEventPubSubType}!````~OmittedEventPubSubType@{$\sim$OmittedEventPubSubType}}
+\index{````~OmittedEventPubSubType@{$\sim$OmittedEventPubSubType}!AMM::OmittedEventPubSubType@{AMM::OmittedEventPubSubType}}
+\doxysubsubsection{\texorpdfstring{$\sim$OmittedEventPubSubType()}{~OmittedEventPubSubType()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Omitted\+Event\+Pub\+Sub\+Type\+::$\sim$\+Omitted\+Event\+Pub\+Sub\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_omitted_event_pub_sub_type_af870462faed89767ca71997704074db5}\label{class_a_m_m_1_1_omitted_event_pub_sub_type_af870462faed89767ca71997704074db5}} 
+\index{AMM::OmittedEventPubSubType@{AMM::OmittedEventPubSubType}!createData@{createData}}
+\index{createData@{createData}!AMM::OmittedEventPubSubType@{AMM::OmittedEventPubSubType}}
+\doxysubsubsection{\texorpdfstring{createData()}{createData()}}
+{\footnotesize\ttfamily void $\ast$ A\+M\+M\+::\+Omitted\+Event\+Pub\+Sub\+Type\+::create\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_omitted_event_pub_sub_type_a5ffe70bff5e7632855ce9590667e4428}\label{class_a_m_m_1_1_omitted_event_pub_sub_type_a5ffe70bff5e7632855ce9590667e4428}} 
+\index{AMM::OmittedEventPubSubType@{AMM::OmittedEventPubSubType}!deleteData@{deleteData}}
+\index{deleteData@{deleteData}!AMM::OmittedEventPubSubType@{AMM::OmittedEventPubSubType}}
+\doxysubsubsection{\texorpdfstring{deleteData()}{deleteData()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Omitted\+Event\+Pub\+Sub\+Type\+::delete\+Data (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_omitted_event_pub_sub_type_a34a5fccc7bf762f9b250f69525e7f5e9}\label{class_a_m_m_1_1_omitted_event_pub_sub_type_a34a5fccc7bf762f9b250f69525e7f5e9}} 
+\index{AMM::OmittedEventPubSubType@{AMM::OmittedEventPubSubType}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!AMM::OmittedEventPubSubType@{AMM::OmittedEventPubSubType}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Omitted\+Event\+Pub\+Sub\+Type\+::deserialize (\begin{DoxyParamCaption}\item[{eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$}]{payload,  }\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_omitted_event_pub_sub_type_a25fb0f2c3269c96e7f9b68ccc5102362}\label{class_a_m_m_1_1_omitted_event_pub_sub_type_a25fb0f2c3269c96e7f9b68ccc5102362}} 
+\index{AMM::OmittedEventPubSubType@{AMM::OmittedEventPubSubType}!getKey@{getKey}}
+\index{getKey@{getKey}!AMM::OmittedEventPubSubType@{AMM::OmittedEventPubSubType}}
+\doxysubsubsection{\texorpdfstring{getKey()}{getKey()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Omitted\+Event\+Pub\+Sub\+Type\+::get\+Key (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{eprosima\+::fastrtps\+::rtps\+::\+Instance\+Handle\+\_\+t $\ast$}]{ihandle,  }\item[{bool}]{force\+\_\+md5 = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_omitted_event_pub_sub_type_ae1767702a2927741baafc6fa5eec2c66}\label{class_a_m_m_1_1_omitted_event_pub_sub_type_ae1767702a2927741baafc6fa5eec2c66}} 
+\index{AMM::OmittedEventPubSubType@{AMM::OmittedEventPubSubType}!getSerializedSizeProvider@{getSerializedSizeProvider}}
+\index{getSerializedSizeProvider@{getSerializedSizeProvider}!AMM::OmittedEventPubSubType@{AMM::OmittedEventPubSubType}}
+\doxysubsubsection{\texorpdfstring{getSerializedSizeProvider()}{getSerializedSizeProvider()}}
+{\footnotesize\ttfamily std\+::function$<$ uint32\+\_\+t()$>$ A\+M\+M\+::\+Omitted\+Event\+Pub\+Sub\+Type\+::get\+Serialized\+Size\+Provider (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_omitted_event_pub_sub_type_a2b3d97f187e75a00ae80afaa550fd343}\label{class_a_m_m_1_1_omitted_event_pub_sub_type_a2b3d97f187e75a00ae80afaa550fd343}} 
+\index{AMM::OmittedEventPubSubType@{AMM::OmittedEventPubSubType}!serialize@{serialize}}
+\index{serialize@{serialize}!AMM::OmittedEventPubSubType@{AMM::OmittedEventPubSubType}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Omitted\+Event\+Pub\+Sub\+Type\+::serialize (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$}]{payload }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_omitted_event_pub_sub_type_ad53070bd3c86433962cd55e01114180d}\label{class_a_m_m_1_1_omitted_event_pub_sub_type_ad53070bd3c86433962cd55e01114180d}} 
+\index{AMM::OmittedEventPubSubType@{AMM::OmittedEventPubSubType}!m\_keyBuffer@{m\_keyBuffer}}
+\index{m\_keyBuffer@{m\_keyBuffer}!AMM::OmittedEventPubSubType@{AMM::OmittedEventPubSubType}}
+\doxysubsubsection{\texorpdfstring{m\_keyBuffer}{m\_keyBuffer}}
+{\footnotesize\ttfamily unsigned char$\ast$ A\+M\+M\+::\+Omitted\+Event\+Pub\+Sub\+Type\+::m\+\_\+key\+Buffer}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_omitted_event_pub_sub_type_a0d26523d0cc5e91d4878be95e1cf0471}\label{class_a_m_m_1_1_omitted_event_pub_sub_type_a0d26523d0cc5e91d4878be95e1cf0471}} 
+\index{AMM::OmittedEventPubSubType@{AMM::OmittedEventPubSubType}!m\_md5@{m\_md5}}
+\index{m\_md5@{m\_md5}!AMM::OmittedEventPubSubType@{AMM::OmittedEventPubSubType}}
+\doxysubsubsection{\texorpdfstring{m\_md5}{m\_md5}}
+{\footnotesize\ttfamily M\+D5 A\+M\+M\+::\+Omitted\+Event\+Pub\+Sub\+Type\+::m\+\_\+md5}
+

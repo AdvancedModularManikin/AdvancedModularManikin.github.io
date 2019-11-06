@@ -1,0 +1,129 @@
+\hypertarget{class_a_m_m_1_1_tick_pub_sub_type}{}\doxysection{A\+MM\+::Tick\+Pub\+Sub\+Type Class Reference}
+\label{class_a_m_m_1_1_tick_pub_sub_type}\index{AMM::TickPubSubType@{AMM::TickPubSubType}}
+
+
+This class represents the Topic\+Data\+Type of the type \mbox{\hyperlink{class_a_m_m_1_1_tick}{Tick}} defined by the user in the I\+DL file.  
+
+
+
+
+{\ttfamily \#include $<$A\+M\+M\+\_\+\+Extended\+Pub\+Sub\+Types.\+h$>$}
+
+Inheritance diagram for A\+MM\+::Tick\+Pub\+Sub\+Type\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_m_m_1_1_tick_pub_sub_type}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{class_a_m_m_1_1_tick}{Tick}} \mbox{\hyperlink{class_a_m_m_1_1_tick_pub_sub_type_a6d5ed8584b8d7334c925a2fa640f456b}{type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_tick_pub_sub_type_a0bb4c7499a5b9ff7f993adeed07c6cc8}{Tick\+Pub\+Sub\+Type}} ()
+\item 
+virtual \mbox{\hyperlink{class_a_m_m_1_1_tick_pub_sub_type_a45a340c2ff94b7283742955725f33891}{$\sim$\+Tick\+Pub\+Sub\+Type}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_tick_pub_sub_type_ae69ff9aeeca96399dd54f3faa39c552b}{serialize}} (void $\ast$data, eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$payload) override
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_tick_pub_sub_type_addfa0b3466f3b2e1883b1b8891721df9}{deserialize}} (eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$payload, void $\ast$data) override
+\item 
+virtual std\+::function$<$ uint32\+\_\+t()$>$ \mbox{\hyperlink{class_a_m_m_1_1_tick_pub_sub_type_a28cf2867afa05a7025e40a0df73bb6b1}{get\+Serialized\+Size\+Provider}} (void $\ast$data) override
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_tick_pub_sub_type_ae5aa88755704505e6cb84561a6a26c8a}{get\+Key}} (void $\ast$data, eprosima\+::fastrtps\+::rtps\+::\+Instance\+Handle\+\_\+t $\ast$ihandle, bool force\+\_\+md5=false) override
+\item 
+virtual void $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_tick_pub_sub_type_a3a5163d9204db7c50fd3cf036284f942}{create\+Data}} () override
+\item 
+virtual void \mbox{\hyperlink{class_a_m_m_1_1_tick_pub_sub_type_aeaf11f97ed31bbf240e2e39ad234e40b}{delete\+Data}} (void $\ast$data) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+M\+D5 \mbox{\hyperlink{class_a_m_m_1_1_tick_pub_sub_type_a43a2a42fcb28ecc994248410ec119ddf}{m\+\_\+md5}}
+\item 
+unsigned char $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_tick_pub_sub_type_aba38f2f7138594a16531e7d96b488935}{m\+\_\+key\+Buffer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the Topic\+Data\+Type of the type \mbox{\hyperlink{class_a_m_m_1_1_tick}{Tick}} defined by the user in the I\+DL file. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_tick_pub_sub_type_a6d5ed8584b8d7334c925a2fa640f456b}\label{class_a_m_m_1_1_tick_pub_sub_type_a6d5ed8584b8d7334c925a2fa640f456b}} 
+\index{AMM::TickPubSubType@{AMM::TickPubSubType}!type@{type}}
+\index{type@{type}!AMM::TickPubSubType@{AMM::TickPubSubType}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{class_a_m_m_1_1_tick}{Tick}} \mbox{\hyperlink{class_a_m_m_1_1_tick_pub_sub_type_a6d5ed8584b8d7334c925a2fa640f456b}{A\+M\+M\+::\+Tick\+Pub\+Sub\+Type\+::type}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_tick_pub_sub_type_a0bb4c7499a5b9ff7f993adeed07c6cc8}\label{class_a_m_m_1_1_tick_pub_sub_type_a0bb4c7499a5b9ff7f993adeed07c6cc8}} 
+\index{AMM::TickPubSubType@{AMM::TickPubSubType}!TickPubSubType@{TickPubSubType}}
+\index{TickPubSubType@{TickPubSubType}!AMM::TickPubSubType@{AMM::TickPubSubType}}
+\doxysubsubsection{\texorpdfstring{TickPubSubType()}{TickPubSubType()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Tick\+Pub\+Sub\+Type\+::\+Tick\+Pub\+Sub\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_tick_pub_sub_type_a45a340c2ff94b7283742955725f33891}\label{class_a_m_m_1_1_tick_pub_sub_type_a45a340c2ff94b7283742955725f33891}} 
+\index{AMM::TickPubSubType@{AMM::TickPubSubType}!````~TickPubSubType@{$\sim$TickPubSubType}}
+\index{````~TickPubSubType@{$\sim$TickPubSubType}!AMM::TickPubSubType@{AMM::TickPubSubType}}
+\doxysubsubsection{\texorpdfstring{$\sim$TickPubSubType()}{~TickPubSubType()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Tick\+Pub\+Sub\+Type\+::$\sim$\+Tick\+Pub\+Sub\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_tick_pub_sub_type_a3a5163d9204db7c50fd3cf036284f942}\label{class_a_m_m_1_1_tick_pub_sub_type_a3a5163d9204db7c50fd3cf036284f942}} 
+\index{AMM::TickPubSubType@{AMM::TickPubSubType}!createData@{createData}}
+\index{createData@{createData}!AMM::TickPubSubType@{AMM::TickPubSubType}}
+\doxysubsubsection{\texorpdfstring{createData()}{createData()}}
+{\footnotesize\ttfamily void $\ast$ A\+M\+M\+::\+Tick\+Pub\+Sub\+Type\+::create\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_tick_pub_sub_type_aeaf11f97ed31bbf240e2e39ad234e40b}\label{class_a_m_m_1_1_tick_pub_sub_type_aeaf11f97ed31bbf240e2e39ad234e40b}} 
+\index{AMM::TickPubSubType@{AMM::TickPubSubType}!deleteData@{deleteData}}
+\index{deleteData@{deleteData}!AMM::TickPubSubType@{AMM::TickPubSubType}}
+\doxysubsubsection{\texorpdfstring{deleteData()}{deleteData()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Tick\+Pub\+Sub\+Type\+::delete\+Data (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_tick_pub_sub_type_addfa0b3466f3b2e1883b1b8891721df9}\label{class_a_m_m_1_1_tick_pub_sub_type_addfa0b3466f3b2e1883b1b8891721df9}} 
+\index{AMM::TickPubSubType@{AMM::TickPubSubType}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!AMM::TickPubSubType@{AMM::TickPubSubType}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Tick\+Pub\+Sub\+Type\+::deserialize (\begin{DoxyParamCaption}\item[{eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$}]{payload,  }\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_tick_pub_sub_type_ae5aa88755704505e6cb84561a6a26c8a}\label{class_a_m_m_1_1_tick_pub_sub_type_ae5aa88755704505e6cb84561a6a26c8a}} 
+\index{AMM::TickPubSubType@{AMM::TickPubSubType}!getKey@{getKey}}
+\index{getKey@{getKey}!AMM::TickPubSubType@{AMM::TickPubSubType}}
+\doxysubsubsection{\texorpdfstring{getKey()}{getKey()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Tick\+Pub\+Sub\+Type\+::get\+Key (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{eprosima\+::fastrtps\+::rtps\+::\+Instance\+Handle\+\_\+t $\ast$}]{ihandle,  }\item[{bool}]{force\+\_\+md5 = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_tick_pub_sub_type_a28cf2867afa05a7025e40a0df73bb6b1}\label{class_a_m_m_1_1_tick_pub_sub_type_a28cf2867afa05a7025e40a0df73bb6b1}} 
+\index{AMM::TickPubSubType@{AMM::TickPubSubType}!getSerializedSizeProvider@{getSerializedSizeProvider}}
+\index{getSerializedSizeProvider@{getSerializedSizeProvider}!AMM::TickPubSubType@{AMM::TickPubSubType}}
+\doxysubsubsection{\texorpdfstring{getSerializedSizeProvider()}{getSerializedSizeProvider()}}
+{\footnotesize\ttfamily std\+::function$<$ uint32\+\_\+t()$>$ A\+M\+M\+::\+Tick\+Pub\+Sub\+Type\+::get\+Serialized\+Size\+Provider (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_tick_pub_sub_type_ae69ff9aeeca96399dd54f3faa39c552b}\label{class_a_m_m_1_1_tick_pub_sub_type_ae69ff9aeeca96399dd54f3faa39c552b}} 
+\index{AMM::TickPubSubType@{AMM::TickPubSubType}!serialize@{serialize}}
+\index{serialize@{serialize}!AMM::TickPubSubType@{AMM::TickPubSubType}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Tick\+Pub\+Sub\+Type\+::serialize (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$}]{payload }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_tick_pub_sub_type_aba38f2f7138594a16531e7d96b488935}\label{class_a_m_m_1_1_tick_pub_sub_type_aba38f2f7138594a16531e7d96b488935}} 
+\index{AMM::TickPubSubType@{AMM::TickPubSubType}!m\_keyBuffer@{m\_keyBuffer}}
+\index{m\_keyBuffer@{m\_keyBuffer}!AMM::TickPubSubType@{AMM::TickPubSubType}}
+\doxysubsubsection{\texorpdfstring{m\_keyBuffer}{m\_keyBuffer}}
+{\footnotesize\ttfamily unsigned char$\ast$ A\+M\+M\+::\+Tick\+Pub\+Sub\+Type\+::m\+\_\+key\+Buffer}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_tick_pub_sub_type_a43a2a42fcb28ecc994248410ec119ddf}\label{class_a_m_m_1_1_tick_pub_sub_type_a43a2a42fcb28ecc994248410ec119ddf}} 
+\index{AMM::TickPubSubType@{AMM::TickPubSubType}!m\_md5@{m\_md5}}
+\index{m\_md5@{m\_md5}!AMM::TickPubSubType@{AMM::TickPubSubType}}
+\doxysubsubsection{\texorpdfstring{m\_md5}{m\_md5}}
+{\footnotesize\ttfamily M\+D5 A\+M\+M\+::\+Tick\+Pub\+Sub\+Type\+::m\+\_\+md5}
+

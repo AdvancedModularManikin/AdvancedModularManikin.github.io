@@ -1,0 +1,129 @@
+\hypertarget{class_a_m_m_1_1_simulation_control_pub_sub_type}{}\doxysection{A\+MM\+::Simulation\+Control\+Pub\+Sub\+Type Class Reference}
+\label{class_a_m_m_1_1_simulation_control_pub_sub_type}\index{AMM::SimulationControlPubSubType@{AMM::SimulationControlPubSubType}}
+
+
+This class represents the Topic\+Data\+Type of the type \mbox{\hyperlink{class_a_m_m_1_1_simulation_control}{Simulation\+Control}} defined by the user in the I\+DL file.  
+
+
+
+
+{\ttfamily \#include $<$A\+M\+M\+\_\+\+Standard\+Pub\+Sub\+Types.\+h$>$}
+
+Inheritance diagram for A\+MM\+::Simulation\+Control\+Pub\+Sub\+Type\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_m_m_1_1_simulation_control_pub_sub_type}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{class_a_m_m_1_1_simulation_control}{Simulation\+Control}} \mbox{\hyperlink{class_a_m_m_1_1_simulation_control_pub_sub_type_a9fe3d8491e54d7aabf1dca8f7b794a4d}{type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_simulation_control_pub_sub_type_a0f29b8d4fecd68f7a990f092e2ca8fa4}{Simulation\+Control\+Pub\+Sub\+Type}} ()
+\item 
+virtual \mbox{\hyperlink{class_a_m_m_1_1_simulation_control_pub_sub_type_a7288ee108fe3f0a85fc2b7922ebc395e}{$\sim$\+Simulation\+Control\+Pub\+Sub\+Type}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_simulation_control_pub_sub_type_a2c4144857497f07ced41a71c5c16eb91}{serialize}} (void $\ast$data, eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$payload) override
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_simulation_control_pub_sub_type_ac924d074879cd184338651f4e1745390}{deserialize}} (eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$payload, void $\ast$data) override
+\item 
+virtual std\+::function$<$ uint32\+\_\+t()$>$ \mbox{\hyperlink{class_a_m_m_1_1_simulation_control_pub_sub_type_a7c45dd3c716ebb6e9a9aed21c3cea6c0}{get\+Serialized\+Size\+Provider}} (void $\ast$data) override
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_simulation_control_pub_sub_type_a3a1bc95f5f4e9d5ba4b7da7b37bbba46}{get\+Key}} (void $\ast$data, eprosima\+::fastrtps\+::rtps\+::\+Instance\+Handle\+\_\+t $\ast$ihandle, bool force\+\_\+md5=false) override
+\item 
+virtual void $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_simulation_control_pub_sub_type_aefa55198f386a60b5df98fe5691bead1}{create\+Data}} () override
+\item 
+virtual void \mbox{\hyperlink{class_a_m_m_1_1_simulation_control_pub_sub_type_ab1ef17933cf7c4f95ad7b417ab605a1c}{delete\+Data}} (void $\ast$data) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+M\+D5 \mbox{\hyperlink{class_a_m_m_1_1_simulation_control_pub_sub_type_aa5336a87c7cf30c27a2215b6abbc13ae}{m\+\_\+md5}}
+\item 
+unsigned char $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_simulation_control_pub_sub_type_ab418f1d8f19da06b8b561efd65fa13fc}{m\+\_\+key\+Buffer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the Topic\+Data\+Type of the type \mbox{\hyperlink{class_a_m_m_1_1_simulation_control}{Simulation\+Control}} defined by the user in the I\+DL file. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_control_pub_sub_type_a9fe3d8491e54d7aabf1dca8f7b794a4d}\label{class_a_m_m_1_1_simulation_control_pub_sub_type_a9fe3d8491e54d7aabf1dca8f7b794a4d}} 
+\index{AMM::SimulationControlPubSubType@{AMM::SimulationControlPubSubType}!type@{type}}
+\index{type@{type}!AMM::SimulationControlPubSubType@{AMM::SimulationControlPubSubType}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{class_a_m_m_1_1_simulation_control}{Simulation\+Control}} \mbox{\hyperlink{class_a_m_m_1_1_simulation_control_pub_sub_type_a9fe3d8491e54d7aabf1dca8f7b794a4d}{A\+M\+M\+::\+Simulation\+Control\+Pub\+Sub\+Type\+::type}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_control_pub_sub_type_a0f29b8d4fecd68f7a990f092e2ca8fa4}\label{class_a_m_m_1_1_simulation_control_pub_sub_type_a0f29b8d4fecd68f7a990f092e2ca8fa4}} 
+\index{AMM::SimulationControlPubSubType@{AMM::SimulationControlPubSubType}!SimulationControlPubSubType@{SimulationControlPubSubType}}
+\index{SimulationControlPubSubType@{SimulationControlPubSubType}!AMM::SimulationControlPubSubType@{AMM::SimulationControlPubSubType}}
+\doxysubsubsection{\texorpdfstring{SimulationControlPubSubType()}{SimulationControlPubSubType()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Simulation\+Control\+Pub\+Sub\+Type\+::\+Simulation\+Control\+Pub\+Sub\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_control_pub_sub_type_a7288ee108fe3f0a85fc2b7922ebc395e}\label{class_a_m_m_1_1_simulation_control_pub_sub_type_a7288ee108fe3f0a85fc2b7922ebc395e}} 
+\index{AMM::SimulationControlPubSubType@{AMM::SimulationControlPubSubType}!````~SimulationControlPubSubType@{$\sim$SimulationControlPubSubType}}
+\index{````~SimulationControlPubSubType@{$\sim$SimulationControlPubSubType}!AMM::SimulationControlPubSubType@{AMM::SimulationControlPubSubType}}
+\doxysubsubsection{\texorpdfstring{$\sim$SimulationControlPubSubType()}{~SimulationControlPubSubType()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Simulation\+Control\+Pub\+Sub\+Type\+::$\sim$\+Simulation\+Control\+Pub\+Sub\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_control_pub_sub_type_aefa55198f386a60b5df98fe5691bead1}\label{class_a_m_m_1_1_simulation_control_pub_sub_type_aefa55198f386a60b5df98fe5691bead1}} 
+\index{AMM::SimulationControlPubSubType@{AMM::SimulationControlPubSubType}!createData@{createData}}
+\index{createData@{createData}!AMM::SimulationControlPubSubType@{AMM::SimulationControlPubSubType}}
+\doxysubsubsection{\texorpdfstring{createData()}{createData()}}
+{\footnotesize\ttfamily void $\ast$ A\+M\+M\+::\+Simulation\+Control\+Pub\+Sub\+Type\+::create\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_control_pub_sub_type_ab1ef17933cf7c4f95ad7b417ab605a1c}\label{class_a_m_m_1_1_simulation_control_pub_sub_type_ab1ef17933cf7c4f95ad7b417ab605a1c}} 
+\index{AMM::SimulationControlPubSubType@{AMM::SimulationControlPubSubType}!deleteData@{deleteData}}
+\index{deleteData@{deleteData}!AMM::SimulationControlPubSubType@{AMM::SimulationControlPubSubType}}
+\doxysubsubsection{\texorpdfstring{deleteData()}{deleteData()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Simulation\+Control\+Pub\+Sub\+Type\+::delete\+Data (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_control_pub_sub_type_ac924d074879cd184338651f4e1745390}\label{class_a_m_m_1_1_simulation_control_pub_sub_type_ac924d074879cd184338651f4e1745390}} 
+\index{AMM::SimulationControlPubSubType@{AMM::SimulationControlPubSubType}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!AMM::SimulationControlPubSubType@{AMM::SimulationControlPubSubType}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Simulation\+Control\+Pub\+Sub\+Type\+::deserialize (\begin{DoxyParamCaption}\item[{eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$}]{payload,  }\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_control_pub_sub_type_a3a1bc95f5f4e9d5ba4b7da7b37bbba46}\label{class_a_m_m_1_1_simulation_control_pub_sub_type_a3a1bc95f5f4e9d5ba4b7da7b37bbba46}} 
+\index{AMM::SimulationControlPubSubType@{AMM::SimulationControlPubSubType}!getKey@{getKey}}
+\index{getKey@{getKey}!AMM::SimulationControlPubSubType@{AMM::SimulationControlPubSubType}}
+\doxysubsubsection{\texorpdfstring{getKey()}{getKey()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Simulation\+Control\+Pub\+Sub\+Type\+::get\+Key (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{eprosima\+::fastrtps\+::rtps\+::\+Instance\+Handle\+\_\+t $\ast$}]{ihandle,  }\item[{bool}]{force\+\_\+md5 = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_control_pub_sub_type_a7c45dd3c716ebb6e9a9aed21c3cea6c0}\label{class_a_m_m_1_1_simulation_control_pub_sub_type_a7c45dd3c716ebb6e9a9aed21c3cea6c0}} 
+\index{AMM::SimulationControlPubSubType@{AMM::SimulationControlPubSubType}!getSerializedSizeProvider@{getSerializedSizeProvider}}
+\index{getSerializedSizeProvider@{getSerializedSizeProvider}!AMM::SimulationControlPubSubType@{AMM::SimulationControlPubSubType}}
+\doxysubsubsection{\texorpdfstring{getSerializedSizeProvider()}{getSerializedSizeProvider()}}
+{\footnotesize\ttfamily std\+::function$<$ uint32\+\_\+t()$>$ A\+M\+M\+::\+Simulation\+Control\+Pub\+Sub\+Type\+::get\+Serialized\+Size\+Provider (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_control_pub_sub_type_a2c4144857497f07ced41a71c5c16eb91}\label{class_a_m_m_1_1_simulation_control_pub_sub_type_a2c4144857497f07ced41a71c5c16eb91}} 
+\index{AMM::SimulationControlPubSubType@{AMM::SimulationControlPubSubType}!serialize@{serialize}}
+\index{serialize@{serialize}!AMM::SimulationControlPubSubType@{AMM::SimulationControlPubSubType}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Simulation\+Control\+Pub\+Sub\+Type\+::serialize (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$}]{payload }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_control_pub_sub_type_ab418f1d8f19da06b8b561efd65fa13fc}\label{class_a_m_m_1_1_simulation_control_pub_sub_type_ab418f1d8f19da06b8b561efd65fa13fc}} 
+\index{AMM::SimulationControlPubSubType@{AMM::SimulationControlPubSubType}!m\_keyBuffer@{m\_keyBuffer}}
+\index{m\_keyBuffer@{m\_keyBuffer}!AMM::SimulationControlPubSubType@{AMM::SimulationControlPubSubType}}
+\doxysubsubsection{\texorpdfstring{m\_keyBuffer}{m\_keyBuffer}}
+{\footnotesize\ttfamily unsigned char$\ast$ A\+M\+M\+::\+Simulation\+Control\+Pub\+Sub\+Type\+::m\+\_\+key\+Buffer}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_control_pub_sub_type_aa5336a87c7cf30c27a2215b6abbc13ae}\label{class_a_m_m_1_1_simulation_control_pub_sub_type_aa5336a87c7cf30c27a2215b6abbc13ae}} 
+\index{AMM::SimulationControlPubSubType@{AMM::SimulationControlPubSubType}!m\_md5@{m\_md5}}
+\index{m\_md5@{m\_md5}!AMM::SimulationControlPubSubType@{AMM::SimulationControlPubSubType}}
+\doxysubsubsection{\texorpdfstring{m\_md5}{m\_md5}}
+{\footnotesize\ttfamily M\+D5 A\+M\+M\+::\+Simulation\+Control\+Pub\+Sub\+Type\+::m\+\_\+md5}
+

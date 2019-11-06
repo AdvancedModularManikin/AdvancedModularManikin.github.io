@@ -1,0 +1,129 @@
+\hypertarget{class_a_m_m_1_1_operational_description_pub_sub_type}{}\doxysection{A\+MM\+::Operational\+Description\+Pub\+Sub\+Type Class Reference}
+\label{class_a_m_m_1_1_operational_description_pub_sub_type}\index{AMM::OperationalDescriptionPubSubType@{AMM::OperationalDescriptionPubSubType}}
+
+
+This class represents the Topic\+Data\+Type of the type \mbox{\hyperlink{class_a_m_m_1_1_operational_description}{Operational\+Description}} defined by the user in the I\+DL file.  
+
+
+
+
+{\ttfamily \#include $<$A\+M\+M\+\_\+\+Standard\+Pub\+Sub\+Types.\+h$>$}
+
+Inheritance diagram for A\+MM\+::Operational\+Description\+Pub\+Sub\+Type\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_m_m_1_1_operational_description_pub_sub_type}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{class_a_m_m_1_1_operational_description}{Operational\+Description}} \mbox{\hyperlink{class_a_m_m_1_1_operational_description_pub_sub_type_a034e620b621edde840b2db72a365015e}{type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_operational_description_pub_sub_type_aae2680ed902a3dcef560c18cce5d9a96}{Operational\+Description\+Pub\+Sub\+Type}} ()
+\item 
+virtual \mbox{\hyperlink{class_a_m_m_1_1_operational_description_pub_sub_type_a8932bdc1696ef3f4f61b5b2c84a34ec5}{$\sim$\+Operational\+Description\+Pub\+Sub\+Type}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_operational_description_pub_sub_type_a6ff5b7f63b6fcf32af12bae54176ab5b}{serialize}} (void $\ast$data, eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$payload) override
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_operational_description_pub_sub_type_a15a5cab82cde507f95a3f89d67c4efdc}{deserialize}} (eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$payload, void $\ast$data) override
+\item 
+virtual std\+::function$<$ uint32\+\_\+t()$>$ \mbox{\hyperlink{class_a_m_m_1_1_operational_description_pub_sub_type_a982c2e06b93d5aab1a9c6cf5208d1d03}{get\+Serialized\+Size\+Provider}} (void $\ast$data) override
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_operational_description_pub_sub_type_ae73e873d6e0df9dda0daeaeb6dcaf48d}{get\+Key}} (void $\ast$data, eprosima\+::fastrtps\+::rtps\+::\+Instance\+Handle\+\_\+t $\ast$ihandle, bool force\+\_\+md5=false) override
+\item 
+virtual void $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_operational_description_pub_sub_type_a33ed09892e12467ff9979fb48911d69f}{create\+Data}} () override
+\item 
+virtual void \mbox{\hyperlink{class_a_m_m_1_1_operational_description_pub_sub_type_aba414ae9524594069a3f4c0fa3c64cba}{delete\+Data}} (void $\ast$data) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+M\+D5 \mbox{\hyperlink{class_a_m_m_1_1_operational_description_pub_sub_type_acfe17ebeec00d8e6f88e3104c1f3a609}{m\+\_\+md5}}
+\item 
+unsigned char $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_operational_description_pub_sub_type_afb22cce52174d0683a2c44f5e8e63111}{m\+\_\+key\+Buffer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the Topic\+Data\+Type of the type \mbox{\hyperlink{class_a_m_m_1_1_operational_description}{Operational\+Description}} defined by the user in the I\+DL file. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_operational_description_pub_sub_type_a034e620b621edde840b2db72a365015e}\label{class_a_m_m_1_1_operational_description_pub_sub_type_a034e620b621edde840b2db72a365015e}} 
+\index{AMM::OperationalDescriptionPubSubType@{AMM::OperationalDescriptionPubSubType}!type@{type}}
+\index{type@{type}!AMM::OperationalDescriptionPubSubType@{AMM::OperationalDescriptionPubSubType}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{class_a_m_m_1_1_operational_description}{Operational\+Description}} \mbox{\hyperlink{class_a_m_m_1_1_operational_description_pub_sub_type_a034e620b621edde840b2db72a365015e}{A\+M\+M\+::\+Operational\+Description\+Pub\+Sub\+Type\+::type}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_operational_description_pub_sub_type_aae2680ed902a3dcef560c18cce5d9a96}\label{class_a_m_m_1_1_operational_description_pub_sub_type_aae2680ed902a3dcef560c18cce5d9a96}} 
+\index{AMM::OperationalDescriptionPubSubType@{AMM::OperationalDescriptionPubSubType}!OperationalDescriptionPubSubType@{OperationalDescriptionPubSubType}}
+\index{OperationalDescriptionPubSubType@{OperationalDescriptionPubSubType}!AMM::OperationalDescriptionPubSubType@{AMM::OperationalDescriptionPubSubType}}
+\doxysubsubsection{\texorpdfstring{OperationalDescriptionPubSubType()}{OperationalDescriptionPubSubType()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Operational\+Description\+Pub\+Sub\+Type\+::\+Operational\+Description\+Pub\+Sub\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_operational_description_pub_sub_type_a8932bdc1696ef3f4f61b5b2c84a34ec5}\label{class_a_m_m_1_1_operational_description_pub_sub_type_a8932bdc1696ef3f4f61b5b2c84a34ec5}} 
+\index{AMM::OperationalDescriptionPubSubType@{AMM::OperationalDescriptionPubSubType}!````~OperationalDescriptionPubSubType@{$\sim$OperationalDescriptionPubSubType}}
+\index{````~OperationalDescriptionPubSubType@{$\sim$OperationalDescriptionPubSubType}!AMM::OperationalDescriptionPubSubType@{AMM::OperationalDescriptionPubSubType}}
+\doxysubsubsection{\texorpdfstring{$\sim$OperationalDescriptionPubSubType()}{~OperationalDescriptionPubSubType()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Operational\+Description\+Pub\+Sub\+Type\+::$\sim$\+Operational\+Description\+Pub\+Sub\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_operational_description_pub_sub_type_a33ed09892e12467ff9979fb48911d69f}\label{class_a_m_m_1_1_operational_description_pub_sub_type_a33ed09892e12467ff9979fb48911d69f}} 
+\index{AMM::OperationalDescriptionPubSubType@{AMM::OperationalDescriptionPubSubType}!createData@{createData}}
+\index{createData@{createData}!AMM::OperationalDescriptionPubSubType@{AMM::OperationalDescriptionPubSubType}}
+\doxysubsubsection{\texorpdfstring{createData()}{createData()}}
+{\footnotesize\ttfamily void $\ast$ A\+M\+M\+::\+Operational\+Description\+Pub\+Sub\+Type\+::create\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_operational_description_pub_sub_type_aba414ae9524594069a3f4c0fa3c64cba}\label{class_a_m_m_1_1_operational_description_pub_sub_type_aba414ae9524594069a3f4c0fa3c64cba}} 
+\index{AMM::OperationalDescriptionPubSubType@{AMM::OperationalDescriptionPubSubType}!deleteData@{deleteData}}
+\index{deleteData@{deleteData}!AMM::OperationalDescriptionPubSubType@{AMM::OperationalDescriptionPubSubType}}
+\doxysubsubsection{\texorpdfstring{deleteData()}{deleteData()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Operational\+Description\+Pub\+Sub\+Type\+::delete\+Data (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_operational_description_pub_sub_type_a15a5cab82cde507f95a3f89d67c4efdc}\label{class_a_m_m_1_1_operational_description_pub_sub_type_a15a5cab82cde507f95a3f89d67c4efdc}} 
+\index{AMM::OperationalDescriptionPubSubType@{AMM::OperationalDescriptionPubSubType}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!AMM::OperationalDescriptionPubSubType@{AMM::OperationalDescriptionPubSubType}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Operational\+Description\+Pub\+Sub\+Type\+::deserialize (\begin{DoxyParamCaption}\item[{eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$}]{payload,  }\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_operational_description_pub_sub_type_ae73e873d6e0df9dda0daeaeb6dcaf48d}\label{class_a_m_m_1_1_operational_description_pub_sub_type_ae73e873d6e0df9dda0daeaeb6dcaf48d}} 
+\index{AMM::OperationalDescriptionPubSubType@{AMM::OperationalDescriptionPubSubType}!getKey@{getKey}}
+\index{getKey@{getKey}!AMM::OperationalDescriptionPubSubType@{AMM::OperationalDescriptionPubSubType}}
+\doxysubsubsection{\texorpdfstring{getKey()}{getKey()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Operational\+Description\+Pub\+Sub\+Type\+::get\+Key (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{eprosima\+::fastrtps\+::rtps\+::\+Instance\+Handle\+\_\+t $\ast$}]{ihandle,  }\item[{bool}]{force\+\_\+md5 = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_operational_description_pub_sub_type_a982c2e06b93d5aab1a9c6cf5208d1d03}\label{class_a_m_m_1_1_operational_description_pub_sub_type_a982c2e06b93d5aab1a9c6cf5208d1d03}} 
+\index{AMM::OperationalDescriptionPubSubType@{AMM::OperationalDescriptionPubSubType}!getSerializedSizeProvider@{getSerializedSizeProvider}}
+\index{getSerializedSizeProvider@{getSerializedSizeProvider}!AMM::OperationalDescriptionPubSubType@{AMM::OperationalDescriptionPubSubType}}
+\doxysubsubsection{\texorpdfstring{getSerializedSizeProvider()}{getSerializedSizeProvider()}}
+{\footnotesize\ttfamily std\+::function$<$ uint32\+\_\+t()$>$ A\+M\+M\+::\+Operational\+Description\+Pub\+Sub\+Type\+::get\+Serialized\+Size\+Provider (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_operational_description_pub_sub_type_a6ff5b7f63b6fcf32af12bae54176ab5b}\label{class_a_m_m_1_1_operational_description_pub_sub_type_a6ff5b7f63b6fcf32af12bae54176ab5b}} 
+\index{AMM::OperationalDescriptionPubSubType@{AMM::OperationalDescriptionPubSubType}!serialize@{serialize}}
+\index{serialize@{serialize}!AMM::OperationalDescriptionPubSubType@{AMM::OperationalDescriptionPubSubType}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Operational\+Description\+Pub\+Sub\+Type\+::serialize (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$}]{payload }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_operational_description_pub_sub_type_afb22cce52174d0683a2c44f5e8e63111}\label{class_a_m_m_1_1_operational_description_pub_sub_type_afb22cce52174d0683a2c44f5e8e63111}} 
+\index{AMM::OperationalDescriptionPubSubType@{AMM::OperationalDescriptionPubSubType}!m\_keyBuffer@{m\_keyBuffer}}
+\index{m\_keyBuffer@{m\_keyBuffer}!AMM::OperationalDescriptionPubSubType@{AMM::OperationalDescriptionPubSubType}}
+\doxysubsubsection{\texorpdfstring{m\_keyBuffer}{m\_keyBuffer}}
+{\footnotesize\ttfamily unsigned char$\ast$ A\+M\+M\+::\+Operational\+Description\+Pub\+Sub\+Type\+::m\+\_\+key\+Buffer}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_operational_description_pub_sub_type_acfe17ebeec00d8e6f88e3104c1f3a609}\label{class_a_m_m_1_1_operational_description_pub_sub_type_acfe17ebeec00d8e6f88e3104c1f3a609}} 
+\index{AMM::OperationalDescriptionPubSubType@{AMM::OperationalDescriptionPubSubType}!m\_md5@{m\_md5}}
+\index{m\_md5@{m\_md5}!AMM::OperationalDescriptionPubSubType@{AMM::OperationalDescriptionPubSubType}}
+\doxysubsubsection{\texorpdfstring{m\_md5}{m\_md5}}
+{\footnotesize\ttfamily M\+D5 A\+M\+M\+::\+Operational\+Description\+Pub\+Sub\+Type\+::m\+\_\+md5}
+

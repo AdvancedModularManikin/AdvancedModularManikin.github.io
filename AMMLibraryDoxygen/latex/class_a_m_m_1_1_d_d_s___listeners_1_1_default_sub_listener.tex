@@ -1,0 +1,107 @@
+\hypertarget{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener}{}\doxysection{A\+MM\+::D\+D\+S\+\_\+\+Listeners\+::Default\+Sub\+Listener Class Reference}
+\label{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener}\index{AMM::DDS\_Listeners::DefaultSubListener@{AMM::DDS\_Listeners::DefaultSubListener}}
+
+
+{\ttfamily \#include $<$D\+D\+S\+\_\+\+Listeners.\+h$>$}
+
+Inheritance diagram for A\+MM\+::D\+D\+S\+\_\+\+Listeners\+::Default\+Sub\+Listener\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener_a320f7bb1372be231daaf60876c5fcba2}{Default\+Sub\+Listener}} ()
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener_a4d0509d2916aecd45774f8a1e85ab324}{$\sim$\+Default\+Sub\+Listener}} () override=default
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener_aa8b21d760bca82a56f55c43e62e9de36}{on\+Subscription\+Matched}} (Subscriber $\ast$sub, Matching\+Info \&info) override
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener_a6671fc5e4daedb64074a569e8eba4d15}{on\+New\+Data\+Message}} (Subscriber $\ast$sub) override
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener_ad826694db3fac64c5fcf3fe8a0a44276}{Set\+Upstream}} (\mbox{\hyperlink{class_listener_interface}{Listener\+Interface}} $\ast$l)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Sample\+Info\+\_\+t \mbox{\hyperlink{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener_ac7b2aac77e1ffb77ca044994d76017f4}{m\+\_\+info}}
+\item 
+int \mbox{\hyperlink{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener_a620b39a170203b1981c34a74f49bb2ec}{n\+\_\+matched}}
+\item 
+int \mbox{\hyperlink{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener_a8d138bacf334de89a24c1d327ccae13e}{n\+\_\+msg}}
+\item 
+\mbox{\hyperlink{class_listener_interface}{Listener\+Interface}} $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener_a8ef816b3e6d7c394c1861520740b5f5f}{upstream}} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Default listener for generic subscribers.
+
+\begin{DoxyNote}{Note}
+Not very useful by it self. Used as a base class for other type-\/specifics listeners. 
+\end{DoxyNote}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener_a320f7bb1372be231daaf60876c5fcba2}\label{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener_a320f7bb1372be231daaf60876c5fcba2}} 
+\index{AMM::DDS\_Listeners::DefaultSubListener@{AMM::DDS\_Listeners::DefaultSubListener}!DefaultSubListener@{DefaultSubListener}}
+\index{DefaultSubListener@{DefaultSubListener}!AMM::DDS\_Listeners::DefaultSubListener@{AMM::DDS\_Listeners::DefaultSubListener}}
+\doxysubsubsection{\texorpdfstring{DefaultSubListener()}{DefaultSubListener()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+D\+D\+S\+\_\+\+Listeners\+::\+Default\+Sub\+Listener\+::\+Default\+Sub\+Listener (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener_a4d0509d2916aecd45774f8a1e85ab324}\label{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener_a4d0509d2916aecd45774f8a1e85ab324}} 
+\index{AMM::DDS\_Listeners::DefaultSubListener@{AMM::DDS\_Listeners::DefaultSubListener}!````~DefaultSubListener@{$\sim$DefaultSubListener}}
+\index{````~DefaultSubListener@{$\sim$DefaultSubListener}!AMM::DDS\_Listeners::DefaultSubListener@{AMM::DDS\_Listeners::DefaultSubListener}}
+\doxysubsubsection{\texorpdfstring{$\sim$DefaultSubListener()}{~DefaultSubListener()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+D\+D\+S\+\_\+\+Listeners\+::\+Default\+Sub\+Listener\+::$\sim$\+Default\+Sub\+Listener (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener_a6671fc5e4daedb64074a569e8eba4d15}\label{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener_a6671fc5e4daedb64074a569e8eba4d15}} 
+\index{AMM::DDS\_Listeners::DefaultSubListener@{AMM::DDS\_Listeners::DefaultSubListener}!onNewDataMessage@{onNewDataMessage}}
+\index{onNewDataMessage@{onNewDataMessage}!AMM::DDS\_Listeners::DefaultSubListener@{AMM::DDS\_Listeners::DefaultSubListener}}
+\doxysubsubsection{\texorpdfstring{onNewDataMessage()}{onNewDataMessage()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+D\+D\+S\+\_\+\+Listeners\+::\+Default\+Sub\+Listener\+::on\+New\+Data\+Message (\begin{DoxyParamCaption}\item[{Subscriber $\ast$}]{sub }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener_aa8b21d760bca82a56f55c43e62e9de36}\label{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener_aa8b21d760bca82a56f55c43e62e9de36}} 
+\index{AMM::DDS\_Listeners::DefaultSubListener@{AMM::DDS\_Listeners::DefaultSubListener}!onSubscriptionMatched@{onSubscriptionMatched}}
+\index{onSubscriptionMatched@{onSubscriptionMatched}!AMM::DDS\_Listeners::DefaultSubListener@{AMM::DDS\_Listeners::DefaultSubListener}}
+\doxysubsubsection{\texorpdfstring{onSubscriptionMatched()}{onSubscriptionMatched()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+D\+D\+S\+\_\+\+Listeners\+::\+Default\+Sub\+Listener\+::on\+Subscription\+Matched (\begin{DoxyParamCaption}\item[{Subscriber $\ast$}]{sub,  }\item[{Matching\+Info \&}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener_ad826694db3fac64c5fcf3fe8a0a44276}\label{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener_ad826694db3fac64c5fcf3fe8a0a44276}} 
+\index{AMM::DDS\_Listeners::DefaultSubListener@{AMM::DDS\_Listeners::DefaultSubListener}!SetUpstream@{SetUpstream}}
+\index{SetUpstream@{SetUpstream}!AMM::DDS\_Listeners::DefaultSubListener@{AMM::DDS\_Listeners::DefaultSubListener}}
+\doxysubsubsection{\texorpdfstring{SetUpstream()}{SetUpstream()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+D\+D\+S\+\_\+\+Listeners\+::\+Default\+Sub\+Listener\+::\+Set\+Upstream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_listener_interface}{Listener\+Interface}} $\ast$}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener_ac7b2aac77e1ffb77ca044994d76017f4}\label{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener_ac7b2aac77e1ffb77ca044994d76017f4}} 
+\index{AMM::DDS\_Listeners::DefaultSubListener@{AMM::DDS\_Listeners::DefaultSubListener}!m\_info@{m\_info}}
+\index{m\_info@{m\_info}!AMM::DDS\_Listeners::DefaultSubListener@{AMM::DDS\_Listeners::DefaultSubListener}}
+\doxysubsubsection{\texorpdfstring{m\_info}{m\_info}}
+{\footnotesize\ttfamily Sample\+Info\+\_\+t A\+M\+M\+::\+D\+D\+S\+\_\+\+Listeners\+::\+Default\+Sub\+Listener\+::m\+\_\+info}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener_a620b39a170203b1981c34a74f49bb2ec}\label{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener_a620b39a170203b1981c34a74f49bb2ec}} 
+\index{AMM::DDS\_Listeners::DefaultSubListener@{AMM::DDS\_Listeners::DefaultSubListener}!n\_matched@{n\_matched}}
+\index{n\_matched@{n\_matched}!AMM::DDS\_Listeners::DefaultSubListener@{AMM::DDS\_Listeners::DefaultSubListener}}
+\doxysubsubsection{\texorpdfstring{n\_matched}{n\_matched}}
+{\footnotesize\ttfamily int A\+M\+M\+::\+D\+D\+S\+\_\+\+Listeners\+::\+Default\+Sub\+Listener\+::n\+\_\+matched}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener_a8d138bacf334de89a24c1d327ccae13e}\label{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener_a8d138bacf334de89a24c1d327ccae13e}} 
+\index{AMM::DDS\_Listeners::DefaultSubListener@{AMM::DDS\_Listeners::DefaultSubListener}!n\_msg@{n\_msg}}
+\index{n\_msg@{n\_msg}!AMM::DDS\_Listeners::DefaultSubListener@{AMM::DDS\_Listeners::DefaultSubListener}}
+\doxysubsubsection{\texorpdfstring{n\_msg}{n\_msg}}
+{\footnotesize\ttfamily int A\+M\+M\+::\+D\+D\+S\+\_\+\+Listeners\+::\+Default\+Sub\+Listener\+::n\+\_\+msg}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener_a8ef816b3e6d7c394c1861520740b5f5f}\label{class_a_m_m_1_1_d_d_s___listeners_1_1_default_sub_listener_a8ef816b3e6d7c394c1861520740b5f5f}} 
+\index{AMM::DDS\_Listeners::DefaultSubListener@{AMM::DDS\_Listeners::DefaultSubListener}!upstream@{upstream}}
+\index{upstream@{upstream}!AMM::DDS\_Listeners::DefaultSubListener@{AMM::DDS\_Listeners::DefaultSubListener}}
+\doxysubsubsection{\texorpdfstring{upstream}{upstream}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_listener_interface}{Listener\+Interface}}$\ast$ A\+M\+M\+::\+D\+D\+S\+\_\+\+Listeners\+::\+Default\+Sub\+Listener\+::upstream \{\}}
+

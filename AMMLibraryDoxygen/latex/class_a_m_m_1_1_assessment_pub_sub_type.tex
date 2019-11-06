@@ -1,0 +1,129 @@
+\hypertarget{class_a_m_m_1_1_assessment_pub_sub_type}{}\doxysection{A\+MM\+::Assessment\+Pub\+Sub\+Type Class Reference}
+\label{class_a_m_m_1_1_assessment_pub_sub_type}\index{AMM::AssessmentPubSubType@{AMM::AssessmentPubSubType}}
+
+
+This class represents the Topic\+Data\+Type of the type \mbox{\hyperlink{class_a_m_m_1_1_assessment}{Assessment}} defined by the user in the I\+DL file.  
+
+
+
+
+{\ttfamily \#include $<$A\+M\+M\+\_\+\+Standard\+Pub\+Sub\+Types.\+h$>$}
+
+Inheritance diagram for A\+MM\+::Assessment\+Pub\+Sub\+Type\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_m_m_1_1_assessment_pub_sub_type}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{class_a_m_m_1_1_assessment}{Assessment}} \mbox{\hyperlink{class_a_m_m_1_1_assessment_pub_sub_type_aafa763d4f3f6eb407772c9c9d3293c50}{type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_assessment_pub_sub_type_af69984f3c187b6447365018d4fdf4818}{Assessment\+Pub\+Sub\+Type}} ()
+\item 
+virtual \mbox{\hyperlink{class_a_m_m_1_1_assessment_pub_sub_type_a8f5552c11490fbe87efcf8606a75077f}{$\sim$\+Assessment\+Pub\+Sub\+Type}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_assessment_pub_sub_type_aa4bb9cdf2d0217953095964c33d0daf7}{serialize}} (void $\ast$data, eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$payload) override
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_assessment_pub_sub_type_a9752eaa134141c8738e7872ecc290d9d}{deserialize}} (eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$payload, void $\ast$data) override
+\item 
+virtual std\+::function$<$ uint32\+\_\+t()$>$ \mbox{\hyperlink{class_a_m_m_1_1_assessment_pub_sub_type_aa098e7db2f7a5eb10da84ef946708473}{get\+Serialized\+Size\+Provider}} (void $\ast$data) override
+\item 
+virtual bool \mbox{\hyperlink{class_a_m_m_1_1_assessment_pub_sub_type_a91e0032f02d7d056cbe33cb96a4cb933}{get\+Key}} (void $\ast$data, eprosima\+::fastrtps\+::rtps\+::\+Instance\+Handle\+\_\+t $\ast$ihandle, bool force\+\_\+md5=false) override
+\item 
+virtual void $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_assessment_pub_sub_type_a992aa17ef4708c7210afbc719aac764a}{create\+Data}} () override
+\item 
+virtual void \mbox{\hyperlink{class_a_m_m_1_1_assessment_pub_sub_type_a1fc2a161b7748071d637da75e31e9c31}{delete\+Data}} (void $\ast$data) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+M\+D5 \mbox{\hyperlink{class_a_m_m_1_1_assessment_pub_sub_type_abab1c9e6db079b1766cd3211916d0161}{m\+\_\+md5}}
+\item 
+unsigned char $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_assessment_pub_sub_type_a18602d450c7f602540f177546516aa1f}{m\+\_\+key\+Buffer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the Topic\+Data\+Type of the type \mbox{\hyperlink{class_a_m_m_1_1_assessment}{Assessment}} defined by the user in the I\+DL file. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_assessment_pub_sub_type_aafa763d4f3f6eb407772c9c9d3293c50}\label{class_a_m_m_1_1_assessment_pub_sub_type_aafa763d4f3f6eb407772c9c9d3293c50}} 
+\index{AMM::AssessmentPubSubType@{AMM::AssessmentPubSubType}!type@{type}}
+\index{type@{type}!AMM::AssessmentPubSubType@{AMM::AssessmentPubSubType}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{class_a_m_m_1_1_assessment}{Assessment}} \mbox{\hyperlink{class_a_m_m_1_1_assessment_pub_sub_type_aafa763d4f3f6eb407772c9c9d3293c50}{A\+M\+M\+::\+Assessment\+Pub\+Sub\+Type\+::type}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_assessment_pub_sub_type_af69984f3c187b6447365018d4fdf4818}\label{class_a_m_m_1_1_assessment_pub_sub_type_af69984f3c187b6447365018d4fdf4818}} 
+\index{AMM::AssessmentPubSubType@{AMM::AssessmentPubSubType}!AssessmentPubSubType@{AssessmentPubSubType}}
+\index{AssessmentPubSubType@{AssessmentPubSubType}!AMM::AssessmentPubSubType@{AMM::AssessmentPubSubType}}
+\doxysubsubsection{\texorpdfstring{AssessmentPubSubType()}{AssessmentPubSubType()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Assessment\+Pub\+Sub\+Type\+::\+Assessment\+Pub\+Sub\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_assessment_pub_sub_type_a8f5552c11490fbe87efcf8606a75077f}\label{class_a_m_m_1_1_assessment_pub_sub_type_a8f5552c11490fbe87efcf8606a75077f}} 
+\index{AMM::AssessmentPubSubType@{AMM::AssessmentPubSubType}!````~AssessmentPubSubType@{$\sim$AssessmentPubSubType}}
+\index{````~AssessmentPubSubType@{$\sim$AssessmentPubSubType}!AMM::AssessmentPubSubType@{AMM::AssessmentPubSubType}}
+\doxysubsubsection{\texorpdfstring{$\sim$AssessmentPubSubType()}{~AssessmentPubSubType()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Assessment\+Pub\+Sub\+Type\+::$\sim$\+Assessment\+Pub\+Sub\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_assessment_pub_sub_type_a992aa17ef4708c7210afbc719aac764a}\label{class_a_m_m_1_1_assessment_pub_sub_type_a992aa17ef4708c7210afbc719aac764a}} 
+\index{AMM::AssessmentPubSubType@{AMM::AssessmentPubSubType}!createData@{createData}}
+\index{createData@{createData}!AMM::AssessmentPubSubType@{AMM::AssessmentPubSubType}}
+\doxysubsubsection{\texorpdfstring{createData()}{createData()}}
+{\footnotesize\ttfamily void $\ast$ A\+M\+M\+::\+Assessment\+Pub\+Sub\+Type\+::create\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_assessment_pub_sub_type_a1fc2a161b7748071d637da75e31e9c31}\label{class_a_m_m_1_1_assessment_pub_sub_type_a1fc2a161b7748071d637da75e31e9c31}} 
+\index{AMM::AssessmentPubSubType@{AMM::AssessmentPubSubType}!deleteData@{deleteData}}
+\index{deleteData@{deleteData}!AMM::AssessmentPubSubType@{AMM::AssessmentPubSubType}}
+\doxysubsubsection{\texorpdfstring{deleteData()}{deleteData()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Assessment\+Pub\+Sub\+Type\+::delete\+Data (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_assessment_pub_sub_type_a9752eaa134141c8738e7872ecc290d9d}\label{class_a_m_m_1_1_assessment_pub_sub_type_a9752eaa134141c8738e7872ecc290d9d}} 
+\index{AMM::AssessmentPubSubType@{AMM::AssessmentPubSubType}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!AMM::AssessmentPubSubType@{AMM::AssessmentPubSubType}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Assessment\+Pub\+Sub\+Type\+::deserialize (\begin{DoxyParamCaption}\item[{eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$}]{payload,  }\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_assessment_pub_sub_type_a91e0032f02d7d056cbe33cb96a4cb933}\label{class_a_m_m_1_1_assessment_pub_sub_type_a91e0032f02d7d056cbe33cb96a4cb933}} 
+\index{AMM::AssessmentPubSubType@{AMM::AssessmentPubSubType}!getKey@{getKey}}
+\index{getKey@{getKey}!AMM::AssessmentPubSubType@{AMM::AssessmentPubSubType}}
+\doxysubsubsection{\texorpdfstring{getKey()}{getKey()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Assessment\+Pub\+Sub\+Type\+::get\+Key (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{eprosima\+::fastrtps\+::rtps\+::\+Instance\+Handle\+\_\+t $\ast$}]{ihandle,  }\item[{bool}]{force\+\_\+md5 = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_assessment_pub_sub_type_aa098e7db2f7a5eb10da84ef946708473}\label{class_a_m_m_1_1_assessment_pub_sub_type_aa098e7db2f7a5eb10da84ef946708473}} 
+\index{AMM::AssessmentPubSubType@{AMM::AssessmentPubSubType}!getSerializedSizeProvider@{getSerializedSizeProvider}}
+\index{getSerializedSizeProvider@{getSerializedSizeProvider}!AMM::AssessmentPubSubType@{AMM::AssessmentPubSubType}}
+\doxysubsubsection{\texorpdfstring{getSerializedSizeProvider()}{getSerializedSizeProvider()}}
+{\footnotesize\ttfamily std\+::function$<$ uint32\+\_\+t()$>$ A\+M\+M\+::\+Assessment\+Pub\+Sub\+Type\+::get\+Serialized\+Size\+Provider (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_assessment_pub_sub_type_aa4bb9cdf2d0217953095964c33d0daf7}\label{class_a_m_m_1_1_assessment_pub_sub_type_aa4bb9cdf2d0217953095964c33d0daf7}} 
+\index{AMM::AssessmentPubSubType@{AMM::AssessmentPubSubType}!serialize@{serialize}}
+\index{serialize@{serialize}!AMM::AssessmentPubSubType@{AMM::AssessmentPubSubType}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Assessment\+Pub\+Sub\+Type\+::serialize (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{eprosima\+::fastrtps\+::rtps\+::\+Serialized\+Payload\+\_\+t $\ast$}]{payload }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_assessment_pub_sub_type_a18602d450c7f602540f177546516aa1f}\label{class_a_m_m_1_1_assessment_pub_sub_type_a18602d450c7f602540f177546516aa1f}} 
+\index{AMM::AssessmentPubSubType@{AMM::AssessmentPubSubType}!m\_keyBuffer@{m\_keyBuffer}}
+\index{m\_keyBuffer@{m\_keyBuffer}!AMM::AssessmentPubSubType@{AMM::AssessmentPubSubType}}
+\doxysubsubsection{\texorpdfstring{m\_keyBuffer}{m\_keyBuffer}}
+{\footnotesize\ttfamily unsigned char$\ast$ A\+M\+M\+::\+Assessment\+Pub\+Sub\+Type\+::m\+\_\+key\+Buffer}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_assessment_pub_sub_type_abab1c9e6db079b1766cd3211916d0161}\label{class_a_m_m_1_1_assessment_pub_sub_type_abab1c9e6db079b1766cd3211916d0161}} 
+\index{AMM::AssessmentPubSubType@{AMM::AssessmentPubSubType}!m\_md5@{m\_md5}}
+\index{m\_md5@{m\_md5}!AMM::AssessmentPubSubType@{AMM::AssessmentPubSubType}}
+\doxysubsubsection{\texorpdfstring{m\_md5}{m\_md5}}
+{\footnotesize\ttfamily M\+D5 A\+M\+M\+::\+Assessment\+Pub\+Sub\+Type\+::m\+\_\+md5}
+

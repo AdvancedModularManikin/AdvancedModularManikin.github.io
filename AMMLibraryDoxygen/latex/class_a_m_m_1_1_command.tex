@@ -1,0 +1,321 @@
+\hypertarget{class_a_m_m_1_1_command}{}\doxysection{A\+MM\+::Command Class Reference}
+\label{class_a_m_m_1_1_command}\index{AMM::Command@{AMM::Command}}
+
+
+This class represents the structure \mbox{\hyperlink{class_a_m_m_1_1_command}{Command}} defined by the user in the I\+DL file.  
+
+
+
+
+{\ttfamily \#include $<$A\+M\+M\+\_\+\+Extended.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+e\+Prosima\+\_\+user\+\_\+\+Dll\+Export \mbox{\hyperlink{class_a_m_m_1_1_command_a15273ef356e3fd6f11f0e0fc68051fdd}{Command}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+e\+Prosima\+\_\+user\+\_\+\+Dll\+Export \mbox{\hyperlink{class_a_m_m_1_1_command_a485edb65699081752f67bb539f88c932}{$\sim$\+Command}} ()
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+e\+Prosima\+\_\+user\+\_\+\+Dll\+Export \mbox{\hyperlink{class_a_m_m_1_1_command_abfdae1f05b7a3536f85dcc8058041845}{Command}} (const \mbox{\hyperlink{class_a_m_m_1_1_command}{Command}} \&x)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+e\+Prosima\+\_\+user\+\_\+\+Dll\+Export \mbox{\hyperlink{class_a_m_m_1_1_command_ae6274b19a52094715b9f537c80bfe4c4}{Command}} (\mbox{\hyperlink{class_a_m_m_1_1_command}{Command}} \&\&x)
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+e\+Prosima\+\_\+user\+\_\+\+Dll\+Export \mbox{\hyperlink{class_a_m_m_1_1_command}{Command}} \& \mbox{\hyperlink{class_a_m_m_1_1_command_a30440fb5b162e1915df2b04024a18b2d}{operator=}} (const \mbox{\hyperlink{class_a_m_m_1_1_command}{Command}} \&x)
+\begin{DoxyCompactList}\small\item\em Copy assignment. \end{DoxyCompactList}\item 
+e\+Prosima\+\_\+user\+\_\+\+Dll\+Export \mbox{\hyperlink{class_a_m_m_1_1_command}{Command}} \& \mbox{\hyperlink{class_a_m_m_1_1_command_ac86e15b2c48e15ed6592855c7a1c2243}{operator=}} (\mbox{\hyperlink{class_a_m_m_1_1_command}{Command}} \&\&x)
+\begin{DoxyCompactList}\small\item\em Move assignment. \end{DoxyCompactList}\item 
+e\+Prosima\+\_\+user\+\_\+\+Dll\+Export void \mbox{\hyperlink{class_a_m_m_1_1_command_a0dc48e0ed7a2e2a5d989a1f4f6ac9f49}{message}} (const std\+::string \&\+\_\+message)
+\begin{DoxyCompactList}\small\item\em This function copies the value in member message. \end{DoxyCompactList}\item 
+e\+Prosima\+\_\+user\+\_\+\+Dll\+Export void \mbox{\hyperlink{class_a_m_m_1_1_command_a1dbb339380f69c91b962567577783dd3}{message}} (std\+::string \&\&\+\_\+message)
+\begin{DoxyCompactList}\small\item\em This function moves the value in member message. \end{DoxyCompactList}\item 
+const e\+Prosima\+\_\+user\+\_\+\+Dll\+Export std\+::string \& \mbox{\hyperlink{class_a_m_m_1_1_command_a762e7e1aad96e51178111ab57e9c36b1}{message}} () const
+\begin{DoxyCompactList}\small\item\em This function returns a constant reference to member message. \end{DoxyCompactList}\item 
+e\+Prosima\+\_\+user\+\_\+\+Dll\+Export std\+::string \& \mbox{\hyperlink{class_a_m_m_1_1_command_a447be35e180241c48ec4c080fac89d1c}{message}} ()
+\begin{DoxyCompactList}\small\item\em This function returns a reference to member message. \end{DoxyCompactList}\item 
+e\+Prosima\+\_\+user\+\_\+\+Dll\+Export void \mbox{\hyperlink{class_a_m_m_1_1_command_a3e6eda12d04d911d22733fe4c3b40643}{serialize}} (eprosima\+::fastcdr\+::\+Cdr \&cdr) const
+\begin{DoxyCompactList}\small\item\em This function serializes an object using C\+DR serialization. \end{DoxyCompactList}\item 
+e\+Prosima\+\_\+user\+\_\+\+Dll\+Export void \mbox{\hyperlink{class_a_m_m_1_1_command_a7848867ea5124b4d639d666bf9cbd837}{deserialize}} (eprosima\+::fastcdr\+::\+Cdr \&cdr)
+\begin{DoxyCompactList}\small\item\em This function deserializes an object using C\+DR serialization. \end{DoxyCompactList}\item 
+e\+Prosima\+\_\+user\+\_\+\+Dll\+Export void \mbox{\hyperlink{class_a_m_m_1_1_command_a3bd2569ddd4c8ad02c45f6e2ecf0b608}{serialize\+Key}} (eprosima\+::fastcdr\+::\+Cdr \&cdr) const
+\begin{DoxyCompactList}\small\item\em This function serializes the key members of an object using C\+DR serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static e\+Prosima\+\_\+user\+\_\+\+Dll\+Export size\+\_\+t \mbox{\hyperlink{class_a_m_m_1_1_command_a02c06ba6b8e7d838b2fe1c04e8994b9a}{get\+Max\+Cdr\+Serialized\+Size}} (size\+\_\+t current\+\_\+alignment=0)
+\begin{DoxyCompactList}\small\item\em This function returns the maximum serialized size of an object depending on the buffer alignment. \end{DoxyCompactList}\item 
+static e\+Prosima\+\_\+user\+\_\+\+Dll\+Export size\+\_\+t \mbox{\hyperlink{class_a_m_m_1_1_command_a28b34cdada20bbb7ff61988cc47dd1ef}{get\+Cdr\+Serialized\+Size}} (const \mbox{\hyperlink{class_a_m_m_1_1_command}{A\+M\+M\+::\+Command}} \&data, size\+\_\+t current\+\_\+alignment=0)
+\begin{DoxyCompactList}\small\item\em This function returns the serialized size of a data depending on the buffer alignment. \end{DoxyCompactList}\item 
+static e\+Prosima\+\_\+user\+\_\+\+Dll\+Export size\+\_\+t \mbox{\hyperlink{class_a_m_m_1_1_command_a58008cee38059828ee9eae569426ff01}{get\+Key\+Max\+Cdr\+Serialized\+Size}} (size\+\_\+t current\+\_\+alignment=0)
+\begin{DoxyCompactList}\small\item\em This function returns the maximum serialized size of the Key of an object depending on the buffer alignment. \end{DoxyCompactList}\item 
+static e\+Prosima\+\_\+user\+\_\+\+Dll\+Export bool \mbox{\hyperlink{class_a_m_m_1_1_command_a817429745391897f1383abef1ba39c28}{is\+Key\+Defined}} ()
+\begin{DoxyCompactList}\small\item\em This function tells you if the Key has been defined for this type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_a_m_m_1_1_command_a06efc03be3ee1e5d04a5e925f385a4af}{m\+\_\+message}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the structure \mbox{\hyperlink{class_a_m_m_1_1_command}{Command}} defined by the user in the I\+DL file. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_command_a15273ef356e3fd6f11f0e0fc68051fdd}\label{class_a_m_m_1_1_command_a15273ef356e3fd6f11f0e0fc68051fdd}} 
+\index{AMM::Command@{AMM::Command}!Command@{Command}}
+\index{Command@{Command}!AMM::Command@{AMM::Command}}
+\doxysubsubsection{\texorpdfstring{Command()}{Command()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Command\+::\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+\mbox{\Hypertarget{class_a_m_m_1_1_command_a485edb65699081752f67bb539f88c932}\label{class_a_m_m_1_1_command_a485edb65699081752f67bb539f88c932}} 
+\index{AMM::Command@{AMM::Command}!````~Command@{$\sim$Command}}
+\index{````~Command@{$\sim$Command}!AMM::Command@{AMM::Command}}
+\doxysubsubsection{\texorpdfstring{$\sim$Command()}{~Command()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Command\+::$\sim$\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default destructor. 
+
+\mbox{\Hypertarget{class_a_m_m_1_1_command_abfdae1f05b7a3536f85dcc8058041845}\label{class_a_m_m_1_1_command_abfdae1f05b7a3536f85dcc8058041845}} 
+\index{AMM::Command@{AMM::Command}!Command@{Command}}
+\index{Command@{Command}!AMM::Command@{AMM::Command}}
+\doxysubsubsection{\texorpdfstring{Command()}{Command()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Command\+::\+Command (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_a_m_m_1_1_command}{Command}} \&}]{x }\end{DoxyParamCaption})}
+
+
+
+Copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Reference to the object \mbox{\hyperlink{class_a_m_m_1_1_command}{A\+M\+M\+::\+Command}} that will be copied. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_m_m_1_1_command_ae6274b19a52094715b9f537c80bfe4c4}\label{class_a_m_m_1_1_command_ae6274b19a52094715b9f537c80bfe4c4}} 
+\index{AMM::Command@{AMM::Command}!Command@{Command}}
+\index{Command@{Command}!AMM::Command@{AMM::Command}}
+\doxysubsubsection{\texorpdfstring{Command()}{Command()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Command\+::\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_m_m_1_1_command}{Command}} \&\&}]{x }\end{DoxyParamCaption})}
+
+
+
+Move constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Reference to the object \mbox{\hyperlink{class_a_m_m_1_1_command}{A\+M\+M\+::\+Command}} that will be copied. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_command_a7848867ea5124b4d639d666bf9cbd837}\label{class_a_m_m_1_1_command_a7848867ea5124b4d639d666bf9cbd837}} 
+\index{AMM::Command@{AMM::Command}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!AMM::Command@{AMM::Command}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Command\+::deserialize (\begin{DoxyParamCaption}\item[{eprosima\+::fastcdr\+::\+Cdr \&}]{cdr }\end{DoxyParamCaption})}
+
+
+
+This function deserializes an object using C\+DR serialization. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cdr} & C\+DR serialization object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_m_m_1_1_command_a28b34cdada20bbb7ff61988cc47dd1ef}\label{class_a_m_m_1_1_command_a28b34cdada20bbb7ff61988cc47dd1ef}} 
+\index{AMM::Command@{AMM::Command}!getCdrSerializedSize@{getCdrSerializedSize}}
+\index{getCdrSerializedSize@{getCdrSerializedSize}!AMM::Command@{AMM::Command}}
+\doxysubsubsection{\texorpdfstring{getCdrSerializedSize()}{getCdrSerializedSize()}}
+{\footnotesize\ttfamily size\+\_\+t A\+M\+M\+::\+Command\+::get\+Cdr\+Serialized\+Size (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_a_m_m_1_1_command}{A\+M\+M\+::\+Command}} \&}]{data,  }\item[{size\+\_\+t}]{current\+\_\+alignment = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This function returns the serialized size of a data depending on the buffer alignment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Data which is calculated its serialized size. \\
+\hline
+{\em current\+\_\+alignment} & Buffer alignment. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Serialized size. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_m_m_1_1_command_a58008cee38059828ee9eae569426ff01}\label{class_a_m_m_1_1_command_a58008cee38059828ee9eae569426ff01}} 
+\index{AMM::Command@{AMM::Command}!getKeyMaxCdrSerializedSize@{getKeyMaxCdrSerializedSize}}
+\index{getKeyMaxCdrSerializedSize@{getKeyMaxCdrSerializedSize}!AMM::Command@{AMM::Command}}
+\doxysubsubsection{\texorpdfstring{getKeyMaxCdrSerializedSize()}{getKeyMaxCdrSerializedSize()}}
+{\footnotesize\ttfamily size\+\_\+t A\+M\+M\+::\+Command\+::get\+Key\+Max\+Cdr\+Serialized\+Size (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{current\+\_\+alignment = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This function returns the maximum serialized size of the Key of an object depending on the buffer alignment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+\_\+alignment} & Buffer alignment. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Maximum serialized size. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_m_m_1_1_command_a02c06ba6b8e7d838b2fe1c04e8994b9a}\label{class_a_m_m_1_1_command_a02c06ba6b8e7d838b2fe1c04e8994b9a}} 
+\index{AMM::Command@{AMM::Command}!getMaxCdrSerializedSize@{getMaxCdrSerializedSize}}
+\index{getMaxCdrSerializedSize@{getMaxCdrSerializedSize}!AMM::Command@{AMM::Command}}
+\doxysubsubsection{\texorpdfstring{getMaxCdrSerializedSize()}{getMaxCdrSerializedSize()}}
+{\footnotesize\ttfamily size\+\_\+t A\+M\+M\+::\+Command\+::get\+Max\+Cdr\+Serialized\+Size (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{current\+\_\+alignment = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This function returns the maximum serialized size of an object depending on the buffer alignment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+\_\+alignment} & Buffer alignment. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Maximum serialized size. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_m_m_1_1_command_a817429745391897f1383abef1ba39c28}\label{class_a_m_m_1_1_command_a817429745391897f1383abef1ba39c28}} 
+\index{AMM::Command@{AMM::Command}!isKeyDefined@{isKeyDefined}}
+\index{isKeyDefined@{isKeyDefined}!AMM::Command@{AMM::Command}}
+\doxysubsubsection{\texorpdfstring{isKeyDefined()}{isKeyDefined()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Command\+::is\+Key\+Defined (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This function tells you if the Key has been defined for this type. 
+
+\mbox{\Hypertarget{class_a_m_m_1_1_command_a447be35e180241c48ec4c080fac89d1c}\label{class_a_m_m_1_1_command_a447be35e180241c48ec4c080fac89d1c}} 
+\index{AMM::Command@{AMM::Command}!message@{message}}
+\index{message@{message}!AMM::Command@{AMM::Command}}
+\doxysubsubsection{\texorpdfstring{message()}{message()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily e\+Prosima\+\_\+user\+\_\+\+Dll\+Export std\+::string\& A\+M\+M\+::\+Command\+::message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This function returns a reference to member message. 
+
+\begin{DoxyReturn}{Returns}
+Reference to member message 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_m_m_1_1_command_a762e7e1aad96e51178111ab57e9c36b1}\label{class_a_m_m_1_1_command_a762e7e1aad96e51178111ab57e9c36b1}} 
+\index{AMM::Command@{AMM::Command}!message@{message}}
+\index{message@{message}!AMM::Command@{AMM::Command}}
+\doxysubsubsection{\texorpdfstring{message()}{message()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily const e\+Prosima\+\_\+user\+\_\+\+Dll\+Export std\+::string\& A\+M\+M\+::\+Command\+::message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This function returns a constant reference to member message. 
+
+\begin{DoxyReturn}{Returns}
+Constant reference to member message 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_m_m_1_1_command_a0dc48e0ed7a2e2a5d989a1f4f6ac9f49}\label{class_a_m_m_1_1_command_a0dc48e0ed7a2e2a5d989a1f4f6ac9f49}} 
+\index{AMM::Command@{AMM::Command}!message@{message}}
+\index{message@{message}!AMM::Command@{AMM::Command}}
+\doxysubsubsection{\texorpdfstring{message()}{message()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily e\+Prosima\+\_\+user\+\_\+\+Dll\+Export void A\+M\+M\+::\+Command\+::message (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{\+\_\+message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This function copies the value in member message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+message} & New value to be copied in member message \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_m_m_1_1_command_a1dbb339380f69c91b962567577783dd3}\label{class_a_m_m_1_1_command_a1dbb339380f69c91b962567577783dd3}} 
+\index{AMM::Command@{AMM::Command}!message@{message}}
+\index{message@{message}!AMM::Command@{AMM::Command}}
+\doxysubsubsection{\texorpdfstring{message()}{message()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily e\+Prosima\+\_\+user\+\_\+\+Dll\+Export void A\+M\+M\+::\+Command\+::message (\begin{DoxyParamCaption}\item[{std\+::string \&\&}]{\+\_\+message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This function moves the value in member message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+message} & New value to be moved in member message \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_m_m_1_1_command_ac86e15b2c48e15ed6592855c7a1c2243}\label{class_a_m_m_1_1_command_ac86e15b2c48e15ed6592855c7a1c2243}} 
+\index{AMM::Command@{AMM::Command}!operator=@{operator=}}
+\index{operator=@{operator=}!AMM::Command@{AMM::Command}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_a_m_m_1_1_command}{A\+M\+M\+::\+Command}} \& A\+M\+M\+::\+Command\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_m_m_1_1_command}{Command}} \&\&}]{x }\end{DoxyParamCaption})}
+
+
+
+Move assignment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Reference to the object \mbox{\hyperlink{class_a_m_m_1_1_command}{A\+M\+M\+::\+Command}} that will be copied. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_m_m_1_1_command_a30440fb5b162e1915df2b04024a18b2d}\label{class_a_m_m_1_1_command_a30440fb5b162e1915df2b04024a18b2d}} 
+\index{AMM::Command@{AMM::Command}!operator=@{operator=}}
+\index{operator=@{operator=}!AMM::Command@{AMM::Command}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_a_m_m_1_1_command}{A\+M\+M\+::\+Command}} \& A\+M\+M\+::\+Command\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_a_m_m_1_1_command}{Command}} \&}]{x }\end{DoxyParamCaption})}
+
+
+
+Copy assignment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Reference to the object \mbox{\hyperlink{class_a_m_m_1_1_command}{A\+M\+M\+::\+Command}} that will be copied. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_m_m_1_1_command_a3e6eda12d04d911d22733fe4c3b40643}\label{class_a_m_m_1_1_command_a3e6eda12d04d911d22733fe4c3b40643}} 
+\index{AMM::Command@{AMM::Command}!serialize@{serialize}}
+\index{serialize@{serialize}!AMM::Command@{AMM::Command}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Command\+::serialize (\begin{DoxyParamCaption}\item[{eprosima\+::fastcdr\+::\+Cdr \&}]{cdr }\end{DoxyParamCaption}) const}
+
+
+
+This function serializes an object using C\+DR serialization. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cdr} & C\+DR serialization object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_m_m_1_1_command_a3bd2569ddd4c8ad02c45f6e2ecf0b608}\label{class_a_m_m_1_1_command_a3bd2569ddd4c8ad02c45f6e2ecf0b608}} 
+\index{AMM::Command@{AMM::Command}!serializeKey@{serializeKey}}
+\index{serializeKey@{serializeKey}!AMM::Command@{AMM::Command}}
+\doxysubsubsection{\texorpdfstring{serializeKey()}{serializeKey()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Command\+::serialize\+Key (\begin{DoxyParamCaption}\item[{eprosima\+::fastcdr\+::\+Cdr \&}]{cdr }\end{DoxyParamCaption}) const}
+
+
+
+This function serializes the key members of an object using C\+DR serialization. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cdr} & C\+DR serialization object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_command_a06efc03be3ee1e5d04a5e925f385a4af}\label{class_a_m_m_1_1_command_a06efc03be3ee1e5d04a5e925f385a4af}} 
+\index{AMM::Command@{AMM::Command}!m\_message@{m\_message}}
+\index{m\_message@{m\_message}!AMM::Command@{AMM::Command}}
+\doxysubsubsection{\texorpdfstring{m\_message}{m\_message}}
+{\footnotesize\ttfamily std\+::string A\+M\+M\+::\+Command\+::m\+\_\+message\hspace{0.3cm}{\ttfamily [private]}}
+
