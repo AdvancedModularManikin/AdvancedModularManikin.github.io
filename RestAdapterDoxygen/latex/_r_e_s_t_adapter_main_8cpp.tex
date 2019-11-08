@@ -20,7 +20,7 @@
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{class_a_m_m_listener}{A\+M\+M\+Listener}}
-\item 
+\begin{DoxyCompactList}\small\item\em Core logic container for D\+DS Manager functions. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_d_d_s_endpoint}{D\+D\+S\+Endpoint}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Namespaces}
@@ -32,9 +32,9 @@ class \mbox{\hyperlink{class_d_d_s_endpoint}{D\+D\+S\+Endpoint}}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a947fab0f1a97b7fe577d435de6c865b1}{Reset\+Labs}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Resets database tables for labs. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a997d3ed3736a85ae64ed026536fee11c}{Append\+Lab\+Row}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Add to database tables for labs. \end{DoxyCompactList}\item 
 database \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a564be1c032c3e3077ac2769ee6d40b7c}{db}} (\char`\"{}amm.\+db\char`\"{})
 \item 
 void \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a3d7a1367587263315242c59e748f20b1}{Publish\+Operational\+Description}} ()
@@ -67,15 +67,15 @@ int \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a0ddf1224851353fc92bfbff6f499fa9
 \begin{DoxyCompactItemize}
 \item 
 int \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_ae53ea95e0769743e3a9e0935564b3739}{port\+Number}} = 9080
-\item 
+\begin{DoxyCompactList}\small\item\em R\+E\+ST adapter port. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_af4bd819081fac2a76628bd5344eba0f8}{thr}} = 2
-\item 
+\begin{DoxyCompactList}\small\item\em R\+E\+ST threads. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_aa2339b21f98abccd12533a54d5f9d712}{daemonize}} = 1
-\item 
+\begin{DoxyCompactList}\small\item\em Daemonize by default. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a13de4912fe523b592f96a3410747ca62}{discovery}} = 1
-\item 
+\begin{DoxyCompactList}\small\item\em Default discovery. \end{DoxyCompactList}\item 
 char \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_aada24ab0f5bbba555afe1420c16ac2f7}{hostname}} \mbox{[}H\+O\+S\+T\+\_\+\+N\+A\+M\+E\+\_\+\+M\+AX\mbox{]}
-\item 
+\begin{DoxyCompactList}\small\item\em Hostname to connect to. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a7f59116465f53d4c016fbcee340f2fb9}{action\+\_\+path}} = \char`\"{}Actions/\char`\"{}
 \item 
 std\+::string \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_af4eb6b9d0e9289562768b92a14741e36}{state\+\_\+path}} = \char`\"{}./states/\char`\"{}
@@ -125,6 +125,10 @@ A\+M\+M\+::\+U\+U\+ID \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a338fdb07d7fd7
 \doxysubsubsection{\texorpdfstring{AppendLabRow()}{AppendLabRow()}}
 {\footnotesize\ttfamily void Append\+Lab\+Row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Add to database tables for labs. 
+
 \mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_a564be1c032c3e3077ac2769ee6d40b7c}\label{_r_e_s_t_adapter_main_8cpp_a564be1c032c3e3077ac2769ee6d40b7c}} 
 \index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!db@{db}}
 \index{db@{db}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
@@ -166,6 +170,10 @@ A\+M\+M\+::\+U\+U\+ID \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a338fdb07d7fd7
 \index{ResetLabs@{ResetLabs}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
 \doxysubsubsection{\texorpdfstring{ResetLabs()}{ResetLabs()}}
 {\footnotesize\ttfamily void Reset\+Labs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets database tables for labs. 
 
 \mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_a3359fd9619fe4e4a0a7517dea732faad}\label{_r_e_s_t_adapter_main_8cpp_a3359fd9619fe4e4a0a7517dea732faad}} 
 \index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!SendCommand@{SendCommand}}
@@ -230,17 +238,29 @@ A\+M\+M\+::\+U\+U\+ID \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a338fdb07d7fd7
 \doxysubsubsection{\texorpdfstring{daemonize}{daemonize}}
 {\footnotesize\ttfamily int daemonize = 1}
 
+
+
+Daemonize by default. 
+
 \mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_a13de4912fe523b592f96a3410747ca62}\label{_r_e_s_t_adapter_main_8cpp_a13de4912fe523b592f96a3410747ca62}} 
 \index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!discovery@{discovery}}
 \index{discovery@{discovery}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
 \doxysubsubsection{\texorpdfstring{discovery}{discovery}}
 {\footnotesize\ttfamily int discovery = 1}
 
+
+
+Default discovery. 
+
 \mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_aada24ab0f5bbba555afe1420c16ac2f7}\label{_r_e_s_t_adapter_main_8cpp_aada24ab0f5bbba555afe1420c16ac2f7}} 
 \index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!hostname@{hostname}}
 \index{hostname@{hostname}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
 \doxysubsubsection{\texorpdfstring{hostname}{hostname}}
 {\footnotesize\ttfamily char hostname\mbox{[}H\+O\+S\+T\+\_\+\+N\+A\+M\+E\+\_\+\+M\+AX\mbox{]}}
+
+
+
+Hostname to connect to. 
 
 \mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_ab3000f420b5025a713af947aca281176}\label{_r_e_s_t_adapter_main_8cpp_ab3000f420b5025a713af947aca281176}} 
 \index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!labsStorage@{labsStorage}}
@@ -308,6 +328,10 @@ A\+M\+M\+::\+U\+U\+ID \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a338fdb07d7fd7
 \doxysubsubsection{\texorpdfstring{portNumber}{portNumber}}
 {\footnotesize\ttfamily int port\+Number = 9080}
 
+
+
+R\+E\+ST adapter port. 
+
 \mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_ac73a3af50fee9d0cb03aa4928cdf8296}\label{_r_e_s_t_adapter_main_8cpp_ac73a3af50fee9d0cb03aa4928cdf8296}} 
 \index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!server@{server}}
 \index{server@{server}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
@@ -350,4 +374,8 @@ A\+M\+M\+::\+U\+U\+ID \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a338fdb07d7fd7
 \index{thr@{thr}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
 \doxysubsubsection{\texorpdfstring{thr}{thr}}
 {\footnotesize\ttfamily int thr = 2}
+
+
+
+R\+E\+ST threads. 
 

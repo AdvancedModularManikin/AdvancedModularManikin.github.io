@@ -10,7 +10,7 @@
 \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a9224c8a184d25cb7acfd738ab3cf5286}{Simulation\+Manager}} ()
 \item 
 void \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a8f8f7144a5c93690a22f8fa823e492ad}{Publish\+Operational\+Description}} ()
-\begin{DoxyCompactList}\small\item\em Sim commands. \end{DoxyCompactList}\item 
+\item 
 void \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_ae85a7d83fa4fbf31c8367a5bd9b1d45e}{Publish\+Configuration}} ()
 \item 
 void \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a50ec080182c2b338e2cdfc206aca3ce3}{Run\+Simulation}} (bool do\+Write\+Topic)
@@ -24,7 +24,7 @@ void \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a903567020d89c7a56594f5
 void \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_aab85e3130f39d51b18d4379a87873db8}{Shutdown}} ()
 \item 
 void \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a3afed222482656679bf05f97d4c591cc}{Set\+Sample\+Rate}} (int rate)
-\begin{DoxyCompactList}\small\item\em Sim properties. \end{DoxyCompactList}\item 
+\item 
 bool \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a9cf34e0c2428776b45bf319753921b87}{Is\+Running}} ()
 \item 
 int \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a86e0ec23a166e14b2a27a7da1c1d3f1b}{Get\+Sample\+Rate}} ()
@@ -110,13 +110,7 @@ int \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a9f372690230f71af7f041e2
 \doxysubsubsection{\texorpdfstring{PublishOperationalDescription()}{PublishOperationalDescription()}}
 {\footnotesize\ttfamily void A\+M\+M\+::\+Simulation\+Manager\+::\+Publish\+Operational\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-
-
-Sim commands. 
-
-Note\+: If do\+Write\+Topic, then write a Simulation\+Control topic to the publisher. This parameter should be false if on\+New\+Simulation\+Control is calling these methods.
-
-Sim Manager doesn\textquotesingle{}t need to write a Simulation\+Control topic if it recieved one. \mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_a290ecd078f54e70daa25274797f686ef}\label{class_a_m_m_1_1_simulation_manager_a290ecd078f54e70daa25274797f686ef}} 
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_a290ecd078f54e70daa25274797f686ef}\label{class_a_m_m_1_1_simulation_manager_a290ecd078f54e70daa25274797f686ef}} 
 \index{AMM::SimulationManager@{AMM::SimulationManager}!ResetSimulation@{ResetSimulation}}
 \index{ResetSimulation@{ResetSimulation}!AMM::SimulationManager@{AMM::SimulationManager}}
 \doxysubsubsection{\texorpdfstring{ResetSimulation()}{ResetSimulation()}}
@@ -128,9 +122,7 @@ Implies both Halt then Reset.\mbox{\Hypertarget{class_a_m_m_1_1_simulation_manag
 \doxysubsubsection{\texorpdfstring{RunSimulation()}{RunSimulation()}}
 {\footnotesize\ttfamily void A\+M\+M\+::\+Simulation\+Manager\+::\+Run\+Simulation (\begin{DoxyParamCaption}\item[{bool}]{do\+Write\+Topic }\end{DoxyParamCaption})}
 
-Note\+: If do\+Write\+Topic, then write a Simulation\+Control topic to the publisher. This parameter should be false if on\+New\+Simulation\+Control is caller.
-
-Sim Manager doesn\textquotesingle{}t need to write a Simulation\+Control topic if it recieved one.\mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_a903567020d89c7a56594f5fb453a22c5}\label{class_a_m_m_1_1_simulation_manager_a903567020d89c7a56594f5fb453a22c5}} 
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_a903567020d89c7a56594f5fb453a22c5}\label{class_a_m_m_1_1_simulation_manager_a903567020d89c7a56594f5fb453a22c5}} 
 \index{AMM::SimulationManager@{AMM::SimulationManager}!SaveSimulation@{SaveSimulation}}
 \index{SaveSimulation@{SaveSimulation}!AMM::SimulationManager@{AMM::SimulationManager}}
 \doxysubsubsection{\texorpdfstring{SaveSimulation()}{SaveSimulation()}}
@@ -141,10 +133,6 @@ Sim Manager doesn\textquotesingle{}t need to write a Simulation\+Control topic i
 \index{SetSampleRate@{SetSampleRate}!AMM::SimulationManager@{AMM::SimulationManager}}
 \doxysubsubsection{\texorpdfstring{SetSampleRate()}{SetSampleRate()}}
 {\footnotesize\ttfamily void A\+M\+M\+::\+Simulation\+Manager\+::\+Set\+Sample\+Rate (\begin{DoxyParamCaption}\item[{int}]{rate }\end{DoxyParamCaption})}
-
-
-
-Sim properties. 
 
 \mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_aab85e3130f39d51b18d4379a87873db8}\label{class_a_m_m_1_1_simulation_manager_aab85e3130f39d51b18d4379a87873db8}} 
 \index{AMM::SimulationManager@{AMM::SimulationManager}!Shutdown@{Shutdown}}
@@ -215,3 +203,9 @@ Sim properties.
 \doxysubsubsection{\texorpdfstring{moduleName}{moduleName}}
 {\footnotesize\ttfamily std\+::string A\+M\+M\+::\+Simulation\+Manager\+::module\+Name = \char`\"{}A\+M\+M\+\_\+\+Simulation\+Manager\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
 
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_simulation_manager_8h}{Simulation\+Manager.\+h}}\item 
+src/\mbox{\hyperlink{_simulation_manager_8cpp}{Simulation\+Manager.\+cpp}}\end{DoxyCompactItemize}

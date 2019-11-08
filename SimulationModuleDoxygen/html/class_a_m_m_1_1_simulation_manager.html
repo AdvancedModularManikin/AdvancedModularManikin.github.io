@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AMM Simulation Manager: AMM::SimulationManager Class Reference</title>
+<title>Simulation Manager: AMM::SimulationManager Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,10 +29,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AMM Simulation Manager
+   <div id="projectname">Simulation Manager
    &#160;<span id="projectnumber">1.0.0</span>
    </div>
-   <div id="projectbrief">Advanced Modular Manikin - Simulation Manager</div>
   </td>
  </tr>
  </tbody>
@@ -103,7 +102,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9224c8a184d25cb7acfd738ab3cf5286"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_m_m_1_1_simulation_manager.html#a9224c8a184d25cb7acfd738ab3cf5286">SimulationManager</a> ()</td></tr>
 <tr class="separator:a9224c8a184d25cb7acfd738ab3cf5286"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f8f7144a5c93690a22f8fa823e492ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_m_m_1_1_simulation_manager.html#a8f8f7144a5c93690a22f8fa823e492ad">PublishOperationalDescription</a> ()</td></tr>
-<tr class="memdesc:a8f8f7144a5c93690a22f8fa823e492ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sim commands.  <a href="class_a_m_m_1_1_simulation_manager.html#a8f8f7144a5c93690a22f8fa823e492ad">More...</a><br /></td></tr>
 <tr class="separator:a8f8f7144a5c93690a22f8fa823e492ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae85a7d83fa4fbf31c8367a5bd9b1d45e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_m_m_1_1_simulation_manager.html#ae85a7d83fa4fbf31c8367a5bd9b1d45e">PublishConfiguration</a> ()</td></tr>
 <tr class="separator:ae85a7d83fa4fbf31c8367a5bd9b1d45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,7 +116,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aab85e3130f39d51b18d4379a87873db8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_m_m_1_1_simulation_manager.html#aab85e3130f39d51b18d4379a87873db8">Shutdown</a> ()</td></tr>
 <tr class="separator:aab85e3130f39d51b18d4379a87873db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3afed222482656679bf05f97d4c591cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_m_m_1_1_simulation_manager.html#a3afed222482656679bf05f97d4c591cc">SetSampleRate</a> (int rate)</td></tr>
-<tr class="memdesc:a3afed222482656679bf05f97d4c591cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sim properties.  <a href="class_a_m_m_1_1_simulation_manager.html#a3afed222482656679bf05f97d4c591cc">More...</a><br /></td></tr>
 <tr class="separator:a3afed222482656679bf05f97d4c591cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cf34e0c2428776b45bf319753921b87"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_m_m_1_1_simulation_manager.html#a9cf34e0c2428776b45bf319753921b87">IsRunning</a> ()</td></tr>
 <tr class="separator:a9cf34e0c2428776b45bf319753921b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -300,10 +297,6 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sim commands. </p>
-<p>Note: If doWriteTopic, then write a SimulationControl topic to the publisher. This parameter should be false if onNewSimulationControl is calling these methods.</p>
-<p>Sim Manager doesn't need to write a SimulationControl topic if it recieved one. </p>
-
 </div>
 </div>
 <a id="a290ecd078f54e70daa25274797f686ef"></a>
@@ -340,8 +333,6 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Note: If doWriteTopic, then write a SimulationControl topic to the publisher. This parameter should be false if onNewSimulationControl is caller.</p>
-<p>Sim Manager doesn't need to write a SimulationControl topic if it recieved one.</p>
 
 </div>
 </div>
@@ -378,8 +369,6 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Sim properties. </p>
 
 </div>
 </div>
@@ -616,6 +605,10 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>src/<a class="el" href="_simulation_manager_8h_source.html">SimulationManager.h</a></li>
+<li>src/<a class="el" href="_simulation_manager_8cpp.html">SimulationManager.cpp</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

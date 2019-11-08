@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['resetsimulation_33',['ResetSimulation',['../class_a_m_m_1_1_simulation_manager.html#a290ecd078f54e70daa25274797f686ef',1,'AMM::SimulationManager']]],
-  ['runsimulation_34',['RunSimulation',['../class_a_m_m_1_1_simulation_manager.html#a50ec080182c2b338e2cdfc206aca3ce3',1,'AMM::SimulationManager']]]
+  ['publishconfiguration_42',['PublishConfiguration',['../class_a_m_m_1_1_simulation_manager.html#ae85a7d83fa4fbf31c8367a5bd9b1d45e',1,'AMM::SimulationManager']]],
+  ['publishoperationaldescription_43',['PublishOperationalDescription',['../class_a_m_m_1_1_simulation_manager.html#a8f8f7144a5c93690a22f8fa823e492ad',1,'AMM::SimulationManager']]]
 ];
