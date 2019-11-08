@@ -18,18 +18,16 @@ Create a void template DDS Manager object.
 AMM::DDSManager<void>* mgr = new AMM::DDSManager<void>("Config/Config.xml");
 ```
 
-The reason why `<void>` is being used here is due to template specialization for DDS Manager.\
-DDS Manager is designed to accept either a <void> template (meaning no type is required), or a template of a single user defined type.
-\
-More on the user defined type in Tutorial 3.
+The reason why `<void>` is being used here is due to template specialization for DDS Manager. <br />
+DDS Manager is designed to accept either a <void> template (meaning no type is required), or a template of a single user defined type. More on the user defined type in Tutorial 3.
 
 Initialize Assessment to start using it.
 ```
 mgr->InitializeAssessment();
 ```
 
-> **NOTE:**\
-See Tutorial 1 for all the usable AMM types, or the AMM Specification Docs for a complete list.\
+> **NOTE:** <br />
+See Tutorial 1 for all the usable AMM types, or the AMM Specification Docs for a complete list. <br />
 https://github.com/AdvancedModularManikin/specification
 
 
@@ -54,8 +52,8 @@ The first argument can be any of the 17 AMM data types depending on the type tha
 Passing a function ref where is first argument is defined as `AMM::EventFragment`, when the method is
 aimed for Assessment, will result is compilation error.
 
-> **NOTE:**\
-Required function signature for Assessment.\
+> **NOTE:** <br />
+Required function signature for Assessment. <br />
 `(AMM::Assessment assessment, eprosima::fastrtps::SampleInfo_t* info)`
 
 The second argument is always `SampleInfo_t*`.

@@ -12,7 +12,7 @@ In order to use the AMM Library, this header must be included.
 ```
 
 
-This tutorial will explain how to use user-defined types with DDS Manager.\
+This tutorial will explain how to use user-defined types with DDS Manager. <br />
 Take note of the class definition below.
 ```
 class Foo {
@@ -22,7 +22,7 @@ public:
    }
 };
 ```
-> **NOTE:**\
+> **NOTE:** <br />
 Class methods designed for subscriber callbacks must be public. User-defined methods for subscriber callbacks can be named whatever. The signature has to match as described in Tutorial 2.
 
 Class Foo contains a method with the same signature as OnAssessmentEvent in Tutorial 2.
@@ -30,7 +30,7 @@ The only difference is this function is associated with a user defined type.
 
 When invoking a Create Subscriber method on DDS Manager for a type, the user is asked for a function reference to pass in as a callback. When creating DDS Manager with a `<void>` template, the user is able to pass in globally defined void functions. The user can also use a class method as the designated callback too, but given how a reference to a global function is very different from a method associated with a type, this requires DDS Manager to be structured slightly different to support the user-defined type -- hence why DDS Manager has been specialized into two template versions.
 
-> **NOTE:**\
+> **NOTE:** <br />
 The two template versions only alter how subscriptions to data and events are handled and nothing else.
 Initializing, Publishling, and Writing are unaffected.
 
@@ -46,7 +46,7 @@ mgr->InitializeAssessment();
 ```
 
 
-We now have an instance of DDS Manager defined to support Foo as a type.\
+We now have an instance of DDS Manager defined to support Foo as a type. <br />
 Before creating a subcriber for Assessment, we need an instance of Foo.
 ```
 Foo foo;
@@ -59,7 +59,7 @@ mgr->CreateAssessmentSubscriber(&foo, &Foo::OnAssessmentEvent);
 
 With this invocation of Create Assessment Subscriber, we're now telling DDS Manager to store both a reference to the class method desired for callbacks, and the object that the method must be called on.
 
-> **NOTE:**\
+> **NOTE:** <br />
 Only non-static class members are supported at this time.
 
 

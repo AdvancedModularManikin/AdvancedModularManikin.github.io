@@ -43,48 +43,48 @@ ModuleState defaultState;
 bool isSimRunning = false;
 ```
 
-Data representing this module's state.\
-This structure isn't a requirement, but helps manage other fields that are designed to be reset to a default value mid-simulation.\
+Data representing this module's state. <br />
+This structure isn't a requirement, but helps manage other fields that are designed to be reset to a default value mid-simulation. <br />
 `struct ModuleState`
 
-Module Configuration.\
+Module Configuration. <br />
 `AMM::ModuleConfiguration mc`
 
-Status of each capability this module has.\
-Subject to change during simulation.\
-This module only has one capability.\
+Status of each capability this module has. <br />
+Subject to change during simulation. <br />
+This module only has one capability. <br />
 `AMM::Status fooStatus`
 
-ID of the current educational encounter running on the current sim.\
-This should always mirror what educational encounter is on Module Configuration.\
-This module should NOT be setting this field.\
-Module Manager sets this field when Module Configuration data is received.\
+ID of the current educational encounter running on the current sim. <br />
+This should always mirror what educational encounter is on Module Configuration. <br />
+This module should NOT be setting this field. <br />
+Module Manager sets this field when Module Configuration data is received. <br />
 `AMM::UUID educationalEncoutner`
 
-Number of ticks this module recieved from Sim Manager while the sim is running.\
-Not a module requirement. Shows that this example module is ticking.\
+Number of ticks this module recieved from Sim Manager while the sim is running. <br />
+Not a module requirement. Shows that this example module is ticking. <br />
 `int tickCount = 0`
 
-DDS Manager for this module.\
+DDS Manager for this module. <br />
 `AMM::DDSManager<void>* mgr`
 
-This module's ID.\
-Gets published at start with Operational Description.\
+This module's ID. <br />
+Gets published at start with Operational Description. <br />
 `AMM::UUID moduleId`
 
-This module's operational description.\
-Static data initialized and published at start.\
+This module's operational description. <br />
+Static data initialized and published at start. <br />
 `AMM::OperationalDescription od`
 
-The current state of this module.\
-Data that is changed as the sim progresses.\
+The current state of this module. <br />
+Data that is changed as the sim progresses. <br />
 `ModuleState currentState`
 
-The default state of this module.\
-Data that is cached at this module's start, then loaded as the currentState when Sim Control RESET is called.\
+The default state of this module. <br />
+Data that is cached at this module's start, then loaded as the currentState when Sim Control RESET is called. <br />
 `ModuleState defaultState`
 
-Control flag for updating this module with the active sim.\
+Control flag for updating this module with the active sim. <br />
 `bool isSimRunning = false`
 
 
@@ -103,7 +103,7 @@ mgr = new AMM::DDSManager<void>("Config/Config.xml");
 Once a module has a live DDS Manager, it now needs to fill out some description data about itself. Two topic types that are required at the module's inception are **Operational Description** and **Module Configuration**.
 
 ###### OPERATIONAL DESCRIPTION
-Describes what this module does and annouces it to other modules on the AMM network.\
+Describes what this module does and annouces it to other modules on the AMM network. <br />
 Operational Description values are initialized at the module's inception and remain static during this module's life time.
 ```
 mgr->InitializeOperationalDescription();
@@ -128,19 +128,19 @@ od.capabilities_schema(AMM::Utility::read_file_to_string("Config/CapabilitiesSch
 
 
 ###### MODULE CONFIGURATION
-How this module, and every other module is/are configured.\
+How this module, and every other module is/are configured. <br />
 Modules initialize their original config via config xml files that are loaded by the DDS Manager, and need to keep track of their configuration during the module's life span.
 ```
 mgr->InitializeModuleConfiguration();
 ```
 
-Note that the values in Module Configuration are subject to change during simulation.\
+Note that the values in Module Configuration are subject to change during simulation. <br />
 Not only is every module required to publish Module Configuration at their start, must also subscribe to this topic too and act accordingly when the received data contains a module id that matches this module's id.
 ```
 mgr->CreateModuleConfigurationPublisher();
 ```
 
-Initializing Module Configuration fields.\
+Initializing Module Configuration fields. <br />
 Note that the Module Configuration representing this module is in the Module State struct.
 ```
 struct ModuleState {
@@ -188,7 +188,7 @@ No module should be publishing Simulation Control unless it is a designated poin
 mgr->InitializeSimulationControl();
 ```
 
-EVERY module MUST subscribe to Simulation Control.\
+EVERY module MUST subscribe to Simulation Control. <br />
 This dictates when a module should be executing its AMM update loop.
 ```
 mgr->CreateSimulationControlSubscriber(&OnNewSimulationControl);
@@ -270,7 +270,7 @@ currentState.fooStatus.message("Ready");
 ```
 
 ###### TICK
-Optional topic type to subscribe to.\
+Optional topic type to subscribe to. <br />
 Though this type is not part of the AMM spec, it is the main driver for how the simulation is able to advance forward in time.
 
 Subscribe to this topic if your module is dependent on updating when the sim as a whole updates.
@@ -320,7 +320,7 @@ ModuleState defaultState;
 defaultState = currentState;
 ```
 
-> **NOTE:**\
+> **NOTE:** <br />
 Operational Description is not being cached, because it should remain static and unchanged after initialization for the remainder of the module's lifespan.
 
 Remember to provide a slight pause between activating publishers and writing data to allow publishers to finish initializing.

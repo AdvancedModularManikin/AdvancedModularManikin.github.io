@@ -32,7 +32,7 @@ int err = mgr->InitializeAssessment();
 Every method in DDS Manager will return an error code.
 It's up to the end user if they want to acknowledge the return value or not.
 
-> **NOTE:**\
+> **NOTE:** <br />
 There are no special error codes. It's either 0 for success or 1 for failure.
 
 Handle the error.
@@ -83,7 +83,7 @@ if (errmsg.length() > 0) {
    std::cout << errmsg << std::endl;
 }
 ```
-> **NOTE:**\
+> **NOTE:** <br />
 This second call of Initialize Assessment will generate a message taht Assessment is already initialized.
 
 
@@ -116,10 +116,10 @@ if (mgr->CreateAssessmentSubscriber(errmsg, &OnAssessmentEvent) != 0) {
 }
 ```
 
-> **NOTE:**\
+> **NOTE:** <br />
 If DDS Manager were declared with a type and Create Subscriber needed a reference to
-a receiver object, this would be how the errmsg overload is expressed:\
-`mgr->CreateAssessmentSubscriber(errmsg, &foo, &Foo:OnEvent);`\
+a receiver object, this would be how the errmsg overload is expressed: <br />
+`mgr->CreateAssessmentSubscriber(errmsg, &foo, &Foo:OnEvent);` <br />
 As mentioned, the errmsg overload always takes the first argument, and everything else
 second and/or third as the otherwise normally would.
 
