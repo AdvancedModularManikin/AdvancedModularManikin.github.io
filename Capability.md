@@ -1,6 +1,6 @@
 
 
-##### Fluidics
+## Fluidics
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <CapabilityGlossaryDefinition xmlns="urn:AdvancedModularManikin"
@@ -10,7 +10,7 @@
 </CapabilityGlossaryDefinition>
 ```
 
-##### IV Access
+## IV Access
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <CapabilityGlossaryDefinition xmlns="urn:AdvancedModularManikin"
@@ -20,7 +20,7 @@
 </CapabilityGlossaryDefinition>
 ```
 
-##### Pulse
+## Pulse
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <CapabilityGlossaryDefinition xmlns="urn:AdvancedModularManikin"

@@ -1,7 +1,7 @@
 
 
 
-##### Auscultate
+## Auscultate
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <EventRecord type="Auscultate">
@@ -9,7 +9,7 @@
 </EventRecord>
 ```
 
-##### IV Access
+## IV Access
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <EventRecord type="IV Access">
@@ -17,7 +17,7 @@
 </EventRecord>
 ```
 
-##### Palpate
+## Palpate
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <EventRecord type="Palpate">
@@ -25,7 +25,7 @@
 </EventRecord>
 ```
 
-##### Substance Bolus
+## Substance Bolus
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <EventRecord type="Substance Bolus">
@@ -38,7 +38,7 @@
 </EventRecord>
 ```
 
-##### Substance Compound Infusion
+## Substance Compound Infusion
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <EventRecord type="Substance Compound Infusion">
@@ -49,7 +49,7 @@
 </EventRecord>
 ```
 
-##### Substance Infusion
+## Substance Infusion
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <EventRecord type="Substance Infusion">

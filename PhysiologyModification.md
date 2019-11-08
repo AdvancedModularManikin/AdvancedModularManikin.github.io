@@ -1,6 +1,6 @@
 
 
-##### Substance Bolus
+## Substance Bolus
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <PhysiologyModification type="Substance Bolus">
@@ -13,7 +13,7 @@
 </PhysiologyModification>
 ```
 
-##### Substance Compound Infusion
+## Substance Compound Infusion
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <PhysiologyModification type="Substance Compound Infusion">
@@ -24,7 +24,7 @@
 </PhysiologyModification>
 ```
 
-##### Substance Infusion
+## Substance Infusion
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <PhysiologyModification type="Substance Infusion">
