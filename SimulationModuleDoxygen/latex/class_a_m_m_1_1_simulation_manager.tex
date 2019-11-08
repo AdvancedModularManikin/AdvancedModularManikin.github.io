@@ -1,0 +1,217 @@
+\hypertarget{class_a_m_m_1_1_simulation_manager}{}\doxysection{A\+MM\+::Simulation\+Manager Class Reference}
+\label{class_a_m_m_1_1_simulation_manager}\index{AMM::SimulationManager@{AMM::SimulationManager}}
+
+
+{\ttfamily \#include $<$Simulation\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a9224c8a184d25cb7acfd738ab3cf5286}{Simulation\+Manager}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a8f8f7144a5c93690a22f8fa823e492ad}{Publish\+Operational\+Description}} ()
+\begin{DoxyCompactList}\small\item\em Sim commands. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_ae85a7d83fa4fbf31c8367a5bd9b1d45e}{Publish\+Configuration}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a50ec080182c2b338e2cdfc206aca3ce3}{Run\+Simulation}} (bool do\+Write\+Topic)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a5df3524776c8f0abbdfee60edb02e8b0}{Halt\+Simulation}} (bool do\+Write\+Topic)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a290ecd078f54e70daa25274797f686ef}{Reset\+Simulation}} (bool do\+Write\+Topic)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a903567020d89c7a56594f5fb453a22c5}{Save\+Simulation}} (bool do\+Write\+Topic)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_aab85e3130f39d51b18d4379a87873db8}{Shutdown}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a3afed222482656679bf05f97d4c591cc}{Set\+Sample\+Rate}} (int rate)
+\begin{DoxyCompactList}\small\item\em Sim properties. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a9cf34e0c2428776b45bf319753921b87}{Is\+Running}} ()
+\item 
+int \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a86e0ec23a166e14b2a27a7da1c1d3f1b}{Get\+Sample\+Rate}} ()
+\item 
+int \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a56e2c74f603eaaccb897e55e5f26896c}{Get\+Tick\+Count}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a70cb67a999eafeab323aecfe8befa9cf}{Tick\+Loop}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a5a211cb0e00daa355227c9e873a98167}{on\+New\+Simulation\+Control}} (A\+M\+M\+::\+Simulation\+Control \&sim\+Control, Sample\+Info\+\_\+t $\ast$info)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+thread \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_aa7d54bcb998e1eaa44a5b4f9c45c7bf2}{m\+\_\+thread}}
+\item 
+mutex \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a705648fe3db4782a301509040295ed22}{m\+\_\+mutex}}
+\item 
+bool \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a4951a57452259876734c9301ed6df312}{m\+\_\+run\+Thread}} = false
+\item 
+A\+M\+M\+::\+U\+U\+ID \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a74249a550007487b48a1711119679a17}{m\+\_\+uuid}}
+\item 
+std\+::string \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_ad60bee6e60e7f5a0f4f09110659316e6}{module\+Name}} = \char`\"{}A\+M\+M\+\_\+\+Simulation\+Manager\char`\"{}
+\item 
+std\+::string \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a2d8d62056f1d6806c015f421202caca3}{config\+File}} = \char`\"{}config/sim\+\_\+manager\+\_\+amm.\+xml\char`\"{}
+\item 
+D\+D\+S\+Manager$<$ \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager}{Simulation\+Manager}} $>$ $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_ae80d59d35c3c148ee4e98bb30a828713}{m\+\_\+mgr}} = new D\+D\+S\+Manager$<$\mbox{\hyperlink{class_a_m_m_1_1_simulation_manager}{Simulation\+Manager}}$>$(\mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a2d8d62056f1d6806c015f421202caca3}{config\+File}})
+\item 
+int \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a1aac46766646fd26795e2b47c115100b}{m\+\_\+tick\+Count}} = 0
+\item 
+int \mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a9f372690230f71af7f041e234d34b0b2}{m\+\_\+sample\+Rate}} = 50
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_a9224c8a184d25cb7acfd738ab3cf5286}\label{class_a_m_m_1_1_simulation_manager_a9224c8a184d25cb7acfd738ab3cf5286}} 
+\index{AMM::SimulationManager@{AMM::SimulationManager}!SimulationManager@{SimulationManager}}
+\index{SimulationManager@{SimulationManager}!AMM::SimulationManager@{AMM::SimulationManager}}
+\doxysubsubsection{\texorpdfstring{SimulationManager()}{SimulationManager()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Simulation\+Manager\+::\+Simulation\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_a86e0ec23a166e14b2a27a7da1c1d3f1b}\label{class_a_m_m_1_1_simulation_manager_a86e0ec23a166e14b2a27a7da1c1d3f1b}} 
+\index{AMM::SimulationManager@{AMM::SimulationManager}!GetSampleRate@{GetSampleRate}}
+\index{GetSampleRate@{GetSampleRate}!AMM::SimulationManager@{AMM::SimulationManager}}
+\doxysubsubsection{\texorpdfstring{GetSampleRate()}{GetSampleRate()}}
+{\footnotesize\ttfamily int A\+M\+M\+::\+Simulation\+Manager\+::\+Get\+Sample\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_a56e2c74f603eaaccb897e55e5f26896c}\label{class_a_m_m_1_1_simulation_manager_a56e2c74f603eaaccb897e55e5f26896c}} 
+\index{AMM::SimulationManager@{AMM::SimulationManager}!GetTickCount@{GetTickCount}}
+\index{GetTickCount@{GetTickCount}!AMM::SimulationManager@{AMM::SimulationManager}}
+\doxysubsubsection{\texorpdfstring{GetTickCount()}{GetTickCount()}}
+{\footnotesize\ttfamily int A\+M\+M\+::\+Simulation\+Manager\+::\+Get\+Tick\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_a5df3524776c8f0abbdfee60edb02e8b0}\label{class_a_m_m_1_1_simulation_manager_a5df3524776c8f0abbdfee60edb02e8b0}} 
+\index{AMM::SimulationManager@{AMM::SimulationManager}!HaltSimulation@{HaltSimulation}}
+\index{HaltSimulation@{HaltSimulation}!AMM::SimulationManager@{AMM::SimulationManager}}
+\doxysubsubsection{\texorpdfstring{HaltSimulation()}{HaltSimulation()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Simulation\+Manager\+::\+Halt\+Simulation (\begin{DoxyParamCaption}\item[{bool}]{do\+Write\+Topic }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_a9cf34e0c2428776b45bf319753921b87}\label{class_a_m_m_1_1_simulation_manager_a9cf34e0c2428776b45bf319753921b87}} 
+\index{AMM::SimulationManager@{AMM::SimulationManager}!IsRunning@{IsRunning}}
+\index{IsRunning@{IsRunning}!AMM::SimulationManager@{AMM::SimulationManager}}
+\doxysubsubsection{\texorpdfstring{IsRunning()}{IsRunning()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Simulation\+Manager\+::\+Is\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_a5a211cb0e00daa355227c9e873a98167}\label{class_a_m_m_1_1_simulation_manager_a5a211cb0e00daa355227c9e873a98167}} 
+\index{AMM::SimulationManager@{AMM::SimulationManager}!onNewSimulationControl@{onNewSimulationControl}}
+\index{onNewSimulationControl@{onNewSimulationControl}!AMM::SimulationManager@{AMM::SimulationManager}}
+\doxysubsubsection{\texorpdfstring{onNewSimulationControl()}{onNewSimulationControl()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Simulation\+Manager\+::on\+New\+Simulation\+Control (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Simulation\+Control \&}]{sim\+Control,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_ae85a7d83fa4fbf31c8367a5bd9b1d45e}\label{class_a_m_m_1_1_simulation_manager_ae85a7d83fa4fbf31c8367a5bd9b1d45e}} 
+\index{AMM::SimulationManager@{AMM::SimulationManager}!PublishConfiguration@{PublishConfiguration}}
+\index{PublishConfiguration@{PublishConfiguration}!AMM::SimulationManager@{AMM::SimulationManager}}
+\doxysubsubsection{\texorpdfstring{PublishConfiguration()}{PublishConfiguration()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Simulation\+Manager\+::\+Publish\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_a8f8f7144a5c93690a22f8fa823e492ad}\label{class_a_m_m_1_1_simulation_manager_a8f8f7144a5c93690a22f8fa823e492ad}} 
+\index{AMM::SimulationManager@{AMM::SimulationManager}!PublishOperationalDescription@{PublishOperationalDescription}}
+\index{PublishOperationalDescription@{PublishOperationalDescription}!AMM::SimulationManager@{AMM::SimulationManager}}
+\doxysubsubsection{\texorpdfstring{PublishOperationalDescription()}{PublishOperationalDescription()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Simulation\+Manager\+::\+Publish\+Operational\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sim commands. 
+
+Note\+: If do\+Write\+Topic, then write a Simulation\+Control topic to the publisher. This parameter should be false if on\+New\+Simulation\+Control is calling these methods.
+
+Sim Manager doesn\textquotesingle{}t need to write a Simulation\+Control topic if it recieved one. \mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_a290ecd078f54e70daa25274797f686ef}\label{class_a_m_m_1_1_simulation_manager_a290ecd078f54e70daa25274797f686ef}} 
+\index{AMM::SimulationManager@{AMM::SimulationManager}!ResetSimulation@{ResetSimulation}}
+\index{ResetSimulation@{ResetSimulation}!AMM::SimulationManager@{AMM::SimulationManager}}
+\doxysubsubsection{\texorpdfstring{ResetSimulation()}{ResetSimulation()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Simulation\+Manager\+::\+Reset\+Simulation (\begin{DoxyParamCaption}\item[{bool}]{do\+Write\+Topic }\end{DoxyParamCaption})}
+
+Implies both Halt then Reset.\mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_a50ec080182c2b338e2cdfc206aca3ce3}\label{class_a_m_m_1_1_simulation_manager_a50ec080182c2b338e2cdfc206aca3ce3}} 
+\index{AMM::SimulationManager@{AMM::SimulationManager}!RunSimulation@{RunSimulation}}
+\index{RunSimulation@{RunSimulation}!AMM::SimulationManager@{AMM::SimulationManager}}
+\doxysubsubsection{\texorpdfstring{RunSimulation()}{RunSimulation()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Simulation\+Manager\+::\+Run\+Simulation (\begin{DoxyParamCaption}\item[{bool}]{do\+Write\+Topic }\end{DoxyParamCaption})}
+
+Note\+: If do\+Write\+Topic, then write a Simulation\+Control topic to the publisher. This parameter should be false if on\+New\+Simulation\+Control is caller.
+
+Sim Manager doesn\textquotesingle{}t need to write a Simulation\+Control topic if it recieved one.\mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_a903567020d89c7a56594f5fb453a22c5}\label{class_a_m_m_1_1_simulation_manager_a903567020d89c7a56594f5fb453a22c5}} 
+\index{AMM::SimulationManager@{AMM::SimulationManager}!SaveSimulation@{SaveSimulation}}
+\index{SaveSimulation@{SaveSimulation}!AMM::SimulationManager@{AMM::SimulationManager}}
+\doxysubsubsection{\texorpdfstring{SaveSimulation()}{SaveSimulation()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Simulation\+Manager\+::\+Save\+Simulation (\begin{DoxyParamCaption}\item[{bool}]{do\+Write\+Topic }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_a3afed222482656679bf05f97d4c591cc}\label{class_a_m_m_1_1_simulation_manager_a3afed222482656679bf05f97d4c591cc}} 
+\index{AMM::SimulationManager@{AMM::SimulationManager}!SetSampleRate@{SetSampleRate}}
+\index{SetSampleRate@{SetSampleRate}!AMM::SimulationManager@{AMM::SimulationManager}}
+\doxysubsubsection{\texorpdfstring{SetSampleRate()}{SetSampleRate()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Simulation\+Manager\+::\+Set\+Sample\+Rate (\begin{DoxyParamCaption}\item[{int}]{rate }\end{DoxyParamCaption})}
+
+
+
+Sim properties. 
+
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_aab85e3130f39d51b18d4379a87873db8}\label{class_a_m_m_1_1_simulation_manager_aab85e3130f39d51b18d4379a87873db8}} 
+\index{AMM::SimulationManager@{AMM::SimulationManager}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!AMM::SimulationManager@{AMM::SimulationManager}}
+\doxysubsubsection{\texorpdfstring{Shutdown()}{Shutdown()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Simulation\+Manager\+::\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_a70cb67a999eafeab323aecfe8befa9cf}\label{class_a_m_m_1_1_simulation_manager_a70cb67a999eafeab323aecfe8befa9cf}} 
+\index{AMM::SimulationManager@{AMM::SimulationManager}!TickLoop@{TickLoop}}
+\index{TickLoop@{TickLoop}!AMM::SimulationManager@{AMM::SimulationManager}}
+\doxysubsubsection{\texorpdfstring{TickLoop()}{TickLoop()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Simulation\+Manager\+::\+Tick\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_a2d8d62056f1d6806c015f421202caca3}\label{class_a_m_m_1_1_simulation_manager_a2d8d62056f1d6806c015f421202caca3}} 
+\index{AMM::SimulationManager@{AMM::SimulationManager}!configFile@{configFile}}
+\index{configFile@{configFile}!AMM::SimulationManager@{AMM::SimulationManager}}
+\doxysubsubsection{\texorpdfstring{configFile}{configFile}}
+{\footnotesize\ttfamily std\+::string A\+M\+M\+::\+Simulation\+Manager\+::config\+File = \char`\"{}config/sim\+\_\+manager\+\_\+amm.\+xml\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_ae80d59d35c3c148ee4e98bb30a828713}\label{class_a_m_m_1_1_simulation_manager_ae80d59d35c3c148ee4e98bb30a828713}} 
+\index{AMM::SimulationManager@{AMM::SimulationManager}!m\_mgr@{m\_mgr}}
+\index{m\_mgr@{m\_mgr}!AMM::SimulationManager@{AMM::SimulationManager}}
+\doxysubsubsection{\texorpdfstring{m\_mgr}{m\_mgr}}
+{\footnotesize\ttfamily D\+D\+S\+Manager$<$\mbox{\hyperlink{class_a_m_m_1_1_simulation_manager}{Simulation\+Manager}}$>$$\ast$ A\+M\+M\+::\+Simulation\+Manager\+::m\+\_\+mgr = new D\+D\+S\+Manager$<$\mbox{\hyperlink{class_a_m_m_1_1_simulation_manager}{Simulation\+Manager}}$>$(\mbox{\hyperlink{class_a_m_m_1_1_simulation_manager_a2d8d62056f1d6806c015f421202caca3}{config\+File}})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_a705648fe3db4782a301509040295ed22}\label{class_a_m_m_1_1_simulation_manager_a705648fe3db4782a301509040295ed22}} 
+\index{AMM::SimulationManager@{AMM::SimulationManager}!m\_mutex@{m\_mutex}}
+\index{m\_mutex@{m\_mutex}!AMM::SimulationManager@{AMM::SimulationManager}}
+\doxysubsubsection{\texorpdfstring{m\_mutex}{m\_mutex}}
+{\footnotesize\ttfamily mutex A\+M\+M\+::\+Simulation\+Manager\+::m\+\_\+mutex\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_a4951a57452259876734c9301ed6df312}\label{class_a_m_m_1_1_simulation_manager_a4951a57452259876734c9301ed6df312}} 
+\index{AMM::SimulationManager@{AMM::SimulationManager}!m\_runThread@{m\_runThread}}
+\index{m\_runThread@{m\_runThread}!AMM::SimulationManager@{AMM::SimulationManager}}
+\doxysubsubsection{\texorpdfstring{m\_runThread}{m\_runThread}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Simulation\+Manager\+::m\+\_\+run\+Thread = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_a9f372690230f71af7f041e234d34b0b2}\label{class_a_m_m_1_1_simulation_manager_a9f372690230f71af7f041e234d34b0b2}} 
+\index{AMM::SimulationManager@{AMM::SimulationManager}!m\_sampleRate@{m\_sampleRate}}
+\index{m\_sampleRate@{m\_sampleRate}!AMM::SimulationManager@{AMM::SimulationManager}}
+\doxysubsubsection{\texorpdfstring{m\_sampleRate}{m\_sampleRate}}
+{\footnotesize\ttfamily int A\+M\+M\+::\+Simulation\+Manager\+::m\+\_\+sample\+Rate = 50\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_aa7d54bcb998e1eaa44a5b4f9c45c7bf2}\label{class_a_m_m_1_1_simulation_manager_aa7d54bcb998e1eaa44a5b4f9c45c7bf2}} 
+\index{AMM::SimulationManager@{AMM::SimulationManager}!m\_thread@{m\_thread}}
+\index{m\_thread@{m\_thread}!AMM::SimulationManager@{AMM::SimulationManager}}
+\doxysubsubsection{\texorpdfstring{m\_thread}{m\_thread}}
+{\footnotesize\ttfamily thread A\+M\+M\+::\+Simulation\+Manager\+::m\+\_\+thread\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_a1aac46766646fd26795e2b47c115100b}\label{class_a_m_m_1_1_simulation_manager_a1aac46766646fd26795e2b47c115100b}} 
+\index{AMM::SimulationManager@{AMM::SimulationManager}!m\_tickCount@{m\_tickCount}}
+\index{m\_tickCount@{m\_tickCount}!AMM::SimulationManager@{AMM::SimulationManager}}
+\doxysubsubsection{\texorpdfstring{m\_tickCount}{m\_tickCount}}
+{\footnotesize\ttfamily int A\+M\+M\+::\+Simulation\+Manager\+::m\+\_\+tick\+Count = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_a74249a550007487b48a1711119679a17}\label{class_a_m_m_1_1_simulation_manager_a74249a550007487b48a1711119679a17}} 
+\index{AMM::SimulationManager@{AMM::SimulationManager}!m\_uuid@{m\_uuid}}
+\index{m\_uuid@{m\_uuid}!AMM::SimulationManager@{AMM::SimulationManager}}
+\doxysubsubsection{\texorpdfstring{m\_uuid}{m\_uuid}}
+{\footnotesize\ttfamily A\+M\+M\+::\+U\+U\+ID A\+M\+M\+::\+Simulation\+Manager\+::m\+\_\+uuid\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_simulation_manager_ad60bee6e60e7f5a0f4f09110659316e6}\label{class_a_m_m_1_1_simulation_manager_ad60bee6e60e7f5a0f4f09110659316e6}} 
+\index{AMM::SimulationManager@{AMM::SimulationManager}!moduleName@{moduleName}}
+\index{moduleName@{moduleName}!AMM::SimulationManager@{AMM::SimulationManager}}
+\doxysubsubsection{\texorpdfstring{moduleName}{moduleName}}
+{\footnotesize\ttfamily std\+::string A\+M\+M\+::\+Simulation\+Manager\+::module\+Name = \char`\"{}A\+M\+M\+\_\+\+Simulation\+Manager\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
