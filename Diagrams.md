@@ -1,10 +1,10 @@
-##### Schematic Documents
+# Schematic Documents
 - [AMM Fluidics Schematic](AMM_fluidics_schematic.pdf)
 
-##### Diagrams
+# Diagrams
 
-###### Power System Architecture
+## Power System Architecture
 ![](/Power_System_Architecture.jpg)
 
-###### AMM Event Fragment Data Flow - Syringe Example
+## AMM Event Fragment Data Flow - Syringe Example
 ![](/AMMEventFragmentDataFlow-SyringeExample.jpg)
