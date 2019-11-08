@@ -1,6 +1,6 @@
 
 
-##### AMM Standard Topic Types
+## AMM Standard Topic Types
 ```
 module AMM
 {
@@ -268,7 +268,7 @@ module AMM
 ```
 
 
-##### Capabilities Schema
+## Capabilities Schema
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema targetNamespace="urn:AdvancedModularManikin"
