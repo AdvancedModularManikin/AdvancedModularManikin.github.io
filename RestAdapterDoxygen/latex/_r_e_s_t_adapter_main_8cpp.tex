@@ -1,0 +1,353 @@
+\hypertarget{_r_e_s_t_adapter_main_8cpp}{}\doxysection{src/\+R\+E\+S\+T\+Adapter\+Main.cpp File Reference}
+\label{_r_e_s_t_adapter_main_8cpp}\index{src/RESTAdapterMain.cpp@{src/RESTAdapterMain.cpp}}
+{\ttfamily \#include $<$mutex$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$condition\+\_\+variable$>$}\newline
+{\ttfamily \#include \char`\"{}amm\+\_\+std.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}A\+M\+M/\+Base\+Logger.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}A\+M\+M/\+Utility.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$pistache/endpoint.\+h$>$}\newline
+{\ttfamily \#include $<$pistache/router.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}rapidjson/document.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}rapidjson/writer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}boost/filesystem.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$boost/algorithm/string/join.\+hpp$>$}\newline
+{\ttfamily \#include \char`\"{}thirdparty/sqlite\+\_\+modern\+\_\+cpp.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_a_m_m_listener}{A\+M\+M\+Listener}}
+\item 
+class \mbox{\hyperlink{class_d_d_s_endpoint}{D\+D\+S\+Endpoint}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_generic}{Generic}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a947fab0f1a97b7fe577d435de6c865b1}{Reset\+Labs}} ()
+\item 
+void \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a997d3ed3736a85ae64ed026536fee11c}{Append\+Lab\+Row}} ()
+\item 
+database \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a564be1c032c3e3077ac2769ee6d40b7c}{db}} (\char`\"{}amm.\+db\char`\"{})
+\item 
+void \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a3d7a1367587263315242c59e748f20b1}{Publish\+Operational\+Description}} ()
+\item 
+void \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_ab72b7fdf60eda751835ccc6aaa6f3322}{Publish\+Configuration}} ()
+\item 
+A\+M\+M\+::\+U\+U\+ID \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_aceed16654633154eeb6862301c144a2e}{Send\+Event\+Record}} (const std\+::string \&location, const std\+::string \&practitioner, const std\+::string \&type)
+\item 
+void \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a2648f42835e24ecbfbf1a3756d86d8d1}{Send\+Physiology\+Modification}} (A\+M\+M\+::\+U\+U\+ID \&er\+\_\+id, const std\+::string \&type, const std\+::string \&payload)
+\item 
+void \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a08e5d5f334d51c1d000ab2286066b54b}{Send\+Render\+Modification}} (A\+M\+M\+::\+U\+U\+ID \&er\+\_\+id, const std\+::string \&type, const std\+::string \&payload)
+\item 
+void \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_af7952de8108a147af6af5c09c2e24a16}{Send\+Performance\+Assessment}} (A\+M\+M\+::\+U\+U\+ID \&er\+\_\+id, const std\+::string \&assessment\+\_\+type, const std\+::string \&assessment\+\_\+info, const std\+::string \&step, const std\+::string \&comment)
+\item 
+void \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a3359fd9619fe4e4a0a7517dea732faad}{Send\+Command}} (const std\+::string \&command)
+\item 
+void \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_aa44f9815ab1798caaf7525c9a3671bac}{print\+Cookies}} (const Http\+::\+Request \&req)
+\item 
+void \mbox{\hyperlink{namespace_generic_a338f5fb4d9bd56baa5c712e9e6a9ec02}{Generic\+::handle\+Ready}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+static void \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a003669aecb12c3bced98b4bb9dc394ca}{show\+\_\+usage}} (const std\+::string \&name)
+\item 
+Port \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_ac39df10459075688500fc49692629fc4}{port}} (static\+\_\+cast$<$ uint16\+\_\+t $>$(\mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_ae53ea95e0769743e3a9e0935564b3739}{port\+Number}}))
+\item 
+Address \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_acea9726dab13332af3a5c74a13ea08dc}{addr}} (Ipv4\+::any(), \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_ac39df10459075688500fc49692629fc4}{port}})
+\item 
+int \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_ae53ea95e0769743e3a9e0935564b3739}{port\+Number}} = 9080
+\item 
+int \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_af4bd819081fac2a76628bd5344eba0f8}{thr}} = 2
+\item 
+int \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_aa2339b21f98abccd12533a54d5f9d712}{daemonize}} = 1
+\item 
+int \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a13de4912fe523b592f96a3410747ca62}{discovery}} = 1
+\item 
+char \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_aada24ab0f5bbba555afe1420c16ac2f7}{hostname}} \mbox{[}H\+O\+S\+T\+\_\+\+N\+A\+M\+E\+\_\+\+M\+AX\mbox{]}
+\item 
+std\+::string \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a7f59116465f53d4c016fbcee340f2fb9}{action\+\_\+path}} = \char`\"{}Actions/\char`\"{}
+\item 
+std\+::string \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_af4eb6b9d0e9289562768b92a14741e36}{state\+\_\+path}} = \char`\"{}./states/\char`\"{}
+\item 
+std\+::string \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a7797ba737316d785f04c988605ed5864}{patient\+\_\+path}} = \char`\"{}./patients/\char`\"{}
+\item 
+std\+::map$<$ std\+::string, double $>$ \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a100c451975b21f205c1833878c7a5bd0}{node\+Data\+Storage}}
+\item 
+std\+::map$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_aac2917d51caf05930056c873dada6e67}{status\+Storage}}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_ab3000f420b5025a713af947aca281176}{labs\+Storage}}
+\item 
+bool \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a842c5b15506e9e12684e22faab489ee3}{m\+\_\+run\+Thread}} = false
+\item 
+int64\+\_\+t \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a1a3bf29d23abc215e4233cd3eb29f45f}{last\+Tick}} = 0
+\item 
+const string \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a9fda7e84daaae7d5a983a088121163e0}{sys\+Prefix}} = \char`\"{}\mbox{[}S\+YS\mbox{]}\char`\"{}
+\item 
+const string \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a3cc1d7ac52b463b53a9c47280aec360f}{act\+Prefix}} = \char`\"{}\mbox{[}A\+CT\mbox{]}\char`\"{}
+\item 
+const string \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a27fe2eb74266d2857ccb69f930e06247}{load\+Scenario\+Prefix}} = \char`\"{}L\+O\+A\+D\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+:\char`\"{}
+\item 
+const string \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a522d858a2bd50574806796d36c245fe5}{load\+Prefix}} = \char`\"{}L\+O\+A\+D\+\_\+\+S\+T\+A\+T\+E\+:\char`\"{}
+\item 
+const std\+::string \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a0fb2dec9ed3c4c96f6498bd9e2a364e6}{module\+Name}} = \char`\"{}A\+M\+M\+\_\+\+R\+E\+S\+T\+\_\+\+Adapter\char`\"{}
+\item 
+const std\+::string \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_ad5835f1d2646493dafb2c5ac6244a93f}{config\+File}} = \char`\"{}config/rest\+\_\+adapter\+\_\+amm.\+xml\char`\"{}
+\item 
+A\+M\+M\+::\+D\+D\+S\+Manager$<$ \mbox{\hyperlink{class_a_m_m_listener}{A\+M\+M\+Listener}} $>$ $\ast$ \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_ae0fde82ab9fc2d07d127b3295496832c}{mgr}} = new A\+M\+M\+::\+D\+D\+S\+Manager$<$\mbox{\hyperlink{class_a_m_m_listener}{A\+M\+M\+Listener}}$>$(\mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_ad5835f1d2646493dafb2c5ac6244a93f}{config\+File}})
+\item 
+A\+M\+M\+::\+U\+U\+ID \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_a338fdb07d7fd7cfdbb20f88db81fb1a0}{m\+\_\+uuid}}
+\item 
+\mbox{\hyperlink{class_d_d_s_endpoint}{D\+D\+S\+Endpoint}} \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_ac73a3af50fee9d0cb03aa4928cdf8296}{server}} (\mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_acea9726dab13332af3a5c74a13ea08dc}{addr}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_acea9726dab13332af3a5c74a13ea08dc}\label{_r_e_s_t_adapter_main_8cpp_acea9726dab13332af3a5c74a13ea08dc}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!addr@{addr}}
+\index{addr@{addr}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{addr()}{addr()}}
+{\footnotesize\ttfamily Address addr (\begin{DoxyParamCaption}\item[{Ipv4\+::any()}]{,  }\item[{\mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_ac39df10459075688500fc49692629fc4}{port}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_a997d3ed3736a85ae64ed026536fee11c}\label{_r_e_s_t_adapter_main_8cpp_a997d3ed3736a85ae64ed026536fee11c}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!AppendLabRow@{AppendLabRow}}
+\index{AppendLabRow@{AppendLabRow}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{AppendLabRow()}{AppendLabRow()}}
+{\footnotesize\ttfamily void Append\+Lab\+Row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_a564be1c032c3e3077ac2769ee6d40b7c}\label{_r_e_s_t_adapter_main_8cpp_a564be1c032c3e3077ac2769ee6d40b7c}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!db@{db}}
+\index{db@{db}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{db()}{db()}}
+{\footnotesize\ttfamily database db (\begin{DoxyParamCaption}\item[{\char`\"{}amm.\+db\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{_r_e_s_t_adapter_main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!main@{main}}
+\index{main@{main}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_ac39df10459075688500fc49692629fc4}\label{_r_e_s_t_adapter_main_8cpp_ac39df10459075688500fc49692629fc4}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!port@{port}}
+\index{port@{port}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{port()}{port()}}
+{\footnotesize\ttfamily Port port (\begin{DoxyParamCaption}\item[{static\+\_\+cast$<$ uint16\+\_\+t $>$}]{port\+Number }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_aa44f9815ab1798caaf7525c9a3671bac}\label{_r_e_s_t_adapter_main_8cpp_aa44f9815ab1798caaf7525c9a3671bac}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!printCookies@{printCookies}}
+\index{printCookies@{printCookies}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{printCookies()}{printCookies()}}
+{\footnotesize\ttfamily void print\+Cookies (\begin{DoxyParamCaption}\item[{const Http\+::\+Request \&}]{req }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_ab72b7fdf60eda751835ccc6aaa6f3322}\label{_r_e_s_t_adapter_main_8cpp_ab72b7fdf60eda751835ccc6aaa6f3322}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!PublishConfiguration@{PublishConfiguration}}
+\index{PublishConfiguration@{PublishConfiguration}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{PublishConfiguration()}{PublishConfiguration()}}
+{\footnotesize\ttfamily void Publish\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_a3d7a1367587263315242c59e748f20b1}\label{_r_e_s_t_adapter_main_8cpp_a3d7a1367587263315242c59e748f20b1}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!PublishOperationalDescription@{PublishOperationalDescription}}
+\index{PublishOperationalDescription@{PublishOperationalDescription}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{PublishOperationalDescription()}{PublishOperationalDescription()}}
+{\footnotesize\ttfamily void Publish\+Operational\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_a947fab0f1a97b7fe577d435de6c865b1}\label{_r_e_s_t_adapter_main_8cpp_a947fab0f1a97b7fe577d435de6c865b1}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!ResetLabs@{ResetLabs}}
+\index{ResetLabs@{ResetLabs}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{ResetLabs()}{ResetLabs()}}
+{\footnotesize\ttfamily void Reset\+Labs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_a3359fd9619fe4e4a0a7517dea732faad}\label{_r_e_s_t_adapter_main_8cpp_a3359fd9619fe4e4a0a7517dea732faad}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!SendCommand@{SendCommand}}
+\index{SendCommand@{SendCommand}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{SendCommand()}{SendCommand()}}
+{\footnotesize\ttfamily void Send\+Command (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{command }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_aceed16654633154eeb6862301c144a2e}\label{_r_e_s_t_adapter_main_8cpp_aceed16654633154eeb6862301c144a2e}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!SendEventRecord@{SendEventRecord}}
+\index{SendEventRecord@{SendEventRecord}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{SendEventRecord()}{SendEventRecord()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+U\+U\+ID Send\+Event\+Record (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{location,  }\item[{const std\+::string \&}]{practitioner,  }\item[{const std\+::string \&}]{type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_af7952de8108a147af6af5c09c2e24a16}\label{_r_e_s_t_adapter_main_8cpp_af7952de8108a147af6af5c09c2e24a16}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!SendPerformanceAssessment@{SendPerformanceAssessment}}
+\index{SendPerformanceAssessment@{SendPerformanceAssessment}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{SendPerformanceAssessment()}{SendPerformanceAssessment()}}
+{\footnotesize\ttfamily void Send\+Performance\+Assessment (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+U\+U\+ID \&}]{er\+\_\+id,  }\item[{const std\+::string \&}]{assessment\+\_\+type,  }\item[{const std\+::string \&}]{assessment\+\_\+info,  }\item[{const std\+::string \&}]{step,  }\item[{const std\+::string \&}]{comment }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_a2648f42835e24ecbfbf1a3756d86d8d1}\label{_r_e_s_t_adapter_main_8cpp_a2648f42835e24ecbfbf1a3756d86d8d1}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!SendPhysiologyModification@{SendPhysiologyModification}}
+\index{SendPhysiologyModification@{SendPhysiologyModification}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{SendPhysiologyModification()}{SendPhysiologyModification()}}
+{\footnotesize\ttfamily void Send\+Physiology\+Modification (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+U\+U\+ID \&}]{er\+\_\+id,  }\item[{const std\+::string \&}]{type,  }\item[{const std\+::string \&}]{payload }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_a08e5d5f334d51c1d000ab2286066b54b}\label{_r_e_s_t_adapter_main_8cpp_a08e5d5f334d51c1d000ab2286066b54b}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!SendRenderModification@{SendRenderModification}}
+\index{SendRenderModification@{SendRenderModification}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{SendRenderModification()}{SendRenderModification()}}
+{\footnotesize\ttfamily void Send\+Render\+Modification (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+U\+U\+ID \&}]{er\+\_\+id,  }\item[{const std\+::string \&}]{type,  }\item[{const std\+::string \&}]{payload }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_a003669aecb12c3bced98b4bb9dc394ca}\label{_r_e_s_t_adapter_main_8cpp_a003669aecb12c3bced98b4bb9dc394ca}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!show\_usage@{show\_usage}}
+\index{show\_usage@{show\_usage}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{show\_usage()}{show\_usage()}}
+{\footnotesize\ttfamily static void show\+\_\+usage (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_a7f59116465f53d4c016fbcee340f2fb9}\label{_r_e_s_t_adapter_main_8cpp_a7f59116465f53d4c016fbcee340f2fb9}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!action\_path@{action\_path}}
+\index{action\_path@{action\_path}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{action\_path}{action\_path}}
+{\footnotesize\ttfamily std\+::string action\+\_\+path = \char`\"{}Actions/\char`\"{}}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_a3cc1d7ac52b463b53a9c47280aec360f}\label{_r_e_s_t_adapter_main_8cpp_a3cc1d7ac52b463b53a9c47280aec360f}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!actPrefix@{actPrefix}}
+\index{actPrefix@{actPrefix}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{actPrefix}{actPrefix}}
+{\footnotesize\ttfamily const string act\+Prefix = \char`\"{}\mbox{[}A\+CT\mbox{]}\char`\"{}}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_ad5835f1d2646493dafb2c5ac6244a93f}\label{_r_e_s_t_adapter_main_8cpp_ad5835f1d2646493dafb2c5ac6244a93f}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!configFile@{configFile}}
+\index{configFile@{configFile}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{configFile}{configFile}}
+{\footnotesize\ttfamily const std\+::string config\+File = \char`\"{}config/rest\+\_\+adapter\+\_\+amm.\+xml\char`\"{}}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_aa2339b21f98abccd12533a54d5f9d712}\label{_r_e_s_t_adapter_main_8cpp_aa2339b21f98abccd12533a54d5f9d712}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!daemonize@{daemonize}}
+\index{daemonize@{daemonize}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{daemonize}{daemonize}}
+{\footnotesize\ttfamily int daemonize = 1}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_a13de4912fe523b592f96a3410747ca62}\label{_r_e_s_t_adapter_main_8cpp_a13de4912fe523b592f96a3410747ca62}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!discovery@{discovery}}
+\index{discovery@{discovery}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{discovery}{discovery}}
+{\footnotesize\ttfamily int discovery = 1}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_aada24ab0f5bbba555afe1420c16ac2f7}\label{_r_e_s_t_adapter_main_8cpp_aada24ab0f5bbba555afe1420c16ac2f7}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!hostname@{hostname}}
+\index{hostname@{hostname}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{hostname}{hostname}}
+{\footnotesize\ttfamily char hostname\mbox{[}H\+O\+S\+T\+\_\+\+N\+A\+M\+E\+\_\+\+M\+AX\mbox{]}}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_ab3000f420b5025a713af947aca281176}\label{_r_e_s_t_adapter_main_8cpp_ab3000f420b5025a713af947aca281176}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!labsStorage@{labsStorage}}
+\index{labsStorage@{labsStorage}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{labsStorage}{labsStorage}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ labs\+Storage}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_a1a3bf29d23abc215e4233cd3eb29f45f}\label{_r_e_s_t_adapter_main_8cpp_a1a3bf29d23abc215e4233cd3eb29f45f}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!lastTick@{lastTick}}
+\index{lastTick@{lastTick}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{lastTick}{lastTick}}
+{\footnotesize\ttfamily int64\+\_\+t last\+Tick = 0}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_a522d858a2bd50574806796d36c245fe5}\label{_r_e_s_t_adapter_main_8cpp_a522d858a2bd50574806796d36c245fe5}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!loadPrefix@{loadPrefix}}
+\index{loadPrefix@{loadPrefix}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{loadPrefix}{loadPrefix}}
+{\footnotesize\ttfamily const string load\+Prefix = \char`\"{}L\+O\+A\+D\+\_\+\+S\+T\+A\+T\+E\+:\char`\"{}}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_a27fe2eb74266d2857ccb69f930e06247}\label{_r_e_s_t_adapter_main_8cpp_a27fe2eb74266d2857ccb69f930e06247}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!loadScenarioPrefix@{loadScenarioPrefix}}
+\index{loadScenarioPrefix@{loadScenarioPrefix}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{loadScenarioPrefix}{loadScenarioPrefix}}
+{\footnotesize\ttfamily const string load\+Scenario\+Prefix = \char`\"{}L\+O\+A\+D\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+:\char`\"{}}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_a842c5b15506e9e12684e22faab489ee3}\label{_r_e_s_t_adapter_main_8cpp_a842c5b15506e9e12684e22faab489ee3}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!m\_runThread@{m\_runThread}}
+\index{m\_runThread@{m\_runThread}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{m\_runThread}{m\_runThread}}
+{\footnotesize\ttfamily bool m\+\_\+run\+Thread = false}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_a338fdb07d7fd7cfdbb20f88db81fb1a0}\label{_r_e_s_t_adapter_main_8cpp_a338fdb07d7fd7cfdbb20f88db81fb1a0}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!m\_uuid@{m\_uuid}}
+\index{m\_uuid@{m\_uuid}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{m\_uuid}{m\_uuid}}
+{\footnotesize\ttfamily A\+M\+M\+::\+U\+U\+ID m\+\_\+uuid}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_ae0fde82ab9fc2d07d127b3295496832c}\label{_r_e_s_t_adapter_main_8cpp_ae0fde82ab9fc2d07d127b3295496832c}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!mgr@{mgr}}
+\index{mgr@{mgr}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{mgr}{mgr}}
+{\footnotesize\ttfamily A\+M\+M\+::\+D\+D\+S\+Manager$<$\mbox{\hyperlink{class_a_m_m_listener}{A\+M\+M\+Listener}}$>$$\ast$ mgr = new A\+M\+M\+::\+D\+D\+S\+Manager$<$\mbox{\hyperlink{class_a_m_m_listener}{A\+M\+M\+Listener}}$>$(\mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_ad5835f1d2646493dafb2c5ac6244a93f}{config\+File}})}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_a0fb2dec9ed3c4c96f6498bd9e2a364e6}\label{_r_e_s_t_adapter_main_8cpp_a0fb2dec9ed3c4c96f6498bd9e2a364e6}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!moduleName@{moduleName}}
+\index{moduleName@{moduleName}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{moduleName}{moduleName}}
+{\footnotesize\ttfamily const std\+::string module\+Name = \char`\"{}A\+M\+M\+\_\+\+R\+E\+S\+T\+\_\+\+Adapter\char`\"{}}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_a100c451975b21f205c1833878c7a5bd0}\label{_r_e_s_t_adapter_main_8cpp_a100c451975b21f205c1833878c7a5bd0}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!nodeDataStorage@{nodeDataStorage}}
+\index{nodeDataStorage@{nodeDataStorage}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{nodeDataStorage}{nodeDataStorage}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, double$>$ node\+Data\+Storage}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_a7797ba737316d785f04c988605ed5864}\label{_r_e_s_t_adapter_main_8cpp_a7797ba737316d785f04c988605ed5864}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!patient\_path@{patient\_path}}
+\index{patient\_path@{patient\_path}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{patient\_path}{patient\_path}}
+{\footnotesize\ttfamily std\+::string patient\+\_\+path = \char`\"{}./patients/\char`\"{}}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_ae53ea95e0769743e3a9e0935564b3739}\label{_r_e_s_t_adapter_main_8cpp_ae53ea95e0769743e3a9e0935564b3739}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!portNumber@{portNumber}}
+\index{portNumber@{portNumber}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{portNumber}{portNumber}}
+{\footnotesize\ttfamily int port\+Number = 9080}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_ac73a3af50fee9d0cb03aa4928cdf8296}\label{_r_e_s_t_adapter_main_8cpp_ac73a3af50fee9d0cb03aa4928cdf8296}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!server@{server}}
+\index{server@{server}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{server}{server}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_d_d_s_endpoint}{D\+D\+S\+Endpoint}} server(\mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_acea9726dab13332af3a5c74a13ea08dc}{addr}})}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_af4eb6b9d0e9289562768b92a14741e36}\label{_r_e_s_t_adapter_main_8cpp_af4eb6b9d0e9289562768b92a14741e36}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!state\_path@{state\_path}}
+\index{state\_path@{state\_path}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{state\_path}{state\_path}}
+{\footnotesize\ttfamily std\+::string state\+\_\+path = \char`\"{}./states/\char`\"{}}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_aac2917d51caf05930056c873dada6e67}\label{_r_e_s_t_adapter_main_8cpp_aac2917d51caf05930056c873dada6e67}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!statusStorage@{statusStorage}}
+\index{statusStorage@{statusStorage}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{statusStorage}{statusStorage}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::string$>$ status\+Storage}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{\{\textcolor{stringliteral}{"STATUS"},         \textcolor{stringliteral}{"NOT RUNNING"}\},}
+\DoxyCodeLine{                                                    \{\textcolor{stringliteral}{"TICK"},           \textcolor{stringliteral}{"0"}\},}
+\DoxyCodeLine{                                                    \{\textcolor{stringliteral}{"TIME"},           \textcolor{stringliteral}{"0"}\},}
+\DoxyCodeLine{                                                    \{\textcolor{stringliteral}{"SCENARIO"},       \textcolor{stringliteral}{""}\},}
+\DoxyCodeLine{                                                    \{\textcolor{stringliteral}{"STATE"},          \textcolor{stringliteral}{""}\},}
+\DoxyCodeLine{                                                    \{\textcolor{stringliteral}{"CLEAR\_SUPPLY"},   \textcolor{stringliteral}{""}\},}
+\DoxyCodeLine{                                                    \{\textcolor{stringliteral}{"BLOOD\_SUPPLY"},   \textcolor{stringliteral}{""}\},}
+\DoxyCodeLine{                                                    \{\textcolor{stringliteral}{"FLUIDICS\_STATE"}, \textcolor{stringliteral}{""}\},}
+\DoxyCodeLine{                                                    \{\textcolor{stringliteral}{"IVARM\_STATE"},    \textcolor{stringliteral}{""}\}\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_a9fda7e84daaae7d5a983a088121163e0}\label{_r_e_s_t_adapter_main_8cpp_a9fda7e84daaae7d5a983a088121163e0}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!sysPrefix@{sysPrefix}}
+\index{sysPrefix@{sysPrefix}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{sysPrefix}{sysPrefix}}
+{\footnotesize\ttfamily const string sys\+Prefix = \char`\"{}\mbox{[}S\+YS\mbox{]}\char`\"{}}
+
+\mbox{\Hypertarget{_r_e_s_t_adapter_main_8cpp_af4bd819081fac2a76628bd5344eba0f8}\label{_r_e_s_t_adapter_main_8cpp_af4bd819081fac2a76628bd5344eba0f8}} 
+\index{RESTAdapterMain.cpp@{RESTAdapterMain.cpp}!thr@{thr}}
+\index{thr@{thr}!RESTAdapterMain.cpp@{RESTAdapterMain.cpp}}
+\doxysubsubsection{\texorpdfstring{thr}{thr}}
+{\footnotesize\ttfamily int thr = 2}
+

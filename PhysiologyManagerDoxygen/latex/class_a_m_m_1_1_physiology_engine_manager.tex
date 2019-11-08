@@ -1,0 +1,382 @@
+\hypertarget{class_a_m_m_1_1_physiology_engine_manager}{}\doxysection{A\+MM\+::Physiology\+Engine\+Manager Class Reference}
+\label{class_a_m_m_1_1_physiology_engine_manager}\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+
+
+{\ttfamily \#include $<$Physiology\+Engine\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_ae32f4fe3b47fa57d50fc7a0107fe40f7}{Physiology\+Engine\+Manager}} ()
+\item 
+virtual \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_ae72ce0052153d6329a815a589301fa3b}{$\sim$\+Physiology\+Engine\+Manager}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_a67dddb622175e4fd98b5f9185dd0038a}{Publish\+Operational\+Description}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_a01c881f2c3a3cdddee409b1aaee0309c}{Publish\+Configuration}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_ac8baf25a3f0824f5ffc0f7f8ef2068ef}{Set\+Logging}} (bool \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_aa90d6a8d54e71e46442e065f3bb09069}{logging\+\_\+enabled}})
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_a8dc5e149b2007c3ba28058d833fc08e8}{Start\+Simulation}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_af94bc9d9602f4dcb5d23b462b5bc44e8}{Stop\+Simulation}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_a0779367a559a6886e60032d8fc875248}{Shutdown}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_a120863c1dc2ffd6fa8d97a7cfffa71d4}{Start\+Tick\+Simulation}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_a8f34391d5bd06c003f660fc202d43566}{Stop\+Tick\+Simulation}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_ab1ea31f1de5d13dbb04ef471bb9b7990}{Publish\+Data}} (bool force)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_ae88114ae0220665b73bbe201c961a4f0}{Print\+Available\+Node\+Paths}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_a54caefeec0331042f801ce13bd971357}{Print\+All\+Current\+Data}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_ab33c2ab5fff71912a9e7a7c25ef2babe}{Status}} ()
+\item 
+int \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_aa1f6181d446cdb1e7fa17173645e83f3}{Get\+Node\+Path\+Count}} ()
+\item 
+int \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_a2428f46141a79da4ca92f32c2ddccaab}{Get\+Tick\+Count}} ()
+\item 
+bool \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_a14cec76365f41dad334eba80b179d85f}{is\+Running}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_a3d414163d8af623709cc44bd72d89b6d}{Send\+Shutdown}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_a7face9ca25e7b9062462e01821884892}{Write\+Node\+Data}} (std\+::string node)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_a9902d718aa3500edca3a1f317fdfc2e8}{Write\+High\+Frequency\+Node\+Data}} (std\+::string node)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_a56789e9803d13ff874f06c40dab3eb6a}{Tick\+Loop}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_ae9c95199d122f42d2febc5553f09e57e}{Advance\+Time\+Tick}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_ab38606716aed70b8576d8badfe1e86b5}{On\+New\+Tick}} (A\+M\+M\+::\+Tick \&ti, Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_a16d82c1889d8f69f3c1ee248ae67ccc2}{On\+New\+Command}} (Command \&cm, Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_af8f4a184c67bc0401fca060b7bc15288}{On\+New\+Simulation\+Control}} (Simulation\+Control \&sim\+Control, Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_ae096d49cd81eb0a93a2de899d988d73c}{On\+New\+Instrument\+Data}} (Instrument\+Data \&i, Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_a10ce95a0c1cbc33e7f86d74799f1a466}{On\+New\+Physiology\+Modification}} (A\+M\+M\+::\+Physiology\+Modification \&phys\+Mod, Sample\+Info\+\_\+t $\ast$info)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_biogears_thread}{Biogears\+Thread}} $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_ac016b014bbbaf8b3ca1b5bd950abdb58}{bg}}
+\item 
+std\+::string \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_a53214020a97e86432cd0d1028584d0b3}{state\+File}}
+\item 
+bool \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_ad5b4693297f78fe397f39b8a11fe8a30}{closed}} = false
+\item 
+bool \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_aba3f18535adc335636c578f621657b25}{paused}} = false
+\item 
+bool \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_a83b5dbbb6380035def7cb2cab8e7719b}{running}} = false
+\item 
+int \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_ac4c423e08c8e79acc0835e78b5294a8c}{last\+Frame}} = 0
+\item 
+bool \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_aa90d6a8d54e71e46442e065f3bb09069}{logging\+\_\+enabled}} = false
+\item 
+std\+::map$<$ std\+::string, double(Biogears\+Thread\+::$\ast$)()$>$ $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_aee0910e0efbde01075ba677737f3b636}{node\+Path\+Map}}
+\item 
+std\+::string \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_aec2be27476196ef998c44c914667ca9d}{sys\+Prefix}} = \char`\"{}\mbox{[}S\+YS\mbox{]}\char`\"{}
+\item 
+std\+::string \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_aab8de9810f2cf5dd6761eb9d7b5773a4}{act\+Prefix}} = \char`\"{}\mbox{[}A\+CT\mbox{]}\char`\"{}
+\item 
+std\+::string \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_ab02bb4b2f061cd1deea1e98753fe562f}{load\+Prefix}} = \char`\"{}L\+O\+A\+D\+\_\+\+S\+T\+A\+T\+E\+:\char`\"{}
+\item 
+std\+::string \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_a13ce8050e1368d571dcf2d1a7b3bbee3}{load\+Scenario\+Prefix}} = \char`\"{}L\+O\+A\+D\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+:\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+A\+M\+M\+::\+U\+U\+ID \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_a6186a7a182229a81cb09314dd102be4d}{m\+\_\+uuid}}
+\item 
+std\+::string \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_afc96105d917956009b601b5d9e0b10a6}{module\+Name}} = \char`\"{}A\+M\+M\+\_\+\+Physiology\+Engine\char`\"{}
+\item 
+std\+::string \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_a0bde1860be478233f511dc09defb658c}{config\+File}} = \char`\"{}config/pe\+\_\+manager\+\_\+amm.\+xml\char`\"{}
+\item 
+A\+M\+M\+::\+D\+D\+S\+Manager$<$ \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager}{A\+M\+M\+::\+Physiology\+Engine\+Manager}} $>$ $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_a912d9d24f8064df147cd48df34861c97}{m\+\_\+mgr}} = new D\+D\+S\+Manager$<$\mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager}{A\+M\+M\+::\+Physiology\+Engine\+Manager}}$>$(\mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_a0bde1860be478233f511dc09defb658c}{config\+File}})
+\item 
+std\+::mutex \mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_a080d672926b15b4c5c357118f12bdcbe}{m\+\_\+mutex}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_ae32f4fe3b47fa57d50fc7a0107fe40f7}\label{class_a_m_m_1_1_physiology_engine_manager_ae32f4fe3b47fa57d50fc7a0107fe40f7}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!PhysiologyEngineManager@{PhysiologyEngineManager}}
+\index{PhysiologyEngineManager@{PhysiologyEngineManager}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{PhysiologyEngineManager()}{PhysiologyEngineManager()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Physiology\+Engine\+Manager\+::\+Physiology\+Engine\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_ae72ce0052153d6329a815a589301fa3b}\label{class_a_m_m_1_1_physiology_engine_manager_ae72ce0052153d6329a815a589301fa3b}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!````~PhysiologyEngineManager@{$\sim$PhysiologyEngineManager}}
+\index{````~PhysiologyEngineManager@{$\sim$PhysiologyEngineManager}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$PhysiologyEngineManager()}{~PhysiologyEngineManager()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Physiology\+Engine\+Manager\+::$\sim$\+Physiology\+Engine\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_ae9c95199d122f42d2febc5553f09e57e}\label{class_a_m_m_1_1_physiology_engine_manager_ae9c95199d122f42d2febc5553f09e57e}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!AdvanceTimeTick@{AdvanceTimeTick}}
+\index{AdvanceTimeTick@{AdvanceTimeTick}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{AdvanceTimeTick()}{AdvanceTimeTick()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Physiology\+Engine\+Manager\+::\+Advance\+Time\+Tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_aa1f6181d446cdb1e7fa17173645e83f3}\label{class_a_m_m_1_1_physiology_engine_manager_aa1f6181d446cdb1e7fa17173645e83f3}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!GetNodePathCount@{GetNodePathCount}}
+\index{GetNodePathCount@{GetNodePathCount}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{GetNodePathCount()}{GetNodePathCount()}}
+{\footnotesize\ttfamily int A\+M\+M\+::\+Physiology\+Engine\+Manager\+::\+Get\+Node\+Path\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_a2428f46141a79da4ca92f32c2ddccaab}\label{class_a_m_m_1_1_physiology_engine_manager_a2428f46141a79da4ca92f32c2ddccaab}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!GetTickCount@{GetTickCount}}
+\index{GetTickCount@{GetTickCount}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{GetTickCount()}{GetTickCount()}}
+{\footnotesize\ttfamily int A\+M\+M\+::\+Physiology\+Engine\+Manager\+::\+Get\+Tick\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_a14cec76365f41dad334eba80b179d85f}\label{class_a_m_m_1_1_physiology_engine_manager_a14cec76365f41dad334eba80b179d85f}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!isRunning@{isRunning}}
+\index{isRunning@{isRunning}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{isRunning()}{isRunning()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Physiology\+Engine\+Manager\+::is\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_a16d82c1889d8f69f3c1ee248ae67ccc2}\label{class_a_m_m_1_1_physiology_engine_manager_a16d82c1889d8f69f3c1ee248ae67ccc2}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!OnNewCommand@{OnNewCommand}}
+\index{OnNewCommand@{OnNewCommand}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{OnNewCommand()}{OnNewCommand()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Physiology\+Engine\+Manager\+::\+On\+New\+Command (\begin{DoxyParamCaption}\item[{Command \&}]{cm,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_ae096d49cd81eb0a93a2de899d988d73c}\label{class_a_m_m_1_1_physiology_engine_manager_ae096d49cd81eb0a93a2de899d988d73c}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!OnNewInstrumentData@{OnNewInstrumentData}}
+\index{OnNewInstrumentData@{OnNewInstrumentData}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{OnNewInstrumentData()}{OnNewInstrumentData()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Physiology\+Engine\+Manager\+::\+On\+New\+Instrument\+Data (\begin{DoxyParamCaption}\item[{Instrument\+Data \&}]{i,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_a10ce95a0c1cbc33e7f86d74799f1a466}\label{class_a_m_m_1_1_physiology_engine_manager_a10ce95a0c1cbc33e7f86d74799f1a466}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!OnNewPhysiologyModification@{OnNewPhysiologyModification}}
+\index{OnNewPhysiologyModification@{OnNewPhysiologyModification}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{OnNewPhysiologyModification()}{OnNewPhysiologyModification()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Physiology\+Engine\+Manager\+::\+On\+New\+Physiology\+Modification (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Physiology\+Modification \&}]{phys\+Mod,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_af8f4a184c67bc0401fca060b7bc15288}\label{class_a_m_m_1_1_physiology_engine_manager_af8f4a184c67bc0401fca060b7bc15288}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!OnNewSimulationControl@{OnNewSimulationControl}}
+\index{OnNewSimulationControl@{OnNewSimulationControl}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{OnNewSimulationControl()}{OnNewSimulationControl()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Physiology\+Engine\+Manager\+::\+On\+New\+Simulation\+Control (\begin{DoxyParamCaption}\item[{Simulation\+Control \&}]{sim\+Control,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_ab38606716aed70b8576d8badfe1e86b5}\label{class_a_m_m_1_1_physiology_engine_manager_ab38606716aed70b8576d8badfe1e86b5}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!OnNewTick@{OnNewTick}}
+\index{OnNewTick@{OnNewTick}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{OnNewTick()}{OnNewTick()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Physiology\+Engine\+Manager\+::\+On\+New\+Tick (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Tick \&}]{ti,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_a54caefeec0331042f801ce13bd971357}\label{class_a_m_m_1_1_physiology_engine_manager_a54caefeec0331042f801ce13bd971357}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!PrintAllCurrentData@{PrintAllCurrentData}}
+\index{PrintAllCurrentData@{PrintAllCurrentData}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{PrintAllCurrentData()}{PrintAllCurrentData()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Physiology\+Engine\+Manager\+::\+Print\+All\+Current\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_ae88114ae0220665b73bbe201c961a4f0}\label{class_a_m_m_1_1_physiology_engine_manager_ae88114ae0220665b73bbe201c961a4f0}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!PrintAvailableNodePaths@{PrintAvailableNodePaths}}
+\index{PrintAvailableNodePaths@{PrintAvailableNodePaths}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{PrintAvailableNodePaths()}{PrintAvailableNodePaths()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Physiology\+Engine\+Manager\+::\+Print\+Available\+Node\+Paths (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_a01c881f2c3a3cdddee409b1aaee0309c}\label{class_a_m_m_1_1_physiology_engine_manager_a01c881f2c3a3cdddee409b1aaee0309c}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!PublishConfiguration@{PublishConfiguration}}
+\index{PublishConfiguration@{PublishConfiguration}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{PublishConfiguration()}{PublishConfiguration()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Physiology\+Engine\+Manager\+::\+Publish\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_ab1ea31f1de5d13dbb04ef471bb9b7990}\label{class_a_m_m_1_1_physiology_engine_manager_ab1ea31f1de5d13dbb04ef471bb9b7990}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!PublishData@{PublishData}}
+\index{PublishData@{PublishData}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{PublishData()}{PublishData()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Physiology\+Engine\+Manager\+::\+Publish\+Data (\begin{DoxyParamCaption}\item[{bool}]{force = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_a67dddb622175e4fd98b5f9185dd0038a}\label{class_a_m_m_1_1_physiology_engine_manager_a67dddb622175e4fd98b5f9185dd0038a}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!PublishOperationalDescription@{PublishOperationalDescription}}
+\index{PublishOperationalDescription@{PublishOperationalDescription}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{PublishOperationalDescription()}{PublishOperationalDescription()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Physiology\+Engine\+Manager\+::\+Publish\+Operational\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_a3d414163d8af623709cc44bd72d89b6d}\label{class_a_m_m_1_1_physiology_engine_manager_a3d414163d8af623709cc44bd72d89b6d}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!SendShutdown@{SendShutdown}}
+\index{SendShutdown@{SendShutdown}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{SendShutdown()}{SendShutdown()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Physiology\+Engine\+Manager\+::\+Send\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_ac8baf25a3f0824f5ffc0f7f8ef2068ef}\label{class_a_m_m_1_1_physiology_engine_manager_ac8baf25a3f0824f5ffc0f7f8ef2068ef}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!SetLogging@{SetLogging}}
+\index{SetLogging@{SetLogging}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{SetLogging()}{SetLogging()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Physiology\+Engine\+Manager\+::\+Set\+Logging (\begin{DoxyParamCaption}\item[{bool}]{logging\+\_\+enabled }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_a0779367a559a6886e60032d8fc875248}\label{class_a_m_m_1_1_physiology_engine_manager_a0779367a559a6886e60032d8fc875248}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{Shutdown()}{Shutdown()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Physiology\+Engine\+Manager\+::\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_a8dc5e149b2007c3ba28058d833fc08e8}\label{class_a_m_m_1_1_physiology_engine_manager_a8dc5e149b2007c3ba28058d833fc08e8}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!StartSimulation@{StartSimulation}}
+\index{StartSimulation@{StartSimulation}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{StartSimulation()}{StartSimulation()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Physiology\+Engine\+Manager\+::\+Start\+Simulation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_a120863c1dc2ffd6fa8d97a7cfffa71d4}\label{class_a_m_m_1_1_physiology_engine_manager_a120863c1dc2ffd6fa8d97a7cfffa71d4}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!StartTickSimulation@{StartTickSimulation}}
+\index{StartTickSimulation@{StartTickSimulation}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{StartTickSimulation()}{StartTickSimulation()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Physiology\+Engine\+Manager\+::\+Start\+Tick\+Simulation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_ab33c2ab5fff71912a9e7a7c25ef2babe}\label{class_a_m_m_1_1_physiology_engine_manager_ab33c2ab5fff71912a9e7a7c25ef2babe}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!Status@{Status}}
+\index{Status@{Status}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{Status()}{Status()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Physiology\+Engine\+Manager\+::\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_af94bc9d9602f4dcb5d23b462b5bc44e8}\label{class_a_m_m_1_1_physiology_engine_manager_af94bc9d9602f4dcb5d23b462b5bc44e8}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!StopSimulation@{StopSimulation}}
+\index{StopSimulation@{StopSimulation}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{StopSimulation()}{StopSimulation()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Physiology\+Engine\+Manager\+::\+Stop\+Simulation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_a8f34391d5bd06c003f660fc202d43566}\label{class_a_m_m_1_1_physiology_engine_manager_a8f34391d5bd06c003f660fc202d43566}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!StopTickSimulation@{StopTickSimulation}}
+\index{StopTickSimulation@{StopTickSimulation}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{StopTickSimulation()}{StopTickSimulation()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Physiology\+Engine\+Manager\+::\+Stop\+Tick\+Simulation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_a56789e9803d13ff874f06c40dab3eb6a}\label{class_a_m_m_1_1_physiology_engine_manager_a56789e9803d13ff874f06c40dab3eb6a}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!TickLoop@{TickLoop}}
+\index{TickLoop@{TickLoop}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{TickLoop()}{TickLoop()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Physiology\+Engine\+Manager\+::\+Tick\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_a9902d718aa3500edca3a1f317fdfc2e8}\label{class_a_m_m_1_1_physiology_engine_manager_a9902d718aa3500edca3a1f317fdfc2e8}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!WriteHighFrequencyNodeData@{WriteHighFrequencyNodeData}}
+\index{WriteHighFrequencyNodeData@{WriteHighFrequencyNodeData}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{WriteHighFrequencyNodeData()}{WriteHighFrequencyNodeData()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Physiology\+Engine\+Manager\+::\+Write\+High\+Frequency\+Node\+Data (\begin{DoxyParamCaption}\item[{std\+::string}]{node }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_a7face9ca25e7b9062462e01821884892}\label{class_a_m_m_1_1_physiology_engine_manager_a7face9ca25e7b9062462e01821884892}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!WriteNodeData@{WriteNodeData}}
+\index{WriteNodeData@{WriteNodeData}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{WriteNodeData()}{WriteNodeData()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Physiology\+Engine\+Manager\+::\+Write\+Node\+Data (\begin{DoxyParamCaption}\item[{std\+::string}]{node }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_aab8de9810f2cf5dd6761eb9d7b5773a4}\label{class_a_m_m_1_1_physiology_engine_manager_aab8de9810f2cf5dd6761eb9d7b5773a4}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!actPrefix@{actPrefix}}
+\index{actPrefix@{actPrefix}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{actPrefix}{actPrefix}}
+{\footnotesize\ttfamily std\+::string A\+M\+M\+::\+Physiology\+Engine\+Manager\+::act\+Prefix = \char`\"{}\mbox{[}A\+CT\mbox{]}\char`\"{}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_ac016b014bbbaf8b3ca1b5bd950abdb58}\label{class_a_m_m_1_1_physiology_engine_manager_ac016b014bbbaf8b3ca1b5bd950abdb58}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!bg@{bg}}
+\index{bg@{bg}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{bg}{bg}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread}{Biogears\+Thread}}$\ast$ A\+M\+M\+::\+Physiology\+Engine\+Manager\+::bg}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_ad5b4693297f78fe397f39b8a11fe8a30}\label{class_a_m_m_1_1_physiology_engine_manager_ad5b4693297f78fe397f39b8a11fe8a30}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!closed@{closed}}
+\index{closed@{closed}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{closed}{closed}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Physiology\+Engine\+Manager\+::closed = false}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_a0bde1860be478233f511dc09defb658c}\label{class_a_m_m_1_1_physiology_engine_manager_a0bde1860be478233f511dc09defb658c}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!configFile@{configFile}}
+\index{configFile@{configFile}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{configFile}{configFile}}
+{\footnotesize\ttfamily std\+::string A\+M\+M\+::\+Physiology\+Engine\+Manager\+::config\+File = \char`\"{}config/pe\+\_\+manager\+\_\+amm.\+xml\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_ac4c423e08c8e79acc0835e78b5294a8c}\label{class_a_m_m_1_1_physiology_engine_manager_ac4c423e08c8e79acc0835e78b5294a8c}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!lastFrame@{lastFrame}}
+\index{lastFrame@{lastFrame}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{lastFrame}{lastFrame}}
+{\footnotesize\ttfamily int A\+M\+M\+::\+Physiology\+Engine\+Manager\+::last\+Frame = 0}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_ab02bb4b2f061cd1deea1e98753fe562f}\label{class_a_m_m_1_1_physiology_engine_manager_ab02bb4b2f061cd1deea1e98753fe562f}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!loadPrefix@{loadPrefix}}
+\index{loadPrefix@{loadPrefix}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{loadPrefix}{loadPrefix}}
+{\footnotesize\ttfamily std\+::string A\+M\+M\+::\+Physiology\+Engine\+Manager\+::load\+Prefix = \char`\"{}L\+O\+A\+D\+\_\+\+S\+T\+A\+T\+E\+:\char`\"{}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_a13ce8050e1368d571dcf2d1a7b3bbee3}\label{class_a_m_m_1_1_physiology_engine_manager_a13ce8050e1368d571dcf2d1a7b3bbee3}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!loadScenarioPrefix@{loadScenarioPrefix}}
+\index{loadScenarioPrefix@{loadScenarioPrefix}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{loadScenarioPrefix}{loadScenarioPrefix}}
+{\footnotesize\ttfamily std\+::string A\+M\+M\+::\+Physiology\+Engine\+Manager\+::load\+Scenario\+Prefix = \char`\"{}L\+O\+A\+D\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+:\char`\"{}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_aa90d6a8d54e71e46442e065f3bb09069}\label{class_a_m_m_1_1_physiology_engine_manager_aa90d6a8d54e71e46442e065f3bb09069}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!logging\_enabled@{logging\_enabled}}
+\index{logging\_enabled@{logging\_enabled}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{logging\_enabled}{logging\_enabled}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Physiology\+Engine\+Manager\+::logging\+\_\+enabled = false}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_a912d9d24f8064df147cd48df34861c97}\label{class_a_m_m_1_1_physiology_engine_manager_a912d9d24f8064df147cd48df34861c97}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!m\_mgr@{m\_mgr}}
+\index{m\_mgr@{m\_mgr}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{m\_mgr}{m\_mgr}}
+{\footnotesize\ttfamily A\+M\+M\+::\+D\+D\+S\+Manager$<$\mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager}{A\+M\+M\+::\+Physiology\+Engine\+Manager}}$>$$\ast$ A\+M\+M\+::\+Physiology\+Engine\+Manager\+::m\+\_\+mgr = new D\+D\+S\+Manager$<$\mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager}{A\+M\+M\+::\+Physiology\+Engine\+Manager}}$>$(\mbox{\hyperlink{class_a_m_m_1_1_physiology_engine_manager_a0bde1860be478233f511dc09defb658c}{config\+File}})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_a080d672926b15b4c5c357118f12bdcbe}\label{class_a_m_m_1_1_physiology_engine_manager_a080d672926b15b4c5c357118f12bdcbe}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!m\_mutex@{m\_mutex}}
+\index{m\_mutex@{m\_mutex}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{m\_mutex}{m\_mutex}}
+{\footnotesize\ttfamily std\+::mutex A\+M\+M\+::\+Physiology\+Engine\+Manager\+::m\+\_\+mutex\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_a6186a7a182229a81cb09314dd102be4d}\label{class_a_m_m_1_1_physiology_engine_manager_a6186a7a182229a81cb09314dd102be4d}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!m\_uuid@{m\_uuid}}
+\index{m\_uuid@{m\_uuid}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{m\_uuid}{m\_uuid}}
+{\footnotesize\ttfamily A\+M\+M\+::\+U\+U\+ID A\+M\+M\+::\+Physiology\+Engine\+Manager\+::m\+\_\+uuid\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_afc96105d917956009b601b5d9e0b10a6}\label{class_a_m_m_1_1_physiology_engine_manager_afc96105d917956009b601b5d9e0b10a6}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!moduleName@{moduleName}}
+\index{moduleName@{moduleName}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{moduleName}{moduleName}}
+{\footnotesize\ttfamily std\+::string A\+M\+M\+::\+Physiology\+Engine\+Manager\+::module\+Name = \char`\"{}A\+M\+M\+\_\+\+Physiology\+Engine\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_aee0910e0efbde01075ba677737f3b636}\label{class_a_m_m_1_1_physiology_engine_manager_aee0910e0efbde01075ba677737f3b636}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!nodePathMap@{nodePathMap}}
+\index{nodePathMap@{nodePathMap}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{nodePathMap}{nodePathMap}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, double (Biogears\+Thread\+::$\ast$)()$>$$\ast$ A\+M\+M\+::\+Physiology\+Engine\+Manager\+::node\+Path\+Map}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_aba3f18535adc335636c578f621657b25}\label{class_a_m_m_1_1_physiology_engine_manager_aba3f18535adc335636c578f621657b25}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!paused@{paused}}
+\index{paused@{paused}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{paused}{paused}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Physiology\+Engine\+Manager\+::paused = false}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_a83b5dbbb6380035def7cb2cab8e7719b}\label{class_a_m_m_1_1_physiology_engine_manager_a83b5dbbb6380035def7cb2cab8e7719b}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!running@{running}}
+\index{running@{running}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{running}{running}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Physiology\+Engine\+Manager\+::running = false}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_a53214020a97e86432cd0d1028584d0b3}\label{class_a_m_m_1_1_physiology_engine_manager_a53214020a97e86432cd0d1028584d0b3}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!stateFile@{stateFile}}
+\index{stateFile@{stateFile}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{stateFile}{stateFile}}
+{\footnotesize\ttfamily std\+::string A\+M\+M\+::\+Physiology\+Engine\+Manager\+::state\+File}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_physiology_engine_manager_aec2be27476196ef998c44c914667ca9d}\label{class_a_m_m_1_1_physiology_engine_manager_aec2be27476196ef998c44c914667ca9d}} 
+\index{AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}!sysPrefix@{sysPrefix}}
+\index{sysPrefix@{sysPrefix}!AMM::PhysiologyEngineManager@{AMM::PhysiologyEngineManager}}
+\doxysubsubsection{\texorpdfstring{sysPrefix}{sysPrefix}}
+{\footnotesize\ttfamily std\+::string A\+M\+M\+::\+Physiology\+Engine\+Manager\+::sys\+Prefix = \char`\"{}\mbox{[}S\+YS\mbox{]}\char`\"{}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+A\+M\+M/\mbox{\hyperlink{_physiology_engine_manager_8h}{Physiology\+Engine\+Manager.\+h}}\item 
+src/\+A\+M\+M/\mbox{\hyperlink{_physiology_engine_manager_8cpp}{Physiology\+Engine\+Manager.\+cpp}}\end{DoxyCompactItemize}

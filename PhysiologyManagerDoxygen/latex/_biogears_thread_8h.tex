@@ -1,0 +1,77 @@
+\hypertarget{_biogears_thread_8h}{}\doxysection{src/\+A\+M\+M/\+Biogears\+Thread.h File Reference}
+\label{_biogears_thread_8h}\index{src/AMM/BiogearsThread.h@{src/AMM/BiogearsThread.h}}
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include \char`\"{}A\+M\+M/\+Base\+Logger.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$boost/algorithm/string.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/assign/list\+\_\+of.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/assign/std/vector.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/exception/all.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/filesystem.\+hpp$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/\+Common\+Data\+Model.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/engine/\+Bio\+Gears\+Physiology\+Engine.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/compartment/\+S\+E\+Compartment\+Manager.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/compartment/fluid/\+S\+E\+Gas\+Compartment.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/compartment/fluid/\+S\+E\+Liquid\+Compartment.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/patient/\+S\+E\+Patient.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/system/physiology/\+S\+E\+Blood\+Chemistry\+System.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/system/physiology/\+S\+E\+Cardiovascular\+System.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/system/physiology/\+S\+E\+Energy\+System.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/system/physiology/\+S\+E\+Respiratory\+System.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/system/physiology/\+S\+E\+Renal\+System.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/engine/\+Physiology\+Engine\+Track.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/patient/actions/\+S\+E\+Pain\+Stimulus.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/patient/actions/\+S\+E\+Substance\+Bolus.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/patient/actions/\+S\+E\+Hemorrhage.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/substance/\+S\+E\+Substance\+Manager.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/system/physiology/\+S\+E\+Drug\+System.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/system/physiology/\+S\+E\+Nervous\+System.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/substance/\+S\+E\+Substance.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/utils/\+S\+E\+Event\+Handler.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/properties/\+S\+E\+Function\+Volume\+Vs\+Time.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/properties/\+S\+E\+Scalar\+Amount\+Per\+Volume.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/properties/\+S\+E\+Scalar\+Fraction.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/properties/\+S\+E\+Scalar\+Frequency.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/properties/\+S\+E\+Scalar\+Length.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/properties/\+S\+E\+Scalar\+Mass.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/properties/\+S\+E\+Scalar\+Mass\+Per\+Volume.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/properties/\+S\+E\+Scalar\+Pressure.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/properties/\+S\+E\+Scalar\+Temperature.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/properties/\+S\+E\+Scalar\+Time.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/properties/\+S\+E\+Scalar\+Volume.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/properties/\+S\+E\+Scalar\+Volume\+Per\+Time.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/properties/\+S\+E\+Scalar\+Osmolality.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/properties/\+S\+E\+Scalar\+Osmolarity.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/properties/\+S\+E\+Scalar\+Types.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/patient/actions/\+S\+E\+Substance\+Compound\+Infusion.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/patient/actions/\+S\+E\+Substance\+Infusion.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/patient/assessments/\+S\+E\+Complete\+Blood\+Count.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/patient/assessments/\+S\+E\+Comprehensive\+Metabolic\+Panel.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/patient/assessments/\+S\+E\+Pulmonary\+Function\+Test.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/patient/assessments/\+S\+E\+Urinalysis.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/substance/\+S\+E\+Substance\+Compound.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/system/equipment/\+Electro\+Cardio\+Gram/\+S\+E\+Electro\+Cardio\+Gram.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/system/equipment/\+Anesthesia/\+S\+E\+Anesthesia\+Machine.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/system/equipment/\+Anesthesia/\+S\+E\+Anesthesia\+Machine\+Oxygen\+Bottle.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/system/equipment/\+Anesthesia/actions/\+S\+E\+Anesthesia\+Machine\+Configuration.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/system/equipment/\+Anesthesia/actions/\+S\+E\+Mask\+Leak.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/system/equipment/\+Anesthesia/actions/\+S\+E\+Oxygen\+Wall\+Port\+Pressure\+Loss.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/scenario/\+S\+E\+Advance\+Time.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/scenario/\+S\+E\+Scenario.\+h$>$}\newline
+{\ttfamily \#include $<$biogears/cdm/scenario/\+S\+E\+Scenario\+Exec.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}A\+M\+M/\+Utility.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread}{A\+M\+M\+::\+Biogears\+Thread}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_a_m_m}{A\+MM}}
+\end{DoxyCompactItemize}

@@ -1,0 +1,418 @@
+\hypertarget{_t_c_p_bridge_main_8cpp}{}\doxysection{src/\+T\+C\+P\+Bridge\+Main.cpp File Reference}
+\label{_t_c_p_bridge_main_8cpp}\index{src/TCPBridgeMain.cpp@{src/TCPBridgeMain.cpp}}
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$boost/algorithm/string.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/archive/iterators/base64\+\_\+from\+\_\+binary.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/archive/iterators/binary\+\_\+from\+\_\+base64.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/archive/iterators/transform\+\_\+width.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/archive/text\+\_\+iarchive.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/archive/text\+\_\+oarchive.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/assign/list\+\_\+of.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/assign/std/vector.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/serialization/map.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/foreach.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/bind.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/asio.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/thread.\+hpp$>$}\newline
+{\ttfamily \#include \char`\"{}Net/\+Client.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Net/\+Server.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Net/\+Udp\+Discovery\+Server.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}amm\+\_\+std.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}A\+M\+M/\+Base\+Logger.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}A\+M\+M/\+Utility.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}tinyxml2.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_t_c_p_bridge_listener}{T\+C\+P\+Bridge\+Listener}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_a0f4c501475f4c6061c429fb011b52d94}{Initialize\+Lab\+Nodes}} ()
+\item 
+void \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_a6e1e60625364238ced2bf8f4fe1f6061}{send\+Config}} (\mbox{\hyperlink{class_client}{Client}} $\ast$c, std\+::string scene, std\+::string client\+Type)
+\item 
+void \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_a267f8e211fa9a385f595b243bcccf004}{send\+Config\+To\+All}} (std\+::string scene)
+\item 
+void \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_a1220502396d2c6afb2706c049a42ac99}{Publish\+Settings}} (std\+::string const \&equipment\+Type)
+\item 
+void \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_af4ae8606324ba31a1a8e29b19f25a784}{Handle\+Settings}} (\mbox{\hyperlink{class_client}{Client}} $\ast$c, std\+::string const \&settings\+Val)
+\item 
+void \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_a45e21e9ffb3dbbae7884cc0f6896f8f9}{Handle\+Capabilities}} (\mbox{\hyperlink{class_client}{Client}} $\ast$c, std\+::string const \&capability\+Val)
+\item 
+void \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_abb9eb759b455e2a75b24a289cc46e02f}{Handle\+Status}} (\mbox{\hyperlink{class_client}{Client}} $\ast$c, std\+::string const \&status\+Val)
+\item 
+void \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_a7833815fc4ab493c7139a54b3d96685e}{Dispatch\+Request}} (\mbox{\hyperlink{class_client}{Client}} $\ast$c, std\+::string const \&request)
+\item 
+void \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_a2627723ed32a582073d31606e5ec2047}{Udp\+Discovery\+Thread}} ()
+\item 
+static void \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_a003669aecb12c3bced98b4bb9dc394ca}{show\+\_\+usage}} (const std\+::string \&name)
+\item 
+void \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_a3d7a1367587263315242c59e748f20b1}{Publish\+Operational\+Description}} ()
+\item 
+void \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_ab72b7fdf60eda751835ccc6aaa6f3322}{Publish\+Configuration}} ()
+\item 
+int \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_ac0f2228420376f4db7e1274f2b41667c}{main}} (int argc, const char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_server}{Server}} $\ast$ \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_a448b7e95325656b7431e9bff4d0b4fb6}{s}}
+\item 
+short \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_abf0c45144b89f0a806f1414513c20d8b}{discovery\+Port}} = 8888
+\item 
+int \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_acf35a16133261ce31afe59b78c8d7abd}{bridge\+Port}} = 9015
+\item 
+int \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_aa2339b21f98abccd12533a54d5f9d712}{daemonize}} = 1
+\item 
+int \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_a13de4912fe523b592f96a3410747ca62}{discovery}} = 1
+\item 
+std\+::map$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_aad7a6ff954881d9071dc48c76bb7d925}{global\+Inbound\+Buffer}}
+\item 
+const string \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_ad5b13fa4f3d76f53fe39502f5c1e353c}{capability\+Prefix}} = \char`\"{}C\+A\+P\+A\+B\+I\+L\+I\+TY=\char`\"{}
+\item 
+const string \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_ac366d1995ed56a5b3a2adf34e42640fb}{settings\+Prefix}} = \char`\"{}S\+E\+T\+T\+I\+N\+GS=\char`\"{}
+\item 
+const string \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_a4793287a43ed1662d50b75ec1e7cbfb8}{status\+Prefix}} = \char`\"{}S\+T\+A\+T\+US=\char`\"{}
+\item 
+const string \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_aef25fede16bad13e44df59c66a38b003}{config\+Prefix}} = \char`\"{}C\+O\+N\+F\+IG=\char`\"{}
+\item 
+const string \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_a061258887d9819f62baa643691fd0c46}{module\+Prefix}} = \char`\"{}M\+O\+D\+U\+L\+E\+\_\+\+N\+A\+ME=\char`\"{}
+\item 
+const string \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_a8f6a2fc649181f29ad1a4fc2c02e3c0b}{register\+Prefix}} = \char`\"{}R\+E\+G\+I\+S\+T\+ER=\char`\"{}
+\item 
+const string \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_a78cc5fcce8b7d340ed83795d95fc0ef6}{request\+Prefix}} = \char`\"{}R\+E\+Q\+U\+E\+ST=\char`\"{}
+\item 
+const string \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_a43cc66c7ad3fe24a027f4214922b7f5d}{keep\+History\+Prefix}} = \char`\"{}K\+E\+E\+P\+\_\+\+H\+I\+S\+T\+O\+RY=\char`\"{}
+\item 
+const string \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_ac8fa94c47b351dba4b2968bf75ae4124}{action\+Prefix}} = \char`\"{}A\+CT=\char`\"{}
+\item 
+std\+::string \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_a253bcbc1fc14a627841c24ffc0e42e90}{generic\+Topic\+Prefix}} = \char`\"{}\mbox{[}\char`\"{}
+\item 
+const string \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_aa3897779d03d519b92d9aba1fb57aacd}{keep\+Alive\+Prefix}} = \char`\"{}\mbox{[}K\+E\+E\+P\+A\+L\+I\+VE\mbox{]}\char`\"{}
+\item 
+const string \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_a27fe2eb74266d2857ccb69f930e06247}{load\+Scenario\+Prefix}} = \char`\"{}L\+O\+A\+D\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+:\char`\"{}
+\item 
+const string \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_a7b3d81a68c156e5d990b986615b85a3d}{halting\+String}} = \char`\"{}H\+A\+L\+T\+I\+N\+G\+\_\+\+E\+R\+R\+OR\char`\"{}
+\item 
+const string \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_a9fda7e84daaae7d5a983a088121163e0}{sys\+Prefix}} = \char`\"{}\mbox{[}S\+YS\mbox{]}\char`\"{}
+\item 
+const string \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_a3cc1d7ac52b463b53a9c47280aec360f}{act\+Prefix}} = \char`\"{}\mbox{[}A\+CT\mbox{]}\char`\"{}
+\item 
+const string \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_a522d858a2bd50574806796d36c245fe5}{load\+Prefix}} = \char`\"{}L\+O\+A\+D\+\_\+\+S\+T\+A\+T\+E\+:\char`\"{}
+\item 
+string \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_abeb86d70b9590be1cf5d24a99fcacee1}{encoded\+Config}} = \char`\"{}\char`\"{}
+\item 
+bool \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_a624c24d3973e790d23212b57f13e894b}{closed}} = false
+\item 
+std\+::map$<$ std\+::string, std\+::vector$<$ std\+::string $>$ $>$ \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_ac6a80a9477f9be306957a38b6d80e3ff}{subscribed\+Topics}}
+\item 
+std\+::map$<$ std\+::string, std\+::vector$<$ std\+::string $>$ $>$ \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_adabe271fdd2cb2aaeafcc1c57e4c36e8}{published\+Topics}}
+\item 
+std\+::map$<$ std\+::string, std\+::map$<$ std\+::string, double $>$ $>$ \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_ad1c8fb65b04e5402e8faf502718be57b}{lab\+Nodes}}
+\item 
+std\+::map$<$ std\+::string, std\+::map$<$ std\+::string, std\+::string $>$ $>$ \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_aa8a18c440fc3c2dd90332bce02d882b9}{equipment\+Settings}}
+\item 
+std\+::map$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_afe6e30e5f6f19d2c9e75ce08572858b4}{client\+Map}}
+\item 
+std\+::map$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_a6dcf677e2322015da200707c55c3a66d}{client\+Type\+Map}}
+\item 
+const std\+::string \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_a0fb2dec9ed3c4c96f6498bd9e2a364e6}{module\+Name}} = \char`\"{}A\+M\+M\+\_\+\+T\+C\+P\+\_\+\+Bridge\char`\"{}
+\item 
+const std\+::string \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_ad5835f1d2646493dafb2c5ac6244a93f}{config\+File}} = \char`\"{}config/tcp\+\_\+bridge\+\_\+amm.\+xml\char`\"{}
+\item 
+A\+M\+M\+::\+D\+D\+S\+Manager$<$ \mbox{\hyperlink{class_t_c_p_bridge_listener}{T\+C\+P\+Bridge\+Listener}} $>$ $\ast$ \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_ade8be75b11770ea9f16373aeaef008e3}{mgr}} = new A\+M\+M\+::\+D\+D\+S\+Manager$<$\mbox{\hyperlink{class_t_c_p_bridge_listener}{T\+C\+P\+Bridge\+Listener}}$>$(\mbox{\hyperlink{_t_c_p_bridge_main_8cpp_ad5835f1d2646493dafb2c5ac6244a93f}{config\+File}})
+\item 
+A\+M\+M\+::\+U\+U\+ID \mbox{\hyperlink{_t_c_p_bridge_main_8cpp_a338fdb07d7fd7cfdbb20f88db81fb1a0}{m\+\_\+uuid}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_a7833815fc4ab493c7139a54b3d96685e}\label{_t_c_p_bridge_main_8cpp_a7833815fc4ab493c7139a54b3d96685e}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!DispatchRequest@{DispatchRequest}}
+\index{DispatchRequest@{DispatchRequest}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{DispatchRequest()}{DispatchRequest()}}
+{\footnotesize\ttfamily void Dispatch\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_client}{Client}} $\ast$}]{c,  }\item[{std\+::string const \&}]{request }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_a45e21e9ffb3dbbae7884cc0f6896f8f9}\label{_t_c_p_bridge_main_8cpp_a45e21e9ffb3dbbae7884cc0f6896f8f9}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!HandleCapabilities@{HandleCapabilities}}
+\index{HandleCapabilities@{HandleCapabilities}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{HandleCapabilities()}{HandleCapabilities()}}
+{\footnotesize\ttfamily void Handle\+Capabilities (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_client}{Client}} $\ast$}]{c,  }\item[{std\+::string const \&}]{capability\+Val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_af4ae8606324ba31a1a8e29b19f25a784}\label{_t_c_p_bridge_main_8cpp_af4ae8606324ba31a1a8e29b19f25a784}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!HandleSettings@{HandleSettings}}
+\index{HandleSettings@{HandleSettings}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{HandleSettings()}{HandleSettings()}}
+{\footnotesize\ttfamily void Handle\+Settings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_client}{Client}} $\ast$}]{c,  }\item[{std\+::string const \&}]{settings\+Val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_abb9eb759b455e2a75b24a289cc46e02f}\label{_t_c_p_bridge_main_8cpp_abb9eb759b455e2a75b24a289cc46e02f}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!HandleStatus@{HandleStatus}}
+\index{HandleStatus@{HandleStatus}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{HandleStatus()}{HandleStatus()}}
+{\footnotesize\ttfamily void Handle\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_client}{Client}} $\ast$}]{c,  }\item[{std\+::string const \&}]{status\+Val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_a0f4c501475f4c6061c429fb011b52d94}\label{_t_c_p_bridge_main_8cpp_a0f4c501475f4c6061c429fb011b52d94}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!InitializeLabNodes@{InitializeLabNodes}}
+\index{InitializeLabNodes@{InitializeLabNodes}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{InitializeLabNodes()}{InitializeLabNodes()}}
+{\footnotesize\ttfamily void Initialize\+Lab\+Nodes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_ac0f2228420376f4db7e1274f2b41667c}\label{_t_c_p_bridge_main_8cpp_ac0f2228420376f4db7e1274f2b41667c}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!main@{main}}
+\index{main@{main}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{const char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_ab72b7fdf60eda751835ccc6aaa6f3322}\label{_t_c_p_bridge_main_8cpp_ab72b7fdf60eda751835ccc6aaa6f3322}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!PublishConfiguration@{PublishConfiguration}}
+\index{PublishConfiguration@{PublishConfiguration}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{PublishConfiguration()}{PublishConfiguration()}}
+{\footnotesize\ttfamily void Publish\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_a3d7a1367587263315242c59e748f20b1}\label{_t_c_p_bridge_main_8cpp_a3d7a1367587263315242c59e748f20b1}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!PublishOperationalDescription@{PublishOperationalDescription}}
+\index{PublishOperationalDescription@{PublishOperationalDescription}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{PublishOperationalDescription()}{PublishOperationalDescription()}}
+{\footnotesize\ttfamily void Publish\+Operational\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_a1220502396d2c6afb2706c049a42ac99}\label{_t_c_p_bridge_main_8cpp_a1220502396d2c6afb2706c049a42ac99}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!PublishSettings@{PublishSettings}}
+\index{PublishSettings@{PublishSettings}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{PublishSettings()}{PublishSettings()}}
+{\footnotesize\ttfamily void Publish\+Settings (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{equipment\+Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_a6e1e60625364238ced2bf8f4fe1f6061}\label{_t_c_p_bridge_main_8cpp_a6e1e60625364238ced2bf8f4fe1f6061}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!sendConfig@{sendConfig}}
+\index{sendConfig@{sendConfig}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{sendConfig()}{sendConfig()}}
+{\footnotesize\ttfamily void send\+Config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_client}{Client}} $\ast$}]{c,  }\item[{std\+::string}]{scene,  }\item[{std\+::string}]{client\+Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_a267f8e211fa9a385f595b243bcccf004}\label{_t_c_p_bridge_main_8cpp_a267f8e211fa9a385f595b243bcccf004}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!sendConfigToAll@{sendConfigToAll}}
+\index{sendConfigToAll@{sendConfigToAll}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{sendConfigToAll()}{sendConfigToAll()}}
+{\footnotesize\ttfamily void send\+Config\+To\+All (\begin{DoxyParamCaption}\item[{std\+::string}]{scene }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_a003669aecb12c3bced98b4bb9dc394ca}\label{_t_c_p_bridge_main_8cpp_a003669aecb12c3bced98b4bb9dc394ca}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!show\_usage@{show\_usage}}
+\index{show\_usage@{show\_usage}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{show\_usage()}{show\_usage()}}
+{\footnotesize\ttfamily static void show\+\_\+usage (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_a2627723ed32a582073d31606e5ec2047}\label{_t_c_p_bridge_main_8cpp_a2627723ed32a582073d31606e5ec2047}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!UdpDiscoveryThread@{UdpDiscoveryThread}}
+\index{UdpDiscoveryThread@{UdpDiscoveryThread}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{UdpDiscoveryThread()}{UdpDiscoveryThread()}}
+{\footnotesize\ttfamily void Udp\+Discovery\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_ac8fa94c47b351dba4b2968bf75ae4124}\label{_t_c_p_bridge_main_8cpp_ac8fa94c47b351dba4b2968bf75ae4124}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!actionPrefix@{actionPrefix}}
+\index{actionPrefix@{actionPrefix}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{actionPrefix}{actionPrefix}}
+{\footnotesize\ttfamily const string action\+Prefix = \char`\"{}A\+CT=\char`\"{}}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_a3cc1d7ac52b463b53a9c47280aec360f}\label{_t_c_p_bridge_main_8cpp_a3cc1d7ac52b463b53a9c47280aec360f}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!actPrefix@{actPrefix}}
+\index{actPrefix@{actPrefix}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{actPrefix}{actPrefix}}
+{\footnotesize\ttfamily const string act\+Prefix = \char`\"{}\mbox{[}A\+CT\mbox{]}\char`\"{}}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_acf35a16133261ce31afe59b78c8d7abd}\label{_t_c_p_bridge_main_8cpp_acf35a16133261ce31afe59b78c8d7abd}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!bridgePort@{bridgePort}}
+\index{bridgePort@{bridgePort}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{bridgePort}{bridgePort}}
+{\footnotesize\ttfamily int bridge\+Port = 9015}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_ad5b13fa4f3d76f53fe39502f5c1e353c}\label{_t_c_p_bridge_main_8cpp_ad5b13fa4f3d76f53fe39502f5c1e353c}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!capabilityPrefix@{capabilityPrefix}}
+\index{capabilityPrefix@{capabilityPrefix}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{capabilityPrefix}{capabilityPrefix}}
+{\footnotesize\ttfamily const string capability\+Prefix = \char`\"{}C\+A\+P\+A\+B\+I\+L\+I\+TY=\char`\"{}}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_afe6e30e5f6f19d2c9e75ce08572858b4}\label{_t_c_p_bridge_main_8cpp_afe6e30e5f6f19d2c9e75ce08572858b4}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!clientMap@{clientMap}}
+\index{clientMap@{clientMap}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{clientMap}{clientMap}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::string$>$ client\+Map}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_a6dcf677e2322015da200707c55c3a66d}\label{_t_c_p_bridge_main_8cpp_a6dcf677e2322015da200707c55c3a66d}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!clientTypeMap@{clientTypeMap}}
+\index{clientTypeMap@{clientTypeMap}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{clientTypeMap}{clientTypeMap}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::string$>$ client\+Type\+Map}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_a624c24d3973e790d23212b57f13e894b}\label{_t_c_p_bridge_main_8cpp_a624c24d3973e790d23212b57f13e894b}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!closed@{closed}}
+\index{closed@{closed}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{closed}{closed}}
+{\footnotesize\ttfamily bool closed = false}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_ad5835f1d2646493dafb2c5ac6244a93f}\label{_t_c_p_bridge_main_8cpp_ad5835f1d2646493dafb2c5ac6244a93f}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!configFile@{configFile}}
+\index{configFile@{configFile}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{configFile}{configFile}}
+{\footnotesize\ttfamily const std\+::string config\+File = \char`\"{}config/tcp\+\_\+bridge\+\_\+amm.\+xml\char`\"{}}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_aef25fede16bad13e44df59c66a38b003}\label{_t_c_p_bridge_main_8cpp_aef25fede16bad13e44df59c66a38b003}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!configPrefix@{configPrefix}}
+\index{configPrefix@{configPrefix}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{configPrefix}{configPrefix}}
+{\footnotesize\ttfamily const string config\+Prefix = \char`\"{}C\+O\+N\+F\+IG=\char`\"{}}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_aa2339b21f98abccd12533a54d5f9d712}\label{_t_c_p_bridge_main_8cpp_aa2339b21f98abccd12533a54d5f9d712}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!daemonize@{daemonize}}
+\index{daemonize@{daemonize}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{daemonize}{daemonize}}
+{\footnotesize\ttfamily int daemonize = 1}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_a13de4912fe523b592f96a3410747ca62}\label{_t_c_p_bridge_main_8cpp_a13de4912fe523b592f96a3410747ca62}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!discovery@{discovery}}
+\index{discovery@{discovery}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{discovery}{discovery}}
+{\footnotesize\ttfamily int discovery = 1}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_abf0c45144b89f0a806f1414513c20d8b}\label{_t_c_p_bridge_main_8cpp_abf0c45144b89f0a806f1414513c20d8b}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!discoveryPort@{discoveryPort}}
+\index{discoveryPort@{discoveryPort}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{discoveryPort}{discoveryPort}}
+{\footnotesize\ttfamily short discovery\+Port = 8888}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_abeb86d70b9590be1cf5d24a99fcacee1}\label{_t_c_p_bridge_main_8cpp_abeb86d70b9590be1cf5d24a99fcacee1}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!encodedConfig@{encodedConfig}}
+\index{encodedConfig@{encodedConfig}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{encodedConfig}{encodedConfig}}
+{\footnotesize\ttfamily string encoded\+Config = \char`\"{}\char`\"{}}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_aa8a18c440fc3c2dd90332bce02d882b9}\label{_t_c_p_bridge_main_8cpp_aa8a18c440fc3c2dd90332bce02d882b9}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!equipmentSettings@{equipmentSettings}}
+\index{equipmentSettings@{equipmentSettings}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{equipmentSettings}{equipmentSettings}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::map$<$std\+::string, std\+::string$>$ $>$ equipment\+Settings}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_a253bcbc1fc14a627841c24ffc0e42e90}\label{_t_c_p_bridge_main_8cpp_a253bcbc1fc14a627841c24ffc0e42e90}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!genericTopicPrefix@{genericTopicPrefix}}
+\index{genericTopicPrefix@{genericTopicPrefix}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{genericTopicPrefix}{genericTopicPrefix}}
+{\footnotesize\ttfamily std\+::string generic\+Topic\+Prefix = \char`\"{}\mbox{[}\char`\"{}}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_aad7a6ff954881d9071dc48c76bb7d925}\label{_t_c_p_bridge_main_8cpp_aad7a6ff954881d9071dc48c76bb7d925}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!globalInboundBuffer@{globalInboundBuffer}}
+\index{globalInboundBuffer@{globalInboundBuffer}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{globalInboundBuffer}{globalInboundBuffer}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::string$>$ global\+Inbound\+Buffer}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_a7b3d81a68c156e5d990b986615b85a3d}\label{_t_c_p_bridge_main_8cpp_a7b3d81a68c156e5d990b986615b85a3d}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!haltingString@{haltingString}}
+\index{haltingString@{haltingString}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{haltingString}{haltingString}}
+{\footnotesize\ttfamily const string halting\+String = \char`\"{}H\+A\+L\+T\+I\+N\+G\+\_\+\+E\+R\+R\+OR\char`\"{}}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_aa3897779d03d519b92d9aba1fb57aacd}\label{_t_c_p_bridge_main_8cpp_aa3897779d03d519b92d9aba1fb57aacd}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!keepAlivePrefix@{keepAlivePrefix}}
+\index{keepAlivePrefix@{keepAlivePrefix}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{keepAlivePrefix}{keepAlivePrefix}}
+{\footnotesize\ttfamily const string keep\+Alive\+Prefix = \char`\"{}\mbox{[}K\+E\+E\+P\+A\+L\+I\+VE\mbox{]}\char`\"{}}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_a43cc66c7ad3fe24a027f4214922b7f5d}\label{_t_c_p_bridge_main_8cpp_a43cc66c7ad3fe24a027f4214922b7f5d}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!keepHistoryPrefix@{keepHistoryPrefix}}
+\index{keepHistoryPrefix@{keepHistoryPrefix}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{keepHistoryPrefix}{keepHistoryPrefix}}
+{\footnotesize\ttfamily const string keep\+History\+Prefix = \char`\"{}K\+E\+E\+P\+\_\+\+H\+I\+S\+T\+O\+RY=\char`\"{}}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_ad1c8fb65b04e5402e8faf502718be57b}\label{_t_c_p_bridge_main_8cpp_ad1c8fb65b04e5402e8faf502718be57b}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!labNodes@{labNodes}}
+\index{labNodes@{labNodes}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{labNodes}{labNodes}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::map$<$std\+::string, double$>$ $>$ lab\+Nodes}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_a522d858a2bd50574806796d36c245fe5}\label{_t_c_p_bridge_main_8cpp_a522d858a2bd50574806796d36c245fe5}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!loadPrefix@{loadPrefix}}
+\index{loadPrefix@{loadPrefix}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{loadPrefix}{loadPrefix}}
+{\footnotesize\ttfamily const string load\+Prefix = \char`\"{}L\+O\+A\+D\+\_\+\+S\+T\+A\+T\+E\+:\char`\"{}}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_a27fe2eb74266d2857ccb69f930e06247}\label{_t_c_p_bridge_main_8cpp_a27fe2eb74266d2857ccb69f930e06247}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!loadScenarioPrefix@{loadScenarioPrefix}}
+\index{loadScenarioPrefix@{loadScenarioPrefix}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{loadScenarioPrefix}{loadScenarioPrefix}}
+{\footnotesize\ttfamily const string load\+Scenario\+Prefix = \char`\"{}L\+O\+A\+D\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+:\char`\"{}}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_a338fdb07d7fd7cfdbb20f88db81fb1a0}\label{_t_c_p_bridge_main_8cpp_a338fdb07d7fd7cfdbb20f88db81fb1a0}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!m\_uuid@{m\_uuid}}
+\index{m\_uuid@{m\_uuid}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{m\_uuid}{m\_uuid}}
+{\footnotesize\ttfamily A\+M\+M\+::\+U\+U\+ID m\+\_\+uuid}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_ade8be75b11770ea9f16373aeaef008e3}\label{_t_c_p_bridge_main_8cpp_ade8be75b11770ea9f16373aeaef008e3}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!mgr@{mgr}}
+\index{mgr@{mgr}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{mgr}{mgr}}
+{\footnotesize\ttfamily A\+M\+M\+::\+D\+D\+S\+Manager$<$\mbox{\hyperlink{class_t_c_p_bridge_listener}{T\+C\+P\+Bridge\+Listener}}$>$$\ast$ mgr = new A\+M\+M\+::\+D\+D\+S\+Manager$<$\mbox{\hyperlink{class_t_c_p_bridge_listener}{T\+C\+P\+Bridge\+Listener}}$>$(\mbox{\hyperlink{_t_c_p_bridge_main_8cpp_ad5835f1d2646493dafb2c5ac6244a93f}{config\+File}})}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_a0fb2dec9ed3c4c96f6498bd9e2a364e6}\label{_t_c_p_bridge_main_8cpp_a0fb2dec9ed3c4c96f6498bd9e2a364e6}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!moduleName@{moduleName}}
+\index{moduleName@{moduleName}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{moduleName}{moduleName}}
+{\footnotesize\ttfamily const std\+::string module\+Name = \char`\"{}A\+M\+M\+\_\+\+T\+C\+P\+\_\+\+Bridge\char`\"{}}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_a061258887d9819f62baa643691fd0c46}\label{_t_c_p_bridge_main_8cpp_a061258887d9819f62baa643691fd0c46}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!modulePrefix@{modulePrefix}}
+\index{modulePrefix@{modulePrefix}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{modulePrefix}{modulePrefix}}
+{\footnotesize\ttfamily const string module\+Prefix = \char`\"{}M\+O\+D\+U\+L\+E\+\_\+\+N\+A\+ME=\char`\"{}}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_adabe271fdd2cb2aaeafcc1c57e4c36e8}\label{_t_c_p_bridge_main_8cpp_adabe271fdd2cb2aaeafcc1c57e4c36e8}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!publishedTopics@{publishedTopics}}
+\index{publishedTopics@{publishedTopics}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{publishedTopics}{publishedTopics}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::vector$<$std\+::string$>$ $>$ published\+Topics}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_a8f6a2fc649181f29ad1a4fc2c02e3c0b}\label{_t_c_p_bridge_main_8cpp_a8f6a2fc649181f29ad1a4fc2c02e3c0b}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!registerPrefix@{registerPrefix}}
+\index{registerPrefix@{registerPrefix}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{registerPrefix}{registerPrefix}}
+{\footnotesize\ttfamily const string register\+Prefix = \char`\"{}R\+E\+G\+I\+S\+T\+ER=\char`\"{}}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_a78cc5fcce8b7d340ed83795d95fc0ef6}\label{_t_c_p_bridge_main_8cpp_a78cc5fcce8b7d340ed83795d95fc0ef6}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!requestPrefix@{requestPrefix}}
+\index{requestPrefix@{requestPrefix}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{requestPrefix}{requestPrefix}}
+{\footnotesize\ttfamily const string request\+Prefix = \char`\"{}R\+E\+Q\+U\+E\+ST=\char`\"{}}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_a448b7e95325656b7431e9bff4d0b4fb6}\label{_t_c_p_bridge_main_8cpp_a448b7e95325656b7431e9bff4d0b4fb6}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!s@{s}}
+\index{s@{s}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{s}{s}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_server}{Server}}$\ast$ s}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_ac366d1995ed56a5b3a2adf34e42640fb}\label{_t_c_p_bridge_main_8cpp_ac366d1995ed56a5b3a2adf34e42640fb}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!settingsPrefix@{settingsPrefix}}
+\index{settingsPrefix@{settingsPrefix}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{settingsPrefix}{settingsPrefix}}
+{\footnotesize\ttfamily const string settings\+Prefix = \char`\"{}S\+E\+T\+T\+I\+N\+GS=\char`\"{}}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_a4793287a43ed1662d50b75ec1e7cbfb8}\label{_t_c_p_bridge_main_8cpp_a4793287a43ed1662d50b75ec1e7cbfb8}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!statusPrefix@{statusPrefix}}
+\index{statusPrefix@{statusPrefix}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{statusPrefix}{statusPrefix}}
+{\footnotesize\ttfamily const string status\+Prefix = \char`\"{}S\+T\+A\+T\+US=\char`\"{}}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_ac6a80a9477f9be306957a38b6d80e3ff}\label{_t_c_p_bridge_main_8cpp_ac6a80a9477f9be306957a38b6d80e3ff}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!subscribedTopics@{subscribedTopics}}
+\index{subscribedTopics@{subscribedTopics}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{subscribedTopics}{subscribedTopics}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::vector$<$std\+::string$>$ $>$ subscribed\+Topics}
+
+\mbox{\Hypertarget{_t_c_p_bridge_main_8cpp_a9fda7e84daaae7d5a983a088121163e0}\label{_t_c_p_bridge_main_8cpp_a9fda7e84daaae7d5a983a088121163e0}} 
+\index{TCPBridgeMain.cpp@{TCPBridgeMain.cpp}!sysPrefix@{sysPrefix}}
+\index{sysPrefix@{sysPrefix}!TCPBridgeMain.cpp@{TCPBridgeMain.cpp}}
+\doxysubsubsection{\texorpdfstring{sysPrefix}{sysPrefix}}
+{\footnotesize\ttfamily const string sys\+Prefix = \char`\"{}\mbox{[}S\+YS\mbox{]}\char`\"{}}
+

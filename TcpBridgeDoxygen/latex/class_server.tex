@@ -1,0 +1,144 @@
+\hypertarget{class_server}{}\doxysection{Server Class Reference}
+\label{class_server}\index{Server@{Server}}
+
+
+{\ttfamily \#include $<$Server.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_server_a7d1fe6ba5f0fe9190a4f039662ea0e85}{Server}} (int port)
+\item 
+void \mbox{\hyperlink{class_server_a95aca0fffe857258b3fd9600e1bfc69a}{Accept\+And\+Dispatch}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void $\ast$ \mbox{\hyperlink{class_server_ac8d1016da16c02ed7b355433d63659f2}{Handle\+Client}} (void $\ast$args)
+\item 
+static void \mbox{\hyperlink{class_server_aa75c2f6db89fef8cfc1d317ab62c7e39}{Send\+To\+All}} (const std\+::string \&message)
+\item 
+static void \mbox{\hyperlink{class_server_a003e89423ce6dc037d7f9e180f103beb}{Send\+To\+Client}} (\mbox{\hyperlink{class_client}{Client}} $\ast$c, const std\+::string \&message)
+\item 
+static \mbox{\hyperlink{class_client}{Client}} $\ast$ \mbox{\hyperlink{class_server_a2153d6df9ebbedcc6c1a4f83ce6e5b3f}{Get\+Client\+By\+Index}} (std\+::string id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_server_a368db8d47256c767f343638aa83ce814}{m\+\_\+run\+Thread}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_server_aad039feaadb82550612ce66de935e7d1}{List\+Clients}} ()
+\item 
+static void \mbox{\hyperlink{class_server_a9709c95ab391cf9487c5032e325b931d}{Send\+To\+All}} (char $\ast$message)
+\item 
+static int \mbox{\hyperlink{class_server_aa136da828d70ac1478c8e6e0dc2ade39}{Find\+Client\+Index}} (\mbox{\hyperlink{class_client}{Client}} $\ast$c)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_server_a1ccc0352ba34f2d410ac46b298b91557}{server\+Sock}}
+\item 
+struct sockaddr\+\_\+in server\+Addr \mbox{\hyperlink{class_server_add4515c535ee96ea0228b6af8c91a803}{client\+Addr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static vector$<$ \mbox{\hyperlink{class_client}{Client}} $>$ \mbox{\hyperlink{class_server_ab0d324927b5390ee7d1211a2f8ac54bb}{clients}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_server_a7d1fe6ba5f0fe9190a4f039662ea0e85}\label{class_server_a7d1fe6ba5f0fe9190a4f039662ea0e85}} 
+\index{Server@{Server}!Server@{Server}}
+\index{Server@{Server}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{Server()}{Server()}}
+{\footnotesize\ttfamily Server\+::\+Server (\begin{DoxyParamCaption}\item[{int}]{port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_server_a95aca0fffe857258b3fd9600e1bfc69a}\label{class_server_a95aca0fffe857258b3fd9600e1bfc69a}} 
+\index{Server@{Server}!AcceptAndDispatch@{AcceptAndDispatch}}
+\index{AcceptAndDispatch@{AcceptAndDispatch}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{AcceptAndDispatch()}{AcceptAndDispatch()}}
+{\footnotesize\ttfamily void Server\+::\+Accept\+And\+Dispatch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_server_aa136da828d70ac1478c8e6e0dc2ade39}\label{class_server_aa136da828d70ac1478c8e6e0dc2ade39}} 
+\index{Server@{Server}!FindClientIndex@{FindClientIndex}}
+\index{FindClientIndex@{FindClientIndex}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{FindClientIndex()}{FindClientIndex()}}
+{\footnotesize\ttfamily int Server\+::\+Find\+Client\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_client}{Client}} $\ast$}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_server_a2153d6df9ebbedcc6c1a4f83ce6e5b3f}\label{class_server_a2153d6df9ebbedcc6c1a4f83ce6e5b3f}} 
+\index{Server@{Server}!GetClientByIndex@{GetClientByIndex}}
+\index{GetClientByIndex@{GetClientByIndex}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{GetClientByIndex()}{GetClientByIndex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_client}{Client}} $\ast$ Server\+::\+Get\+Client\+By\+Index (\begin{DoxyParamCaption}\item[{std\+::string}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_server_ac8d1016da16c02ed7b355433d63659f2}\label{class_server_ac8d1016da16c02ed7b355433d63659f2}} 
+\index{Server@{Server}!HandleClient@{HandleClient}}
+\index{HandleClient@{HandleClient}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{HandleClient()}{HandleClient()}}
+{\footnotesize\ttfamily void $\ast$ Server\+::\+Handle\+Client (\begin{DoxyParamCaption}\item[{void $\ast$}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_server_aad039feaadb82550612ce66de935e7d1}\label{class_server_aad039feaadb82550612ce66de935e7d1}} 
+\index{Server@{Server}!ListClients@{ListClients}}
+\index{ListClients@{ListClients}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{ListClients()}{ListClients()}}
+{\footnotesize\ttfamily void Server\+::\+List\+Clients (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_server_a9709c95ab391cf9487c5032e325b931d}\label{class_server_a9709c95ab391cf9487c5032e325b931d}} 
+\index{Server@{Server}!SendToAll@{SendToAll}}
+\index{SendToAll@{SendToAll}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{SendToAll()}{SendToAll()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Server\+::\+Send\+To\+All (\begin{DoxyParamCaption}\item[{char $\ast$}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_server_aa75c2f6db89fef8cfc1d317ab62c7e39}\label{class_server_aa75c2f6db89fef8cfc1d317ab62c7e39}} 
+\index{Server@{Server}!SendToAll@{SendToAll}}
+\index{SendToAll@{SendToAll}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{SendToAll()}{SendToAll()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Server\+::\+Send\+To\+All (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_server_a003e89423ce6dc037d7f9e180f103beb}\label{class_server_a003e89423ce6dc037d7f9e180f103beb}} 
+\index{Server@{Server}!SendToClient@{SendToClient}}
+\index{SendToClient@{SendToClient}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{SendToClient()}{SendToClient()}}
+{\footnotesize\ttfamily void Server\+::\+Send\+To\+Client (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_client}{Client}} $\ast$}]{c,  }\item[{const std\+::string \&}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_server_add4515c535ee96ea0228b6af8c91a803}\label{class_server_add4515c535ee96ea0228b6af8c91a803}} 
+\index{Server@{Server}!clientAddr@{clientAddr}}
+\index{clientAddr@{clientAddr}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{clientAddr}{clientAddr}}
+{\footnotesize\ttfamily struct sockaddr\+\_\+in server\+Addr Server\+::client\+Addr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_server_ab0d324927b5390ee7d1211a2f8ac54bb}\label{class_server_ab0d324927b5390ee7d1211a2f8ac54bb}} 
+\index{Server@{Server}!clients@{clients}}
+\index{clients@{clients}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{clients}{clients}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_client}{Client}} $>$ Server\+::clients\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_server_a368db8d47256c767f343638aa83ce814}\label{class_server_a368db8d47256c767f343638aa83ce814}} 
+\index{Server@{Server}!m\_runThread@{m\_runThread}}
+\index{m\_runThread@{m\_runThread}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{m\_runThread}{m\_runThread}}
+{\footnotesize\ttfamily bool Server\+::m\+\_\+run\+Thread\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_server_a1ccc0352ba34f2d410ac46b298b91557}\label{class_server_a1ccc0352ba34f2d410ac46b298b91557}} 
+\index{Server@{Server}!serverSock@{serverSock}}
+\index{serverSock@{serverSock}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{serverSock}{serverSock}}
+{\footnotesize\ttfamily int Server\+::server\+Sock\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Net/\mbox{\hyperlink{_server_8h}{Server.\+h}}\item 
+src/\+Net/\mbox{\hyperlink{_server_8cpp}{Server.\+cpp}}\item 
+src/\mbox{\hyperlink{_t_c_p_bridge_main_8cpp}{T\+C\+P\+Bridge\+Main.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,1524 @@
+\hypertarget{class_a_m_m_1_1_biogears_thread}{}\doxysection{A\+MM\+::Biogears\+Thread Class Reference}
+\label{class_a_m_m_1_1_biogears_thread}\index{AMM::BiogearsThread@{AMM::BiogearsThread}}
+
+
+{\ttfamily \#include $<$Biogears\+Thread.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a170624f12008492d51bff53a13a364f8}{Biogears\+Thread}} (const std\+::string \&state\+File)
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a9b1b4634bd39c3becf2577d40160d3d7}{$\sim$\+Biogears\+Thread}} ()
+\item 
+bool \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a85db87ebd33294d2e64be6d885da6fad}{Load\+State}} (const std\+::string \&state\+File, double sec)
+\item 
+bool \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a3b097442414c3c5daa30e0df3929915e}{Save\+State}} (const std\+::string \&state\+File)
+\item 
+bool \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_aab77c203610161c8ec885c8615cb223f}{Save\+State}} ()
+\item 
+bool \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a1a0fa12e0f07f06bbed3384662c40eda}{Process\+Patient\+Action}} (std\+::string action\+Type, std\+::string payload)
+\item 
+bool \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a601b599998d4e7d56a8240a003bec669}{Execute\+X\+M\+L\+Command}} (const std\+::string \&cmd)
+\item 
+bool \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a694162ae90edc6c89480bfc09f5abe2b}{Execute\+Command}} (const std\+::string \&cmd)
+\item 
+bool \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a88154f5dc00ed7dbc1dc97a6bdd1a4eb}{Execute}} (std\+::function$<$ std\+::unique\+\_\+ptr$<$ biogears\+::\+Physiology\+Engine $>$(std\+::unique\+\_\+ptr$<$ biogears\+::\+Physiology\+Engine $>$ \&\&)$>$ func)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a5e42af06510ad8d273ef158389c65d25}{Shutdown}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a5c4e0c4b012b0040bfee9aacae0ca6b4}{Start\+Simulation}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a408327e904f4f7c0acd48ffc8e618e20}{Stop\+Simulation}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_aee635c32bc28e706df6f44fe41e3317a}{Advance\+Time\+Tick}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a2951f37bd8faf9ddfeecb9b155eb03e3}{Get\+Simulation\+Time}} ()
+\item 
+std\+::map$<$ std\+::string, double(Biogears\+Thread\+::$\ast$)()$>$ $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_ab50c73c4166fe2d94eed2ab3a2132a5a}{Get\+Node\+Path\+Table}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a90d6aa1c65c82a605674213a00329880}{Get\+Node\+Path}} (const std\+::string \&node\+Path)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_acc8ed2d74be7c3b8d291e9795274342b}{Set\+Ventilator}} (const std\+::string \&ventilator\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a3deb76fc0678fa7e5420a088a8c2d9cd}{Set\+B\+V\+M\+Mask}} (const std\+::string \&ventilator\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a8d97dbbaa80b762bb0f05a840b639dbe}{Set\+I\+V\+Pump}} (const std\+::string \&pump\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a7c8a692cb18b7b2940a38bfa8006527c}{Set\+Pain}} (const std\+::string \&pain\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a8a438f0a59bf0b64456a22660e57455d}{Set\+Hemorrhage}} (const std\+::string \&location, const std\+::string \&hemorrhage\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_af0d67a7ab21330d92075f86ec5d70ad4}{Set\+Acute\+Stress}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a2037ffdc4eeec66baf4d947be0feed57}{Set\+Airway\+Obstruction}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a4d3b63809912a62d007cff700998cba0}{Set\+Apnea}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a31f933e71aa1adfa6dcedc1e21ff7a67}{Set\+Asthma\+Attack}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_af032243ea5609ebeb83bddbc498099a2}{Set\+Brain\+Injury}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a55c56607c8b6d1c9110d49cd4433dd17}{Set\+Bronchoconstriction}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a16b636f7ff13e077613a8b5b3e5963e2}{Set\+Burn\+Wound}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a83129a26f6991ecd7346f315f20a6e06}{Set\+Cardiac\+Arrest}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a966f1ecfde266e3f4be1ee59210a2bd3}{Set\+Chest\+Compression}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_ac4c21c37e0e4c3c250c1efa84ca56b67}{Set\+Chest\+Compression\+Force}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_aac6812c46336244a44f4f8f87415ee7a}{Set\+Chest\+Compression\+Force\+Scale}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_ab848348372efaf26e2a8d1bc3b75c90d}{Set\+Chest\+Occlusive\+Dressing}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a46501e395cb35cb1c4f848f82da838f5}{Set\+Conscious\+Respiration}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_aa2aa98d265b95c0ee44ed096e2f22cf9}{Set\+Breath\+Hold}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a85643bee31437e7275bf663e80ddeda0}{Set\+Forced\+Exhale}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a715ed7764fe14d94d50bfda6f017ee86}{Set\+Forced\+Inhale}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a6e56a0d006d2192890f18d00ffc4b2d4}{Set\+Conscious\+Respiration\+Command}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_aefd133ce331ea6e9fdf8d64b27f38f88}{Set\+Consume\+Nutrients}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a77c0e7852ee3fdb905a4f04449557bb4}{Set\+Exercise}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a16eccd4ff821d2bb95b25636cdb05e17}{Set\+Hemorrhage}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_ab441647bdbc0665a97f31fe6a8488ef8}{Set\+Infection}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a68bdca9944b12739b53322405e3b4c9e}{Set\+Intubation}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_aee7e2752e9530674fd219b162c33d5b2}{Set\+Mechanical\+Ventilation}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a616d722339c1e75505b788b1b73bfe88}{Set\+Needle\+Decompression}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a69fa78a3e373adc1cdb3cd1df2e36fcf}{Set\+Pain\+Stimulus}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_aa8d79675f644865441ce8a2e7209afa0}{Set\+Patient\+Action}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a6a21aa9444933698050bae0697370d11}{Set\+Patient\+Assessment\+Request}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a979a93e607e1a26926962b9d50537b53}{Set\+Pericardial\+Effusion}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_aa19a96c1ea0ab3110c682cd84ab0e1df}{Set\+Pupillary\+Response}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_ace14c2b3793de01382b111d1b0fa960d}{Set\+Sepsis}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a1497338b1fd7d453b776e3e31620155e}{Set\+Substance\+Administration}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a8d8a64326af0f22727a641c1dd6d2fb1}{Set\+Substance\+Bolus}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a38bdb7b5e273bfa87f02fe0811a6764e}{Set\+Substance\+Compound\+Infusion}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a523ee9f3f5f31f696925b5dc7f957356}{Set\+Substance\+Infusion}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_ab811355de454174dd61deaf2e0e28c1d}{Set\+Substance\+Oral\+Dose}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a78c1e1fff1a8a47b463dbca299a56c9b}{Set\+Tension\+Pneumothorax}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a48999107d2c0242958f47ae87ea1d519}{Set\+Urinate}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a89e4b7529c3665083ef62a645e50e1c0}{Set\+Use\+Inhaler}} (const std\+::string \&action\+Settings)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a46d8fc1f1cc0be531d8f6acf5bf18a52}{Set\+Logging}} (bool log)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a66f5bcf4da6266165deb973ae305ffcf}{Set\+Last\+Frame}} (int \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a590eecb09a940a81dd017476fd1d86be}{last\+Frame}})
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a60535236b601eefe5ca620f9d01d3f11}{Status}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::map$<$ std\+::string, double(Biogears\+Thread\+::$\ast$)()$>$ \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a691422a39913c88a08b6d2da7473fa5b}{node\+Path\+Table}}
+\item 
+static std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a401de13beb3422977f47c3fec2e39e65}{high\+Frequency\+Nodes}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::mutex \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a1f0375fa6d1c5af24cc0db3ea3a88540}{m\+\_\+mutex}}
+\item 
+bool \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_ab27cf2de33a6fa8336ee5d98563ac673}{running}} = false
+\item 
+std\+::unique\+\_\+ptr$<$ biogears\+::\+Physiology\+Engine $>$ \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a79552c8c599f94c6dae38876fa6e9423}{m\+\_\+pe}}
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_af424af3f5a43ef334afab6826ff46754}{thresh}} = 1.\+0
+\item 
+bool \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_aba02f54f5e204dc2bbc1b51cbb0c8ec3}{falling\+\_\+L}}
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_aea8006f942b0497255aee996547bc6a0}{lung\+\_\+vol\+\_\+L}}
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_aec0dd1b010f68c490342d3fb2f48e523}{new\+\_\+min\+\_\+L}}
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a1beeac6caf1e708618fcb05ea09d5e48}{new\+\_\+max\+\_\+L}}
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a649cd73f2367b7c70903c4d1ee200f9a}{min\+\_\+lung\+\_\+vol\+\_\+L}}
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a13ce7c1b126d9dfef562058bc5b48868}{max\+\_\+lung\+\_\+vol\+\_\+L}}
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_ae2343c27e4ad492f248889c4372f677f}{chestrise\+\_\+pct\+\_\+L}}
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a605593b70747adc5d488e3bf07dd64d2}{left\+Lung\+Tidal\+Vol}}
+\item 
+bool \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a067c84e9eaba22ba3257155f5b700d80}{falling\+\_\+R}}
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_af0963a8e93c931eb78784359cc3bd5ce}{lung\+\_\+vol\+\_\+R}}
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a494ea06d4d2119e3f4b729a8440da08f}{new\+\_\+min\+\_\+R}}
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a7f7e08995ecef11114a01ec9c679eb45}{new\+\_\+max\+\_\+R}}
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a33379ea119429a71c7a0bcc1481bd670}{min\+\_\+lung\+\_\+vol\+\_\+R}}
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_aaeb2d79ca64dfffc8890b527d290acb5}{max\+\_\+lung\+\_\+vol\+\_\+R}}
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a92bfe8e3aca143dc4504f40b5e8a0eb5}{chestrise\+\_\+pct\+\_\+R}}
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a9869cfd91fe63be4021731151b849eba}{right\+Lung\+Tidal\+Vol}}
+\item 
+bool \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a4b58810d8be84638a926c14fe9b6c03a}{event\+Handler\+Attached}} = false
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a075e197525d926275005f36ee65a9efc}{blood\+PH}} = 0.\+0
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a7f34f3a06d2fd45d7d475c0afa5a6d60}{raw\+Blood\+PH}} = 0.\+0
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a2934db2fb90e929a8673aa3c4bc0ff7e}{lactate\+Concentration}} = 0.\+0
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a3f679399cc072fab7b0ada0f98bc9828}{lactate\+M\+M\+OL}} = 0.\+0
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a696dcfd960bc0d75452b0fdf921ff940}{starting\+Blood\+Volume}} = 5423.\+53
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a309e6a68bef946dd8bcbada6c517422d}{current\+Blood\+Volume}} = 0.\+0
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a41287002dcf04ebdea2c1200bf3da13f}{raw\+Respiration\+Rate}} = 0.\+0
+\item 
+int \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a590eecb09a940a81dd017476fd1d86be}{last\+Frame}} = 0
+\item 
+int \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a86ed9d27fed8ad2ca04537d2f60d4e30}{logging\+Frequency}} = 50
+\item 
+bool \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a8fdaf44351feba6fefbc2f16d083e29a}{logging\+\_\+enabled}} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_aed48430bac7692d6833a1467db9cc31b}{Load\+Scenario\+File}} (const std\+::string \&scenario\+File)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_aedc21f2d00571ab50041713c31d0bb8b}{Populate\+Node\+Path\+Table}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_ac914a705824febe7cc5c3dc2d5b66689}{Get\+Logging\+Status}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a9b2be8db2052910c228fd4c6a6f69019}{Get\+Shutdown\+Message}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a68071b13befa2eacb0f09405fd526050}{Get\+Blood\+Loss\+Percentage}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a99c6e02bb3fb2c6d57f4752fa9b4e09d}{Get\+Heart\+Rate}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_aace93e968361fc430ccbf3f3ae2bc6b0}{Get\+Blood\+Volume}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_ad26cdfa2690197a163e1324d4a28c81e}{Get\+Arterial\+Systolic\+Pressure}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a2e95eaa5e87e666517fe856228620cd0}{Get\+Arterial\+Diastolic\+Pressure}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a2f5ae5a625f71d580b849b8c2626c4aa}{Get\+Mean\+Arterial\+Pressure}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_aff9702cc9a0c87302d4220eefed5af30}{Get\+Arterial\+Pressure}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_ad036d2c9aede9c47733ca09fc554a64a}{Get\+Mean\+Central\+Venous\+Pressure}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a6bc33e146bb0042183069af12914f313}{Get\+End\+Tidal\+Carbon\+Dioxide\+Fraction}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a0b0bbae3dbc3075053f366f5b6253c76}{Get\+Oxygen\+Saturation}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_afe46a4abe340b946e1ed2a87d234dedd}{Get\+Raw\+Respiration\+Rate}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a4f5c60eb11318e264f26c21b4e3c78e8}{Get\+Respiration\+Rate}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_abf8d5dfa4edbc4dbe750a4359e0bdf9e}{Get\+Core\+Temperature}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_ada26544137b008384b7cc574f44d927e}{Get\+E\+C\+G\+Waveform}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_ab8fb905cacce04048bdfb3c0e3ccf665}{Get\+Sodium\+Concentration}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_ae4e3a3c739b8ae895eaa85510b1ed270}{Get\+Sodium}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a552ba4e3f0411c32b0a7b03eab4a5ab1}{Get\+Glucose\+Concentration}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_ad81f561ddb23ccf295e47270da769911}{Get\+B\+UN}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a59138587d86d568d9db50b23e6a97e2d}{Get\+Creatinine\+Concentration}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a303e2ad765162f2aa8b01cee6a08af25}{Get\+White\+Blood\+Cell\+Count}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_af1ca237b51cea4f022554e315c4bf2ae}{Get\+Red\+Blood\+Cell\+Count}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a81e85653bf67d62552715f8ecdfde0bf}{Get\+Hemoglobin\+Concentration}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_ade1172e824e3067fe0cc56a4361582d7}{Get\+Oxyhemoglobin\+Concentration}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a637d8647b277ab644cacd01aab53569e}{Get\+Carbaminohemoglobin\+Concentration}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a939a073d0f2fe30b97eb073b5d3e2ab5}{Get\+Oxy\+Carbaminohemoglobin\+Concentration}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a2c8ed9802a16bcfb2c03122777abdbb2}{Get\+Carboxyhemoglobin\+Concentration}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_af9fa6c9f0d60f20336afb2831043849e}{Get\+Hematocrit}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a122462ce008c3994f787400c9c293e6f}{Get\+Raw\+Blood\+PH}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a318f5363cbbfa4345f9850fcaab97bb6}{Get\+Blood\+PH}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a0e8d01aa0170d3e5642493689e352df2}{Get\+Arterial\+Carbon\+Dioxide\+Pressure}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a1a614e0753e4f5119cfdeedbb56623c4}{Get\+Arterial\+Oxygen\+Pressure}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a04a016435c8c0665ff78ac5ef962f16b}{Get\+Venous\+Oxygen\+Pressure}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a4e4f5d1ca5cec3c8f2abf5f3f9734794}{Get\+Venous\+Carbon\+Dioxide\+Pressure}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_aff2e7c5c339025d0eef282990428af19}{Get\+Bicarbonate\+Concentration}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a09a326d5503413935fe31d4b98eed5ca}{Get\+Bicarbonate}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a886048f1d281b7dd6fe0cd8af0faa58d}{Get\+Base\+Excess}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a550dcbc18c7b13ba6e45c8db83fc5ca5}{Get\+C\+O2}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a5e306e28b44fbf82332241798f98e1f8}{Get\+Potassium}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_ac1d2e4665980e5beedaaa1e4a0f148e9}{Get\+Chloride}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_ab06feceee29c12cfc5f76d2917943e98}{Get\+Platelet\+Count}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_aefb6bb66ef855ee47bc1ad5308bd3a80}{Get\+Exhaled\+C\+O2}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a8c8b6beb2b60dfa6f23ae696013dd4c9}{Get\+Tidal\+Volume}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a1ea445022fed7a3f037b417defe8be87}{Get\+Total\+Lung\+Volume}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_af196b446556dadd2dfaa1e86cf478ee7}{Get\+Left\+Lung\+Volume}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a2ef76bee23be22738498b7576a21d2a7}{Get\+Right\+Lung\+Volume}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a0a3017e40c74cdfe5fb64c76f25eee1f}{Get\+Left\+Lung\+Tidal\+Volume}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_acf0d33287faf8ba09cf9b26160bb5750}{Get\+Right\+Lung\+Tidal\+Volume}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a6f53eb3979cb4dec594b4fa033d49eaf}{Get\+Left\+Pleural\+Cavity\+Volume}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_aaf2da032b31d59cce9c2497914d310a3}{Get\+Right\+Pleural\+Cavity\+Volume}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a7e1b4645d48c36d58fbcb4490dc98098}{Get\+Left\+Alveoli\+Baseline\+Compliance}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_ae8181f2b9744181e99e15855df49c412}{Get\+Right\+Alveoli\+Baseline\+Compliance}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_ac34be5db66743a1044f8d6863c54892e}{Get\+Cardiac\+Output}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a4fe0c28d9f33b4846a51f7cae31144a0}{Get\+Calcium\+Concentration}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a4704a2660ae60da9dc4590378cee29bd}{Get\+Albumin\+Concentration}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a5a25eac3a871d45e768a427b5fe60062}{Get\+Lactate\+Concentration}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a79074321c2a5c5515d0c5ee1c653531a}{Get\+Lactate\+Concentration\+M\+M\+OL}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a0398b4c1cd18970bea47023b595f2351}{Get\+Total\+Bilirubin}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a7a2895576280810bdc798c32e1f894fa}{Get\+Total\+Protein}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_ac562b25feda3f862af2cdbecf3e3d392}{Get\+Pain\+Visual\+Analogue\+Scale}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_acd9668a070ec413d7eb29de49a7510f4}{Get\+Urine\+Specific\+Gravity}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a871b1c5eddca6e880476ebba6fd89bed}{Get\+Urine\+Production\+Rate}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_ac189f262bd52dd8130df1c776cb0ba70}{Get\+Urine\+Osmolality}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_abd2e617bd750b44822ba610226c4b0cc}{Get\+Urine\+Osmolarity}} ()
+\item 
+double \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a153c06efacad55c07ed6ef98ad9c41ea}{Get\+Bladder\+Glucose}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+biogears\+::\+S\+E\+Substance $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_ae61dba54416d68dc6c5c5c7c6709e942}{sodium}}
+\item 
+biogears\+::\+S\+E\+Substance $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_ab8bfe898559e45695ef8f20997e2740e}{glucose}}
+\item 
+biogears\+::\+S\+E\+Substance $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_ab129af1749eef1cb44320560e2e2ffc3}{creatinine}}
+\item 
+biogears\+::\+S\+E\+Substance $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_afee9aa817ea92147b09eadc410df72de}{calcium}}
+\item 
+biogears\+::\+S\+E\+Substance $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a366cd2929efd89cd71d7166b0dce6920}{albumin}}
+\item 
+biogears\+::\+S\+E\+Substance $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a803dda24d89e443faf1fa609a6a4c2f4}{hemoglobin}}
+\item 
+biogears\+::\+S\+E\+Substance $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a6dbd5de1a8dd1f6569f1ad4f8b4baae4}{bicarbonate}}
+\item 
+biogears\+::\+S\+E\+Substance $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a4f4de687c0a34a2d87085d3f02a6950b}{C\+O2}}
+\item 
+biogears\+::\+S\+E\+Substance $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_ab1d292ec2dfeab199e340519d399bb40}{N2}}
+\item 
+biogears\+::\+S\+E\+Substance $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a05618f93390fe55a3aa247b0293c4a27}{O2}}
+\item 
+biogears\+::\+S\+E\+Substance $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a5e79c8cb672769e85151bcd1a01f0579}{CO}}
+\item 
+biogears\+::\+S\+E\+Substance $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a87d78fa7adcb6329c1d14a78481286bc}{Hb}}
+\item 
+biogears\+::\+S\+E\+Substance $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a06cfbbb85bde01518dce4b89058909ba}{Hb\+O2}}
+\item 
+biogears\+::\+S\+E\+Substance $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a6cb24d0be6c01f574cbb180938f4f3e3}{Hb\+C\+O2}}
+\item 
+biogears\+::\+S\+E\+Substance $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a17b5df0b47b58924d17232e6d31402d4}{Hb\+CO}}
+\item 
+biogears\+::\+S\+E\+Substance $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a1fb1f896ebebd48f3229274c96ce4ca1}{Hb\+O2\+C\+O2}}
+\item 
+biogears\+::\+S\+E\+Substance $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a131306630013d74ebbe572d7388a12eb}{potassium}}
+\item 
+biogears\+::\+S\+E\+Substance $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a10d0bbd66d94869d6587a56b0fb799ca}{chloride}}
+\item 
+biogears\+::\+S\+E\+Substance $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a8a631ae02c11f9041331cbc7cd74658b}{lactate}}
+\item 
+const biogears\+::\+S\+E\+Gas\+Compartment $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a6e718bdb9e72da1eae984cc1a87e8de5}{carina}}
+\item 
+const biogears\+::\+S\+E\+Gas\+Compartment $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_aafddea50b729ad3a1cf771831deec9f7}{left\+Lung}}
+\item 
+const biogears\+::\+S\+E\+Gas\+Compartment $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a55f03cb12b89d4b0d77eb28012e100ca}{right\+Lung}}
+\item 
+const biogears\+::\+S\+E\+Liquid\+Compartment $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_biogears_thread_a708a98ee5c95c7efd0a5ededaf85dd31}{bladder}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a170624f12008492d51bff53a13a364f8}\label{class_a_m_m_1_1_biogears_thread_a170624f12008492d51bff53a13a364f8}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!BiogearsThread@{BiogearsThread}}
+\index{BiogearsThread@{BiogearsThread}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{BiogearsThread()}{BiogearsThread()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Biogears\+Thread\+::\+Biogears\+Thread (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{state\+File }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a9b1b4634bd39c3becf2577d40160d3d7}\label{class_a_m_m_1_1_biogears_thread_a9b1b4634bd39c3becf2577d40160d3d7}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!````~BiogearsThread@{$\sim$BiogearsThread}}
+\index{````~BiogearsThread@{$\sim$BiogearsThread}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{$\sim$BiogearsThread()}{~BiogearsThread()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Biogears\+Thread\+::$\sim$\+Biogears\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_aee635c32bc28e706df6f44fe41e3317a}\label{class_a_m_m_1_1_biogears_thread_aee635c32bc28e706df6f44fe41e3317a}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!AdvanceTimeTick@{AdvanceTimeTick}}
+\index{AdvanceTimeTick@{AdvanceTimeTick}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{AdvanceTimeTick()}{AdvanceTimeTick()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Advance\+Time\+Tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a88154f5dc00ed7dbc1dc97a6bdd1a4eb}\label{class_a_m_m_1_1_biogears_thread_a88154f5dc00ed7dbc1dc97a6bdd1a4eb}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!Execute@{Execute}}
+\index{Execute@{Execute}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Biogears\+Thread\+::\+Execute (\begin{DoxyParamCaption}\item[{std\+::function$<$ std\+::unique\+\_\+ptr$<$ biogears\+::\+Physiology\+Engine $>$(std\+::unique\+\_\+ptr$<$ biogears\+::\+Physiology\+Engine $>$ \&\&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a694162ae90edc6c89480bfc09f5abe2b}\label{class_a_m_m_1_1_biogears_thread_a694162ae90edc6c89480bfc09f5abe2b}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!ExecuteCommand@{ExecuteCommand}}
+\index{ExecuteCommand@{ExecuteCommand}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{ExecuteCommand()}{ExecuteCommand()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Biogears\+Thread\+::\+Execute\+Command (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cmd }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a601b599998d4e7d56a8240a003bec669}\label{class_a_m_m_1_1_biogears_thread_a601b599998d4e7d56a8240a003bec669}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!ExecuteXMLCommand@{ExecuteXMLCommand}}
+\index{ExecuteXMLCommand@{ExecuteXMLCommand}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{ExecuteXMLCommand()}{ExecuteXMLCommand()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Biogears\+Thread\+::\+Execute\+X\+M\+L\+Command (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cmd }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a4704a2660ae60da9dc4590378cee29bd}\label{class_a_m_m_1_1_biogears_thread_a4704a2660ae60da9dc4590378cee29bd}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetAlbuminConcentration@{GetAlbuminConcentration}}
+\index{GetAlbuminConcentration@{GetAlbuminConcentration}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetAlbuminConcentration()}{GetAlbuminConcentration()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Albumin\+Concentration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a0e8d01aa0170d3e5642493689e352df2}\label{class_a_m_m_1_1_biogears_thread_a0e8d01aa0170d3e5642493689e352df2}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetArterialCarbonDioxidePressure@{GetArterialCarbonDioxidePressure}}
+\index{GetArterialCarbonDioxidePressure@{GetArterialCarbonDioxidePressure}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetArterialCarbonDioxidePressure()}{GetArterialCarbonDioxidePressure()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Arterial\+Carbon\+Dioxide\+Pressure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a2e95eaa5e87e666517fe856228620cd0}\label{class_a_m_m_1_1_biogears_thread_a2e95eaa5e87e666517fe856228620cd0}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetArterialDiastolicPressure@{GetArterialDiastolicPressure}}
+\index{GetArterialDiastolicPressure@{GetArterialDiastolicPressure}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetArterialDiastolicPressure()}{GetArterialDiastolicPressure()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Arterial\+Diastolic\+Pressure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a1a614e0753e4f5119cfdeedbb56623c4}\label{class_a_m_m_1_1_biogears_thread_a1a614e0753e4f5119cfdeedbb56623c4}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetArterialOxygenPressure@{GetArterialOxygenPressure}}
+\index{GetArterialOxygenPressure@{GetArterialOxygenPressure}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetArterialOxygenPressure()}{GetArterialOxygenPressure()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Arterial\+Oxygen\+Pressure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_aff9702cc9a0c87302d4220eefed5af30}\label{class_a_m_m_1_1_biogears_thread_aff9702cc9a0c87302d4220eefed5af30}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetArterialPressure@{GetArterialPressure}}
+\index{GetArterialPressure@{GetArterialPressure}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetArterialPressure()}{GetArterialPressure()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Arterial\+Pressure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_ad26cdfa2690197a163e1324d4a28c81e}\label{class_a_m_m_1_1_biogears_thread_ad26cdfa2690197a163e1324d4a28c81e}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetArterialSystolicPressure@{GetArterialSystolicPressure}}
+\index{GetArterialSystolicPressure@{GetArterialSystolicPressure}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetArterialSystolicPressure()}{GetArterialSystolicPressure()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Arterial\+Systolic\+Pressure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a886048f1d281b7dd6fe0cd8af0faa58d}\label{class_a_m_m_1_1_biogears_thread_a886048f1d281b7dd6fe0cd8af0faa58d}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetBaseExcess@{GetBaseExcess}}
+\index{GetBaseExcess@{GetBaseExcess}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetBaseExcess()}{GetBaseExcess()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Base\+Excess (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a09a326d5503413935fe31d4b98eed5ca}\label{class_a_m_m_1_1_biogears_thread_a09a326d5503413935fe31d4b98eed5ca}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetBicarbonate@{GetBicarbonate}}
+\index{GetBicarbonate@{GetBicarbonate}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetBicarbonate()}{GetBicarbonate()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Bicarbonate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_aff2e7c5c339025d0eef282990428af19}\label{class_a_m_m_1_1_biogears_thread_aff2e7c5c339025d0eef282990428af19}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetBicarbonateConcentration@{GetBicarbonateConcentration}}
+\index{GetBicarbonateConcentration@{GetBicarbonateConcentration}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetBicarbonateConcentration()}{GetBicarbonateConcentration()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Bicarbonate\+Concentration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a153c06efacad55c07ed6ef98ad9c41ea}\label{class_a_m_m_1_1_biogears_thread_a153c06efacad55c07ed6ef98ad9c41ea}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetBladderGlucose@{GetBladderGlucose}}
+\index{GetBladderGlucose@{GetBladderGlucose}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetBladderGlucose()}{GetBladderGlucose()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Bladder\+Glucose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a68071b13befa2eacb0f09405fd526050}\label{class_a_m_m_1_1_biogears_thread_a68071b13befa2eacb0f09405fd526050}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetBloodLossPercentage@{GetBloodLossPercentage}}
+\index{GetBloodLossPercentage@{GetBloodLossPercentage}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetBloodLossPercentage()}{GetBloodLossPercentage()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Blood\+Loss\+Percentage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a318f5363cbbfa4345f9850fcaab97bb6}\label{class_a_m_m_1_1_biogears_thread_a318f5363cbbfa4345f9850fcaab97bb6}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetBloodPH@{GetBloodPH}}
+\index{GetBloodPH@{GetBloodPH}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetBloodPH()}{GetBloodPH()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Blood\+PH (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_aace93e968361fc430ccbf3f3ae2bc6b0}\label{class_a_m_m_1_1_biogears_thread_aace93e968361fc430ccbf3f3ae2bc6b0}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetBloodVolume@{GetBloodVolume}}
+\index{GetBloodVolume@{GetBloodVolume}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetBloodVolume()}{GetBloodVolume()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Blood\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_ad81f561ddb23ccf295e47270da769911}\label{class_a_m_m_1_1_biogears_thread_ad81f561ddb23ccf295e47270da769911}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetBUN@{GetBUN}}
+\index{GetBUN@{GetBUN}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetBUN()}{GetBUN()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+B\+UN (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a4fe0c28d9f33b4846a51f7cae31144a0}\label{class_a_m_m_1_1_biogears_thread_a4fe0c28d9f33b4846a51f7cae31144a0}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetCalciumConcentration@{GetCalciumConcentration}}
+\index{GetCalciumConcentration@{GetCalciumConcentration}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetCalciumConcentration()}{GetCalciumConcentration()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Calcium\+Concentration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a637d8647b277ab644cacd01aab53569e}\label{class_a_m_m_1_1_biogears_thread_a637d8647b277ab644cacd01aab53569e}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetCarbaminohemoglobinConcentration@{GetCarbaminohemoglobinConcentration}}
+\index{GetCarbaminohemoglobinConcentration@{GetCarbaminohemoglobinConcentration}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetCarbaminohemoglobinConcentration()}{GetCarbaminohemoglobinConcentration()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Carbaminohemoglobin\+Concentration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a2c8ed9802a16bcfb2c03122777abdbb2}\label{class_a_m_m_1_1_biogears_thread_a2c8ed9802a16bcfb2c03122777abdbb2}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetCarboxyhemoglobinConcentration@{GetCarboxyhemoglobinConcentration}}
+\index{GetCarboxyhemoglobinConcentration@{GetCarboxyhemoglobinConcentration}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetCarboxyhemoglobinConcentration()}{GetCarboxyhemoglobinConcentration()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Carboxyhemoglobin\+Concentration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_ac34be5db66743a1044f8d6863c54892e}\label{class_a_m_m_1_1_biogears_thread_ac34be5db66743a1044f8d6863c54892e}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetCardiacOutput@{GetCardiacOutput}}
+\index{GetCardiacOutput@{GetCardiacOutput}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetCardiacOutput()}{GetCardiacOutput()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Cardiac\+Output (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_ac1d2e4665980e5beedaaa1e4a0f148e9}\label{class_a_m_m_1_1_biogears_thread_ac1d2e4665980e5beedaaa1e4a0f148e9}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetChloride@{GetChloride}}
+\index{GetChloride@{GetChloride}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetChloride()}{GetChloride()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Chloride (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a550dcbc18c7b13ba6e45c8db83fc5ca5}\label{class_a_m_m_1_1_biogears_thread_a550dcbc18c7b13ba6e45c8db83fc5ca5}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetCO2@{GetCO2}}
+\index{GetCO2@{GetCO2}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetCO2()}{GetCO2()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+C\+O2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_abf8d5dfa4edbc4dbe750a4359e0bdf9e}\label{class_a_m_m_1_1_biogears_thread_abf8d5dfa4edbc4dbe750a4359e0bdf9e}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetCoreTemperature@{GetCoreTemperature}}
+\index{GetCoreTemperature@{GetCoreTemperature}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetCoreTemperature()}{GetCoreTemperature()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Core\+Temperature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a59138587d86d568d9db50b23e6a97e2d}\label{class_a_m_m_1_1_biogears_thread_a59138587d86d568d9db50b23e6a97e2d}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetCreatinineConcentration@{GetCreatinineConcentration}}
+\index{GetCreatinineConcentration@{GetCreatinineConcentration}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetCreatinineConcentration()}{GetCreatinineConcentration()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Creatinine\+Concentration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_ada26544137b008384b7cc574f44d927e}\label{class_a_m_m_1_1_biogears_thread_ada26544137b008384b7cc574f44d927e}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetECGWaveform@{GetECGWaveform}}
+\index{GetECGWaveform@{GetECGWaveform}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetECGWaveform()}{GetECGWaveform()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+E\+C\+G\+Waveform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a6bc33e146bb0042183069af12914f313}\label{class_a_m_m_1_1_biogears_thread_a6bc33e146bb0042183069af12914f313}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetEndTidalCarbonDioxideFraction@{GetEndTidalCarbonDioxideFraction}}
+\index{GetEndTidalCarbonDioxideFraction@{GetEndTidalCarbonDioxideFraction}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetEndTidalCarbonDioxideFraction()}{GetEndTidalCarbonDioxideFraction()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+End\+Tidal\+Carbon\+Dioxide\+Fraction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_aefb6bb66ef855ee47bc1ad5308bd3a80}\label{class_a_m_m_1_1_biogears_thread_aefb6bb66ef855ee47bc1ad5308bd3a80}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetExhaledCO2@{GetExhaledCO2}}
+\index{GetExhaledCO2@{GetExhaledCO2}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetExhaledCO2()}{GetExhaledCO2()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Exhaled\+C\+O2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a552ba4e3f0411c32b0a7b03eab4a5ab1}\label{class_a_m_m_1_1_biogears_thread_a552ba4e3f0411c32b0a7b03eab4a5ab1}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetGlucoseConcentration@{GetGlucoseConcentration}}
+\index{GetGlucoseConcentration@{GetGlucoseConcentration}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetGlucoseConcentration()}{GetGlucoseConcentration()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Glucose\+Concentration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a99c6e02bb3fb2c6d57f4752fa9b4e09d}\label{class_a_m_m_1_1_biogears_thread_a99c6e02bb3fb2c6d57f4752fa9b4e09d}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetHeartRate@{GetHeartRate}}
+\index{GetHeartRate@{GetHeartRate}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetHeartRate()}{GetHeartRate()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Heart\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_af9fa6c9f0d60f20336afb2831043849e}\label{class_a_m_m_1_1_biogears_thread_af9fa6c9f0d60f20336afb2831043849e}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetHematocrit@{GetHematocrit}}
+\index{GetHematocrit@{GetHematocrit}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetHematocrit()}{GetHematocrit()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Hematocrit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a81e85653bf67d62552715f8ecdfde0bf}\label{class_a_m_m_1_1_biogears_thread_a81e85653bf67d62552715f8ecdfde0bf}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetHemoglobinConcentration@{GetHemoglobinConcentration}}
+\index{GetHemoglobinConcentration@{GetHemoglobinConcentration}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetHemoglobinConcentration()}{GetHemoglobinConcentration()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Hemoglobin\+Concentration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a5a25eac3a871d45e768a427b5fe60062}\label{class_a_m_m_1_1_biogears_thread_a5a25eac3a871d45e768a427b5fe60062}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetLactateConcentration@{GetLactateConcentration}}
+\index{GetLactateConcentration@{GetLactateConcentration}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetLactateConcentration()}{GetLactateConcentration()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Lactate\+Concentration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a79074321c2a5c5515d0c5ee1c653531a}\label{class_a_m_m_1_1_biogears_thread_a79074321c2a5c5515d0c5ee1c653531a}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetLactateConcentrationMMOL@{GetLactateConcentrationMMOL}}
+\index{GetLactateConcentrationMMOL@{GetLactateConcentrationMMOL}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetLactateConcentrationMMOL()}{GetLactateConcentrationMMOL()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Lactate\+Concentration\+M\+M\+OL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a7e1b4645d48c36d58fbcb4490dc98098}\label{class_a_m_m_1_1_biogears_thread_a7e1b4645d48c36d58fbcb4490dc98098}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetLeftAlveoliBaselineCompliance@{GetLeftAlveoliBaselineCompliance}}
+\index{GetLeftAlveoliBaselineCompliance@{GetLeftAlveoliBaselineCompliance}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetLeftAlveoliBaselineCompliance()}{GetLeftAlveoliBaselineCompliance()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Left\+Alveoli\+Baseline\+Compliance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a0a3017e40c74cdfe5fb64c76f25eee1f}\label{class_a_m_m_1_1_biogears_thread_a0a3017e40c74cdfe5fb64c76f25eee1f}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetLeftLungTidalVolume@{GetLeftLungTidalVolume}}
+\index{GetLeftLungTidalVolume@{GetLeftLungTidalVolume}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetLeftLungTidalVolume()}{GetLeftLungTidalVolume()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Left\+Lung\+Tidal\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_af196b446556dadd2dfaa1e86cf478ee7}\label{class_a_m_m_1_1_biogears_thread_af196b446556dadd2dfaa1e86cf478ee7}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetLeftLungVolume@{GetLeftLungVolume}}
+\index{GetLeftLungVolume@{GetLeftLungVolume}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetLeftLungVolume()}{GetLeftLungVolume()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Left\+Lung\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a6f53eb3979cb4dec594b4fa033d49eaf}\label{class_a_m_m_1_1_biogears_thread_a6f53eb3979cb4dec594b4fa033d49eaf}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetLeftPleuralCavityVolume@{GetLeftPleuralCavityVolume}}
+\index{GetLeftPleuralCavityVolume@{GetLeftPleuralCavityVolume}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetLeftPleuralCavityVolume()}{GetLeftPleuralCavityVolume()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Left\+Pleural\+Cavity\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_ac914a705824febe7cc5c3dc2d5b66689}\label{class_a_m_m_1_1_biogears_thread_ac914a705824febe7cc5c3dc2d5b66689}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetLoggingStatus@{GetLoggingStatus}}
+\index{GetLoggingStatus@{GetLoggingStatus}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetLoggingStatus()}{GetLoggingStatus()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Logging\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a2f5ae5a625f71d580b849b8c2626c4aa}\label{class_a_m_m_1_1_biogears_thread_a2f5ae5a625f71d580b849b8c2626c4aa}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetMeanArterialPressure@{GetMeanArterialPressure}}
+\index{GetMeanArterialPressure@{GetMeanArterialPressure}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetMeanArterialPressure()}{GetMeanArterialPressure()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Mean\+Arterial\+Pressure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_ad036d2c9aede9c47733ca09fc554a64a}\label{class_a_m_m_1_1_biogears_thread_ad036d2c9aede9c47733ca09fc554a64a}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetMeanCentralVenousPressure@{GetMeanCentralVenousPressure}}
+\index{GetMeanCentralVenousPressure@{GetMeanCentralVenousPressure}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetMeanCentralVenousPressure()}{GetMeanCentralVenousPressure()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Mean\+Central\+Venous\+Pressure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a90d6aa1c65c82a605674213a00329880}\label{class_a_m_m_1_1_biogears_thread_a90d6aa1c65c82a605674213a00329880}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetNodePath@{GetNodePath}}
+\index{GetNodePath@{GetNodePath}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetNodePath()}{GetNodePath()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Node\+Path (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{node\+Path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_ab50c73c4166fe2d94eed2ab3a2132a5a}\label{class_a_m_m_1_1_biogears_thread_ab50c73c4166fe2d94eed2ab3a2132a5a}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetNodePathTable@{GetNodePathTable}}
+\index{GetNodePathTable@{GetNodePathTable}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetNodePathTable()}{GetNodePathTable()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, double(Biogears\+Thread\+::$\ast$)()$>$ $\ast$ A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Node\+Path\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a939a073d0f2fe30b97eb073b5d3e2ab5}\label{class_a_m_m_1_1_biogears_thread_a939a073d0f2fe30b97eb073b5d3e2ab5}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetOxyCarbaminohemoglobinConcentration@{GetOxyCarbaminohemoglobinConcentration}}
+\index{GetOxyCarbaminohemoglobinConcentration@{GetOxyCarbaminohemoglobinConcentration}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetOxyCarbaminohemoglobinConcentration()}{GetOxyCarbaminohemoglobinConcentration()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Oxy\+Carbaminohemoglobin\+Concentration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a0b0bbae3dbc3075053f366f5b6253c76}\label{class_a_m_m_1_1_biogears_thread_a0b0bbae3dbc3075053f366f5b6253c76}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetOxygenSaturation@{GetOxygenSaturation}}
+\index{GetOxygenSaturation@{GetOxygenSaturation}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetOxygenSaturation()}{GetOxygenSaturation()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Oxygen\+Saturation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_ade1172e824e3067fe0cc56a4361582d7}\label{class_a_m_m_1_1_biogears_thread_ade1172e824e3067fe0cc56a4361582d7}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetOxyhemoglobinConcentration@{GetOxyhemoglobinConcentration}}
+\index{GetOxyhemoglobinConcentration@{GetOxyhemoglobinConcentration}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetOxyhemoglobinConcentration()}{GetOxyhemoglobinConcentration()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Oxyhemoglobin\+Concentration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_ac562b25feda3f862af2cdbecf3e3d392}\label{class_a_m_m_1_1_biogears_thread_ac562b25feda3f862af2cdbecf3e3d392}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetPainVisualAnalogueScale@{GetPainVisualAnalogueScale}}
+\index{GetPainVisualAnalogueScale@{GetPainVisualAnalogueScale}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetPainVisualAnalogueScale()}{GetPainVisualAnalogueScale()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Pain\+Visual\+Analogue\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_ab06feceee29c12cfc5f76d2917943e98}\label{class_a_m_m_1_1_biogears_thread_ab06feceee29c12cfc5f76d2917943e98}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetPlateletCount@{GetPlateletCount}}
+\index{GetPlateletCount@{GetPlateletCount}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetPlateletCount()}{GetPlateletCount()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Platelet\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a5e306e28b44fbf82332241798f98e1f8}\label{class_a_m_m_1_1_biogears_thread_a5e306e28b44fbf82332241798f98e1f8}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetPotassium@{GetPotassium}}
+\index{GetPotassium@{GetPotassium}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetPotassium()}{GetPotassium()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Potassium (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a122462ce008c3994f787400c9c293e6f}\label{class_a_m_m_1_1_biogears_thread_a122462ce008c3994f787400c9c293e6f}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetRawBloodPH@{GetRawBloodPH}}
+\index{GetRawBloodPH@{GetRawBloodPH}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetRawBloodPH()}{GetRawBloodPH()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Raw\+Blood\+PH (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_afe46a4abe340b946e1ed2a87d234dedd}\label{class_a_m_m_1_1_biogears_thread_afe46a4abe340b946e1ed2a87d234dedd}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetRawRespirationRate@{GetRawRespirationRate}}
+\index{GetRawRespirationRate@{GetRawRespirationRate}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetRawRespirationRate()}{GetRawRespirationRate()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Raw\+Respiration\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_af1ca237b51cea4f022554e315c4bf2ae}\label{class_a_m_m_1_1_biogears_thread_af1ca237b51cea4f022554e315c4bf2ae}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetRedBloodCellCount@{GetRedBloodCellCount}}
+\index{GetRedBloodCellCount@{GetRedBloodCellCount}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetRedBloodCellCount()}{GetRedBloodCellCount()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Red\+Blood\+Cell\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a4f5c60eb11318e264f26c21b4e3c78e8}\label{class_a_m_m_1_1_biogears_thread_a4f5c60eb11318e264f26c21b4e3c78e8}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetRespirationRate@{GetRespirationRate}}
+\index{GetRespirationRate@{GetRespirationRate}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetRespirationRate()}{GetRespirationRate()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Respiration\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_ae8181f2b9744181e99e15855df49c412}\label{class_a_m_m_1_1_biogears_thread_ae8181f2b9744181e99e15855df49c412}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetRightAlveoliBaselineCompliance@{GetRightAlveoliBaselineCompliance}}
+\index{GetRightAlveoliBaselineCompliance@{GetRightAlveoliBaselineCompliance}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetRightAlveoliBaselineCompliance()}{GetRightAlveoliBaselineCompliance()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Right\+Alveoli\+Baseline\+Compliance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_acf0d33287faf8ba09cf9b26160bb5750}\label{class_a_m_m_1_1_biogears_thread_acf0d33287faf8ba09cf9b26160bb5750}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetRightLungTidalVolume@{GetRightLungTidalVolume}}
+\index{GetRightLungTidalVolume@{GetRightLungTidalVolume}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetRightLungTidalVolume()}{GetRightLungTidalVolume()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Right\+Lung\+Tidal\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a2ef76bee23be22738498b7576a21d2a7}\label{class_a_m_m_1_1_biogears_thread_a2ef76bee23be22738498b7576a21d2a7}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetRightLungVolume@{GetRightLungVolume}}
+\index{GetRightLungVolume@{GetRightLungVolume}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetRightLungVolume()}{GetRightLungVolume()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Right\+Lung\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_aaf2da032b31d59cce9c2497914d310a3}\label{class_a_m_m_1_1_biogears_thread_aaf2da032b31d59cce9c2497914d310a3}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetRightPleuralCavityVolume@{GetRightPleuralCavityVolume}}
+\index{GetRightPleuralCavityVolume@{GetRightPleuralCavityVolume}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetRightPleuralCavityVolume()}{GetRightPleuralCavityVolume()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Right\+Pleural\+Cavity\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a9b2be8db2052910c228fd4c6a6f69019}\label{class_a_m_m_1_1_biogears_thread_a9b2be8db2052910c228fd4c6a6f69019}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetShutdownMessage@{GetShutdownMessage}}
+\index{GetShutdownMessage@{GetShutdownMessage}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetShutdownMessage()}{GetShutdownMessage()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Shutdown\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a2951f37bd8faf9ddfeecb9b155eb03e3}\label{class_a_m_m_1_1_biogears_thread_a2951f37bd8faf9ddfeecb9b155eb03e3}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetSimulationTime@{GetSimulationTime}}
+\index{GetSimulationTime@{GetSimulationTime}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetSimulationTime()}{GetSimulationTime()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Simulation\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_ae4e3a3c739b8ae895eaa85510b1ed270}\label{class_a_m_m_1_1_biogears_thread_ae4e3a3c739b8ae895eaa85510b1ed270}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetSodium@{GetSodium}}
+\index{GetSodium@{GetSodium}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetSodium()}{GetSodium()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Sodium (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_ab8fb905cacce04048bdfb3c0e3ccf665}\label{class_a_m_m_1_1_biogears_thread_ab8fb905cacce04048bdfb3c0e3ccf665}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetSodiumConcentration@{GetSodiumConcentration}}
+\index{GetSodiumConcentration@{GetSodiumConcentration}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetSodiumConcentration()}{GetSodiumConcentration()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Sodium\+Concentration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a8c8b6beb2b60dfa6f23ae696013dd4c9}\label{class_a_m_m_1_1_biogears_thread_a8c8b6beb2b60dfa6f23ae696013dd4c9}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetTidalVolume@{GetTidalVolume}}
+\index{GetTidalVolume@{GetTidalVolume}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetTidalVolume()}{GetTidalVolume()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Tidal\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a0398b4c1cd18970bea47023b595f2351}\label{class_a_m_m_1_1_biogears_thread_a0398b4c1cd18970bea47023b595f2351}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetTotalBilirubin@{GetTotalBilirubin}}
+\index{GetTotalBilirubin@{GetTotalBilirubin}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetTotalBilirubin()}{GetTotalBilirubin()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Total\+Bilirubin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a1ea445022fed7a3f037b417defe8be87}\label{class_a_m_m_1_1_biogears_thread_a1ea445022fed7a3f037b417defe8be87}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetTotalLungVolume@{GetTotalLungVolume}}
+\index{GetTotalLungVolume@{GetTotalLungVolume}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetTotalLungVolume()}{GetTotalLungVolume()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Total\+Lung\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a7a2895576280810bdc798c32e1f894fa}\label{class_a_m_m_1_1_biogears_thread_a7a2895576280810bdc798c32e1f894fa}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetTotalProtein@{GetTotalProtein}}
+\index{GetTotalProtein@{GetTotalProtein}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetTotalProtein()}{GetTotalProtein()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Total\+Protein (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_ac189f262bd52dd8130df1c776cb0ba70}\label{class_a_m_m_1_1_biogears_thread_ac189f262bd52dd8130df1c776cb0ba70}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetUrineOsmolality@{GetUrineOsmolality}}
+\index{GetUrineOsmolality@{GetUrineOsmolality}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetUrineOsmolality()}{GetUrineOsmolality()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Urine\+Osmolality (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_abd2e617bd750b44822ba610226c4b0cc}\label{class_a_m_m_1_1_biogears_thread_abd2e617bd750b44822ba610226c4b0cc}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetUrineOsmolarity@{GetUrineOsmolarity}}
+\index{GetUrineOsmolarity@{GetUrineOsmolarity}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetUrineOsmolarity()}{GetUrineOsmolarity()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Urine\+Osmolarity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a871b1c5eddca6e880476ebba6fd89bed}\label{class_a_m_m_1_1_biogears_thread_a871b1c5eddca6e880476ebba6fd89bed}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetUrineProductionRate@{GetUrineProductionRate}}
+\index{GetUrineProductionRate@{GetUrineProductionRate}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetUrineProductionRate()}{GetUrineProductionRate()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Urine\+Production\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_acd9668a070ec413d7eb29de49a7510f4}\label{class_a_m_m_1_1_biogears_thread_acd9668a070ec413d7eb29de49a7510f4}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetUrineSpecificGravity@{GetUrineSpecificGravity}}
+\index{GetUrineSpecificGravity@{GetUrineSpecificGravity}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetUrineSpecificGravity()}{GetUrineSpecificGravity()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Urine\+Specific\+Gravity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a4e4f5d1ca5cec3c8f2abf5f3f9734794}\label{class_a_m_m_1_1_biogears_thread_a4e4f5d1ca5cec3c8f2abf5f3f9734794}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetVenousCarbonDioxidePressure@{GetVenousCarbonDioxidePressure}}
+\index{GetVenousCarbonDioxidePressure@{GetVenousCarbonDioxidePressure}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetVenousCarbonDioxidePressure()}{GetVenousCarbonDioxidePressure()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Venous\+Carbon\+Dioxide\+Pressure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a04a016435c8c0665ff78ac5ef962f16b}\label{class_a_m_m_1_1_biogears_thread_a04a016435c8c0665ff78ac5ef962f16b}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetVenousOxygenPressure@{GetVenousOxygenPressure}}
+\index{GetVenousOxygenPressure@{GetVenousOxygenPressure}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetVenousOxygenPressure()}{GetVenousOxygenPressure()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+Venous\+Oxygen\+Pressure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a303e2ad765162f2aa8b01cee6a08af25}\label{class_a_m_m_1_1_biogears_thread_a303e2ad765162f2aa8b01cee6a08af25}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!GetWhiteBloodCellCount@{GetWhiteBloodCellCount}}
+\index{GetWhiteBloodCellCount@{GetWhiteBloodCellCount}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{GetWhiteBloodCellCount()}{GetWhiteBloodCellCount()}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::\+Get\+White\+Blood\+Cell\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_aed48430bac7692d6833a1467db9cc31b}\label{class_a_m_m_1_1_biogears_thread_aed48430bac7692d6833a1467db9cc31b}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!LoadScenarioFile@{LoadScenarioFile}}
+\index{LoadScenarioFile@{LoadScenarioFile}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{LoadScenarioFile()}{LoadScenarioFile()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Biogears\+Thread\+::\+Load\+Scenario\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{scenario\+File }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a85db87ebd33294d2e64be6d885da6fad}\label{class_a_m_m_1_1_biogears_thread_a85db87ebd33294d2e64be6d885da6fad}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!LoadState@{LoadState}}
+\index{LoadState@{LoadState}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{LoadState()}{LoadState()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Biogears\+Thread\+::\+Load\+State (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{state\+File,  }\item[{double}]{sec }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_aedc21f2d00571ab50041713c31d0bb8b}\label{class_a_m_m_1_1_biogears_thread_aedc21f2d00571ab50041713c31d0bb8b}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!PopulateNodePathTable@{PopulateNodePathTable}}
+\index{PopulateNodePathTable@{PopulateNodePathTable}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{PopulateNodePathTable()}{PopulateNodePathTable()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Populate\+Node\+Path\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a1a0fa12e0f07f06bbed3384662c40eda}\label{class_a_m_m_1_1_biogears_thread_a1a0fa12e0f07f06bbed3384662c40eda}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!ProcessPatientAction@{ProcessPatientAction}}
+\index{ProcessPatientAction@{ProcessPatientAction}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{ProcessPatientAction()}{ProcessPatientAction()}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Biogears\+Thread\+::\+Process\+Patient\+Action (\begin{DoxyParamCaption}\item[{std\+::string}]{action\+Type,  }\item[{std\+::string}]{payload }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_aab77c203610161c8ec885c8615cb223f}\label{class_a_m_m_1_1_biogears_thread_aab77c203610161c8ec885c8615cb223f}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SaveState@{SaveState}}
+\index{SaveState@{SaveState}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SaveState()}{SaveState()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Biogears\+Thread\+::\+Save\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a3b097442414c3c5daa30e0df3929915e}\label{class_a_m_m_1_1_biogears_thread_a3b097442414c3c5daa30e0df3929915e}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SaveState@{SaveState}}
+\index{SaveState@{SaveState}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SaveState()}{SaveState()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Biogears\+Thread\+::\+Save\+State (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{state\+File }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_af0d67a7ab21330d92075f86ec5d70ad4}\label{class_a_m_m_1_1_biogears_thread_af0d67a7ab21330d92075f86ec5d70ad4}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetAcuteStress@{SetAcuteStress}}
+\index{SetAcuteStress@{SetAcuteStress}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetAcuteStress()}{SetAcuteStress()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Acute\+Stress (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a2037ffdc4eeec66baf4d947be0feed57}\label{class_a_m_m_1_1_biogears_thread_a2037ffdc4eeec66baf4d947be0feed57}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetAirwayObstruction@{SetAirwayObstruction}}
+\index{SetAirwayObstruction@{SetAirwayObstruction}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetAirwayObstruction()}{SetAirwayObstruction()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Airway\+Obstruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a4d3b63809912a62d007cff700998cba0}\label{class_a_m_m_1_1_biogears_thread_a4d3b63809912a62d007cff700998cba0}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetApnea@{SetApnea}}
+\index{SetApnea@{SetApnea}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetApnea()}{SetApnea()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Apnea (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a31f933e71aa1adfa6dcedc1e21ff7a67}\label{class_a_m_m_1_1_biogears_thread_a31f933e71aa1adfa6dcedc1e21ff7a67}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetAsthmaAttack@{SetAsthmaAttack}}
+\index{SetAsthmaAttack@{SetAsthmaAttack}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetAsthmaAttack()}{SetAsthmaAttack()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Asthma\+Attack (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_af032243ea5609ebeb83bddbc498099a2}\label{class_a_m_m_1_1_biogears_thread_af032243ea5609ebeb83bddbc498099a2}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetBrainInjury@{SetBrainInjury}}
+\index{SetBrainInjury@{SetBrainInjury}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetBrainInjury()}{SetBrainInjury()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Brain\+Injury (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_aa2aa98d265b95c0ee44ed096e2f22cf9}\label{class_a_m_m_1_1_biogears_thread_aa2aa98d265b95c0ee44ed096e2f22cf9}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetBreathHold@{SetBreathHold}}
+\index{SetBreathHold@{SetBreathHold}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetBreathHold()}{SetBreathHold()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Breath\+Hold (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a55c56607c8b6d1c9110d49cd4433dd17}\label{class_a_m_m_1_1_biogears_thread_a55c56607c8b6d1c9110d49cd4433dd17}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetBronchoconstriction@{SetBronchoconstriction}}
+\index{SetBronchoconstriction@{SetBronchoconstriction}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetBronchoconstriction()}{SetBronchoconstriction()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Bronchoconstriction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a16b636f7ff13e077613a8b5b3e5963e2}\label{class_a_m_m_1_1_biogears_thread_a16b636f7ff13e077613a8b5b3e5963e2}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetBurnWound@{SetBurnWound}}
+\index{SetBurnWound@{SetBurnWound}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetBurnWound()}{SetBurnWound()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Burn\+Wound (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a3deb76fc0678fa7e5420a088a8c2d9cd}\label{class_a_m_m_1_1_biogears_thread_a3deb76fc0678fa7e5420a088a8c2d9cd}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetBVMMask@{SetBVMMask}}
+\index{SetBVMMask@{SetBVMMask}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetBVMMask()}{SetBVMMask()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+B\+V\+M\+Mask (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ventilator\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a83129a26f6991ecd7346f315f20a6e06}\label{class_a_m_m_1_1_biogears_thread_a83129a26f6991ecd7346f315f20a6e06}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetCardiacArrest@{SetCardiacArrest}}
+\index{SetCardiacArrest@{SetCardiacArrest}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetCardiacArrest()}{SetCardiacArrest()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Cardiac\+Arrest (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a966f1ecfde266e3f4be1ee59210a2bd3}\label{class_a_m_m_1_1_biogears_thread_a966f1ecfde266e3f4be1ee59210a2bd3}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetChestCompression@{SetChestCompression}}
+\index{SetChestCompression@{SetChestCompression}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetChestCompression()}{SetChestCompression()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Chest\+Compression (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_ac4c21c37e0e4c3c250c1efa84ca56b67}\label{class_a_m_m_1_1_biogears_thread_ac4c21c37e0e4c3c250c1efa84ca56b67}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetChestCompressionForce@{SetChestCompressionForce}}
+\index{SetChestCompressionForce@{SetChestCompressionForce}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetChestCompressionForce()}{SetChestCompressionForce()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Chest\+Compression\+Force (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_aac6812c46336244a44f4f8f87415ee7a}\label{class_a_m_m_1_1_biogears_thread_aac6812c46336244a44f4f8f87415ee7a}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetChestCompressionForceScale@{SetChestCompressionForceScale}}
+\index{SetChestCompressionForceScale@{SetChestCompressionForceScale}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetChestCompressionForceScale()}{SetChestCompressionForceScale()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Chest\+Compression\+Force\+Scale (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_ab848348372efaf26e2a8d1bc3b75c90d}\label{class_a_m_m_1_1_biogears_thread_ab848348372efaf26e2a8d1bc3b75c90d}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetChestOcclusiveDressing@{SetChestOcclusiveDressing}}
+\index{SetChestOcclusiveDressing@{SetChestOcclusiveDressing}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetChestOcclusiveDressing()}{SetChestOcclusiveDressing()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Chest\+Occlusive\+Dressing (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a46501e395cb35cb1c4f848f82da838f5}\label{class_a_m_m_1_1_biogears_thread_a46501e395cb35cb1c4f848f82da838f5}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetConsciousRespiration@{SetConsciousRespiration}}
+\index{SetConsciousRespiration@{SetConsciousRespiration}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetConsciousRespiration()}{SetConsciousRespiration()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Conscious\+Respiration (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a6e56a0d006d2192890f18d00ffc4b2d4}\label{class_a_m_m_1_1_biogears_thread_a6e56a0d006d2192890f18d00ffc4b2d4}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetConsciousRespirationCommand@{SetConsciousRespirationCommand}}
+\index{SetConsciousRespirationCommand@{SetConsciousRespirationCommand}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetConsciousRespirationCommand()}{SetConsciousRespirationCommand()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Conscious\+Respiration\+Command (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_aefd133ce331ea6e9fdf8d64b27f38f88}\label{class_a_m_m_1_1_biogears_thread_aefd133ce331ea6e9fdf8d64b27f38f88}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetConsumeNutrients@{SetConsumeNutrients}}
+\index{SetConsumeNutrients@{SetConsumeNutrients}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetConsumeNutrients()}{SetConsumeNutrients()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Consume\+Nutrients (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a77c0e7852ee3fdb905a4f04449557bb4}\label{class_a_m_m_1_1_biogears_thread_a77c0e7852ee3fdb905a4f04449557bb4}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetExercise@{SetExercise}}
+\index{SetExercise@{SetExercise}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetExercise()}{SetExercise()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Exercise (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a85643bee31437e7275bf663e80ddeda0}\label{class_a_m_m_1_1_biogears_thread_a85643bee31437e7275bf663e80ddeda0}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetForcedExhale@{SetForcedExhale}}
+\index{SetForcedExhale@{SetForcedExhale}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetForcedExhale()}{SetForcedExhale()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Forced\+Exhale (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a715ed7764fe14d94d50bfda6f017ee86}\label{class_a_m_m_1_1_biogears_thread_a715ed7764fe14d94d50bfda6f017ee86}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetForcedInhale@{SetForcedInhale}}
+\index{SetForcedInhale@{SetForcedInhale}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetForcedInhale()}{SetForcedInhale()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Forced\+Inhale (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a16eccd4ff821d2bb95b25636cdb05e17}\label{class_a_m_m_1_1_biogears_thread_a16eccd4ff821d2bb95b25636cdb05e17}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetHemorrhage@{SetHemorrhage}}
+\index{SetHemorrhage@{SetHemorrhage}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetHemorrhage()}{SetHemorrhage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Hemorrhage (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a8a438f0a59bf0b64456a22660e57455d}\label{class_a_m_m_1_1_biogears_thread_a8a438f0a59bf0b64456a22660e57455d}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetHemorrhage@{SetHemorrhage}}
+\index{SetHemorrhage@{SetHemorrhage}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetHemorrhage()}{SetHemorrhage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Hemorrhage (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{location,  }\item[{const std\+::string \&}]{hemorrhage\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_ab441647bdbc0665a97f31fe6a8488ef8}\label{class_a_m_m_1_1_biogears_thread_ab441647bdbc0665a97f31fe6a8488ef8}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetInfection@{SetInfection}}
+\index{SetInfection@{SetInfection}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetInfection()}{SetInfection()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Infection (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a68bdca9944b12739b53322405e3b4c9e}\label{class_a_m_m_1_1_biogears_thread_a68bdca9944b12739b53322405e3b4c9e}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetIntubation@{SetIntubation}}
+\index{SetIntubation@{SetIntubation}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetIntubation()}{SetIntubation()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Intubation (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a8d97dbbaa80b762bb0f05a840b639dbe}\label{class_a_m_m_1_1_biogears_thread_a8d97dbbaa80b762bb0f05a840b639dbe}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetIVPump@{SetIVPump}}
+\index{SetIVPump@{SetIVPump}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetIVPump()}{SetIVPump()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+I\+V\+Pump (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{pump\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a66f5bcf4da6266165deb973ae305ffcf}\label{class_a_m_m_1_1_biogears_thread_a66f5bcf4da6266165deb973ae305ffcf}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetLastFrame@{SetLastFrame}}
+\index{SetLastFrame@{SetLastFrame}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetLastFrame()}{SetLastFrame()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Last\+Frame (\begin{DoxyParamCaption}\item[{int}]{last\+Frame }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a46d8fc1f1cc0be531d8f6acf5bf18a52}\label{class_a_m_m_1_1_biogears_thread_a46d8fc1f1cc0be531d8f6acf5bf18a52}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetLogging@{SetLogging}}
+\index{SetLogging@{SetLogging}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetLogging()}{SetLogging()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Logging (\begin{DoxyParamCaption}\item[{bool}]{log }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_aee7e2752e9530674fd219b162c33d5b2}\label{class_a_m_m_1_1_biogears_thread_aee7e2752e9530674fd219b162c33d5b2}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetMechanicalVentilation@{SetMechanicalVentilation}}
+\index{SetMechanicalVentilation@{SetMechanicalVentilation}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetMechanicalVentilation()}{SetMechanicalVentilation()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Mechanical\+Ventilation (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a616d722339c1e75505b788b1b73bfe88}\label{class_a_m_m_1_1_biogears_thread_a616d722339c1e75505b788b1b73bfe88}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetNeedleDecompression@{SetNeedleDecompression}}
+\index{SetNeedleDecompression@{SetNeedleDecompression}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetNeedleDecompression()}{SetNeedleDecompression()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Needle\+Decompression (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a7c8a692cb18b7b2940a38bfa8006527c}\label{class_a_m_m_1_1_biogears_thread_a7c8a692cb18b7b2940a38bfa8006527c}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetPain@{SetPain}}
+\index{SetPain@{SetPain}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetPain()}{SetPain()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Pain (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{pain\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a69fa78a3e373adc1cdb3cd1df2e36fcf}\label{class_a_m_m_1_1_biogears_thread_a69fa78a3e373adc1cdb3cd1df2e36fcf}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetPainStimulus@{SetPainStimulus}}
+\index{SetPainStimulus@{SetPainStimulus}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetPainStimulus()}{SetPainStimulus()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Pain\+Stimulus (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_aa8d79675f644865441ce8a2e7209afa0}\label{class_a_m_m_1_1_biogears_thread_aa8d79675f644865441ce8a2e7209afa0}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetPatientAction@{SetPatientAction}}
+\index{SetPatientAction@{SetPatientAction}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetPatientAction()}{SetPatientAction()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Patient\+Action (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a6a21aa9444933698050bae0697370d11}\label{class_a_m_m_1_1_biogears_thread_a6a21aa9444933698050bae0697370d11}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetPatientAssessmentRequest@{SetPatientAssessmentRequest}}
+\index{SetPatientAssessmentRequest@{SetPatientAssessmentRequest}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetPatientAssessmentRequest()}{SetPatientAssessmentRequest()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Patient\+Assessment\+Request (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a979a93e607e1a26926962b9d50537b53}\label{class_a_m_m_1_1_biogears_thread_a979a93e607e1a26926962b9d50537b53}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetPericardialEffusion@{SetPericardialEffusion}}
+\index{SetPericardialEffusion@{SetPericardialEffusion}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetPericardialEffusion()}{SetPericardialEffusion()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Pericardial\+Effusion (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_aa19a96c1ea0ab3110c682cd84ab0e1df}\label{class_a_m_m_1_1_biogears_thread_aa19a96c1ea0ab3110c682cd84ab0e1df}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetPupillaryResponse@{SetPupillaryResponse}}
+\index{SetPupillaryResponse@{SetPupillaryResponse}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetPupillaryResponse()}{SetPupillaryResponse()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Pupillary\+Response (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_ace14c2b3793de01382b111d1b0fa960d}\label{class_a_m_m_1_1_biogears_thread_ace14c2b3793de01382b111d1b0fa960d}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetSepsis@{SetSepsis}}
+\index{SetSepsis@{SetSepsis}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetSepsis()}{SetSepsis()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Sepsis (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a1497338b1fd7d453b776e3e31620155e}\label{class_a_m_m_1_1_biogears_thread_a1497338b1fd7d453b776e3e31620155e}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetSubstanceAdministration@{SetSubstanceAdministration}}
+\index{SetSubstanceAdministration@{SetSubstanceAdministration}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetSubstanceAdministration()}{SetSubstanceAdministration()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Substance\+Administration (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a8d8a64326af0f22727a641c1dd6d2fb1}\label{class_a_m_m_1_1_biogears_thread_a8d8a64326af0f22727a641c1dd6d2fb1}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetSubstanceBolus@{SetSubstanceBolus}}
+\index{SetSubstanceBolus@{SetSubstanceBolus}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetSubstanceBolus()}{SetSubstanceBolus()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Substance\+Bolus (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a38bdb7b5e273bfa87f02fe0811a6764e}\label{class_a_m_m_1_1_biogears_thread_a38bdb7b5e273bfa87f02fe0811a6764e}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetSubstanceCompoundInfusion@{SetSubstanceCompoundInfusion}}
+\index{SetSubstanceCompoundInfusion@{SetSubstanceCompoundInfusion}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetSubstanceCompoundInfusion()}{SetSubstanceCompoundInfusion()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Substance\+Compound\+Infusion (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a523ee9f3f5f31f696925b5dc7f957356}\label{class_a_m_m_1_1_biogears_thread_a523ee9f3f5f31f696925b5dc7f957356}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetSubstanceInfusion@{SetSubstanceInfusion}}
+\index{SetSubstanceInfusion@{SetSubstanceInfusion}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetSubstanceInfusion()}{SetSubstanceInfusion()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Substance\+Infusion (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_ab811355de454174dd61deaf2e0e28c1d}\label{class_a_m_m_1_1_biogears_thread_ab811355de454174dd61deaf2e0e28c1d}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetSubstanceOralDose@{SetSubstanceOralDose}}
+\index{SetSubstanceOralDose@{SetSubstanceOralDose}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetSubstanceOralDose()}{SetSubstanceOralDose()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Substance\+Oral\+Dose (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a78c1e1fff1a8a47b463dbca299a56c9b}\label{class_a_m_m_1_1_biogears_thread_a78c1e1fff1a8a47b463dbca299a56c9b}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetTensionPneumothorax@{SetTensionPneumothorax}}
+\index{SetTensionPneumothorax@{SetTensionPneumothorax}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetTensionPneumothorax()}{SetTensionPneumothorax()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Tension\+Pneumothorax (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a48999107d2c0242958f47ae87ea1d519}\label{class_a_m_m_1_1_biogears_thread_a48999107d2c0242958f47ae87ea1d519}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetUrinate@{SetUrinate}}
+\index{SetUrinate@{SetUrinate}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetUrinate()}{SetUrinate()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Urinate (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a89e4b7529c3665083ef62a645e50e1c0}\label{class_a_m_m_1_1_biogears_thread_a89e4b7529c3665083ef62a645e50e1c0}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetUseInhaler@{SetUseInhaler}}
+\index{SetUseInhaler@{SetUseInhaler}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetUseInhaler()}{SetUseInhaler()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Use\+Inhaler (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_acc8ed2d74be7c3b8d291e9795274342b}\label{class_a_m_m_1_1_biogears_thread_acc8ed2d74be7c3b8d291e9795274342b}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!SetVentilator@{SetVentilator}}
+\index{SetVentilator@{SetVentilator}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{SetVentilator()}{SetVentilator()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Set\+Ventilator (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ventilator\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a5e42af06510ad8d273ef158389c65d25}\label{class_a_m_m_1_1_biogears_thread_a5e42af06510ad8d273ef158389c65d25}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{Shutdown()}{Shutdown()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a5c4e0c4b012b0040bfee9aacae0ca6b4}\label{class_a_m_m_1_1_biogears_thread_a5c4e0c4b012b0040bfee9aacae0ca6b4}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!StartSimulation@{StartSimulation}}
+\index{StartSimulation@{StartSimulation}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{StartSimulation()}{StartSimulation()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Start\+Simulation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a60535236b601eefe5ca620f9d01d3f11}\label{class_a_m_m_1_1_biogears_thread_a60535236b601eefe5ca620f9d01d3f11}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!Status@{Status}}
+\index{Status@{Status}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{Status()}{Status()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a408327e904f4f7c0acd48ffc8e618e20}\label{class_a_m_m_1_1_biogears_thread_a408327e904f4f7c0acd48ffc8e618e20}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!StopSimulation@{StopSimulation}}
+\index{StopSimulation@{StopSimulation}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{StopSimulation()}{StopSimulation()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Biogears\+Thread\+::\+Stop\+Simulation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a366cd2929efd89cd71d7166b0dce6920}\label{class_a_m_m_1_1_biogears_thread_a366cd2929efd89cd71d7166b0dce6920}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!albumin@{albumin}}
+\index{albumin@{albumin}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{albumin}{albumin}}
+{\footnotesize\ttfamily biogears\+::\+S\+E\+Substance$\ast$ A\+M\+M\+::\+Biogears\+Thread\+::albumin\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a6dbd5de1a8dd1f6569f1ad4f8b4baae4}\label{class_a_m_m_1_1_biogears_thread_a6dbd5de1a8dd1f6569f1ad4f8b4baae4}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!bicarbonate@{bicarbonate}}
+\index{bicarbonate@{bicarbonate}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{bicarbonate}{bicarbonate}}
+{\footnotesize\ttfamily biogears\+::\+S\+E\+Substance$\ast$ A\+M\+M\+::\+Biogears\+Thread\+::bicarbonate\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a708a98ee5c95c7efd0a5ededaf85dd31}\label{class_a_m_m_1_1_biogears_thread_a708a98ee5c95c7efd0a5ededaf85dd31}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!bladder@{bladder}}
+\index{bladder@{bladder}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{bladder}{bladder}}
+{\footnotesize\ttfamily const biogears\+::\+S\+E\+Liquid\+Compartment$\ast$ A\+M\+M\+::\+Biogears\+Thread\+::bladder\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a075e197525d926275005f36ee65a9efc}\label{class_a_m_m_1_1_biogears_thread_a075e197525d926275005f36ee65a9efc}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!bloodPH@{bloodPH}}
+\index{bloodPH@{bloodPH}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{bloodPH}{bloodPH}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::blood\+PH = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_afee9aa817ea92147b09eadc410df72de}\label{class_a_m_m_1_1_biogears_thread_afee9aa817ea92147b09eadc410df72de}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!calcium@{calcium}}
+\index{calcium@{calcium}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{calcium}{calcium}}
+{\footnotesize\ttfamily biogears\+::\+S\+E\+Substance$\ast$ A\+M\+M\+::\+Biogears\+Thread\+::calcium\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a6e718bdb9e72da1eae984cc1a87e8de5}\label{class_a_m_m_1_1_biogears_thread_a6e718bdb9e72da1eae984cc1a87e8de5}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!carina@{carina}}
+\index{carina@{carina}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{carina}{carina}}
+{\footnotesize\ttfamily const biogears\+::\+S\+E\+Gas\+Compartment$\ast$ A\+M\+M\+::\+Biogears\+Thread\+::carina\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_ae2343c27e4ad492f248889c4372f677f}\label{class_a_m_m_1_1_biogears_thread_ae2343c27e4ad492f248889c4372f677f}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!chestrise\_pct\_L@{chestrise\_pct\_L}}
+\index{chestrise\_pct\_L@{chestrise\_pct\_L}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{chestrise\_pct\_L}{chestrise\_pct\_L}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::chestrise\+\_\+pct\+\_\+L\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a92bfe8e3aca143dc4504f40b5e8a0eb5}\label{class_a_m_m_1_1_biogears_thread_a92bfe8e3aca143dc4504f40b5e8a0eb5}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!chestrise\_pct\_R@{chestrise\_pct\_R}}
+\index{chestrise\_pct\_R@{chestrise\_pct\_R}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{chestrise\_pct\_R}{chestrise\_pct\_R}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::chestrise\+\_\+pct\+\_\+R\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a10d0bbd66d94869d6587a56b0fb799ca}\label{class_a_m_m_1_1_biogears_thread_a10d0bbd66d94869d6587a56b0fb799ca}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!chloride@{chloride}}
+\index{chloride@{chloride}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{chloride}{chloride}}
+{\footnotesize\ttfamily biogears\+::\+S\+E\+Substance$\ast$ A\+M\+M\+::\+Biogears\+Thread\+::chloride\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a5e79c8cb672769e85151bcd1a01f0579}\label{class_a_m_m_1_1_biogears_thread_a5e79c8cb672769e85151bcd1a01f0579}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!CO@{CO}}
+\index{CO@{CO}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{CO}{CO}}
+{\footnotesize\ttfamily biogears\+::\+S\+E\+Substance$\ast$ A\+M\+M\+::\+Biogears\+Thread\+::\+CO\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a4f4de687c0a34a2d87085d3f02a6950b}\label{class_a_m_m_1_1_biogears_thread_a4f4de687c0a34a2d87085d3f02a6950b}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!CO2@{CO2}}
+\index{CO2@{CO2}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{CO2}{CO2}}
+{\footnotesize\ttfamily biogears\+::\+S\+E\+Substance$\ast$ A\+M\+M\+::\+Biogears\+Thread\+::\+C\+O2\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_ab129af1749eef1cb44320560e2e2ffc3}\label{class_a_m_m_1_1_biogears_thread_ab129af1749eef1cb44320560e2e2ffc3}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!creatinine@{creatinine}}
+\index{creatinine@{creatinine}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{creatinine}{creatinine}}
+{\footnotesize\ttfamily biogears\+::\+S\+E\+Substance$\ast$ A\+M\+M\+::\+Biogears\+Thread\+::creatinine\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a309e6a68bef946dd8bcbada6c517422d}\label{class_a_m_m_1_1_biogears_thread_a309e6a68bef946dd8bcbada6c517422d}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!currentBloodVolume@{currentBloodVolume}}
+\index{currentBloodVolume@{currentBloodVolume}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{currentBloodVolume}{currentBloodVolume}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::current\+Blood\+Volume = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a4b58810d8be84638a926c14fe9b6c03a}\label{class_a_m_m_1_1_biogears_thread_a4b58810d8be84638a926c14fe9b6c03a}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!eventHandlerAttached@{eventHandlerAttached}}
+\index{eventHandlerAttached@{eventHandlerAttached}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{eventHandlerAttached}{eventHandlerAttached}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Biogears\+Thread\+::event\+Handler\+Attached = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_aba02f54f5e204dc2bbc1b51cbb0c8ec3}\label{class_a_m_m_1_1_biogears_thread_aba02f54f5e204dc2bbc1b51cbb0c8ec3}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!falling\_L@{falling\_L}}
+\index{falling\_L@{falling\_L}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{falling\_L}{falling\_L}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Biogears\+Thread\+::falling\+\_\+L\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a067c84e9eaba22ba3257155f5b700d80}\label{class_a_m_m_1_1_biogears_thread_a067c84e9eaba22ba3257155f5b700d80}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!falling\_R@{falling\_R}}
+\index{falling\_R@{falling\_R}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{falling\_R}{falling\_R}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Biogears\+Thread\+::falling\+\_\+R\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_ab8bfe898559e45695ef8f20997e2740e}\label{class_a_m_m_1_1_biogears_thread_ab8bfe898559e45695ef8f20997e2740e}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!glucose@{glucose}}
+\index{glucose@{glucose}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{glucose}{glucose}}
+{\footnotesize\ttfamily biogears\+::\+S\+E\+Substance$\ast$ A\+M\+M\+::\+Biogears\+Thread\+::glucose\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a87d78fa7adcb6329c1d14a78481286bc}\label{class_a_m_m_1_1_biogears_thread_a87d78fa7adcb6329c1d14a78481286bc}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!Hb@{Hb}}
+\index{Hb@{Hb}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{Hb}{Hb}}
+{\footnotesize\ttfamily biogears\+::\+S\+E\+Substance$\ast$ A\+M\+M\+::\+Biogears\+Thread\+::\+Hb\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a17b5df0b47b58924d17232e6d31402d4}\label{class_a_m_m_1_1_biogears_thread_a17b5df0b47b58924d17232e6d31402d4}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!HbCO@{HbCO}}
+\index{HbCO@{HbCO}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{HbCO}{HbCO}}
+{\footnotesize\ttfamily biogears\+::\+S\+E\+Substance$\ast$ A\+M\+M\+::\+Biogears\+Thread\+::\+Hb\+CO\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a6cb24d0be6c01f574cbb180938f4f3e3}\label{class_a_m_m_1_1_biogears_thread_a6cb24d0be6c01f574cbb180938f4f3e3}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!HbCO2@{HbCO2}}
+\index{HbCO2@{HbCO2}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{HbCO2}{HbCO2}}
+{\footnotesize\ttfamily biogears\+::\+S\+E\+Substance$\ast$ A\+M\+M\+::\+Biogears\+Thread\+::\+Hb\+C\+O2\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a06cfbbb85bde01518dce4b89058909ba}\label{class_a_m_m_1_1_biogears_thread_a06cfbbb85bde01518dce4b89058909ba}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!HbO2@{HbO2}}
+\index{HbO2@{HbO2}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{HbO2}{HbO2}}
+{\footnotesize\ttfamily biogears\+::\+S\+E\+Substance$\ast$ A\+M\+M\+::\+Biogears\+Thread\+::\+Hb\+O2\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a1fb1f896ebebd48f3229274c96ce4ca1}\label{class_a_m_m_1_1_biogears_thread_a1fb1f896ebebd48f3229274c96ce4ca1}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!HbO2CO2@{HbO2CO2}}
+\index{HbO2CO2@{HbO2CO2}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{HbO2CO2}{HbO2CO2}}
+{\footnotesize\ttfamily biogears\+::\+S\+E\+Substance$\ast$ A\+M\+M\+::\+Biogears\+Thread\+::\+Hb\+O2\+C\+O2\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a803dda24d89e443faf1fa609a6a4c2f4}\label{class_a_m_m_1_1_biogears_thread_a803dda24d89e443faf1fa609a6a4c2f4}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!hemoglobin@{hemoglobin}}
+\index{hemoglobin@{hemoglobin}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{hemoglobin}{hemoglobin}}
+{\footnotesize\ttfamily biogears\+::\+S\+E\+Substance$\ast$ A\+M\+M\+::\+Biogears\+Thread\+::hemoglobin\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a401de13beb3422977f47c3fec2e39e65}\label{class_a_m_m_1_1_biogears_thread_a401de13beb3422977f47c3fec2e39e65}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!highFrequencyNodes@{highFrequencyNodes}}
+\index{highFrequencyNodes@{highFrequencyNodes}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{highFrequencyNodes}{highFrequencyNodes}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ A\+M\+M\+::\+Biogears\+Thread\+::high\+Frequency\+Nodes\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a8a631ae02c11f9041331cbc7cd74658b}\label{class_a_m_m_1_1_biogears_thread_a8a631ae02c11f9041331cbc7cd74658b}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!lactate@{lactate}}
+\index{lactate@{lactate}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{lactate}{lactate}}
+{\footnotesize\ttfamily biogears\+::\+S\+E\+Substance$\ast$ A\+M\+M\+::\+Biogears\+Thread\+::lactate\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a2934db2fb90e929a8673aa3c4bc0ff7e}\label{class_a_m_m_1_1_biogears_thread_a2934db2fb90e929a8673aa3c4bc0ff7e}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!lactateConcentration@{lactateConcentration}}
+\index{lactateConcentration@{lactateConcentration}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{lactateConcentration}{lactateConcentration}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::lactate\+Concentration = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a3f679399cc072fab7b0ada0f98bc9828}\label{class_a_m_m_1_1_biogears_thread_a3f679399cc072fab7b0ada0f98bc9828}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!lactateMMOL@{lactateMMOL}}
+\index{lactateMMOL@{lactateMMOL}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{lactateMMOL}{lactateMMOL}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::lactate\+M\+M\+OL = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a590eecb09a940a81dd017476fd1d86be}\label{class_a_m_m_1_1_biogears_thread_a590eecb09a940a81dd017476fd1d86be}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!lastFrame@{lastFrame}}
+\index{lastFrame@{lastFrame}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{lastFrame}{lastFrame}}
+{\footnotesize\ttfamily int A\+M\+M\+::\+Biogears\+Thread\+::last\+Frame = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_aafddea50b729ad3a1cf771831deec9f7}\label{class_a_m_m_1_1_biogears_thread_aafddea50b729ad3a1cf771831deec9f7}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!leftLung@{leftLung}}
+\index{leftLung@{leftLung}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{leftLung}{leftLung}}
+{\footnotesize\ttfamily const biogears\+::\+S\+E\+Gas\+Compartment$\ast$ A\+M\+M\+::\+Biogears\+Thread\+::left\+Lung\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a605593b70747adc5d488e3bf07dd64d2}\label{class_a_m_m_1_1_biogears_thread_a605593b70747adc5d488e3bf07dd64d2}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!leftLungTidalVol@{leftLungTidalVol}}
+\index{leftLungTidalVol@{leftLungTidalVol}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{leftLungTidalVol}{leftLungTidalVol}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::left\+Lung\+Tidal\+Vol\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a8fdaf44351feba6fefbc2f16d083e29a}\label{class_a_m_m_1_1_biogears_thread_a8fdaf44351feba6fefbc2f16d083e29a}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!logging\_enabled@{logging\_enabled}}
+\index{logging\_enabled@{logging\_enabled}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{logging\_enabled}{logging\_enabled}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Biogears\+Thread\+::logging\+\_\+enabled = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a86ed9d27fed8ad2ca04537d2f60d4e30}\label{class_a_m_m_1_1_biogears_thread_a86ed9d27fed8ad2ca04537d2f60d4e30}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!loggingFrequency@{loggingFrequency}}
+\index{loggingFrequency@{loggingFrequency}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{loggingFrequency}{loggingFrequency}}
+{\footnotesize\ttfamily int A\+M\+M\+::\+Biogears\+Thread\+::logging\+Frequency = 50\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_aea8006f942b0497255aee996547bc6a0}\label{class_a_m_m_1_1_biogears_thread_aea8006f942b0497255aee996547bc6a0}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!lung\_vol\_L@{lung\_vol\_L}}
+\index{lung\_vol\_L@{lung\_vol\_L}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{lung\_vol\_L}{lung\_vol\_L}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::lung\+\_\+vol\+\_\+L\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_af0963a8e93c931eb78784359cc3bd5ce}\label{class_a_m_m_1_1_biogears_thread_af0963a8e93c931eb78784359cc3bd5ce}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!lung\_vol\_R@{lung\_vol\_R}}
+\index{lung\_vol\_R@{lung\_vol\_R}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{lung\_vol\_R}{lung\_vol\_R}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::lung\+\_\+vol\+\_\+R\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a1f0375fa6d1c5af24cc0db3ea3a88540}\label{class_a_m_m_1_1_biogears_thread_a1f0375fa6d1c5af24cc0db3ea3a88540}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!m\_mutex@{m\_mutex}}
+\index{m\_mutex@{m\_mutex}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{m\_mutex}{m\_mutex}}
+{\footnotesize\ttfamily std\+::mutex A\+M\+M\+::\+Biogears\+Thread\+::m\+\_\+mutex\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a79552c8c599f94c6dae38876fa6e9423}\label{class_a_m_m_1_1_biogears_thread_a79552c8c599f94c6dae38876fa6e9423}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!m\_pe@{m\_pe}}
+\index{m\_pe@{m\_pe}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{m\_pe}{m\_pe}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$biogears\+::\+Physiology\+Engine$>$ A\+M\+M\+::\+Biogears\+Thread\+::m\+\_\+pe\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a13ce7c1b126d9dfef562058bc5b48868}\label{class_a_m_m_1_1_biogears_thread_a13ce7c1b126d9dfef562058bc5b48868}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!max\_lung\_vol\_L@{max\_lung\_vol\_L}}
+\index{max\_lung\_vol\_L@{max\_lung\_vol\_L}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{max\_lung\_vol\_L}{max\_lung\_vol\_L}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::max\+\_\+lung\+\_\+vol\+\_\+L\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_aaeb2d79ca64dfffc8890b527d290acb5}\label{class_a_m_m_1_1_biogears_thread_aaeb2d79ca64dfffc8890b527d290acb5}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!max\_lung\_vol\_R@{max\_lung\_vol\_R}}
+\index{max\_lung\_vol\_R@{max\_lung\_vol\_R}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{max\_lung\_vol\_R}{max\_lung\_vol\_R}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::max\+\_\+lung\+\_\+vol\+\_\+R\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a649cd73f2367b7c70903c4d1ee200f9a}\label{class_a_m_m_1_1_biogears_thread_a649cd73f2367b7c70903c4d1ee200f9a}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!min\_lung\_vol\_L@{min\_lung\_vol\_L}}
+\index{min\_lung\_vol\_L@{min\_lung\_vol\_L}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{min\_lung\_vol\_L}{min\_lung\_vol\_L}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::min\+\_\+lung\+\_\+vol\+\_\+L\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a33379ea119429a71c7a0bcc1481bd670}\label{class_a_m_m_1_1_biogears_thread_a33379ea119429a71c7a0bcc1481bd670}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!min\_lung\_vol\_R@{min\_lung\_vol\_R}}
+\index{min\_lung\_vol\_R@{min\_lung\_vol\_R}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{min\_lung\_vol\_R}{min\_lung\_vol\_R}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::min\+\_\+lung\+\_\+vol\+\_\+R\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_ab1d292ec2dfeab199e340519d399bb40}\label{class_a_m_m_1_1_biogears_thread_ab1d292ec2dfeab199e340519d399bb40}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!N2@{N2}}
+\index{N2@{N2}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{N2}{N2}}
+{\footnotesize\ttfamily biogears\+::\+S\+E\+Substance$\ast$ A\+M\+M\+::\+Biogears\+Thread\+::\+N2\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a1beeac6caf1e708618fcb05ea09d5e48}\label{class_a_m_m_1_1_biogears_thread_a1beeac6caf1e708618fcb05ea09d5e48}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!new\_max\_L@{new\_max\_L}}
+\index{new\_max\_L@{new\_max\_L}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{new\_max\_L}{new\_max\_L}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::new\+\_\+max\+\_\+L\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a7f7e08995ecef11114a01ec9c679eb45}\label{class_a_m_m_1_1_biogears_thread_a7f7e08995ecef11114a01ec9c679eb45}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!new\_max\_R@{new\_max\_R}}
+\index{new\_max\_R@{new\_max\_R}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{new\_max\_R}{new\_max\_R}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::new\+\_\+max\+\_\+R\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_aec0dd1b010f68c490342d3fb2f48e523}\label{class_a_m_m_1_1_biogears_thread_aec0dd1b010f68c490342d3fb2f48e523}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!new\_min\_L@{new\_min\_L}}
+\index{new\_min\_L@{new\_min\_L}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{new\_min\_L}{new\_min\_L}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::new\+\_\+min\+\_\+L\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a494ea06d4d2119e3f4b729a8440da08f}\label{class_a_m_m_1_1_biogears_thread_a494ea06d4d2119e3f4b729a8440da08f}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!new\_min\_R@{new\_min\_R}}
+\index{new\_min\_R@{new\_min\_R}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{new\_min\_R}{new\_min\_R}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::new\+\_\+min\+\_\+R\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a691422a39913c88a08b6d2da7473fa5b}\label{class_a_m_m_1_1_biogears_thread_a691422a39913c88a08b6d2da7473fa5b}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!nodePathTable@{nodePathTable}}
+\index{nodePathTable@{nodePathTable}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{nodePathTable}{nodePathTable}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, double(Biogears\+Thread\+::$\ast$)()$>$ A\+M\+M\+::\+Biogears\+Thread\+::node\+Path\+Table\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a05618f93390fe55a3aa247b0293c4a27}\label{class_a_m_m_1_1_biogears_thread_a05618f93390fe55a3aa247b0293c4a27}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!O2@{O2}}
+\index{O2@{O2}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{O2}{O2}}
+{\footnotesize\ttfamily biogears\+::\+S\+E\+Substance$\ast$ A\+M\+M\+::\+Biogears\+Thread\+::\+O2\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a131306630013d74ebbe572d7388a12eb}\label{class_a_m_m_1_1_biogears_thread_a131306630013d74ebbe572d7388a12eb}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!potassium@{potassium}}
+\index{potassium@{potassium}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{potassium}{potassium}}
+{\footnotesize\ttfamily biogears\+::\+S\+E\+Substance$\ast$ A\+M\+M\+::\+Biogears\+Thread\+::potassium\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a7f34f3a06d2fd45d7d475c0afa5a6d60}\label{class_a_m_m_1_1_biogears_thread_a7f34f3a06d2fd45d7d475c0afa5a6d60}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!rawBloodPH@{rawBloodPH}}
+\index{rawBloodPH@{rawBloodPH}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{rawBloodPH}{rawBloodPH}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::raw\+Blood\+PH = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a41287002dcf04ebdea2c1200bf3da13f}\label{class_a_m_m_1_1_biogears_thread_a41287002dcf04ebdea2c1200bf3da13f}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!rawRespirationRate@{rawRespirationRate}}
+\index{rawRespirationRate@{rawRespirationRate}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{rawRespirationRate}{rawRespirationRate}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::raw\+Respiration\+Rate = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a55f03cb12b89d4b0d77eb28012e100ca}\label{class_a_m_m_1_1_biogears_thread_a55f03cb12b89d4b0d77eb28012e100ca}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!rightLung@{rightLung}}
+\index{rightLung@{rightLung}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{rightLung}{rightLung}}
+{\footnotesize\ttfamily const biogears\+::\+S\+E\+Gas\+Compartment$\ast$ A\+M\+M\+::\+Biogears\+Thread\+::right\+Lung\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a9869cfd91fe63be4021731151b849eba}\label{class_a_m_m_1_1_biogears_thread_a9869cfd91fe63be4021731151b849eba}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!rightLungTidalVol@{rightLungTidalVol}}
+\index{rightLungTidalVol@{rightLungTidalVol}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{rightLungTidalVol}{rightLungTidalVol}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::right\+Lung\+Tidal\+Vol\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_ab27cf2de33a6fa8336ee5d98563ac673}\label{class_a_m_m_1_1_biogears_thread_ab27cf2de33a6fa8336ee5d98563ac673}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!running@{running}}
+\index{running@{running}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{running}{running}}
+{\footnotesize\ttfamily bool A\+M\+M\+::\+Biogears\+Thread\+::running = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_ae61dba54416d68dc6c5c5c7c6709e942}\label{class_a_m_m_1_1_biogears_thread_ae61dba54416d68dc6c5c5c7c6709e942}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!sodium@{sodium}}
+\index{sodium@{sodium}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{sodium}{sodium}}
+{\footnotesize\ttfamily biogears\+::\+S\+E\+Substance$\ast$ A\+M\+M\+::\+Biogears\+Thread\+::sodium\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_a696dcfd960bc0d75452b0fdf921ff940}\label{class_a_m_m_1_1_biogears_thread_a696dcfd960bc0d75452b0fdf921ff940}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!startingBloodVolume@{startingBloodVolume}}
+\index{startingBloodVolume@{startingBloodVolume}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{startingBloodVolume}{startingBloodVolume}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::starting\+Blood\+Volume = 5423.\+53\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_biogears_thread_af424af3f5a43ef334afab6826ff46754}\label{class_a_m_m_1_1_biogears_thread_af424af3f5a43ef334afab6826ff46754}} 
+\index{AMM::BiogearsThread@{AMM::BiogearsThread}!thresh@{thresh}}
+\index{thresh@{thresh}!AMM::BiogearsThread@{AMM::BiogearsThread}}
+\doxysubsubsection{\texorpdfstring{thresh}{thresh}}
+{\footnotesize\ttfamily double A\+M\+M\+::\+Biogears\+Thread\+::thresh = 1.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+A\+M\+M/\mbox{\hyperlink{_biogears_thread_8h}{Biogears\+Thread.\+h}}\item 
+src/\+A\+M\+M/\mbox{\hyperlink{_biogears_thread_8cpp}{Biogears\+Thread.\+cpp}}\end{DoxyCompactItemize}

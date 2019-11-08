@@ -1,0 +1,47 @@
+\hypertarget{class_a_m_m_listener}{}\doxysection{A\+M\+M\+Listener Class Reference}
+\label{class_a_m_m_listener}\index{AMMListener@{AMMListener}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_a_m_m_listener_a80e9531fc460afbdcf3aa06aff0e5d37}{on\+New\+Tick}} (A\+M\+M\+::\+Tick \&t, Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{class_a_m_m_listener_a454691041fa3a731a2f24a06da649c29}{on\+New\+Command}} (A\+M\+M\+::\+Command \&c, Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{class_a_m_m_listener_a39279d5b992535a7f18d347790e1ea38}{on\+New\+Physiology\+Value}} (A\+M\+M\+::\+Physiology\+Value \&n, Sample\+Info\+\_\+t $\ast$info)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_m_m_listener_a454691041fa3a731a2f24a06da649c29}\label{class_a_m_m_listener_a454691041fa3a731a2f24a06da649c29}} 
+\index{AMMListener@{AMMListener}!onNewCommand@{onNewCommand}}
+\index{onNewCommand@{onNewCommand}!AMMListener@{AMMListener}}
+\doxysubsubsection{\texorpdfstring{onNewCommand()}{onNewCommand()}}
+{\footnotesize\ttfamily void A\+M\+M\+Listener\+::on\+New\+Command (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Command \&}]{c,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_a_m_m_listener_a39279d5b992535a7f18d347790e1ea38}\label{class_a_m_m_listener_a39279d5b992535a7f18d347790e1ea38}} 
+\index{AMMListener@{AMMListener}!onNewPhysiologyValue@{onNewPhysiologyValue}}
+\index{onNewPhysiologyValue@{onNewPhysiologyValue}!AMMListener@{AMMListener}}
+\doxysubsubsection{\texorpdfstring{onNewPhysiologyValue()}{onNewPhysiologyValue()}}
+{\footnotesize\ttfamily void A\+M\+M\+Listener\+::on\+New\+Physiology\+Value (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Physiology\+Value \&}]{n,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_a_m_m_listener_a80e9531fc460afbdcf3aa06aff0e5d37}\label{class_a_m_m_listener_a80e9531fc460afbdcf3aa06aff0e5d37}} 
+\index{AMMListener@{AMMListener}!onNewTick@{onNewTick}}
+\index{onNewTick@{onNewTick}!AMMListener@{AMMListener}}
+\doxysubsubsection{\texorpdfstring{onNewTick()}{onNewTick()}}
+{\footnotesize\ttfamily void A\+M\+M\+Listener\+::on\+New\+Tick (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Tick \&}]{t,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+void on\+New\+Status(\+A\+M\+M\+::\+Status \&st, Sample\+Info\+\_\+t $\ast$info) \{ ostringstream status\+Value; status\+Value $<$$<$ st.\+status\+\_\+value();
+
+L\+O\+G\+\_\+\+D\+E\+B\+UG $<$$<$ \char`\"{}\mbox{[}\char`\"{} $<$$<$ st.\+module\+\_\+id() $<$$<$ \char`\"{}\mbox{]}\mbox{[}\char`\"{} $<$$<$ st.\+module\+\_\+name() $<$$<$ \char`\"{}\mbox{]}\mbox{[}\char`\"{} $<$$<$ st.\+capability() $<$$<$ \char`\"{}\mbox{]} Status = \char`\"{} $<$$<$ status\+Value.\+str();
+
+if (st.\+module\+\_\+name() == \char`\"{}\+A\+M\+M\+\_\+\+Fluid\+Manager\char`\"{} \&\& st.\+capability() == \char`\"{}\char`\"{}) \{ status\+Storage\mbox{[}\char`\"{}\+F\+L\+U\+I\+D\+I\+C\+S\+\_\+\+S\+T\+A\+T\+E\char`\"{}\mbox{]} = status\+Value.\+str(); \}
+
+if (st.\+module\+\_\+name() == \char`\"{}\+A\+M\+M\+\_\+\+Fluid\+Manager\char`\"{} \&\& st.\+capability() == \char`\"{}clear\+\_\+supply\char`\"{}) \{ status\+Storage\mbox{[}\char`\"{}\+C\+L\+E\+A\+R\+\_\+\+S\+U\+P\+P\+L\+Y\char`\"{}\mbox{]} = status\+Value.\+str(); \}
+
+if (st.\+module\+\_\+name() == \char`\"{}\+A\+M\+M\+\_\+\+Fluid\+Manager\char`\"{} \&\& st.\+capability() == \char`\"{}blood\+\_\+supply\char`\"{}) \{ status\+Storage\mbox{[}\char`\"{}\+B\+L\+O\+O\+D\+\_\+\+S\+U\+P\+P\+L\+Y\char`\"{}\mbox{]} = status\+Value.\+str(); \}
+
+if (st.\+capability() == \char`\"{}iv\+\_\+detection\char`\"{}) \{ status\+Storage\mbox{[}\char`\"{}\+I\+V\+A\+R\+M\+\_\+\+S\+T\+A\+T\+E\char`\"{}\mbox{]} = status\+Value.\+str(); \} \} 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp}{R\+E\+S\+T\+Adapter\+Main.\+cpp}}\end{DoxyCompactItemize}

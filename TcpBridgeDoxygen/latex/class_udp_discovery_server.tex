@@ -1,0 +1,102 @@
+\hypertarget{class_udp_discovery_server}{}\doxysection{Udp\+Discovery\+Server Class Reference}
+\label{class_udp_discovery_server}\index{UdpDiscoveryServer@{UdpDiscoveryServer}}
+
+
+{\ttfamily \#include $<$Udp\+Discovery\+Server.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_udp_discovery_server_a323332f49466a2dbed14230b2439c21c}{Udp\+Discovery\+Server}} (boost\+::asio\+::io\+\_\+service \&io\+\_\+service, unsigned short port)
+\item 
+void \mbox{\hyperlink{class_udp_discovery_server_add1bea19f6313e7822eb9e0a70b50ea2}{handle\+\_\+receive\+\_\+from}} (const boost\+::system\+::error\+\_\+code \&error, size\+\_\+t bytes\+\_\+recvd)
+\item 
+void \mbox{\hyperlink{class_udp_discovery_server_a2f5fabc11146b3828fd3c147b58276bf}{handle\+\_\+send\+\_\+to}} (const boost\+::system\+::error\+\_\+code \&error, size\+\_\+t bytes\+\_\+sent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{class_udp_discovery_server_a025cd681daa35fa9831ff21ad0e4c8d4a931c68efbe6eec45c308e81bc9ae1b2a}{max\+\_\+length}} = 1024
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::asio\+::io\+\_\+service \& \mbox{\hyperlink{class_udp_discovery_server_a8ab149fb555273e565b38618bbf1d52f}{io\+\_\+service\+\_\+}}
+\item 
+udp\+::socket \mbox{\hyperlink{class_udp_discovery_server_ac6e58bc7e254a6031c81c7b1d64d00b0}{socket\+\_\+}}
+\item 
+udp\+::endpoint \mbox{\hyperlink{class_udp_discovery_server_ac0c0cb2273cd316453458ee1e06ac40d}{sender\+\_\+endpoint\+\_\+}}
+\item 
+char \mbox{\hyperlink{class_udp_discovery_server_a17781ecf0169523cb755c20ad478eb31}{data\+\_\+}} \mbox{[}\mbox{\hyperlink{class_udp_discovery_server_a025cd681daa35fa9831ff21ad0e4c8d4a931c68efbe6eec45c308e81bc9ae1b2a}{max\+\_\+length}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_udp_discovery_server_a025cd681daa35fa9831ff21ad0e4c8d4}\label{class_udp_discovery_server_a025cd681daa35fa9831ff21ad0e4c8d4}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{max\_length@{max\_length}!UdpDiscoveryServer@{UdpDiscoveryServer}}\index{UdpDiscoveryServer@{UdpDiscoveryServer}!max\_length@{max\_length}}}\mbox{\Hypertarget{class_udp_discovery_server_a025cd681daa35fa9831ff21ad0e4c8d4a931c68efbe6eec45c308e81bc9ae1b2a}\label{class_udp_discovery_server_a025cd681daa35fa9831ff21ad0e4c8d4a931c68efbe6eec45c308e81bc9ae1b2a}} 
+max\+\_\+length&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_udp_discovery_server_a323332f49466a2dbed14230b2439c21c}\label{class_udp_discovery_server_a323332f49466a2dbed14230b2439c21c}} 
+\index{UdpDiscoveryServer@{UdpDiscoveryServer}!UdpDiscoveryServer@{UdpDiscoveryServer}}
+\index{UdpDiscoveryServer@{UdpDiscoveryServer}!UdpDiscoveryServer@{UdpDiscoveryServer}}
+\doxysubsubsection{\texorpdfstring{UdpDiscoveryServer()}{UdpDiscoveryServer()}}
+{\footnotesize\ttfamily Udp\+Discovery\+Server\+::\+Udp\+Discovery\+Server (\begin{DoxyParamCaption}\item[{boost\+::asio\+::io\+\_\+service \&}]{io\+\_\+service,  }\item[{unsigned short}]{port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_udp_discovery_server_add1bea19f6313e7822eb9e0a70b50ea2}\label{class_udp_discovery_server_add1bea19f6313e7822eb9e0a70b50ea2}} 
+\index{UdpDiscoveryServer@{UdpDiscoveryServer}!handle\_receive\_from@{handle\_receive\_from}}
+\index{handle\_receive\_from@{handle\_receive\_from}!UdpDiscoveryServer@{UdpDiscoveryServer}}
+\doxysubsubsection{\texorpdfstring{handle\_receive\_from()}{handle\_receive\_from()}}
+{\footnotesize\ttfamily void Udp\+Discovery\+Server\+::handle\+\_\+receive\+\_\+from (\begin{DoxyParamCaption}\item[{const boost\+::system\+::error\+\_\+code \&}]{error,  }\item[{size\+\_\+t}]{bytes\+\_\+recvd }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_udp_discovery_server_a2f5fabc11146b3828fd3c147b58276bf}\label{class_udp_discovery_server_a2f5fabc11146b3828fd3c147b58276bf}} 
+\index{UdpDiscoveryServer@{UdpDiscoveryServer}!handle\_send\_to@{handle\_send\_to}}
+\index{handle\_send\_to@{handle\_send\_to}!UdpDiscoveryServer@{UdpDiscoveryServer}}
+\doxysubsubsection{\texorpdfstring{handle\_send\_to()}{handle\_send\_to()}}
+{\footnotesize\ttfamily void Udp\+Discovery\+Server\+::handle\+\_\+send\+\_\+to (\begin{DoxyParamCaption}\item[{const boost\+::system\+::error\+\_\+code \&}]{error,  }\item[{size\+\_\+t}]{bytes\+\_\+sent }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_udp_discovery_server_a17781ecf0169523cb755c20ad478eb31}\label{class_udp_discovery_server_a17781ecf0169523cb755c20ad478eb31}} 
+\index{UdpDiscoveryServer@{UdpDiscoveryServer}!data\_@{data\_}}
+\index{data\_@{data\_}!UdpDiscoveryServer@{UdpDiscoveryServer}}
+\doxysubsubsection{\texorpdfstring{data\_}{data\_}}
+{\footnotesize\ttfamily char Udp\+Discovery\+Server\+::data\+\_\+\mbox{[}\mbox{\hyperlink{class_udp_discovery_server_a025cd681daa35fa9831ff21ad0e4c8d4a931c68efbe6eec45c308e81bc9ae1b2a}{max\+\_\+length}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_udp_discovery_server_a8ab149fb555273e565b38618bbf1d52f}\label{class_udp_discovery_server_a8ab149fb555273e565b38618bbf1d52f}} 
+\index{UdpDiscoveryServer@{UdpDiscoveryServer}!io\_service\_@{io\_service\_}}
+\index{io\_service\_@{io\_service\_}!UdpDiscoveryServer@{UdpDiscoveryServer}}
+\doxysubsubsection{\texorpdfstring{io\_service\_}{io\_service\_}}
+{\footnotesize\ttfamily boost\+::asio\+::io\+\_\+service\& Udp\+Discovery\+Server\+::io\+\_\+service\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_udp_discovery_server_ac0c0cb2273cd316453458ee1e06ac40d}\label{class_udp_discovery_server_ac0c0cb2273cd316453458ee1e06ac40d}} 
+\index{UdpDiscoveryServer@{UdpDiscoveryServer}!sender\_endpoint\_@{sender\_endpoint\_}}
+\index{sender\_endpoint\_@{sender\_endpoint\_}!UdpDiscoveryServer@{UdpDiscoveryServer}}
+\doxysubsubsection{\texorpdfstring{sender\_endpoint\_}{sender\_endpoint\_}}
+{\footnotesize\ttfamily udp\+::endpoint Udp\+Discovery\+Server\+::sender\+\_\+endpoint\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_udp_discovery_server_ac6e58bc7e254a6031c81c7b1d64d00b0}\label{class_udp_discovery_server_ac6e58bc7e254a6031c81c7b1d64d00b0}} 
+\index{UdpDiscoveryServer@{UdpDiscoveryServer}!socket\_@{socket\_}}
+\index{socket\_@{socket\_}!UdpDiscoveryServer@{UdpDiscoveryServer}}
+\doxysubsubsection{\texorpdfstring{socket\_}{socket\_}}
+{\footnotesize\ttfamily udp\+::socket Udp\+Discovery\+Server\+::socket\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Net/\mbox{\hyperlink{_udp_discovery_server_8h}{Udp\+Discovery\+Server.\+h}}\item 
+src/\+Net/\mbox{\hyperlink{_udp_discovery_server_8cpp}{Udp\+Discovery\+Server.\+cpp}}\end{DoxyCompactItemize}

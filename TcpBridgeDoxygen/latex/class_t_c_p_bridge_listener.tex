@@ -1,0 +1,60 @@
+\hypertarget{class_t_c_p_bridge_listener}{}\doxysection{T\+C\+P\+Bridge\+Listener Class Reference}
+\label{class_t_c_p_bridge_listener}\index{TCPBridgeListener@{TCPBridgeListener}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_t_c_p_bridge_listener_afcd295b3e2204d55796e099aebe18d99}{on\+New\+Physiology\+Waveform}} (A\+M\+M\+::\+Physiology\+Waveform \&n, Sample\+Info\+\_\+t $\ast$info)
+\begin{DoxyCompactList}\small\item\em Event handler for incoming Physiology Waveform data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_c_p_bridge_listener_ac2c4bd3dc23e8b61f69cc54198a20718}{on\+New\+Physiology\+Value}} (A\+M\+M\+::\+Physiology\+Value \&n, Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{class_t_c_p_bridge_listener_aae5205449f728d28f325a09b8d376e0b}{on\+New\+Physiology\+Modification}} (A\+M\+M\+::\+Physiology\+Modification \&pm, Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{class_t_c_p_bridge_listener_a57a3dc60183af9360f739a18247a91ad}{on\+New\+Render\+Modification}} (A\+M\+M\+::\+Render\+Modification \&rend\+Mod, Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{class_t_c_p_bridge_listener_a6441be3fa6d29d542033bc154776edf5}{on\+New\+Command}} (A\+M\+M\+::\+Command \&c, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$info)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Fast\+R\+T\+P\+S/\+D\+DS Listener for subscriptions 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_c_p_bridge_listener_a6441be3fa6d29d542033bc154776edf5}\label{class_t_c_p_bridge_listener_a6441be3fa6d29d542033bc154776edf5}} 
+\index{TCPBridgeListener@{TCPBridgeListener}!onNewCommand@{onNewCommand}}
+\index{onNewCommand@{onNewCommand}!TCPBridgeListener@{TCPBridgeListener}}
+\doxysubsubsection{\texorpdfstring{onNewCommand()}{onNewCommand()}}
+{\footnotesize\ttfamily void T\+C\+P\+Bridge\+Listener\+::on\+New\+Command (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Command \&}]{c,  }\item[{eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_t_c_p_bridge_listener_aae5205449f728d28f325a09b8d376e0b}\label{class_t_c_p_bridge_listener_aae5205449f728d28f325a09b8d376e0b}} 
+\index{TCPBridgeListener@{TCPBridgeListener}!onNewPhysiologyModification@{onNewPhysiologyModification}}
+\index{onNewPhysiologyModification@{onNewPhysiologyModification}!TCPBridgeListener@{TCPBridgeListener}}
+\doxysubsubsection{\texorpdfstring{onNewPhysiologyModification()}{onNewPhysiologyModification()}}
+{\footnotesize\ttfamily void T\+C\+P\+Bridge\+Listener\+::on\+New\+Physiology\+Modification (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Physiology\+Modification \&}]{pm,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_t_c_p_bridge_listener_ac2c4bd3dc23e8b61f69cc54198a20718}\label{class_t_c_p_bridge_listener_ac2c4bd3dc23e8b61f69cc54198a20718}} 
+\index{TCPBridgeListener@{TCPBridgeListener}!onNewPhysiologyValue@{onNewPhysiologyValue}}
+\index{onNewPhysiologyValue@{onNewPhysiologyValue}!TCPBridgeListener@{TCPBridgeListener}}
+\doxysubsubsection{\texorpdfstring{onNewPhysiologyValue()}{onNewPhysiologyValue()}}
+{\footnotesize\ttfamily void T\+C\+P\+Bridge\+Listener\+::on\+New\+Physiology\+Value (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Physiology\+Value \&}]{n,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_t_c_p_bridge_listener_afcd295b3e2204d55796e099aebe18d99}\label{class_t_c_p_bridge_listener_afcd295b3e2204d55796e099aebe18d99}} 
+\index{TCPBridgeListener@{TCPBridgeListener}!onNewPhysiologyWaveform@{onNewPhysiologyWaveform}}
+\index{onNewPhysiologyWaveform@{onNewPhysiologyWaveform}!TCPBridgeListener@{TCPBridgeListener}}
+\doxysubsubsection{\texorpdfstring{onNewPhysiologyWaveform()}{onNewPhysiologyWaveform()}}
+{\footnotesize\ttfamily void T\+C\+P\+Bridge\+Listener\+::on\+New\+Physiology\+Waveform (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Physiology\+Waveform \&}]{n,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Event handler for incoming Physiology Waveform data. 
+
+\mbox{\Hypertarget{class_t_c_p_bridge_listener_a57a3dc60183af9360f739a18247a91ad}\label{class_t_c_p_bridge_listener_a57a3dc60183af9360f739a18247a91ad}} 
+\index{TCPBridgeListener@{TCPBridgeListener}!onNewRenderModification@{onNewRenderModification}}
+\index{onNewRenderModification@{onNewRenderModification}!TCPBridgeListener@{TCPBridgeListener}}
+\doxysubsubsection{\texorpdfstring{onNewRenderModification()}{onNewRenderModification()}}
+{\footnotesize\ttfamily void T\+C\+P\+Bridge\+Listener\+::on\+New\+Render\+Modification (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Render\+Modification \&}]{rend\+Mod,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_t_c_p_bridge_main_8cpp}{T\+C\+P\+Bridge\+Main.\+cpp}}\end{DoxyCompactItemize}

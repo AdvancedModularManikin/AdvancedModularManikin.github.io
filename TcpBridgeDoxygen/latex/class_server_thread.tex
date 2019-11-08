@@ -1,0 +1,97 @@
+\hypertarget{class_server_thread}{}\doxysection{Server\+Thread Class Reference}
+\label{class_server_thread}\index{ServerThread@{ServerThread}}
+
+
+{\ttfamily \#include $<$Server\+Thread.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_server_thread_add6afee95a602948317d79de2b8c8047}{Server\+Thread}} ()
+\item 
+int \mbox{\hyperlink{class_server_thread_a680131e9d6476e1b78a2b15d4c1a252f}{Create}} (void $\ast$Callback, void $\ast$args)
+\item 
+int \mbox{\hyperlink{class_server_thread_a4d8485289d8a555ae5078e42af62f949}{Join}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_server_thread_a39e514a2cc5d256ce06f7cbf62a803dc}{Init\+Mutex}} ()
+\item 
+static int \mbox{\hyperlink{class_server_thread_ae0db3b5399b49221485d4d8ec2eb9dab}{Lock\+Mutex}} (const string \&identifier)
+\item 
+static int \mbox{\hyperlink{class_server_thread_a9e93651821063eae6b8cc14d2008a075}{Unlock\+Mutex}} (const string \&identifier)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+pthread\+\_\+t \mbox{\hyperlink{class_server_thread_a55c4259bf1102b38759da54fb4b82f7f}{tid}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static pthread\+\_\+mutex\+\_\+t \mbox{\hyperlink{class_server_thread_adf9a361ebca565cbc52b0482a17ff61e}{mutex}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_server_thread_add6afee95a602948317d79de2b8c8047}\label{class_server_thread_add6afee95a602948317d79de2b8c8047}} 
+\index{ServerThread@{ServerThread}!ServerThread@{ServerThread}}
+\index{ServerThread@{ServerThread}!ServerThread@{ServerThread}}
+\doxysubsubsection{\texorpdfstring{ServerThread()}{ServerThread()}}
+{\footnotesize\ttfamily Server\+Thread\+::\+Server\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_server_thread_a680131e9d6476e1b78a2b15d4c1a252f}\label{class_server_thread_a680131e9d6476e1b78a2b15d4c1a252f}} 
+\index{ServerThread@{ServerThread}!Create@{Create}}
+\index{Create@{Create}!ServerThread@{ServerThread}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily int Server\+Thread\+::\+Create (\begin{DoxyParamCaption}\item[{void $\ast$}]{Callback,  }\item[{void $\ast$}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_server_thread_a39e514a2cc5d256ce06f7cbf62a803dc}\label{class_server_thread_a39e514a2cc5d256ce06f7cbf62a803dc}} 
+\index{ServerThread@{ServerThread}!InitMutex@{InitMutex}}
+\index{InitMutex@{InitMutex}!ServerThread@{ServerThread}}
+\doxysubsubsection{\texorpdfstring{InitMutex()}{InitMutex()}}
+{\footnotesize\ttfamily int Server\+Thread\+::\+Init\+Mutex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_server_thread_a4d8485289d8a555ae5078e42af62f949}\label{class_server_thread_a4d8485289d8a555ae5078e42af62f949}} 
+\index{ServerThread@{ServerThread}!Join@{Join}}
+\index{Join@{Join}!ServerThread@{ServerThread}}
+\doxysubsubsection{\texorpdfstring{Join()}{Join()}}
+{\footnotesize\ttfamily int Server\+Thread\+::\+Join (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_server_thread_ae0db3b5399b49221485d4d8ec2eb9dab}\label{class_server_thread_ae0db3b5399b49221485d4d8ec2eb9dab}} 
+\index{ServerThread@{ServerThread}!LockMutex@{LockMutex}}
+\index{LockMutex@{LockMutex}!ServerThread@{ServerThread}}
+\doxysubsubsection{\texorpdfstring{LockMutex()}{LockMutex()}}
+{\footnotesize\ttfamily int Server\+Thread\+::\+Lock\+Mutex (\begin{DoxyParamCaption}\item[{const string \&}]{identifier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_server_thread_a9e93651821063eae6b8cc14d2008a075}\label{class_server_thread_a9e93651821063eae6b8cc14d2008a075}} 
+\index{ServerThread@{ServerThread}!UnlockMutex@{UnlockMutex}}
+\index{UnlockMutex@{UnlockMutex}!ServerThread@{ServerThread}}
+\doxysubsubsection{\texorpdfstring{UnlockMutex()}{UnlockMutex()}}
+{\footnotesize\ttfamily int Server\+Thread\+::\+Unlock\+Mutex (\begin{DoxyParamCaption}\item[{const string \&}]{identifier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_server_thread_adf9a361ebca565cbc52b0482a17ff61e}\label{class_server_thread_adf9a361ebca565cbc52b0482a17ff61e}} 
+\index{ServerThread@{ServerThread}!mutex@{mutex}}
+\index{mutex@{mutex}!ServerThread@{ServerThread}}
+\doxysubsubsection{\texorpdfstring{mutex}{mutex}}
+{\footnotesize\ttfamily pthread\+\_\+mutex\+\_\+t Server\+Thread\+::mutex\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_server_thread_a55c4259bf1102b38759da54fb4b82f7f}\label{class_server_thread_a55c4259bf1102b38759da54fb4b82f7f}} 
+\index{ServerThread@{ServerThread}!tid@{tid}}
+\index{tid@{tid}!ServerThread@{ServerThread}}
+\doxysubsubsection{\texorpdfstring{tid}{tid}}
+{\footnotesize\ttfamily pthread\+\_\+t Server\+Thread\+::tid}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Net/\mbox{\hyperlink{_server_thread_8h}{Server\+Thread.\+h}}\item 
+src/\+Net/\mbox{\hyperlink{_server_thread_8cpp}{Server\+Thread.\+cpp}}\end{DoxyCompactItemize}

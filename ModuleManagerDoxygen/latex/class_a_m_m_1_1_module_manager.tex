@@ -1,0 +1,310 @@
+\hypertarget{class_a_m_m_1_1_module_manager}{}\doxysection{A\+MM\+::Module\+Manager Class Reference}
+\label{class_a_m_m_1_1_module_manager}\index{AMM::ModuleManager@{AMM::ModuleManager}}
+
+
+{\ttfamily \#include $<$Module\+Manager.\+h$>$}
+
+Inheritance diagram for A\+MM\+::Module\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_m_m_1_1_module_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_module_manager_ac72ecddf58536f0d33e493fd1ddf768c}{Module\+Manager}} ()
+\item 
+\mbox{\hyperlink{class_a_m_m_1_1_module_manager_ac78781a8907cdd7015f9d5ee2bf036aa}{$\sim$\+Module\+Manager}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_module_manager_a4233659c12a352fcea96adfd2f0ee0ab}{Publish\+Operational\+Description}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_module_manager_a8c3c064cd05cf1183cf97577bff7eae5}{Publish\+Configuration}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_module_manager_a67e2476e0c69f30a78a74c34f9032844}{Shutdown}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_module_manager_ac912ac6f3f4f06343fe8a68251cf1120}{Show\+Status}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_module_manager_ada7ec618ad1bc8d5ced0acf9e2fc711c}{Write\+Log\+Entry}} (\mbox{\hyperlink{struct_a_m_m_1_1_log_entry}{Log\+Entry}} log)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_module_manager_adba8c02c9b4437b25a59c84ccdb79a7e}{Clear\+Event\+Log}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_module_manager_a6f477f502716d81b1e26ee0421320f0f}{Clear\+Diagnostic\+Log}} ()
+\item 
+std\+::string \mbox{\hyperlink{class_a_m_m_1_1_module_manager_adf0f1e573b8c5679171dde922562ec99}{Extract\+G\+U\+I\+D\+To\+String}} (G\+U\+I\+D\+\_\+t guid)
+\item 
+uint64\+\_\+t \mbox{\hyperlink{class_a_m_m_1_1_module_manager_a7a41b1483ea97dae1daa2c6bcc91a046}{Get\+Timestamp}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_module_manager_ae0d733404586d399a5a33d886988b4f0}{on\+New\+Log}} (A\+M\+M\+::\+Log \&log, Sample\+Info\+\_\+t $\ast$info)
+\begin{DoxyCompactList}\small\item\em D\+DS event handlers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_module_manager_afcb15af748798cb76d7c02e4b2489b96}{on\+New\+Module\+Configuration}} (A\+M\+M\+::\+Module\+Configuration \&mc, Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_module_manager_a5c9265346f600baa65457169339e2e1b}{on\+New\+Status}} (A\+M\+M\+::\+Status \&status, Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_module_manager_a1b24ef48688bd496a8eeff4be7aab8c3}{on\+New\+Simulation\+Control}} (A\+M\+M\+::\+Simulation\+Control \&sim\+Control, Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_module_manager_a3d9d1c23ac2b8224c4c25dc6b7729306}{on\+New\+Assessment}} (A\+M\+M\+::\+Assessment \&assessment, Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_module_manager_a21e462140f22c9e7a41b08958a3f58fd}{on\+New\+Event\+Fragment}} (A\+M\+M\+::\+Event\+Fragment \&event\+Frag, Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_module_manager_adfa3e87ebc365c5d1aed92894fe296c1}{on\+New\+Event\+Record}} (A\+M\+M\+::\+Event\+Record \&event\+Rec, Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_module_manager_a93adae5a4d4a23137a6994ed482eac31}{on\+New\+Fragment\+Amendment\+Request}} (A\+M\+M\+::\+Fragment\+Amendment\+Request \&ffar, Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_module_manager_a92fb5aefa305375646394f7622913bd0}{on\+New\+Omitted\+Event}} (A\+M\+M\+::\+Omitted\+Event \&omitted\+Event, Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_module_manager_a7104e7a50cde68dbb472cf5e84bd0fb7}{on\+New\+Operational\+Description}} (A\+M\+M\+::\+Operational\+Description \&op\+Descript, Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_module_manager_a065b8409bd127ce2f4dd5fcf546f932b}{on\+New\+Render\+Modification}} (A\+M\+M\+::\+Render\+Modification \&rend\+Mod, Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_module_manager_aa4a61b42d92541587c7f11a716069bb2}{on\+New\+Physiology\+Modification}} (A\+M\+M\+::\+Physiology\+Modification \&phys\+Mod, Sample\+Info\+\_\+t $\ast$info)
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_module_manager_aa434451c748560c2aa46d22a14fb208a}{on\+New\+Command}} (A\+M\+M\+::\+Command \&command, eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$info)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+A\+M\+M\+::\+U\+U\+ID \mbox{\hyperlink{class_a_m_m_1_1_module_manager_a20cfdf318794f334c3b0f46ca0a5cab1}{m\+\_\+uuid}}
+\item 
+std\+::string \mbox{\hyperlink{class_a_m_m_1_1_module_manager_ad93a65b7cfde55c4add2c8d58903141b}{module\+Name}} = \char`\"{}A\+M\+M\+\_\+\+Module\+Manager\char`\"{}
+\item 
+const std\+::string \mbox{\hyperlink{class_a_m_m_1_1_module_manager_a86ac58ff7a22e19a31972dafce1b8c8d}{config\+\_\+file}} = \char`\"{}config/module\+\_\+manager\+\_\+amm.\+xml\char`\"{}
+\item 
+D\+D\+S\+Manager$<$ \mbox{\hyperlink{class_a_m_m_1_1_module_manager}{Module\+Manager}} $>$ $\ast$ \mbox{\hyperlink{class_a_m_m_1_1_module_manager_ad23a9ad2e794ee1d42ef5b587ec32127}{m\+\_\+mgr}} = new D\+D\+S\+Manager$<$\mbox{\hyperlink{class_a_m_m_1_1_module_manager}{Module\+Manager}}$>$(\mbox{\hyperlink{class_a_m_m_1_1_module_manager_a86ac58ff7a22e19a31972dafce1b8c8d}{config\+\_\+file}})
+\item 
+mutex \mbox{\hyperlink{class_a_m_m_1_1_module_manager_a81031067822e71d482306e17aed68f5f}{m\+\_\+mapmutex}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_module_manager_a9e2ac80796730eec1cdf063ba912f9f5}{Run\+Simulation}} ()
+\begin{DoxyCompactList}\small\item\em Simulation controllers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_module_manager_a8c73a638e5292b5f1f344c3c42a8be4a}{Halt\+Simulation}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_module_manager_ab5f8c9d8643816eb4f0fb4c213f17fc5}{Reset\+Simulation}} ()
+\item 
+void \mbox{\hyperlink{class_a_m_m_1_1_module_manager_afce739be7a0744f20f0eaba8898e584c}{Save\+Simulation}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Module Manager class
+
+Container for Module Manager logic. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_ac72ecddf58536f0d33e493fd1ddf768c}\label{class_a_m_m_1_1_module_manager_ac72ecddf58536f0d33e493fd1ddf768c}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!ModuleManager@{ModuleManager}}
+\index{ModuleManager@{ModuleManager}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{ModuleManager()}{ModuleManager()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Module\+Manager\+::\+Module\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_ac78781a8907cdd7015f9d5ee2bf036aa}\label{class_a_m_m_1_1_module_manager_ac78781a8907cdd7015f9d5ee2bf036aa}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!````~ModuleManager@{$\sim$ModuleManager}}
+\index{````~ModuleManager@{$\sim$ModuleManager}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$ModuleManager()}{~ModuleManager()}}
+{\footnotesize\ttfamily A\+M\+M\+::\+Module\+Manager\+::$\sim$\+Module\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_a6f477f502716d81b1e26ee0421320f0f}\label{class_a_m_m_1_1_module_manager_a6f477f502716d81b1e26ee0421320f0f}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!ClearDiagnosticLog@{ClearDiagnosticLog}}
+\index{ClearDiagnosticLog@{ClearDiagnosticLog}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{ClearDiagnosticLog()}{ClearDiagnosticLog()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Module\+Manager\+::\+Clear\+Diagnostic\+Log (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_adba8c02c9b4437b25a59c84ccdb79a7e}\label{class_a_m_m_1_1_module_manager_adba8c02c9b4437b25a59c84ccdb79a7e}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!ClearEventLog@{ClearEventLog}}
+\index{ClearEventLog@{ClearEventLog}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{ClearEventLog()}{ClearEventLog()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Module\+Manager\+::\+Clear\+Event\+Log (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_adf0f1e573b8c5679171dde922562ec99}\label{class_a_m_m_1_1_module_manager_adf0f1e573b8c5679171dde922562ec99}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!ExtractGUIDToString@{ExtractGUIDToString}}
+\index{ExtractGUIDToString@{ExtractGUIDToString}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{ExtractGUIDToString()}{ExtractGUIDToString()}}
+{\footnotesize\ttfamily std\+::string A\+M\+M\+::\+Module\+Manager\+::\+Extract\+G\+U\+I\+D\+To\+String (\begin{DoxyParamCaption}\item[{G\+U\+I\+D\+\_\+t}]{guid }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_a7a41b1483ea97dae1daa2c6bcc91a046}\label{class_a_m_m_1_1_module_manager_a7a41b1483ea97dae1daa2c6bcc91a046}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!GetTimestamp@{GetTimestamp}}
+\index{GetTimestamp@{GetTimestamp}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{GetTimestamp()}{GetTimestamp()}}
+{\footnotesize\ttfamily uint64\+\_\+t A\+M\+M\+::\+Module\+Manager\+::\+Get\+Timestamp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_a8c73a638e5292b5f1f344c3c42a8be4a}\label{class_a_m_m_1_1_module_manager_a8c73a638e5292b5f1f344c3c42a8be4a}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!HaltSimulation@{HaltSimulation}}
+\index{HaltSimulation@{HaltSimulation}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{HaltSimulation()}{HaltSimulation()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Module\+Manager\+::\+Halt\+Simulation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_a3d9d1c23ac2b8224c4c25dc6b7729306}\label{class_a_m_m_1_1_module_manager_a3d9d1c23ac2b8224c4c25dc6b7729306}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!onNewAssessment@{onNewAssessment}}
+\index{onNewAssessment@{onNewAssessment}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{onNewAssessment()}{onNewAssessment()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Module\+Manager\+::on\+New\+Assessment (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Assessment \&}]{assessment,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_aa434451c748560c2aa46d22a14fb208a}\label{class_a_m_m_1_1_module_manager_aa434451c748560c2aa46d22a14fb208a}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!onNewCommand@{onNewCommand}}
+\index{onNewCommand@{onNewCommand}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{onNewCommand()}{onNewCommand()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Module\+Manager\+::on\+New\+Command (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Command \&}]{command,  }\item[{eprosima\+::fastrtps\+::\+Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_a21e462140f22c9e7a41b08958a3f58fd}\label{class_a_m_m_1_1_module_manager_a21e462140f22c9e7a41b08958a3f58fd}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!onNewEventFragment@{onNewEventFragment}}
+\index{onNewEventFragment@{onNewEventFragment}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{onNewEventFragment()}{onNewEventFragment()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Module\+Manager\+::on\+New\+Event\+Fragment (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Event\+Fragment \&}]{event\+Frag,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_adfa3e87ebc365c5d1aed92894fe296c1}\label{class_a_m_m_1_1_module_manager_adfa3e87ebc365c5d1aed92894fe296c1}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!onNewEventRecord@{onNewEventRecord}}
+\index{onNewEventRecord@{onNewEventRecord}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{onNewEventRecord()}{onNewEventRecord()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Module\+Manager\+::on\+New\+Event\+Record (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Event\+Record \&}]{event\+Rec,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_a93adae5a4d4a23137a6994ed482eac31}\label{class_a_m_m_1_1_module_manager_a93adae5a4d4a23137a6994ed482eac31}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!onNewFragmentAmendmentRequest@{onNewFragmentAmendmentRequest}}
+\index{onNewFragmentAmendmentRequest@{onNewFragmentAmendmentRequest}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{onNewFragmentAmendmentRequest()}{onNewFragmentAmendmentRequest()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Module\+Manager\+::on\+New\+Fragment\+Amendment\+Request (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Fragment\+Amendment\+Request \&}]{ffar,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_ae0d733404586d399a5a33d886988b4f0}\label{class_a_m_m_1_1_module_manager_ae0d733404586d399a5a33d886988b4f0}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!onNewLog@{onNewLog}}
+\index{onNewLog@{onNewLog}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{onNewLog()}{onNewLog()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Module\+Manager\+::on\+New\+Log (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Log \&}]{log,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+D\+DS event handlers. 
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_afcb15af748798cb76d7c02e4b2489b96}\label{class_a_m_m_1_1_module_manager_afcb15af748798cb76d7c02e4b2489b96}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!onNewModuleConfiguration@{onNewModuleConfiguration}}
+\index{onNewModuleConfiguration@{onNewModuleConfiguration}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{onNewModuleConfiguration()}{onNewModuleConfiguration()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Module\+Manager\+::on\+New\+Module\+Configuration (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Module\+Configuration \&}]{mc,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_a92fb5aefa305375646394f7622913bd0}\label{class_a_m_m_1_1_module_manager_a92fb5aefa305375646394f7622913bd0}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!onNewOmittedEvent@{onNewOmittedEvent}}
+\index{onNewOmittedEvent@{onNewOmittedEvent}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{onNewOmittedEvent()}{onNewOmittedEvent()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Module\+Manager\+::on\+New\+Omitted\+Event (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Omitted\+Event \&}]{omitted\+Event,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_a7104e7a50cde68dbb472cf5e84bd0fb7}\label{class_a_m_m_1_1_module_manager_a7104e7a50cde68dbb472cf5e84bd0fb7}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!onNewOperationalDescription@{onNewOperationalDescription}}
+\index{onNewOperationalDescription@{onNewOperationalDescription}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{onNewOperationalDescription()}{onNewOperationalDescription()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Module\+Manager\+::on\+New\+Operational\+Description (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Operational\+Description \&}]{op\+Descript,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_aa4a61b42d92541587c7f11a716069bb2}\label{class_a_m_m_1_1_module_manager_aa4a61b42d92541587c7f11a716069bb2}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!onNewPhysiologyModification@{onNewPhysiologyModification}}
+\index{onNewPhysiologyModification@{onNewPhysiologyModification}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{onNewPhysiologyModification()}{onNewPhysiologyModification()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Module\+Manager\+::on\+New\+Physiology\+Modification (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Physiology\+Modification \&}]{phys\+Mod,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_a065b8409bd127ce2f4dd5fcf546f932b}\label{class_a_m_m_1_1_module_manager_a065b8409bd127ce2f4dd5fcf546f932b}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!onNewRenderModification@{onNewRenderModification}}
+\index{onNewRenderModification@{onNewRenderModification}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{onNewRenderModification()}{onNewRenderModification()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Module\+Manager\+::on\+New\+Render\+Modification (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Render\+Modification \&}]{rend\+Mod,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_a1b24ef48688bd496a8eeff4be7aab8c3}\label{class_a_m_m_1_1_module_manager_a1b24ef48688bd496a8eeff4be7aab8c3}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!onNewSimulationControl@{onNewSimulationControl}}
+\index{onNewSimulationControl@{onNewSimulationControl}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{onNewSimulationControl()}{onNewSimulationControl()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Module\+Manager\+::on\+New\+Simulation\+Control (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Simulation\+Control \&}]{sim\+Control,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_a5c9265346f600baa65457169339e2e1b}\label{class_a_m_m_1_1_module_manager_a5c9265346f600baa65457169339e2e1b}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!onNewStatus@{onNewStatus}}
+\index{onNewStatus@{onNewStatus}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{onNewStatus()}{onNewStatus()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Module\+Manager\+::on\+New\+Status (\begin{DoxyParamCaption}\item[{A\+M\+M\+::\+Status \&}]{status,  }\item[{Sample\+Info\+\_\+t $\ast$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_a8c3c064cd05cf1183cf97577bff7eae5}\label{class_a_m_m_1_1_module_manager_a8c3c064cd05cf1183cf97577bff7eae5}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!PublishConfiguration@{PublishConfiguration}}
+\index{PublishConfiguration@{PublishConfiguration}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{PublishConfiguration()}{PublishConfiguration()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Module\+Manager\+::\+Publish\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_a4233659c12a352fcea96adfd2f0ee0ab}\label{class_a_m_m_1_1_module_manager_a4233659c12a352fcea96adfd2f0ee0ab}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!PublishOperationalDescription@{PublishOperationalDescription}}
+\index{PublishOperationalDescription@{PublishOperationalDescription}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{PublishOperationalDescription()}{PublishOperationalDescription()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Module\+Manager\+::\+Publish\+Operational\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_ab5f8c9d8643816eb4f0fb4c213f17fc5}\label{class_a_m_m_1_1_module_manager_ab5f8c9d8643816eb4f0fb4c213f17fc5}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!ResetSimulation@{ResetSimulation}}
+\index{ResetSimulation@{ResetSimulation}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{ResetSimulation()}{ResetSimulation()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Module\+Manager\+::\+Reset\+Simulation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_a9e2ac80796730eec1cdf063ba912f9f5}\label{class_a_m_m_1_1_module_manager_a9e2ac80796730eec1cdf063ba912f9f5}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!RunSimulation@{RunSimulation}}
+\index{RunSimulation@{RunSimulation}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{RunSimulation()}{RunSimulation()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Module\+Manager\+::\+Run\+Simulation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Simulation controllers. 
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_afce739be7a0744f20f0eaba8898e584c}\label{class_a_m_m_1_1_module_manager_afce739be7a0744f20f0eaba8898e584c}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!SaveSimulation@{SaveSimulation}}
+\index{SaveSimulation@{SaveSimulation}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{SaveSimulation()}{SaveSimulation()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Module\+Manager\+::\+Save\+Simulation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_ac912ac6f3f4f06343fe8a68251cf1120}\label{class_a_m_m_1_1_module_manager_ac912ac6f3f4f06343fe8a68251cf1120}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!ShowStatus@{ShowStatus}}
+\index{ShowStatus@{ShowStatus}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{ShowStatus()}{ShowStatus()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Module\+Manager\+::\+Show\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_a67e2476e0c69f30a78a74c34f9032844}\label{class_a_m_m_1_1_module_manager_a67e2476e0c69f30a78a74c34f9032844}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{Shutdown()}{Shutdown()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Module\+Manager\+::\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gracefully close and delete everything created by mod manager.\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_ada7ec618ad1bc8d5ced0acf9e2fc711c}\label{class_a_m_m_1_1_module_manager_ada7ec618ad1bc8d5ced0acf9e2fc711c}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!WriteLogEntry@{WriteLogEntry}}
+\index{WriteLogEntry@{WriteLogEntry}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{WriteLogEntry()}{WriteLogEntry()}}
+{\footnotesize\ttfamily void A\+M\+M\+::\+Module\+Manager\+::\+Write\+Log\+Entry (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_a_m_m_1_1_log_entry}{Log\+Entry}}}]{log }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_a86ac58ff7a22e19a31972dafce1b8c8d}\label{class_a_m_m_1_1_module_manager_a86ac58ff7a22e19a31972dafce1b8c8d}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!config\_file@{config\_file}}
+\index{config\_file@{config\_file}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{config\_file}{config\_file}}
+{\footnotesize\ttfamily const std\+::string A\+M\+M\+::\+Module\+Manager\+::config\+\_\+file = \char`\"{}config/module\+\_\+manager\+\_\+amm.\+xml\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_a81031067822e71d482306e17aed68f5f}\label{class_a_m_m_1_1_module_manager_a81031067822e71d482306e17aed68f5f}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!m\_mapmutex@{m\_mapmutex}}
+\index{m\_mapmutex@{m\_mapmutex}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{m\_mapmutex}{m\_mapmutex}}
+{\footnotesize\ttfamily mutex A\+M\+M\+::\+Module\+Manager\+::m\+\_\+mapmutex\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_ad23a9ad2e794ee1d42ef5b587ec32127}\label{class_a_m_m_1_1_module_manager_ad23a9ad2e794ee1d42ef5b587ec32127}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!m\_mgr@{m\_mgr}}
+\index{m\_mgr@{m\_mgr}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{m\_mgr}{m\_mgr}}
+{\footnotesize\ttfamily D\+D\+S\+Manager$<$\mbox{\hyperlink{class_a_m_m_1_1_module_manager}{Module\+Manager}}$>$$\ast$ A\+M\+M\+::\+Module\+Manager\+::m\+\_\+mgr = new D\+D\+S\+Manager$<$\mbox{\hyperlink{class_a_m_m_1_1_module_manager}{Module\+Manager}}$>$(\mbox{\hyperlink{class_a_m_m_1_1_module_manager_a86ac58ff7a22e19a31972dafce1b8c8d}{config\+\_\+file}})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_a20cfdf318794f334c3b0f46ca0a5cab1}\label{class_a_m_m_1_1_module_manager_a20cfdf318794f334c3b0f46ca0a5cab1}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!m\_uuid@{m\_uuid}}
+\index{m\_uuid@{m\_uuid}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{m\_uuid}{m\_uuid}}
+{\footnotesize\ttfamily A\+M\+M\+::\+U\+U\+ID A\+M\+M\+::\+Module\+Manager\+::m\+\_\+uuid\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_a_m_m_1_1_module_manager_ad93a65b7cfde55c4add2c8d58903141b}\label{class_a_m_m_1_1_module_manager_ad93a65b7cfde55c4add2c8d58903141b}} 
+\index{AMM::ModuleManager@{AMM::ModuleManager}!moduleName@{moduleName}}
+\index{moduleName@{moduleName}!AMM::ModuleManager@{AMM::ModuleManager}}
+\doxysubsubsection{\texorpdfstring{moduleName}{moduleName}}
+{\footnotesize\ttfamily std\+::string A\+M\+M\+::\+Module\+Manager\+::module\+Name = \char`\"{}A\+M\+M\+\_\+\+Module\+Manager\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
+

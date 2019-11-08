@@ -1,0 +1,343 @@
+\hypertarget{class_d_d_s_endpoint}{}\doxysection{D\+D\+S\+Endpoint Class Reference}
+\label{class_d_d_s_endpoint}\index{DDSEndpoint@{DDSEndpoint}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_d_d_s_endpoint_a7b7183f2276ac951f79e871e586e8796}{D\+D\+S\+Endpoint}} (Address \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_acea9726dab13332af3a5c74a13ea08dc}{addr}})
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_a3ffc9d48f8177fe8fc8ad3a178259451}{init}} (int \mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp_af4bd819081fac2a76628bd5344eba0f8}{thr}}=2)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_a1670b1add345bc41f69a1e265f02a0f2}{start}} ()
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_af02a9f4adb7021a2523168b1c2501a84}{shutdown}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::mutex \mbox{\hyperlink{class_d_d_s_endpoint_a4b8dc3e1acfcae357cfcbf0758a0e182}{Lock}}
+\item 
+typedef std\+::lock\+\_\+guard$<$ \mbox{\hyperlink{class_d_d_s_endpoint_a4b8dc3e1acfcae357cfcbf0758a0e182}{Lock}} $>$ \mbox{\hyperlink{class_d_d_s_endpoint_a9d043ef11c6189e082ccf54472cd8c34}{Guard}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_a89237253bc13e7ab975034e9e83e50d1}{setup\+Routes}} ()
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_acba5f5fed0197b0ca1d31aae3b476d64}{get\+Instance}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_a6666952341f92c587a958d8020e73dd4}{get\+States}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_ae766e88a39c3917e9d71e6d51532714a}{delete\+State}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_a241024bc8e9d178a087e2571520bbcc2}{get\+Patients}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_a07152b6ac28adff9a21bb70caa6eebae}{get\+Actions}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_a62be7744ec855e1ebff8cfccc05d51a7}{execute\+Command}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_ad43589a58b60f1c9f700c86433048bdf}{execute\+Physiology\+Modification}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_a4e205af123f2711d76b8f16fcedf9c57}{execute\+Render\+Modification}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_a42ab18da8fb6dc22032cb618f56498eb}{execute\+Performance\+Assessment}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_a2b960adcc6b3bccc91c6ee6bc3c9b0ee}{execute\+Options}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_a1cc617ee00ccbe2bf4ef5be8e6b523c0}{create\+Action}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_ac77dcd140e50a2a7e0e45e2a4f052765}{delete\+Action}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_aece10be9aa0c8f1fa457351fbd552461}{update\+Action}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_ac7e8e60767259cfe5e12866a591b88a5}{get\+Action}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_a39e3c67465b08bba10a71188e6a281d0}{issue\+Command}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_ae20a19b2ab25c252451d0f4c6fbe5f66}{get\+Module\+By\+Id}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_a3352869524f47fd35e1dfc96fd98a653}{get\+Module\+By\+Guid}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_aa288b998dc5d537c66c1d1cf36dfb83c}{get\+Module\+Count}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_abdbffa30c57a541d9166a9cf43e7f540}{get\+Other\+Modules}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_ab72368e6abf758100a12309c8f2242c6}{get\+Modules}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_a0240588c2d708399e7a7514df61a9ddd}{get\+Event\+Log}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_a7bdef12f789d1b41fd05bf7da3274e64}{get\+Event\+Log\+C\+SV}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_ac3773c7ed5b11826251fbc3dbb676785}{get\+Diagnostic\+Log}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_af8f8eedfbc33b86200de2d7e07205192}{get\+Diagnostic\+Log\+C\+SV}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_a5cfc1ca6e28b7f8e2ba6d52aaf4d6e54}{get\+Nodes}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_a25d202b6a3a9c37683a87f382265bde9}{get\+Labs\+Report}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_ad3eda54f0b1a69e139eece1d3ee6bb45}{get\+Node}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_a02457539bcda4e232dabf3d8225dab35}{do\+Debug}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\item 
+void \mbox{\hyperlink{class_d_d_s_endpoint_aa1f4773fc983e71b135f3b8d93d2d601}{do\+Shutdown}} (const Rest\+::\+Request \&request, Http\+::\+Response\+Writer response)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_d_d_s_endpoint_a4b8dc3e1acfcae357cfcbf0758a0e182}{Lock}} \mbox{\hyperlink{class_d_d_s_endpoint_af6cabcaf62b98d4f6f8f0a9efe843273}{command\+Lock}}
+\item 
+std\+::shared\+\_\+ptr$<$ Http\+::\+Endpoint $>$ \mbox{\hyperlink{class_d_d_s_endpoint_abbd8de382ae6376a300cd8c36b88a031}{http\+Endpoint}}
+\item 
+Rest\+::\+Router \mbox{\hyperlink{class_d_d_s_endpoint_a8666239398ad64b11ffd33d94e6df20c}{router}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_d_d_s_endpoint_a9d043ef11c6189e082ccf54472cd8c34}\label{class_d_d_s_endpoint_a9d043ef11c6189e082ccf54472cd8c34}} 
+\index{DDSEndpoint@{DDSEndpoint}!Guard@{Guard}}
+\index{Guard@{Guard}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{Guard}{Guard}}
+{\footnotesize\ttfamily typedef std\+::lock\+\_\+guard$<$\mbox{\hyperlink{class_d_d_s_endpoint_a4b8dc3e1acfcae357cfcbf0758a0e182}{Lock}}$>$ \mbox{\hyperlink{class_d_d_s_endpoint_a9d043ef11c6189e082ccf54472cd8c34}{D\+D\+S\+Endpoint\+::\+Guard}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_a4b8dc3e1acfcae357cfcbf0758a0e182}\label{class_d_d_s_endpoint_a4b8dc3e1acfcae357cfcbf0758a0e182}} 
+\index{DDSEndpoint@{DDSEndpoint}!Lock@{Lock}}
+\index{Lock@{Lock}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{Lock}{Lock}}
+{\footnotesize\ttfamily typedef std\+::mutex \mbox{\hyperlink{class_d_d_s_endpoint_a4b8dc3e1acfcae357cfcbf0758a0e182}{D\+D\+S\+Endpoint\+::\+Lock}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_d_d_s_endpoint_a7b7183f2276ac951f79e871e586e8796}\label{class_d_d_s_endpoint_a7b7183f2276ac951f79e871e586e8796}} 
+\index{DDSEndpoint@{DDSEndpoint}!DDSEndpoint@{DDSEndpoint}}
+\index{DDSEndpoint@{DDSEndpoint}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{DDSEndpoint()}{DDSEndpoint()}}
+{\footnotesize\ttfamily D\+D\+S\+Endpoint\+::\+D\+D\+S\+Endpoint (\begin{DoxyParamCaption}\item[{Address}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_d_d_s_endpoint_a1cc617ee00ccbe2bf4ef5be8e6b523c0}\label{class_d_d_s_endpoint_a1cc617ee00ccbe2bf4ef5be8e6b523c0}} 
+\index{DDSEndpoint@{DDSEndpoint}!createAction@{createAction}}
+\index{createAction@{createAction}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{createAction()}{createAction()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::create\+Action (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_ac77dcd140e50a2a7e0e45e2a4f052765}\label{class_d_d_s_endpoint_ac77dcd140e50a2a7e0e45e2a4f052765}} 
+\index{DDSEndpoint@{DDSEndpoint}!deleteAction@{deleteAction}}
+\index{deleteAction@{deleteAction}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{deleteAction()}{deleteAction()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::delete\+Action (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_ae766e88a39c3917e9d71e6d51532714a}\label{class_d_d_s_endpoint_ae766e88a39c3917e9d71e6d51532714a}} 
+\index{DDSEndpoint@{DDSEndpoint}!deleteState@{deleteState}}
+\index{deleteState@{deleteState}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{deleteState()}{deleteState()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::delete\+State (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_a02457539bcda4e232dabf3d8225dab35}\label{class_d_d_s_endpoint_a02457539bcda4e232dabf3d8225dab35}} 
+\index{DDSEndpoint@{DDSEndpoint}!doDebug@{doDebug}}
+\index{doDebug@{doDebug}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{doDebug()}{doDebug()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::do\+Debug (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_aa1f4773fc983e71b135f3b8d93d2d601}\label{class_d_d_s_endpoint_aa1f4773fc983e71b135f3b8d93d2d601}} 
+\index{DDSEndpoint@{DDSEndpoint}!doShutdown@{doShutdown}}
+\index{doShutdown@{doShutdown}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{doShutdown()}{doShutdown()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::do\+Shutdown (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_a62be7744ec855e1ebff8cfccc05d51a7}\label{class_d_d_s_endpoint_a62be7744ec855e1ebff8cfccc05d51a7}} 
+\index{DDSEndpoint@{DDSEndpoint}!executeCommand@{executeCommand}}
+\index{executeCommand@{executeCommand}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{executeCommand()}{executeCommand()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::execute\+Command (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_a2b960adcc6b3bccc91c6ee6bc3c9b0ee}\label{class_d_d_s_endpoint_a2b960adcc6b3bccc91c6ee6bc3c9b0ee}} 
+\index{DDSEndpoint@{DDSEndpoint}!executeOptions@{executeOptions}}
+\index{executeOptions@{executeOptions}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{executeOptions()}{executeOptions()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::execute\+Options (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_a42ab18da8fb6dc22032cb618f56498eb}\label{class_d_d_s_endpoint_a42ab18da8fb6dc22032cb618f56498eb}} 
+\index{DDSEndpoint@{DDSEndpoint}!executePerformanceAssessment@{executePerformanceAssessment}}
+\index{executePerformanceAssessment@{executePerformanceAssessment}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{executePerformanceAssessment()}{executePerformanceAssessment()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::execute\+Performance\+Assessment (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_ad43589a58b60f1c9f700c86433048bdf}\label{class_d_d_s_endpoint_ad43589a58b60f1c9f700c86433048bdf}} 
+\index{DDSEndpoint@{DDSEndpoint}!executePhysiologyModification@{executePhysiologyModification}}
+\index{executePhysiologyModification@{executePhysiologyModification}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{executePhysiologyModification()}{executePhysiologyModification()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::execute\+Physiology\+Modification (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_a4e205af123f2711d76b8f16fcedf9c57}\label{class_d_d_s_endpoint_a4e205af123f2711d76b8f16fcedf9c57}} 
+\index{DDSEndpoint@{DDSEndpoint}!executeRenderModification@{executeRenderModification}}
+\index{executeRenderModification@{executeRenderModification}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{executeRenderModification()}{executeRenderModification()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::execute\+Render\+Modification (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_ac7e8e60767259cfe5e12866a591b88a5}\label{class_d_d_s_endpoint_ac7e8e60767259cfe5e12866a591b88a5}} 
+\index{DDSEndpoint@{DDSEndpoint}!getAction@{getAction}}
+\index{getAction@{getAction}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{getAction()}{getAction()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::get\+Action (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_a07152b6ac28adff9a21bb70caa6eebae}\label{class_d_d_s_endpoint_a07152b6ac28adff9a21bb70caa6eebae}} 
+\index{DDSEndpoint@{DDSEndpoint}!getActions@{getActions}}
+\index{getActions@{getActions}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{getActions()}{getActions()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::get\+Actions (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_ac3773c7ed5b11826251fbc3dbb676785}\label{class_d_d_s_endpoint_ac3773c7ed5b11826251fbc3dbb676785}} 
+\index{DDSEndpoint@{DDSEndpoint}!getDiagnosticLog@{getDiagnosticLog}}
+\index{getDiagnosticLog@{getDiagnosticLog}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{getDiagnosticLog()}{getDiagnosticLog()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::get\+Diagnostic\+Log (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_af8f8eedfbc33b86200de2d7e07205192}\label{class_d_d_s_endpoint_af8f8eedfbc33b86200de2d7e07205192}} 
+\index{DDSEndpoint@{DDSEndpoint}!getDiagnosticLogCSV@{getDiagnosticLogCSV}}
+\index{getDiagnosticLogCSV@{getDiagnosticLogCSV}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{getDiagnosticLogCSV()}{getDiagnosticLogCSV()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::get\+Diagnostic\+Log\+C\+SV (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_a0240588c2d708399e7a7514df61a9ddd}\label{class_d_d_s_endpoint_a0240588c2d708399e7a7514df61a9ddd}} 
+\index{DDSEndpoint@{DDSEndpoint}!getEventLog@{getEventLog}}
+\index{getEventLog@{getEventLog}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{getEventLog()}{getEventLog()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::get\+Event\+Log (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_a7bdef12f789d1b41fd05bf7da3274e64}\label{class_d_d_s_endpoint_a7bdef12f789d1b41fd05bf7da3274e64}} 
+\index{DDSEndpoint@{DDSEndpoint}!getEventLogCSV@{getEventLogCSV}}
+\index{getEventLogCSV@{getEventLogCSV}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{getEventLogCSV()}{getEventLogCSV()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::get\+Event\+Log\+C\+SV (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_acba5f5fed0197b0ca1d31aae3b476d64}\label{class_d_d_s_endpoint_acba5f5fed0197b0ca1d31aae3b476d64}} 
+\index{DDSEndpoint@{DDSEndpoint}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::get\+Instance (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_a25d202b6a3a9c37683a87f382265bde9}\label{class_d_d_s_endpoint_a25d202b6a3a9c37683a87f382265bde9}} 
+\index{DDSEndpoint@{DDSEndpoint}!getLabsReport@{getLabsReport}}
+\index{getLabsReport@{getLabsReport}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{getLabsReport()}{getLabsReport()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::get\+Labs\+Report (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_a3352869524f47fd35e1dfc96fd98a653}\label{class_d_d_s_endpoint_a3352869524f47fd35e1dfc96fd98a653}} 
+\index{DDSEndpoint@{DDSEndpoint}!getModuleByGuid@{getModuleByGuid}}
+\index{getModuleByGuid@{getModuleByGuid}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{getModuleByGuid()}{getModuleByGuid()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::get\+Module\+By\+Guid (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_ae20a19b2ab25c252451d0f4c6fbe5f66}\label{class_d_d_s_endpoint_ae20a19b2ab25c252451d0f4c6fbe5f66}} 
+\index{DDSEndpoint@{DDSEndpoint}!getModuleById@{getModuleById}}
+\index{getModuleById@{getModuleById}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{getModuleById()}{getModuleById()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::get\+Module\+By\+Id (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_aa288b998dc5d537c66c1d1cf36dfb83c}\label{class_d_d_s_endpoint_aa288b998dc5d537c66c1d1cf36dfb83c}} 
+\index{DDSEndpoint@{DDSEndpoint}!getModuleCount@{getModuleCount}}
+\index{getModuleCount@{getModuleCount}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{getModuleCount()}{getModuleCount()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::get\+Module\+Count (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_ab72368e6abf758100a12309c8f2242c6}\label{class_d_d_s_endpoint_ab72368e6abf758100a12309c8f2242c6}} 
+\index{DDSEndpoint@{DDSEndpoint}!getModules@{getModules}}
+\index{getModules@{getModules}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{getModules()}{getModules()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::get\+Modules (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_ad3eda54f0b1a69e139eece1d3ee6bb45}\label{class_d_d_s_endpoint_ad3eda54f0b1a69e139eece1d3ee6bb45}} 
+\index{DDSEndpoint@{DDSEndpoint}!getNode@{getNode}}
+\index{getNode@{getNode}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{getNode()}{getNode()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::get\+Node (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_a5cfc1ca6e28b7f8e2ba6d52aaf4d6e54}\label{class_d_d_s_endpoint_a5cfc1ca6e28b7f8e2ba6d52aaf4d6e54}} 
+\index{DDSEndpoint@{DDSEndpoint}!getNodes@{getNodes}}
+\index{getNodes@{getNodes}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{getNodes()}{getNodes()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::get\+Nodes (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_abdbffa30c57a541d9166a9cf43e7f540}\label{class_d_d_s_endpoint_abdbffa30c57a541d9166a9cf43e7f540}} 
+\index{DDSEndpoint@{DDSEndpoint}!getOtherModules@{getOtherModules}}
+\index{getOtherModules@{getOtherModules}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{getOtherModules()}{getOtherModules()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::get\+Other\+Modules (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_a241024bc8e9d178a087e2571520bbcc2}\label{class_d_d_s_endpoint_a241024bc8e9d178a087e2571520bbcc2}} 
+\index{DDSEndpoint@{DDSEndpoint}!getPatients@{getPatients}}
+\index{getPatients@{getPatients}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{getPatients()}{getPatients()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::get\+Patients (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_a6666952341f92c587a958d8020e73dd4}\label{class_d_d_s_endpoint_a6666952341f92c587a958d8020e73dd4}} 
+\index{DDSEndpoint@{DDSEndpoint}!getStates@{getStates}}
+\index{getStates@{getStates}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{getStates()}{getStates()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::get\+States (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_a3ffc9d48f8177fe8fc8ad3a178259451}\label{class_d_d_s_endpoint_a3ffc9d48f8177fe8fc8ad3a178259451}} 
+\index{DDSEndpoint@{DDSEndpoint}!init@{init}}
+\index{init@{init}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::init (\begin{DoxyParamCaption}\item[{int}]{thr = {\ttfamily 2} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_a39e3c67465b08bba10a71188e6a281d0}\label{class_d_d_s_endpoint_a39e3c67465b08bba10a71188e6a281d0}} 
+\index{DDSEndpoint@{DDSEndpoint}!issueCommand@{issueCommand}}
+\index{issueCommand@{issueCommand}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{issueCommand()}{issueCommand()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::issue\+Command (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_a89237253bc13e7ab975034e9e83e50d1}\label{class_d_d_s_endpoint_a89237253bc13e7ab975034e9e83e50d1}} 
+\index{DDSEndpoint@{DDSEndpoint}!setupRoutes@{setupRoutes}}
+\index{setupRoutes@{setupRoutes}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{setupRoutes()}{setupRoutes()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::setup\+Routes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_af02a9f4adb7021a2523168b1c2501a84}\label{class_d_d_s_endpoint_af02a9f4adb7021a2523168b1c2501a84}} 
+\index{DDSEndpoint@{DDSEndpoint}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_a1670b1add345bc41f69a1e265f02a0f2}\label{class_d_d_s_endpoint_a1670b1add345bc41f69a1e265f02a0f2}} 
+\index{DDSEndpoint@{DDSEndpoint}!start@{start}}
+\index{start@{start}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_aece10be9aa0c8f1fa457351fbd552461}\label{class_d_d_s_endpoint_aece10be9aa0c8f1fa457351fbd552461}} 
+\index{DDSEndpoint@{DDSEndpoint}!updateAction@{updateAction}}
+\index{updateAction@{updateAction}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{updateAction()}{updateAction()}}
+{\footnotesize\ttfamily void D\+D\+S\+Endpoint\+::update\+Action (\begin{DoxyParamCaption}\item[{const Rest\+::\+Request \&}]{request,  }\item[{Http\+::\+Response\+Writer}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_d_d_s_endpoint_af6cabcaf62b98d4f6f8f0a9efe843273}\label{class_d_d_s_endpoint_af6cabcaf62b98d4f6f8f0a9efe843273}} 
+\index{DDSEndpoint@{DDSEndpoint}!commandLock@{commandLock}}
+\index{commandLock@{commandLock}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{commandLock}{commandLock}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_d_d_s_endpoint_a4b8dc3e1acfcae357cfcbf0758a0e182}{Lock}} D\+D\+S\+Endpoint\+::command\+Lock\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_abbd8de382ae6376a300cd8c36b88a031}\label{class_d_d_s_endpoint_abbd8de382ae6376a300cd8c36b88a031}} 
+\index{DDSEndpoint@{DDSEndpoint}!httpEndpoint@{httpEndpoint}}
+\index{httpEndpoint@{httpEndpoint}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{httpEndpoint}{httpEndpoint}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$Http\+::\+Endpoint$>$ D\+D\+S\+Endpoint\+::http\+Endpoint\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_d_d_s_endpoint_a8666239398ad64b11ffd33d94e6df20c}\label{class_d_d_s_endpoint_a8666239398ad64b11ffd33d94e6df20c}} 
+\index{DDSEndpoint@{DDSEndpoint}!router@{router}}
+\index{router@{router}!DDSEndpoint@{DDSEndpoint}}
+\doxysubsubsection{\texorpdfstring{router}{router}}
+{\footnotesize\ttfamily Rest\+::\+Router D\+D\+S\+Endpoint\+::router\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_r_e_s_t_adapter_main_8cpp}{R\+E\+S\+T\+Adapter\+Main.\+cpp}}\end{DoxyCompactItemize}
